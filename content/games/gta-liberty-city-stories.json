@@ -2145,60 +2145,6 @@
     "coverage": "complete",
     "items": [
       {
-        "id": "weapon-set-1",
-        "effect": "Weapon set 1",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Up → Square → Square → D-Pad Down → D-Pad Left → Square → Square → D-Pad Right",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Up → Square → Square → D-Pad Down → D-Pad Left → Square → Square → D-Pad Right",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "weapon-set-2",
-        "effect": "Weapon set 2",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Up → Circle → Circle → D-Pad Down → D-Pad Left → Circle → Circle → D-Pad Right",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Up → Circle → Circle → D-Pad Down → D-Pad Left → Circle → Circle → D-Pad Right",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "weapon-set-3",
-        "effect": "Weapon set 3",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Up → Cross → Cross → D-Pad Down → D-Pad Left → Cross → Cross → D-Pad Right",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Up → Cross → Cross → D-Pad Down → D-Pad Left → Cross → Cross → D-Pad Right",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
         "id": "250-000",
         "effect": "$250,000",
         "codes": [
@@ -2210,6 +2156,258 @@
           {
             "platform": "PlayStation Portable",
             "code": "L Trigger → R Trigger → Triangle → L Trigger → R Trigger → Circle → L Trigger → R Trigger",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "aggressive-drivers",
+        "effect": "Aggressive drivers",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Square → Square → R1 → Cross → Cross → L1 → Circle → Circle",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Square → Square → R Trigger → Cross → Cross → L Trigger → Circle → Circle",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "all-green-lights",
+        "effect": "All green lights",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Triangle → Triangle → R1 → Square → Square → L1 → Cross → Cross",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Triangle → Triangle → R Trigger → Square → Square → L Trigger → Cross → Cross",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "all-vehicles-chrome-plated",
+        "effect": "All vehicles chrome plated",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Triangle → R1 → L1 → D-Pad Down → D-Pad Down → R1 → R1 → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Triangle → R Trigger → L Trigger → D-Pad Down → D-Pad Down → R Trigger → R Trigger → Triangle",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "big-heads",
+        "effect": "Big heads",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Circle → Circle → Cross → L1 → R1",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Circle → Circle → Cross → L Trigger → R Trigger",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "black-traffic",
+        "effect": "Black traffic",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Circle → Circle → R1 → Triangle → Triangle → L1 → Square → Square",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Circle → Circle → R Trigger → Triangle → Triangle → L Trigger → Square → Square",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "cars-drive-on-water",
+        "effect": "Cars drive on water",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Circle → Cross → D-Pad Down → Circle → Cross → D-Pad Up → L1 → L1",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Circle → Cross → D-Pad Down → Circle → Cross → D-Pad Up → L Trigger → L Trigger",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "change-bike-tire-size",
+        "effect": "Change bike tire size",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Circle → D-Pad Right → Cross → D-Pad Up → D-Pad Right → Cross → L1 → Square",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Circle → D-Pad Right → Cross → D-Pad Up → D-Pad Right → Cross → L Trigger → Square",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "clear-weather",
+        "effect": "Clear weather",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "D-Pad Up → D-Pad Down → Circle → D-Pad Up → D-Pad Down → Square → L1 → R1",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "D-Pad Up → D-Pad Down → Circle → D-Pad Up → D-Pad Down → Square → L Trigger → R Trigger",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "commit-suicide",
+        "effect": "Commit suicide",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → D-Pad Down → D-Pad Left → R1 → Cross → Circle → D-Pad Up → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "L Trigger → D-Pad Down → D-Pad Left → R Trigger → Cross → Circle → D-Pad Up → Triangle",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "destroy-all-cars",
+        "effect": "Destroy all cars",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Cross → Square",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Cross → Square",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "display-game-credits",
+        "effect": "Display game credits",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → R1 → L1 → R1 → D-Pad Up → D-Pad Down → L1 → R1",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "L Trigger → R Trigger → L Trigger → R Trigger → D-Pad Up → D-Pad Down → L Trigger → R Trigger",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "faster-clock",
+        "effect": "Faster clock",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Circle → Cross",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Circle → Cross",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "faster-gameplay",
+        "effect": "Faster gameplay",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "R1 → R1 → L1 → R1 → R1 → L1 → D-Pad Down → Cross",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "R Trigger → R Trigger → L Trigger → R Trigger → R Trigger → L Trigger → D-Pad Down → Cross",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "foggy-weather",
+        "effect": "Foggy weather",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "D-Pad Up → D-Pad Down → Triangle → D-Pad Up → D-Pad Down → Cross → L1 → R1",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "D-Pad Up → D-Pad Down → Triangle → D-Pad Up → D-Pad Down → Cross → L Trigger → R Trigger",
             "input": "button"
           }
         ],
@@ -2253,17 +2451,53 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "raise-wanted-level",
-        "effect": "Raise wanted level",
+        "id": "male-pedestrians-follow-you",
+        "effect": "Male pedestrians follow you",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "L1 → R1 → Square → L1 → R1 → Triangle → L1 → R1",
+            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Triangle → Triangle → Circle → L1 → R1",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "L Trigger → R Trigger → Square → L Trigger → R Trigger → Triangle → L Trigger → R Trigger",
+            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Triangle → Triangle → Circle → L Trigger → R Trigger",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "media-attention-meter",
+        "effect": "Media attention meter",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → D-Pad Up → D-Pad Right → R1 → Triangle → Square → D-Pad Down → Cross",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "L Trigger → D-Pad Up → D-Pad Right → R Trigger → Triangle → Square → D-Pad Down → Cross",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "nearest-pedestrian-enters-your-vehicle",
+        "effect": "Nearest pedestrian enters your vehicle",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Cross → Square → D-Pad Down → Cross → Square → D-Pad Up → R1 → R1",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Cross → Square → D-Pad Down → Cross → Square → D-Pad Up → R Trigger → R Trigger",
             "input": "button"
           }
         ],
@@ -2289,42 +2523,6 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "sunny-weather",
-        "effect": "Sunny weather",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "L1 → L1 → Circle → R1 → R1 → Square → Triangle → Cross",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "L Trigger → L Trigger → Circle → R Trigger → R Trigger → Square → Triangle → Cross",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "clear-weather",
-        "effect": "Clear weather",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Up → D-Pad Down → Circle → D-Pad Up → D-Pad Down → Square → L1 → R1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Up → D-Pad Down → Circle → D-Pad Up → D-Pad Down → Square → L Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
         "id": "overcast-weather",
         "effect": "Overcast weather",
         "codes": [
@@ -2336,132 +2534,6 @@
           {
             "platform": "PlayStation Portable",
             "code": "D-Pad Up → D-Pad Down → Cross → D-Pad Up → D-Pad Down → Triangle → L Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "rainy-weather",
-        "effect": "Rainy weather",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Up → D-Pad Down → Square → D-Pad Up → D-Pad Down → Circle → L1 → R1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Up → D-Pad Down → Square → D-Pad Up → D-Pad Down → Circle → L Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "foggy-weather",
-        "effect": "Foggy weather",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Up → D-Pad Down → Triangle → D-Pad Up → D-Pad Down → Cross → L1 → R1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Up → D-Pad Down → Triangle → D-Pad Up → D-Pad Down → Cross → L Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "spawn-rhino",
-        "effect": "Spawn Rhino",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Triangle → Circle",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Triangle → Circle",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "faster-clock",
-        "effect": "Faster clock",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Circle → Cross",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Circle → Cross",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "destroy-all-cars",
-        "effect": "Destroy all cars",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Cross → Square",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Cross → Square",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "play-as-pedestrian",
-        "effect": "Play as pedestrian",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Square → Triangle",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Square → Triangle",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "pedestrians-riot",
-        "effect": "Pedestrians riot",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "L1 → L1 → R1 → L1 → L1 → R1 → D-Pad Left → Square",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "L Trigger → L Trigger → R Trigger → L Trigger → L Trigger → R Trigger → D-Pad Left → Square",
             "input": "button"
           }
         ],
@@ -2505,35 +2577,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "faster-gameplay",
-        "effect": "Faster gameplay",
+        "id": "pedestrians-riot",
+        "effect": "Pedestrians riot",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "R1 → R1 → L1 → R1 → R1 → L1 → D-Pad Down → Cross",
+            "code": "L1 → L1 → R1 → L1 → L1 → R1 → D-Pad Left → Square",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "R Trigger → R Trigger → L Trigger → R Trigger → R Trigger → L Trigger → D-Pad Down → Cross",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "slower-gameplay",
-        "effect": "Slower gameplay",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "R1 → Triangle → Cross → R1 → Square → Circle → D-Pad Left → D-Pad Right",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "R Trigger → Triangle → Cross → R Trigger → Square → Circle → D-Pad Left → D-Pad Right",
+            "code": "L Trigger → L Trigger → R Trigger → L Trigger → L Trigger → R Trigger → D-Pad Left → Square",
             "input": "button"
           }
         ],
@@ -2559,17 +2613,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "media-attention-meter",
-        "effect": "Media attention meter",
+        "id": "play-as-pedestrian",
+        "effect": "Play as pedestrian",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "L1 → D-Pad Up → D-Pad Right → R1 → Triangle → Square → D-Pad Down → Cross",
+            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Square → Triangle",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "L Trigger → D-Pad Up → D-Pad Right → R Trigger → Triangle → Square → D-Pad Down → Cross",
+            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Square → Triangle",
             "input": "button"
           }
         ],
@@ -2577,17 +2631,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "commit-suicide",
-        "effect": "Commit suicide",
+        "id": "rainy-weather",
+        "effect": "Rainy weather",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "L1 → D-Pad Down → D-Pad Left → R1 → Cross → Circle → D-Pad Up → Triangle",
+            "code": "D-Pad Up → D-Pad Down → Square → D-Pad Up → D-Pad Down → Circle → L1 → R1",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "L Trigger → D-Pad Down → D-Pad Left → R Trigger → Cross → Circle → D-Pad Up → Triangle",
+            "code": "D-Pad Up → D-Pad Down → Square → D-Pad Up → D-Pad Down → Circle → L Trigger → R Trigger",
             "input": "button"
           }
         ],
@@ -2595,17 +2649,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "all-green-lights",
-        "effect": "All green lights",
+        "id": "raise-wanted-level",
+        "effect": "Raise wanted level",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Triangle → Triangle → R1 → Square → Square → L1 → Cross → Cross",
+            "code": "L1 → R1 → Square → L1 → R1 → Triangle → L1 → R1",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Triangle → Triangle → R Trigger → Square → Square → L Trigger → Cross → Cross",
+            "code": "L Trigger → R Trigger → Square → L Trigger → R Trigger → Triangle → L Trigger → R Trigger",
             "input": "button"
           }
         ],
@@ -2613,17 +2667,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "aggressive-drivers",
-        "effect": "Aggressive drivers",
+        "id": "reverse-upside-down",
+        "effect": "Reverse upside down",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Square → Square → R1 → Cross → Cross → L1 → Circle → Circle",
+            "code": "Cross → Cross → Cross → D-Pad Down → D-Pad Down → D-Pad Right → L1 → R1",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Square → Square → R Trigger → Cross → Cross → L Trigger → Circle → Circle",
+            "code": "Cross → Cross → Cross → D-Pad Down → D-Pad Down → D-Pad Right → L Trigger → R Trigger",
             "input": "button"
           }
         ],
@@ -2631,17 +2685,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "white-traffic",
-        "effect": "White traffic",
+        "id": "slower-gameplay",
+        "effect": "Slower gameplay",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Cross → Cross → R1 → Circle → Circle → L1 → Triangle → Triangle",
+            "code": "R1 → Triangle → Cross → R1 → Square → Circle → D-Pad Left → D-Pad Right",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Cross → Cross → R Trigger → Circle → Circle → L Trigger → Triangle → Triangle",
+            "code": "R Trigger → Triangle → Cross → R Trigger → Square → Circle → D-Pad Left → D-Pad Right",
             "input": "button"
           }
         ],
@@ -2649,17 +2703,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "black-traffic",
-        "effect": "Black traffic",
+        "id": "spawn-rhino",
+        "effect": "Spawn Rhino",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Circle → Circle → R1 → Triangle → Triangle → L1 → Square → Square",
+            "code": "L1 → L1 → D-Pad Left → L1 → L1 → D-Pad Right → Triangle → Circle",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Circle → Circle → R Trigger → Triangle → Triangle → L Trigger → Square → Square",
+            "code": "L Trigger → L Trigger → D-Pad Left → L Trigger → L Trigger → D-Pad Right → Triangle → Circle",
             "input": "button"
           }
         ],
@@ -2685,17 +2739,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "cars-drive-on-water",
-        "effect": "Cars drive on water",
+        "id": "sunny-weather",
+        "effect": "Sunny weather",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Circle → Cross → D-Pad Down → Circle → Cross → D-Pad Up → L1 → L1",
+            "code": "L1 → L1 → Circle → R1 → R1 → Square → Triangle → Cross",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Circle → Cross → D-Pad Down → Circle → Cross → D-Pad Up → L Trigger → L Trigger",
+            "code": "L Trigger → L Trigger → Circle → R Trigger → R Trigger → Square → Triangle → Cross",
             "input": "button"
           }
         ],
@@ -2703,89 +2757,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "nearest-pedestrian-enters-your-vehicle",
-        "effect": "Nearest pedestrian enters your vehicle",
+        "id": "unlock-all-multiplayer-content",
+        "effect": "Unlock all multiplayer content",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Cross → Square → D-Pad Down → Cross → Square → D-Pad Up → R1 → R1",
+            "code": "D-Pad Up → D-Pad Up → D-Pad Up → Triangle → Triangle → Circle → L1 → R1",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Cross → Square → D-Pad Down → Cross → Square → D-Pad Up → R Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "male-pedestrians-follow-you",
-        "effect": "Male pedestrians follow you",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Triangle → Triangle → Circle → L1 → R1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Triangle → Triangle → Circle → L Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "big-heads",
-        "effect": "Big heads",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Circle → Circle → Cross → L1 → R1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Circle → Circle → Cross → L Trigger → R Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "upside-down",
-        "effect": "Upside down",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Cross → Cross → Square → R1 → L1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Cross → Cross → Square → R Trigger → L Trigger",
-            "input": "button"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "reverse-upside-down",
-        "effect": "Reverse upside down",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "Cross → Cross → Cross → D-Pad Down → D-Pad Down → D-Pad Right → L1 → R1",
-            "input": "button"
-          },
-          {
-            "platform": "PlayStation Portable",
-            "code": "Cross → Cross → Cross → D-Pad Down → D-Pad Down → D-Pad Right → L Trigger → R Trigger",
+            "code": "D-Pad Up → D-Pad Up → D-Pad Up → Triangle → Triangle → Circle → L Trigger → R Trigger",
             "input": "button"
           }
         ],
@@ -2847,17 +2829,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "unlock-all-multiplayer-content",
-        "effect": "Unlock all multiplayer content",
+        "id": "upside-down",
+        "effect": "Upside down",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "D-Pad Up → D-Pad Up → D-Pad Up → Triangle → Triangle → Circle → L1 → R1",
+            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Cross → Cross → Square → R1 → L1",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "D-Pad Up → D-Pad Up → D-Pad Up → Triangle → Triangle → Circle → L Trigger → R Trigger",
+            "code": "D-Pad Down → D-Pad Down → D-Pad Down → Cross → Cross → Square → R Trigger → L Trigger",
             "input": "button"
           }
         ],
@@ -2865,17 +2847,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "change-bike-tire-size",
-        "effect": "Change bike tire size",
+        "id": "weapon-set-1",
+        "effect": "Weapon set 1",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Circle → D-Pad Right → Cross → D-Pad Up → D-Pad Right → Cross → L1 → Square",
+            "code": "D-Pad Up → Square → Square → D-Pad Down → D-Pad Left → Square → Square → D-Pad Right",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Circle → D-Pad Right → Cross → D-Pad Up → D-Pad Right → Cross → L Trigger → Square",
+            "code": "D-Pad Up → Square → Square → D-Pad Down → D-Pad Left → Square → Square → D-Pad Right",
             "input": "button"
           }
         ],
@@ -2883,17 +2865,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "display-game-credits",
-        "effect": "Display game credits",
+        "id": "weapon-set-2",
+        "effect": "Weapon set 2",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "L1 → R1 → L1 → R1 → D-Pad Up → D-Pad Down → L1 → R1",
+            "code": "D-Pad Up → Circle → Circle → D-Pad Down → D-Pad Left → Circle → Circle → D-Pad Right",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "L Trigger → R Trigger → L Trigger → R Trigger → D-Pad Up → D-Pad Down → L Trigger → R Trigger",
+            "code": "D-Pad Up → Circle → Circle → D-Pad Down → D-Pad Left → Circle → Circle → D-Pad Right",
             "input": "button"
           }
         ],
@@ -2901,17 +2883,35 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "all-vehicles-chrome-plated",
-        "effect": "All vehicles chrome plated",
+        "id": "weapon-set-3",
+        "effect": "Weapon set 3",
         "codes": [
           {
             "platform": "PlayStation",
-            "code": "Triangle → R1 → L1 → D-Pad Down → D-Pad Down → R1 → R1 → Triangle",
+            "code": "D-Pad Up → Cross → Cross → D-Pad Down → D-Pad Left → Cross → Cross → D-Pad Right",
             "input": "button"
           },
           {
             "platform": "PlayStation Portable",
-            "code": "Triangle → R Trigger → L Trigger → D-Pad Down → D-Pad Down → R Trigger → R Trigger → Triangle",
+            "code": "D-Pad Up → Cross → Cross → D-Pad Down → D-Pad Left → Cross → Cross → D-Pad Right",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "white-traffic",
+        "effect": "White traffic",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Cross → Cross → R1 → Circle → Circle → L1 → Triangle → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PlayStation Portable",
+            "code": "Cross → Cross → R Trigger → Circle → Circle → L Trigger → Triangle → Triangle",
             "input": "button"
           }
         ],

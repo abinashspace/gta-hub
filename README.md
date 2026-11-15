@@ -5,7 +5,7 @@ seven sections each, every record available as HTML **and** portable JSON. No se
 no build service, no external requests — GitHub Pages serves the whole thing for free.
 
 ```
-17 games · 7 sections · 1,201 pages · 3,807 tracked image slots · 0 runtime dependencies
+17 games · 7 sections · 1,205 pages · 3,807 tracked image slots · 0 runtime dependencies
 ```
 
 ## What's here
@@ -51,6 +51,17 @@ Records per game and section (— means the game genuinely has none, which is re
 GTA VI is deliberately official-information-only: Jason, Lucia, Leonida and Vice City, with
 no invented missions, vehicles, weapons, cheats or collectibles. Its empty sections carry
 `coverage: empty` and a note explaining why.
+
+## Cross-game views
+
+Four pages cut across the per-game structure. Each has a JSON twin:
+
+| Page | What it does | JSON |
+|---|---|---|
+| `/timeline/` | Every release in order, grouped into 2D, 3D and HD universes | `/data/cross/timeline.json` |
+| `/compare/` | Record matrix, section leaders and shared cities | `/data/cross/compare.json` |
+| `/cheats/` | All 452 cheat codes, grouped by game, with platform codes | `/data/cheats.json` |
+| `/locations/` | All 144 locations, plus a city index | `/data/locations.json` |
 
 ## Local development
 
@@ -118,6 +129,10 @@ currently `placeholder` or `real`. That file is the worklist.
 | `/data/search-index.json` | One object per record |
 | `/data/images.json` | Image manifest with status |
 | `/data/status.json` | Per-game coverage |
+| `/data/cheats.json` | Every cheat code flattened across games |
+| `/data/locations.json` | Every location flattened across games |
+| `/data/cross/timeline.json` | Releases grouped by universe |
+| `/data/cross/compare.json` | Record matrix and section leaders |
 | `/llms.txt` | Plain-text map for LLM crawlers |
 
 Conventions: permanent kebab-case `id`; unknown numbers are `null`, never `0`;
@@ -126,10 +141,14 @@ deterministically.
 
 ## Status
 
-Session 0 (engine, design, deploy) is complete. Content depth varies per game and is
-declared honestly in each bundle's `coverage` flags — see `PLAN.md` for the session
-roadmap and the remaining gaps (notably: full mission lists for the larger games, cheat
-strings for the handheld/episodic titles, and real artwork).
+All seven sections exist for all 17 games. Mission chains are complete for 15 games (GTA 2
+and GTA Online are honest district/job summaries), vehicle and weapon rosters are complete
+for the 15 games that have them, and cheat tables cover the 13 games that ship cheats.
+Character and location depth still varies per game; every section declares its own
+`coverage` so a verified core is never mistaken for a full list.
+
+Remaining gaps: real artwork (all slots are generated placeholders), full casts for every
+game, and GTA VI, which stays official-information-only by design. See `PLAN.md`.
 
 ## License
 

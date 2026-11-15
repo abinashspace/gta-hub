@@ -127,10 +127,12 @@ and the validator — one definition, four consumers.
 - Coverage banner on the game page; no invented missions/vehicles/weapons
 
 ### Session 5 — Cross-game layer
-- `/compare/` static tables (vehicles by top speed across games, weapons by damage tier)
-- `/search/` (client-side over `search-index.json`, works offline)
-- `/timeline/`, `/locations/` global index, `/cheats/` global index
-- Redirect map + link checker + data diff report between builds
+- [x] `/compare/` — record matrix, per-section leaders, shared cities (+ `data/cross/compare.json`)
+- [x] `/search/` (client-side over `search-index.json`, works offline)
+- [x] `/timeline/` — releases grouped by 2D / 3D / HD universe (+ `data/cross/timeline.json`)
+- [x] `/locations/` global index (+ `data/locations.json`) and `/cheats/` global index (+ `data/cheats.json`)
+- [x] Link checker, in CI on every push
+- [ ] Redirect map and build-to-build data diff report (not yet needed: no URLs have moved)
 
 ### Session 6 — Hardening
 - HTML validation, a11y pass (contrast, focus, landmarks, table captions)
@@ -173,7 +175,10 @@ Build writes `docs/data/status.json` with per-game, per-section counts and compl
   VC 107, VCS 106, LCS 81, Chinatown Wars 75, GTA 2 68, III 63, GTA 1 60, London 42/41).
 - Session 5: full weapon tables for 15 games (San Andreas 90, GTA V 62, VC 59, VCS 42, LCS 40).
 - Session 6: mission-giver characters derived from the mission tables (27 added).
-- Validator: 0 errors, 0 warnings. Linkcheck: 1,202 files, 26,330 internal refs, 0 broken.
+- Session 7: cross-game layer — `/timeline/`, `/compare/`, `/cheats/`, `/locations/` with
+  JSON twins, plus cheat-data normalisation (removed wiki reference artefacts from effects
+  and slugs, unified platform labels, `phone` input type).
+- Validator: 0 errors, 0 warnings. Linkcheck: 1,206 files, 31,397 internal refs, 0 broken.
 
 ### Open
 

@@ -1791,6 +1791,19 @@
     "coverage": "complete",
     "items": [
       {
+        "id": "10-score-multipliers-from-the-start",
+        "effect": "+10 Score Multipliers from the start.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "HATEMACHINE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
         "id": "9-999-990-points",
         "effect": "9,999,990 points",
         "codes": [
@@ -1810,6 +1823,19 @@
           {
             "platform": "PlayStation",
             "code": "SATANLIVES",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "999-999-999-points-from-the-start",
+        "effect": "999,999,999 points from the start.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ITCOULDBEYOU",
             "input": "keyboard"
           }
         ],
@@ -1882,6 +1908,19 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
+        "id": "all-six-chapters-unlocked",
+        "effect": "All six chapters unlocked.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ITSGALLUS NINEINAROW SUPER WELL",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
         "id": "all-weapons",
         "effect": "All Weapons",
         "codes": [
@@ -1895,12 +1934,66 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
+        "id": "all-weapons-with-full-ammo",
+        "effect": "All weapons with full ammo",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "Numpad *",
+            "edition": "Debug only",
+            "input": "touch"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
         "id": "all-weapons-armor-and-a-jail-card",
         "effect": "All Weapons, Armor and a Jail Card",
         "codes": [
           {
             "platform": "PlayStation",
             "code": "PECKINPAH",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "center-camera-view",
+        "effect": "Center camera view",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "Home",
+            "edition": "Debug only",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "disable-offensive-language",
+        "effect": "Disable offensive language",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "IAMNOTGARYPENN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "disable-wanted-level-press-ctrl-enter-after-entering",
+        "effect": "Disable wanted level. Press Ctrl + Enter after entering train to hijack it.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "IAMTHELAW STEVESMATES",
             "input": "keyboard"
           }
         ],
@@ -1921,6 +2014,19 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
+        "id": "enable-offensive-language",
+        "effect": "Enable offensive language",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "IAMGARYPENN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
         "id": "five-times-multiplier",
         "effect": "Five Times Multiplier",
         "codes": [
@@ -1934,12 +2040,38 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
+        "id": "gives-the-player-all-weapons-full-armor-and-a-get-out",
+        "effect": "Gives the player all weapons, full Armor and a 'Get Out of Jail Free Card' from the start.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SUCKMYROCKET",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
         "id": "god-cheat",
         "effect": "God Cheat",
         "codes": [
           {
             "platform": "PlayStation",
             "code": "HANGTHEDJ",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "infinite-lives",
+        "effect": "Infinite lives.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ITSTANTRUM 6031769",
             "input": "keyboard"
           }
         ],
@@ -1999,12 +2131,13 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "wanted-level-max",
-        "effect": "Wanted Level Max ($)",
+        "id": "pan-camera-down",
+        "effect": "Pan camera down",
         "codes": [
           {
-            "platform": "PlayStation",
-            "code": "EATTHIS",
+            "platform": "PC",
+            "code": "Numpad 2",
+            "edition": "Debug only",
             "input": "keyboard"
           }
         ],
@@ -2012,12 +2145,13 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "gives-the-player-all-weapons-full-armor-and-a-get-out",
-        "effect": "Gives the player all weapons, full Armor and a 'Get Out of Jail Free Card' from the start.",
+        "id": "pan-camera-left",
+        "effect": "Pan camera left",
         "codes": [
           {
             "platform": "PC",
-            "code": "SUCKMYROCKET",
+            "code": "Numpad 4",
+            "edition": "Debug only",
             "input": "keyboard"
           }
         ],
@@ -2025,12 +2159,54 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "10-score-multipliers-from-the-start",
-        "effect": "+10 Score Multipliers from the start.",
+        "id": "pan-camera-right",
+        "effect": "Pan camera right",
         "codes": [
           {
             "platform": "PC",
-            "code": "HATEMACHINE",
+            "code": "Numpad 6",
+            "edition": "Debug only",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "pan-camera-up",
+        "effect": "Pan camera up",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "Numpad 8",
+            "edition": "Debug only",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "pause-and-advance-single-frame",
+        "effect": "Pause and advance single frame",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "Numpad +",
+            "edition": "Debug only",
+            "input": "touch"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "press-the-to-enable-all-weapons",
+        "effect": "Press the * to enable all weapons.",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BUCKFAST CALLMENIGEL",
             "input": "keyboard"
           }
         ],
@@ -2051,194 +2227,26 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "999-999-999-points-from-the-start",
-        "effect": "999,999,999 points from the start.",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "ITCOULDBEYOU",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "all-six-chapters-unlocked",
-        "effect": "All six chapters unlocked.",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "ITSGALLUS NINEINAROW SUPER WELL",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "press-the-to-enable-all-weapons",
-        "effect": "Press the * to enable all weapons.",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "BUCKFAST CALLMENIGEL",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "infinite-lives",
-        "effect": "Infinite lives.",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "ITSTANTRUM 6031769",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "disable-wanted-level-press-ctrl-enter-after-entering",
-        "effect": "Disable wanted level. Press Ctrl + Enter after entering train to hijack it.",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "IAMTHELAW STEVESMATES",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "enable-offensive-language",
-        "effect": "Enable offensive language",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "IAMGARYPENN",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "disable-offensive-language",
-        "effect": "Disable offensive language",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "IAMNOTGARYPENN",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "pan-camera-up",
-        "effect": "Pan camera up",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Numpad 8",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "pan-camera-down",
-        "effect": "Pan camera down",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Numpad 2",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "pan-camera-right",
-        "effect": "Pan camera right",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Numpad 6",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "pan-camera-left",
-        "effect": "Pan camera left",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Numpad 4",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "center-camera-view",
-        "effect": "Center camera view",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Home",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "pause-and-advance-single-frame",
-        "effect": "Pause and advance single frame",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Numpad +",
-            "input": "touch"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "all-weapons-with-full-ammo",
-        "effect": "All weapons with full ammo",
-        "codes": [
-          {
-            "platform": "Debug Cheat (PC only)",
-            "code": "Numpad *",
-            "input": "touch"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
         "id": "restart-current-chapter",
         "effect": "Restart current chapter",
         "codes": [
           {
-            "platform": "Debug Cheat (PC only)",
+            "platform": "PC",
             "code": "F12",
+            "edition": "Debug only",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "wanted-level-max",
+        "effect": "Wanted Level Max ($)",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "EATTHIS",
             "input": "keyboard"
           }
         ],

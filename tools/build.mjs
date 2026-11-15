@@ -339,6 +339,33 @@ ${gameTable}
 <h2 id="coverage">Coverage</h2>
 <p class="note">Cells show how many records exist today. <span class="badge badge-complete">complete</span> <span class="badge badge-partial">partial</span> <span class="badge badge-limited">limited</span> <span class="badge badge-official-only">official-only</span> <span class="badge badge-empty">empty</span></p>
 ${matrix}
+<h2 id="cross">Cross-game views</h2>
+${cardGrid([
+    {
+      href: 'timeline/',
+      kicker: `${games[0].year}–${games[games.length - 1].year} · ${games.length} releases`,
+      title: 'Timeline',
+      meta: 'Every release in order, grouped by 2D, 3D and HD universe.',
+    },
+    {
+      href: 'compare/',
+      kicker: `${games.length} games × ${SECTION_KEYS.length} sections`,
+      title: 'Compare games',
+      meta: 'Record counts, section leaders and shared cities side by side.',
+    },
+    {
+      href: 'cheats/',
+      kicker: `${totalCounts.cheats} cheats`,
+      title: 'All cheat codes',
+      meta: 'One page, every game, with platform and button sequence.',
+    },
+    {
+      href: 'locations/',
+      kicker: `${totalCounts.locations} locations`,
+      title: 'All locations',
+      meta: 'Cities, districts and landmarks across the series.',
+    },
+  ])}
 <h2 id="machines">For machines</h2>
 <p>No JavaScript is required to read this site. Prefer JSON: every URL below is a static file in this repository.</p>
 ${endpoints}
@@ -588,6 +615,572 @@ ${items.length ? `<h2 id="fields">Field definitions</h2>${fieldTable(key)}` : ''
   }
 }
 
+/* --------------------------------------------------------- cross-game pages */
+
+const ERA_BY_SLUG = {
+  gta: '2d',
+  'gta-london-1969': '2d',
+  'gta-london-1961': '2d',
+  'gta-2': '2d',
+  'gta-iii': '3d',
+  'gta-vice-city': '3d',
+  'gta-san-andreas': '3d',
+  'gta-advance': '3d',
+  'gta-liberty-city-stories': '3d',
+  'gta-vice-city-stories': '3d',
+  'gta-iv': 'hd',
+  'gta-iv-the-lost-and-damned': 'hd',
+  'gta-the-ballad-of-gay-tony': 'hd',
+  'gta-chinatown-wars': 'hd',
+  'gta-v': 'hd',
+  'gta-online': 'hd',
+  'gta-vi': 'upcoming',
+};
+
+const ERAS = [
+  {
+    key: '2d',
+    name: '2D Universe',
+    range: '1997–1999',
+    blurb:
+      'Top-down games seen from an overhead camera: the original city trilogy, the two London expansions and GTA 2’s retro-futurist Anywhere City.',
+  },
+  {
+    key: '3d',
+    name: '3D Universe',
+    range: '2001–2006',
+    blurb:
+      'The move to third-person 3D: Liberty City, Vice City and San Andreas, plus the handheld and Stories spin-offs that reuse those maps.',
+  },
+  {
+    key: 'hd',
+    name: 'HD Universe',
+    range: '2008–2013',
+    blurb:
+      'The high-definition era: Liberty City and Los Santos in full 3D, the two Episodes from Liberty City, Chinatown Wars and the persistent world of GTA Online.',
+  },
+  {
+    key: 'upcoming',
+    name: 'Upcoming',
+    range: '2026–',
+    blurb:
+      'Announced but unreleased. GTA VI is recorded here from official Rockstar material only, with empty sections left explicitly empty.',
+  },
+];
+
+const crossRows = games.map((g) => {
+  const counts = Object.fromEntries(SECTION_KEYS.map((k) => [k, g.sections[k].items.length]));
+  return {
+    slug: g.slug,
+    order: g.order,
+    title: g.title,
+    short_title: g.short_title,
+    year: g.year,
+    released: g.released,
+    type: g.type,
+    status: g.status,
+    eraKey: ERA_BY_SLUG[g.slug] ?? 'hd',
+    era: ERAS.find((e) => e.key === (ERA_BY_SLUG[g.slug] ?? 'hd')).name,
+    setting: g.setting,
+    cities: g.cities,
+    protagonists: g.protagonists,
+    platforms: g.platforms,
+    cheats: g.cheats,
+    counts,
+    coverage: Object.fromEntries(SECTION_KEYS.map((k) => [k, g.sections[k].coverage])),
+    records: SECTION_KEYS.reduce((n, k) => n + counts[k], 0),
+  };
+});
+
+const sectionLeaders = SECTION_KEYS.map((k) => {
+  const ranked = [...crossRows].sort((a, b) => b.counts[k] - a.counts[k] || a.order - b.order);
+  return { key: k, title: SECTIONS[k].title, leader: ranked[0], runnerUp: ranked[1] };
+});
+
+const cheatRows = [];
+for (const g of games) {
+  for (const c of g.sections.cheats.items) {
+    cheatRows.push({
+      game: g.slug,
+      game_title: g.title,
+      year: g.year,
+      id: c.id,
+      effect: c.effect,
+      platforms: [...new Set(c.codes.map((x) => x.platform))],
+      codes: c.codes.map((x) => ({
+        platform: x.platform,
+        code: x.code,
+        input: x.input,
+        ...(x.edition ? { edition: x.edition } : {}),
+      })),
+      verified: c.verified,
+      ...(c.source ? { source: c.source } : {}),
+    });
+  }
+}
+
+const locationRows = [];
+for (const g of games) {
+  for (const l of g.sections.locations.items) {
+    locationRows.push({
+      game: g.slug,
+      game_title: g.title,
+      year: g.year,
+      id: l.id,
+      name: l.name,
+      type: l.type,
+      parent: l.parent ?? null,
+      summary: l.summary ?? null,
+      verified: l.verified,
+    });
+  }
+}
+
+const cityIndex = [];
+{
+  const byCity = new Map();
+  for (const g of games) {
+    for (const city of g.cities) {
+      if (!byCity.has(city)) byCity.set(city, { name: city, games: [], locations: 0 });
+      const entry = byCity.get(city);
+      entry.games.push({ slug: g.slug, title: g.title, year: g.year });
+      entry.locations += g.sections.locations.items.filter((l) => l.name === city || l.parent === city).length;
+    }
+  }
+  for (const entry of byCity.values()) {
+    entry.games.sort((a, b) => a.year - b.year);
+    cityIndex.push(entry);
+  }
+  cityIndex.sort((a, b) => b.games.length - a.games.length || a.name.localeCompare(b.name, 'en'));
+}
+
+const cheatGameRows = games
+  .map((g) => ({
+    slug: g.slug,
+    title: g.title,
+    year: g.year,
+    count: g.sections.cheats.items.length,
+    coverage: g.sections.cheats.coverage,
+    platforms: [...new Set(g.sections.cheats.items.flatMap((c) => c.codes.map((x) => x.platform)))].sort(),
+    note: g.bundle?.meta?.notes,
+  }))
+  .filter((r) => r.count > 0);
+
+// timeline page
+{
+  const rel = relFrom('timeline/index.html');
+  const eraBlocks = ERAS.map((era) => {
+    const rows = crossRows.filter((r) => r.eraKey === era.key).sort((a, b) => a.year - b.year || a.order - b.order);
+    if (!rows.length) return '';
+    return `<h2 id="${era.key}">${esc(era.name)} <span class="note">${esc(era.range)}</span></h2>
+<p>${esc(era.blurb)}</p>
+<div class="table-wrap"><table class="data-table">
+<caption>${esc(era.name)} — ${rows.length} release${rows.length === 1 ? '' : 's'}</caption>
+<thead><tr><th scope="col" class="num">Year</th><th scope="col">Game</th><th scope="col">Type</th><th scope="col">Status</th><th scope="col">Setting</th><th scope="col">Cities</th><th scope="col">Protagonists</th><th scope="col" class="num">Records</th></tr></thead>
+<tbody>${rows
+      .map(
+        (r) =>
+          `<tr><td class="num">${r.year}</td><td><a href="${rel}games/${r.slug}/">${esc(r.title)}</a></td><td>${esc(
+            r.type
+          )}</td><td>${esc(r.status)}</td><td>${esc(r.setting)}</td><td>${esc(r.cities.join(', '))}</td><td>${esc(
+            r.protagonists.join(', ')
+          )}</td><td class="num">${r.records}</td></tr>`
+      )
+      .join('\n')}</tbody></table></div>`;
+  }).join('\n');
+
+  const content = `${pageHead({
+    eyebrow: `${games[0].year}–${games[games.length - 1].year} · ${games.length} releases`,
+    title: 'Timeline',
+    lead: 'Every Grand Theft Auto release in order, grouped by universe. Dates are original platform releases, not ports.',
+  })}
+${statGrid([
+    { label: 'Releases', value: games.length },
+    { label: 'Main games', value: crossRows.filter((r) => r.type === 'Main').length },
+    { label: 'Expansions', value: crossRows.filter((r) => r.type === 'Expansion').length },
+    { label: 'Spin-offs & online', value: crossRows.filter((r) => r.type === 'Spin-off' || r.type === 'Online').length },
+  ])}
+${dataLink('../', 'data/cross/timeline.json', 'timeline.json — eras and releases')}
+${eraBlocks}
+<p class="note">Era assignment follows the game’s own universe (2D, 3D, HD), not its release date. GTA Advance sits in the 3D universe; Chinatown Wars sits in the HD universe.</p>
+<nav class="pager" aria-label="Cross-game navigation">
+  <a href="${rel}">← All games</a>
+  <a href="${rel}compare/">Compare games →</a>
+</nav>`;
+
+  await page('timeline/index.html', {
+    title: 'GTA release timeline — every game in order',
+    description: `Chronological list of all ${games.length} Grand Theft Auto releases, grouped by 2D, 3D and HD universe.`,
+    canonicalPath: '/timeline/',
+    jsonPath: 'data/cross/timeline.json',
+    pageType: 'cross',
+    breadcrumbs: [
+      { label: 'Games', href: '/' },
+      { label: 'Timeline', href: '/timeline/' },
+    ],
+    content,
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Grand Theft Auto release timeline',
+        numberOfItems: games.length,
+        itemListElement: games.map((g, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: g.title,
+          url: `${site.base_url}/games/${g.slug}/`,
+        })),
+      },
+    ],
+  });
+
+  await write(
+    'data/cross/timeline.json',
+    JSON.stringify(
+      {
+        generated: new Date().toISOString(),
+        description: 'Every GTA release in order, grouped by universe.',
+        eras: ERAS.map((e) => ({
+          ...e,
+          games: crossRows
+            .filter((r) => r.eraKey === e.key)
+            .sort((a, b) => a.year - b.year || a.order - b.order)
+            .map((r) => ({
+              slug: r.slug,
+              title: r.title,
+              year: r.year,
+              released: r.released,
+              type: r.type,
+              status: r.status,
+              setting: r.setting,
+              cities: r.cities,
+              protagonists: r.protagonists,
+              records: r.records,
+              page: `games/${r.slug}/`,
+              data: `data/games/${r.slug}.json`,
+            })),
+        })),
+      },
+      null,
+      2
+    )
+  );
+}
+
+// compare page
+{
+  const rel = relFrom('compare/index.html');
+  const headCols = SECTION_KEYS.map((k) => `<th scope="col" class="num">${esc(SECTIONS[k].title)}</th>`).join('');
+  const body = crossRows
+    .map(
+      (r) =>
+        `<tr><td><a href="${rel}games/${r.slug}/">${esc(r.short_title)}</a></td><td class="num">${r.year}</td><td>${esc(
+          r.era
+        )}</td><td>${esc(r.type)}</td>${SECTION_KEYS.map(
+          (k) => `<td class="num cov cov-${coverageClass(r.coverage[k])}">${r.counts[k]}</td>`
+        ).join('')}<td class="num"><strong>${r.records}</strong></td></tr>`
+    )
+    .join('\n');
+
+  const leaders = `<div class="table-wrap"><table class="data-table">
+<caption>Most complete section per type</caption>
+<thead><tr><th scope="col">Section</th><th scope="col">Largest</th><th scope="col" class="num">Records</th><th scope="col">Runner-up</th><th scope="col" class="num">Records</th></tr></thead>
+<tbody>${sectionLeaders
+    .map(
+      (l) =>
+        `<tr><td><a href="${rel}games/${l.leader.slug}/${l.key}/">${esc(l.title)}</a></td><td><a href="${rel}games/${
+          l.leader.slug
+        }/">${esc(l.leader.short_title)}</a></td><td class="num">${l.leader.counts[l.key]}</td><td>${
+          l.runnerUp ? `<a href="${rel}games/${l.runnerUp.slug}/">${esc(l.runnerUp.short_title)}</a>` : '—'
+        }</td><td class="num">${l.runnerUp ? l.runnerUp.counts[l.key] : '—'}</td></tr>`
+    )
+    .join('\n')}</tbody></table></div>`;
+
+  const content = `${pageHead({
+    eyebrow: '17 games · 7 sections · one table',
+    title: 'Compare games',
+    lead: 'Record counts per game and section, plus which games cover each section most deeply. Counts are records, not a quality score — coverage flags still apply.',
+  })}
+${statGrid([
+    { label: 'Games', value: games.length },
+    { label: 'Records', value: crossRows.reduce((n, r) => n + r.records, 0) },
+    { label: 'Biggest game', value: [...crossRows].sort((a, b) => b.records - a.records)[0].short_title },
+    { label: 'Sections', value: SECTION_KEYS.length },
+  ])}
+${dataLink('../', 'data/cross/compare.json', 'compare.json — the full matrix')}
+<h2 id="matrix">Records per game and section</h2>
+<div class="table-wrap"><table class="data-table has-num">
+<caption>Record matrix — all ${games.length} games</caption>
+<thead><tr><th scope="col">Game</th><th scope="col" class="num">Year</th><th scope="col">Era</th><th scope="col">Type</th>${headCols}<th scope="col" class="num">Total</th></tr></thead>
+<tbody>${body}</tbody></table></div>
+<h2 id="leaders">Section leaders</h2>
+${leaders}
+<h2 id="cities">Shared cities</h2>
+<p>Which cities recur across the series. Counts are declared settings, not location records.</p>
+<div class="table-wrap"><table class="data-table">
+<caption>Cities and the games set in them</caption>
+<thead><tr><th scope="col">City</th><th scope="col" class="num">Games</th><th scope="col">Appears in</th></tr></thead>
+<tbody>${cityIndex
+    .map(
+      (c) =>
+        `<tr><td>${esc(c.name)}</td><td class="num">${c.games.length}</td><td>${c.games
+          .map((g) => `<a href="${rel}games/${g.slug}/">${esc(g.title)}</a>`)
+          .join(', ')}</td></tr>`
+    )
+    .join('\n')}</tbody></table></div>
+<nav class="pager" aria-label="Cross-game navigation">
+  <a href="${rel}timeline/">← Timeline</a>
+  <a href="${rel}cheats/">All cheat codes →</a>
+</nav>`;
+
+  await page('compare/index.html', {
+    title: 'Compare every GTA game — records, sections and coverage',
+    description: `Side-by-side record counts for all ${games.length} GTA games across characters, missions, vehicles, weapons, cheats, locations and collectibles.`,
+    canonicalPath: '/compare/',
+    jsonPath: 'data/cross/compare.json',
+    pageType: 'cross',
+    breadcrumbs: [
+      { label: 'Games', href: '/' },
+      { label: 'Compare', href: '/compare/' },
+    ],
+    content,
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Dataset',
+        name: 'GTA Hub record matrix',
+        description: 'Record counts per game and section for every Grand Theft Auto release.',
+        url: `${site.base_url}/compare/`,
+        isAccessibleForFree: true,
+        creator: { '@type': 'Organization', name: site.author },
+      },
+    ],
+  });
+
+  await write(
+    'data/cross/compare.json',
+    JSON.stringify(
+      {
+        generated: new Date().toISOString(),
+        description: 'Record counts per game and section, with section leaders and shared cities.',
+        sections: SECTION_KEYS.map((k) => ({ key: k, title: SECTIONS[k].title })),
+        games: crossRows,
+        leaders: sectionLeaders.map((l) => ({
+          section: l.key,
+          title: l.title,
+          leader: { slug: l.leader.slug, title: l.leader.title, count: l.leader.counts[l.key] },
+          runner_up: { slug: l.runnerUp.slug, title: l.runnerUp.title, count: l.runnerUp.counts[l.key] },
+        })),
+        cities: cityIndex,
+      },
+      null,
+      2
+    )
+  );
+}
+
+// global cheats page
+{
+  const rel = relFrom('cheats/index.html');
+  const summary = `<div class="table-wrap"><table class="data-table has-num">
+<caption>Cheat coverage by game</caption>
+<thead><tr><th scope="col">Game</th><th scope="col" class="num">Year</th><th scope="col" class="num">Cheats</th><th scope="col">Platforms covered</th></tr></thead>
+<tbody>${cheatGameRows
+    .map(
+      (r) =>
+        `<tr><td><a href="#${r.slug}">${esc(r.title)}</a></td><td class="num">${r.year}</td><td class="num">${r.count}</td><td>${esc(
+          r.platforms.join(', ')
+        )}</td></tr>`
+    )
+    .join('\n')}</tbody></table></div>`;
+
+  const noCheatGames = games.filter((g) => g.sections.cheats.items.length === 0);
+
+  const blocks = cheatGameRows
+    .map((r) => {
+      const g = games.find((x) => x.slug === r.slug);
+      const anchor = `<h2 id="${r.slug}">${esc(r.title)} <span class="note">${r.year}</span></h2>`;
+      const actions = `<p class="section-actions"><a class="btn btn-ghost" href="${rel}games/${r.slug}/cheats/">Game cheat page</a><a class="btn btn-ghost" href="${rel}data/games/${r.slug}/cheats.json" type="application/json">cheats.json</a></p>`;
+      return `${anchor}${actions}${sectionTable('cheats', g.sections.cheats.items, rel, g)}`;
+    })
+    .join('\n');
+
+  const content = `${pageHead({
+    eyebrow: `${cheatRows.length} cheats · ${cheatGameRows.length} games`,
+    title: 'All cheat codes',
+    lead: 'Every cheat code in the dataset on one page, grouped by game, with the platform and button sequence or keyboard code.',
+  })}
+${statGrid([
+    { label: 'Cheats', value: cheatRows.length },
+    { label: 'Games with cheats', value: cheatGameRows.length },
+    { label: 'Platform entries', value: cheatRows.reduce((n, r) => n + r.codes.length, 0) },
+    {
+      label: 'Games without cheats',
+      html: `${noCheatGames.length} — ${noCheatGames.map((g) => esc(g.short_title)).join(', ')}`,
+    },
+  ])}
+${dataLink('../', 'data/cheats.json', 'cheats.json — flat list with codes')}
+<h2 id="summary">Coverage by game</h2>
+${summary}${
+    noCheatGames.length
+      ? `<p class="note">${noCheatGames
+          .map((g) => `<a href="${rel}games/${g.slug}/">${esc(g.title)}</a>`)
+          .join(', ')} ship without cheat codes; those sections are recorded as <code>coverage: empty</code> with a note explaining why.</p>`
+      : ''
+  }
+${blocks}
+<nav class="pager" aria-label="Cross-game navigation">
+  <a href="${rel}compare/">← Compare games</a>
+  <a href="${rel}locations/">All locations →</a>
+</nav>`;
+
+  await page('cheats/index.html', {
+    title: 'All GTA cheat codes — every game, every platform',
+    description: `All ${cheatRows.length} cheat codes across ${cheatGameRows.length} Grand Theft Auto games, with button sequences, keyboard codes and platforms.`,
+    canonicalPath: '/cheats/',
+    jsonPath: 'data/cheats.json',
+    pageType: 'cross',
+    breadcrumbs: [
+      { label: 'Games', href: '/' },
+      { label: 'Cheats', href: '/cheats/' },
+    ],
+    content,
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Grand Theft Auto cheat codes',
+        numberOfItems: cheatRows.length,
+        itemListElement: cheatRows.slice(0, 100).map((r, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: `${r.effect} — ${r.game_title}`,
+        })),
+      },
+    ],
+  });
+
+  await write(
+    'data/cheats.json',
+    JSON.stringify(
+      {
+        generated: new Date().toISOString(),
+        description: 'Flat cheat-code list across all games. codes[].platform, code, input (button|keyboard|phone|touch).',
+        count: cheatRows.length,
+        games: games.map((g) => ({
+          slug: g.slug,
+          title: g.title,
+          year: g.year,
+          count: g.sections.cheats.items.length,
+          coverage: g.sections.cheats.coverage,
+        })),
+        items: cheatRows,
+      },
+      null,
+      2
+    )
+  );
+}
+
+// global locations page
+{
+  const rel = relFrom('locations/index.html');
+  const cities = `<div class="table-wrap"><table class="data-table has-num">
+<caption>Cities across the series</caption>
+<thead><tr><th scope="col">City</th><th scope="col" class="num">Games</th><th scope="col" class="num">Location records</th><th scope="col">Appears in</th></tr></thead>
+<tbody>${cityIndex
+    .map(
+      (c) =>
+        `<tr><td>${esc(c.name)}</td><td class="num">${c.games.length}</td><td class="num">${c.locations}</td><td>${c.games
+          .map((g) => `<a href="${rel}games/${g.slug}/">${esc(g.title)}</a>`)
+          .join(', ')}</td></tr>`
+    )
+    .join('\n')}</tbody></table></div>`;
+
+  const blocks = games
+    .filter((g) => g.sections.locations.items.length)
+    .map((g) => {
+      const anchor = `<h2 id="${g.slug}">${esc(g.title)} <span class="note">${g.year}</span></h2>`;
+      const actions = `<p class="section-actions"><a class="btn btn-ghost" href="${rel}games/${g.slug}/locations/">Game location page</a><a class="btn btn-ghost" href="${rel}data/games/${g.slug}/locations.json" type="application/json">locations.json</a></p>`;
+      return `${anchor}${actions}${sectionTable('locations', g.sections.locations.items, rel, g)}`;
+    })
+    .join('\n');
+
+  const content = `${pageHead({
+    eyebrow: `${locationRows.length} locations · ${cityIndex.length} cities`,
+    title: 'All locations',
+    lead: 'Every city, district and landmark in the dataset, grouped by game, plus an index of which cities recur across the series.',
+  })}
+${statGrid([
+    { label: 'Locations', value: locationRows.length },
+    { label: 'Cities', value: cityIndex.length },
+    { label: 'Games covered', value: games.filter((g) => g.sections.locations.items.length).length },
+    { label: 'Largest', value: [...crossRows].sort((a, b) => b.counts.locations - a.counts.locations)[0].short_title },
+  ])}
+${dataLink('../', 'data/locations.json', 'locations.json — flat list with parents')}
+<h2 id="cities">Cities across the series</h2>
+<p>Declared settings per game, with the number of location records that name the city directly.</p>
+${cities}
+<h2 id="all">Locations by game</h2>
+${blocks}
+<nav class="pager" aria-label="Cross-game navigation">
+  <a href="${rel}cheats/">← All cheat codes</a>
+  <a href="${rel}timeline/">Timeline →</a>
+</nav>`;
+
+  await page('locations/index.html', {
+    title: 'All GTA locations — cities, districts and landmarks',
+    description: `All ${locationRows.length} locations across the Grand Theft Auto series, grouped by game and by city.`,
+    canonicalPath: '/locations/',
+    jsonPath: 'data/locations.json',
+    pageType: 'cross',
+    breadcrumbs: [
+      { label: 'Games', href: '/' },
+      { label: 'Locations', href: '/locations/' },
+    ],
+    content,
+    jsonld: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Grand Theft Auto locations',
+        numberOfItems: locationRows.length,
+        itemListElement: locationRows.slice(0, 100).map((r, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: `${r.name} — ${r.game_title}`,
+        })),
+      },
+    ],
+  });
+
+  await write(
+    'data/locations.json',
+    JSON.stringify(
+      {
+        generated: new Date().toISOString(),
+        description: 'Flat location list across all games plus a city index. parent is the containing area.',
+        count: locationRows.length,
+        cities: cityIndex,
+        items: locationRows,
+      },
+      null,
+      2
+    )
+  );
+}
+
+dataIndex.cross = {
+  pages: { timeline: 'timeline/', compare: 'compare/', cheats: 'cheats/', locations: 'locations/' },
+  data: {
+    timeline: 'data/cross/timeline.json',
+    compare: 'data/cross/compare.json',
+    cheats: 'data/cheats.json',
+    locations: 'data/locations.json',
+  },
+};
+
 function fieldTable(key) {
   const s = SECTIONS[key];
   const rows = Object.entries(s.fields)
@@ -691,6 +1284,10 @@ ${statGrid([
 <tr><td><a href="search-index.json"><code>/data/search-index.json</code></a></td><td>Corpus</td><td>One object per record; powers /search/</td></tr>
 <tr><td><a href="images.json"><code>/data/images.json</code></a></td><td>Manifest</td><td>Every image path, dimension and status</td></tr>
 <tr><td><a href="status.json"><code>/data/status.json</code></a></td><td>Status</td><td>Per-game coverage and totals</td></tr>
+<tr><td><a href="cheats.json"><code>/data/cheats.json</code></a></td><td>Cross-game</td><td>Every cheat code flattened, with game, platform and input type</td></tr>
+<tr><td><a href="locations.json"><code>/data/locations.json</code></a></td><td>Cross-game</td><td>Every location flattened, plus a city index</td></tr>
+<tr><td><a href="cross/timeline.json"><code>/data/cross/timeline.json</code></a></td><td>Cross-game</td><td>All releases grouped by 2D, 3D and HD universe</td></tr>
+<tr><td><a href="cross/compare.json"><code>/data/cross/compare.json</code></a></td><td>Cross-game</td><td>Record counts per game and section, leaders, shared cities</td></tr>
 <tr><td><a href="games/gta-iii.json"><code>/data/games/&lt;slug&gt;.json</code></a></td><td>Bundle</td><td>All seven sections for one game</td></tr>
 <tr><td><a href="games/gta-iii/characters.json"><code>/data/games/&lt;slug&gt;/&lt;section&gt;.json</code></a></td><td>Collection</td><td>One section, sorted, with coverage metadata</td></tr>
 </tbody></table></div>
@@ -817,7 +1414,7 @@ await page('404.html', {
 
 /* --------------------------------------------------------------- sitemap */
 
-const urls = ['/', '/data/', '/search/', '/about/'];
+const urls = ['/', '/timeline/', '/compare/', '/cheats/', '/locations/', '/data/', '/search/', '/about/'];
 for (const g of games) {
   urls.push(`/games/${g.slug}/`);
   for (const key of SECTION_KEYS) {
@@ -867,7 +1464,18 @@ Sitemap: ${site.base_url}/sitemap.xml
     `- ${site.base_url}/data/search-index.json — one object per record`,
     `- ${site.base_url}/data/images.json — image manifest with status`,
     `- ${site.base_url}/data/status.json — per-game coverage`,
+    `- ${site.base_url}/data/cheats.json — every cheat code, flattened across games`,
+    `- ${site.base_url}/data/locations.json — every location, flattened across games`,
+    `- ${site.base_url}/data/cross/timeline.json — releases by universe`,
+    `- ${site.base_url}/data/cross/compare.json — record counts per game and section`,
     `- ${site.base_url}/data/schema/<section>.json — JSON Schema per record type`,
+    '',
+    '## Cross-game pages',
+    '',
+    `- ${site.base_url}/timeline/ — releases in order, grouped by universe`,
+    `- ${site.base_url}/compare/ — record matrix, section leaders, shared cities`,
+    `- ${site.base_url}/cheats/ — all cheat codes on one page`,
+    `- ${site.base_url}/locations/ — all locations on one page`,
     '',
     '## Record contract',
     '',

@@ -842,338 +842,6 @@
     "coverage": "complete",
     "items": [
       {
-        "id": "all-levels-unlocked",
-        "effect": "All levels unlocked",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "ITSALLUP",
-            "input": "keyboard"
-          },
-          {
-            "platform": "PC",
-            "code": "TUMYFROG",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "SESAME",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "invincibility",
-        "effect": "Invincibility*",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "LIVELONG",
-            "input": "keyboard"
-          },
-          {
-            "platform": "PC",
-            "code": "RSJABBER",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "INFINITY",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "all-weapons",
-        "effect": "All weapons",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "NAVARONE",
-            "input": "keyboard"
-          },
-          {
-            "platform": "PC",
-            "code": "GODOFGTA",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "BIGGUNS",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "turbo-mode",
-        "effect": "Turbo mode",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "IGNITION",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "no-police",
-        "effect": "No police",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "LOSEFEDS",
-            "input": "keyboard"
-          },
-          {
-            "platform": "PC",
-            "code": "LOSEFEDS",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "LAWLESS",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "display-coordinates",
-        "effect": "Display coordinates",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "WUGGLES",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "maximum-wanted-level",
-        "effect": "Maximum wanted level",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "DESIRES",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "BADBOYS",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "5x-multiplier",
-        "effect": "5x multiplier",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "HIGHFIVE",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "BOYAKASH",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "get-10-million-points",
-        "effect": "Get 10 million points",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "BIGSCORE",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "debug-basic-scripts",
-        "effect": "Debug basic scripts",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "NOFRILLS",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "get-10-000-000",
-        "effect": "Get $10,000,000",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "IAMDAVEJ",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "ULTIMATE",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "get-500-000",
-        "effect": "Get $500,000",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "MUCHCASH",
-            "input": "keyboard"
-          },
-          {
-            "platform": "PC",
-            "code": "MUCHCASH",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "MUCHCASH",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "player-get-points",
-        "effect": "Player get points",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "DANISGOD",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "unlimited-cash",
-        "effect": "Unlimited cash",
-        "codes": [
-          {
-            "platform": "PlayStation",
-            "code": "IAMPLAYA",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "more-blood",
-        "effect": "More blood",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "GOREFEST",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "WOUNDED",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "max-respect-from-all-gangs",
-        "effect": "Max respect from all gangs",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "MADEMAN",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "ALLFREND",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "free-shopping",
-        "effect": "Free shopping",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "EATSOUP",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "99-lives",
-        "effect": "99 lives",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "CUTIE1",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "BIGCATS",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "keep-weapons-after-death",
-        "effect": "Keep weapons after death",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "ARSESTAR",
-            "input": "keyboard"
-          },
-          {
-            "platform": "Dreamcast",
-            "code": "LOSTTOYS",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
         "id": "10x-multiplier",
         "effect": "10x multiplier",
         "codes": [
@@ -1187,43 +855,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "skip-exploding-scores",
-        "effect": "Skip exploding scores",
+        "id": "5x-multiplier",
+        "effect": "5x multiplier",
         "codes": [
           {
-            "platform": "PC",
-            "code": "COCKTART",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "basic-set-of-weapons-and-max-ammo",
-        "effect": "Basic set of weapons and max ammo",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "DAVEMOON",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "electro-gun-with-infinite-ammo",
-        "effect": "Electro Gun with infinite ammo",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "VOLTFEST",
+            "platform": "Dreamcast",
+            "code": "BOYAKASH",
             "input": "keyboard"
           },
           {
-            "platform": "Dreamcast",
-            "code": "BIGFRIES",
+            "platform": "PlayStation",
+            "code": "HIGHFIVE",
             "input": "keyboard"
           }
         ],
@@ -1231,17 +873,17 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "flame-thrower-with-infinite-ammo",
-        "effect": "Flame Thrower with infinite ammo",
+        "id": "99-lives",
+        "effect": "99 lives",
         "codes": [
           {
-            "platform": "PC",
-            "code": "FLAMEON",
+            "platform": "Dreamcast",
+            "code": "BIGCATS",
             "input": "keyboard"
           },
           {
-            "platform": "Dreamcast",
-            "code": "TOASTIES",
+            "platform": "PC",
+            "code": "CUTIE1",
             "input": "keyboard"
           }
         ],
@@ -1249,61 +891,35 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "unlimited-double-damage",
-        "effect": "Unlimited double damage",
+        "id": "all-cars-are-mini-cars",
+        "effect": "All cars are mini cars",
         "codes": [
           {
             "platform": "PC",
-            "code": "SCHURULZ",
+            "code": "FISHFLAP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "all-levels-unlocked",
+        "effect": "All levels unlocked",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "SESAME",
             "input": "keyboard"
           },
           {
-            "platform": "Dreamcast",
-            "code": "DBLWAMMY",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "invisibility",
-        "effect": "Invisibility",
-        "codes": [
-          {
             "platform": "PC",
-            "code": "HUNSRUS",
+            "code": "TUMYFROG",
             "input": "keyboard"
           },
           {
-            "platform": "Dreamcast",
-            "code": "SCOOBYDO",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "unlimited-get-out-of-jail-free-cards",
-        "effect": "Unlimited \"get out of jail free\" cards",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "JAILBAIT",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true,
-        "source": "GTA Wiki cheat code tables (per-platform codes)"
-      },
-      {
-        "id": "only-mugger-peds-spawn",
-        "effect": "Only mugger peds spawn",
-        "codes": [
-          {
-            "platform": "PC",
-            "code": "BUCKFAST",
+            "platform": "PlayStation",
+            "code": "ITSALLUP",
             "input": "keyboard"
           }
         ],
@@ -1324,17 +940,22 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "only-elvis-peds-spawn",
-        "effect": "Only Elvis peds spawn",
+        "id": "all-weapons",
+        "effect": "All weapons",
         "codes": [
           {
-            "platform": "PC",
-            "code": "LASVEGAS",
+            "platform": "Dreamcast",
+            "code": "BIGGUNS",
             "input": "keyboard"
           },
           {
-            "platform": "Dreamcast",
-            "code": "ERRHUH",
+            "platform": "PC",
+            "code": "GODOFGTA",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation",
+            "code": "NAVARONE",
             "input": "keyboard"
           }
         ],
@@ -1342,12 +963,391 @@
         "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "all-cars-are-mini-cars",
-        "effect": "All cars are mini cars",
+        "id": "basic-set-of-weapons-and-max-ammo",
+        "effect": "Basic set of weapons and max ammo",
         "codes": [
           {
             "platform": "PC",
-            "code": "FISHFLAP",
+            "code": "DAVEMOON",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "debug-basic-scripts",
+        "effect": "Debug basic scripts",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "NOFRILLS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "display-coordinates",
+        "effect": "Display coordinates",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "WUGGLES",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "electro-gun-with-infinite-ammo",
+        "effect": "Electro Gun with infinite ammo",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "BIGFRIES",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "VOLTFEST",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "flame-thrower-with-infinite-ammo",
+        "effect": "Flame Thrower with infinite ammo",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "TOASTIES",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "FLAMEON",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "free-shopping",
+        "effect": "Free shopping",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "EATSOUP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "get-10-000-000",
+        "effect": "Get $10,000,000",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "ULTIMATE",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "IAMDAVEJ",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "get-500-000",
+        "effect": "Get $500,000",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "MUCHCASH",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "MUCHCASH",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation",
+            "code": "MUCHCASH",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "get-10-million-points",
+        "effect": "Get 10 million points",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "BIGSCORE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "invincibility",
+        "effect": "Invincibility*",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "INFINITY",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "RSJABBER",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation",
+            "code": "LIVELONG",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "invisibility",
+        "effect": "Invisibility",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "SCOOBYDO",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "HUNSRUS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "keep-weapons-after-death",
+        "effect": "Keep weapons after death",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "LOSTTOYS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "ARSESTAR",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "max-respect-from-all-gangs",
+        "effect": "Max respect from all gangs",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "ALLFREND",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "MADEMAN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "maximum-wanted-level",
+        "effect": "Maximum wanted level",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "BADBOYS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation",
+            "code": "DESIRES",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "more-blood",
+        "effect": "More blood",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "WOUNDED",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "GOREFEST",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "no-police",
+        "effect": "No police",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "LAWLESS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "LOSEFEDS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation",
+            "code": "LOSEFEDS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "only-elvis-peds-spawn",
+        "effect": "Only Elvis peds spawn",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "ERRHUH",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "LASVEGAS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "only-mugger-peds-spawn",
+        "effect": "Only mugger peds spawn",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BUCKFAST",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "player-get-points",
+        "effect": "Player get points",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "DANISGOD",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "skip-exploding-scores",
+        "effect": "Skip exploding scores",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "COCKTART",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "turbo-mode",
+        "effect": "Turbo mode",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "IGNITION",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlimited-get-out-of-jail-free-cards",
+        "effect": "Unlimited \"get out of jail free\" cards",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "JAILBAIT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlimited-cash",
+        "effect": "Unlimited cash",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "IAMPLAYA",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlimited-double-damage",
+        "effect": "Unlimited double damage",
+        "codes": [
+          {
+            "platform": "Dreamcast",
+            "code": "DBLWAMMY",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "SCHURULZ",
             "input": "keyboard"
           }
         ],

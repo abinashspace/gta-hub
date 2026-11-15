@@ -13,9 +13,37 @@
     "generate_placeholders": true
   },
   "nav": [
-    { "label": "Games", "href": "/" },
-    { "label": "Data", "href": "/data/" },
-    { "label": "Search", "href": "/search/" },
-    { "label": "About", "href": "/about/" }
+    {
+      "label": "Games",
+      "href": "/"
+    },
+    {
+      "label": "Timeline",
+      "href": "/timeline/"
+    },
+    {
+      "label": "Compare",
+      "href": "/compare/"
+    },
+    {
+      "label": "Cheats",
+      "href": "/cheats/"
+    },
+    {
+      "label": "Locations",
+      "href": "/locations/"
+    },
+    {
+      "label": "Data",
+      "href": "/data/"
+    },
+    {
+      "label": "Search",
+      "href": "/search/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    }
   ]
 }
