@@ -1769,181 +1769,536 @@
     ]
   },
   "cheats": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
       {
-        "id": "full-health",
-        "effect": "Full health",
+        "id": "replenish-player-health-if-driving-a-vehicle-its-health",
+        "effect": "Replenish player health ; if driving a vehicle, its health will also be replenished",
         "codes": [
           {
-            "platform": "PC",
+            "platform": "PlayStation",
+            "code": "R2 → R2 → L1 → R1 → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
             "code": "GESUNDHEIT",
             "input": "keyboard"
           },
           {
-            "platform": "PlayStation 2",
-            "code": "R2 R2 L1 R1 L2 L2 L2 L1",
+            "platform": "Xbox",
+            "code": "Black → Black → Left Trigger (LT) → Right Trigger (RT) → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up",
             "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "full-armor",
-        "effect": "Full armor",
+        "id": "replenish-player-armor",
+        "effect": "Replenish player armor",
         "codes": [
           {
-            "platform": "PC",
-            "code": "TURTOISE",
-            "input": "keyboard"
+            "platform": "PlayStation",
+            "code": "R2 → R2 → L1 → L2 → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "TURTOISE (1.0 version) TORTOISE (1.1 version)",
+            "input": "touch"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Black → Black → Left Trigger (LT) → White → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up",
+            "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "all-weapons",
-        "effect": "All weapons",
+        "id": "acquire-all-weapons",
+        "effect": "Acquire all weapons",
         "codes": [
           {
-            "platform": "PC",
+            "platform": "PlayStation",
+            "code": "R2 → R2 → L1 → R2 → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
             "code": "GUNSGUNSGUNS",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Black → Black → Left Trigger (LT) → Black → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up",
+            "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "money",
-        "effect": "$250,000",
+        "id": "acquire-250-000-in-cash",
+        "effect": "Acquire $250,000 in cash",
         "codes": [
           {
-            "platform": "PC",
+            "platform": "PlayStation",
+            "code": "R2 → R2 → L1 → L1 → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Right → D-Pad Up",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
             "code": "IFIWEREARICHMAN",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Black → Black → Left Trigger (LT) → Left Trigger (LT) → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up",
+            "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "wanted-up",
-        "effect": "Increase wanted level",
+        "id": "spawn-a-rhino-on-android-instead-of-a-tank-the-first",
+        "effect": "Spawn a Rhino (On Android , instead of a tank, the first time the cheat is used a Landstalker spawns, after which random cars are spawned)",
         "codes": [
           {
-            "platform": "PC",
-            "code": "MOREPOLICEPLEASE",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true
-      },
-      {
-        "id": "wanted-clear",
-        "effect": "Clear wanted level",
-        "codes": [
+            "platform": "PlayStation",
+            "code": "Circle → Circle → Circle → Circle → Circle → Circle → R1 → L2 → L1 → Triangle → Circle → Triangle",
+            "input": "button"
+          },
           {
-            "platform": "PC",
-            "code": "NOPOLICEPLEASE",
-            "input": "keyboard"
-          }
-        ],
-        "verified": true
-      },
-      {
-        "id": "spawn-tank",
-        "effect": "Spawn a Rhino tank",
-        "codes": [
-          {
-            "platform": "PC",
+            "platform": "PC/ Android",
             "code": "GIVEUSATANK",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "B → B → B → B → B → B → Right Trigger (RT) → White → Left Trigger (LT) → Y → B → Y",
+            "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "blow-up-cars",
-        "effect": "Destroy all vehicles",
+        "id": "blow-up-explode-destroy-all-vehicles-excluding-police",
+        "effect": "Blow up/explode/destroy all vehicles , excluding police-controlled helicopters and NPC Dodo",
         "codes": [
           {
-            "platform": "PC",
+            "platform": "PlayStation",
+            "code": "L2 → R2 → L1 → R1 → L2 → R2 → Triangle → Square → Circle → Triangle → L2 → L1",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
             "code": "BANGBANGBANG",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "White → Black → Left Trigger (LT) → Right Trigger (RT) → White → Black → Y → X → B → Y → White → Left Trigger (LT)",
+            "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "flying-cars",
-        "effect": "Cars can fly",
+        "id": "low-gravity-for-cars-cars-control-like-airborne-planes",
+        "effect": "Low gravity for cars, cars control like airborne planes",
         "codes": [
           {
-            "platform": "PC",
+            "platform": "PlayStation",
+            "code": "D-Pad Right → R2 → Circle → R1 → L2 → D-Pad Down → L1 → R1",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
             "code": "CHITTYCHITTYBB",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "D-Pad Left → Black → B → Right Trigger (RT) → White → D-Pad Down → Left Trigger (LT) → Right Trigger (RT)",
+            "input": "button"
           }
         ],
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "pedestrians-riot",
-        "effect": "Pedestrians riot",
+        "id": "only-the-wheels-of-cars-are-visible",
+        "effect": "Only the wheels of cars are visible",
         "codes": [
           {
-            "platform": "PC",
-            "code": "NASTYLIMBSCHEAT",
+            "platform": "PlayStation",
+            "code": "L1 → L1 → Square → R2 → Triangle → L1 → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "ANICESETOFWHEELS",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Left Trigger (LT) → Left Trigger (LT) → X → Black → Y → Left Trigger (LT) → Y",
+            "input": "button"
           }
         ],
-        "verified": false,
-        "source": "Community cheat databases — spelling varies by edition"
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "pedestrians-attack",
-        "effect": "Pedestrians attack you",
+        "id": "increase-grip-on-ground-boost-jump-ability-in-all-cars",
+        "effect": "Increase grip on ground, boost jump ability in all cars, disables unique stunt jumps",
         "codes": [
           {
-            "platform": "PC",
-            "code": "NOBODYLIKESME",
+            "platform": "PlayStation",
+            "code": "R1 → L1 → R2 → L1 → D-Pad Left → R1 → R1 → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "CORNERSLIKEMAD",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Right Trigger (RT) → Left Trigger (LT) → Black → Left Trigger (LT) → D-Pad Left → Right Trigger (RT) → Right Trigger (RT) → Y",
+            "input": "button"
           }
         ],
-        "verified": false
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "change-clothes",
-        "effect": "Change player clothes",
+        "id": "increase-wanted-level-by-two-stars",
+        "effect": "Increase wanted level by two stars",
         "codes": [
           {
-            "platform": "PC",
-            "code": "ILIKEDRESSINGUP",
+            "platform": "PlayStation",
+            "code": "R2 → R2 → L1 → R2 → D-Pad Left → D-Pad Right → D-Pad Left → D-Pad Right → D-Pad Left → D-Pad Right",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "MOREPOLICEPLEASE",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Black → Black → Left Trigger (LT) → Black → D-Pad Left → D-Pad Left → D-Pad Left → D-Pad Left → D-Pad Left → D-Pad Left",
+            "input": "button"
           }
         ],
-        "verified": false
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "slow-motion",
-        "effect": "Slow motion",
+        "id": "remove-all-wanted-level",
+        "effect": "Remove all wanted level",
         "codes": [
           {
-            "platform": "PC",
+            "platform": "PlayStation",
+            "code": "R2 → R2 → L1 → R2 → D-Pad Up → D-Pad Down → D-Pad Up → D-Pad Down → D-Pad Up → D-Pad Down",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "NOPOLICEPLEASE",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Black → Black → Left Trigger (LT) → Black → D-Pad Up → D-Pad Down → D-Pad Up → D-Pad Down → D-Pad Up → D-Pad Down",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "light-clouds",
+        "effect": "Light clouds",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → L2 → R1 → R2 → R2 → R1 → L2 → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "SKINCANCERFORME",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Left Trigger (LT) → White → Right Trigger (RT) → Black → Black → Right Trigger (RT) → White → Y",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "stormy-weather",
+        "effect": "Stormy weather",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → L2 → R1 → R2 → R2 → R1 → L2 → Circle",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "ILOVESCOTLAND",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Left Trigger (LT) → White → Right Trigger (RT) → Black → Black → Right Trigger (RT) → White → B",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "foggy-weather",
+        "effect": "Foggy weather",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → L2 → R1 → R2 → R2 → R1 → L2 → Cross",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "PEASOUP",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Left Trigger (LT) → White → Right Trigger (RT) → Black → Black → Right Trigger (RT) → White → A",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "overcast-weather",
+        "effect": "Overcast weather",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "L1 → L2 → R1 → R2 → R2 → R1 → L2 → Square",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "ILIKESCOTLAND",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Left Trigger (LT) → White → Right Trigger (RT) → Black → Black → Right Trigger (RT) → White → X",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "increase-game-speed-by-2-up-to-x4-normal-speed",
+        "effect": "Increase game speed by 2, up to x4 normal speed",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Triangle → D-Pad Up → D-Pad Right → D-Pad Down → Square → L1 → L2",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "TIMEFLIESWHENYOU",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Y → D-Pad Up → D-Pad Left → D-Pad Down → X → Left Trigger (LT) → White",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "decrease-game-speed-by-half-down-to-x025-normal-speed",
+        "effect": "Decrease game speed by half, down to x0.25 normal speed",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Triangle → D-Pad Up → D-Pad Right → D-Pad Down → Square → R1 → R2",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
             "code": "BOOOOORING",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Y → D-Pad Up → D-Pad Left → D-Pad Down → X → Right Trigger (RT) → Black",
+            "input": "button"
           }
         ],
-        "verified": false
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       },
       {
-        "id": "fast-time",
-        "effect": "Faster game clock",
+        "id": "speed-up-game-clock",
+        "effect": "Speed up game clock",
         "codes": [
           {
-            "platform": "PC",
-            "code": "TIME FLIES BY WHEN YOU'RE DRIVING",
+            "platform": "PlayStation",
+            "code": "Circle → Circle → Circle → Square → Square → Square → Square → Square → L1 → Triangle → Circle → Triangle",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "MADWEATHER",
             "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "B → B → B → X → X → X → X → X → Left Trigger (LT) → Y → B → Y",
+            "input": "button"
           }
         ],
-        "verified": false
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "pedestrian-riot",
+        "effect": "Pedestrian riot",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "D-Pad Down → D-Pad Up → D-Pad Left → D-Pad Up → Cross → R1 → R2 → L2 → L1",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "ITSALLGOINGMAAAD",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "D-Pad Down → D-Pad Up → D-Pad Left → D-Pad Up → A → Right Trigger (RT) → Black → White → Left Trigger (LT)",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "pedestrians-attack-claude",
+        "effect": "Pedestrians attack Claude",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "D-Pad Down → D-Pad Up → D-Pad Left → D-Pad Up → Cross → R1 → R2 → L1 → L2",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "NOBODYLIKESME",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "D-Pad Down → D-Pad Up → D-Pad Left → D-Pad Up → A → Right Trigger (RT) → Black → Left Trigger (LT) → White",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "pedestrians-except-prostitutes-and-street-criminals",
+        "effect": "Pedestrians (except prostitutes and street criminals ) carry weapons",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "R2 → R1 → Triangle → Cross → L2 → L1 → D-Pad Up → D-Pad Down",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "WEAPONSFORALL",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "Black → Right Trigger (RT) → Y → A → White → Left Trigger (LT) → D-Pad Up → D-Pad Down",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "play-as-pedestrian",
+        "effect": "Play as pedestrian",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "D-Pad Right → D-Pad Down → D-Pad Left → D-Pad Up → L1 → L2 → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Right",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "ILIKEDRESSINGUP",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "D-Pad Left → D-Pad Down → D-Pad Left → D-Pad Up → Left Trigger (LT) → White → D-Pad Up → D-Pad Left → D-Pad Down → D-Pad Left",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "gore-mode",
+        "effect": "Gore mode",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "Square → L1 → Circle → D-Pad Down → L1 → R1 → Triangle → D-Pad Right → L1 → Cross",
+            "input": "button"
+          },
+          {
+            "platform": "PC/ Android",
+            "code": "NASTYLIMBSCHEAT",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Xbox",
+            "code": "X → Left Trigger (LT) → B → D-Pad Down → Left Trigger (LT) → Right Trigger (RT) → Y → D-Pad Left → Left Trigger (LT) → A",
+            "input": "button"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
       }
     ]
   },

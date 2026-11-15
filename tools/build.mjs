@@ -118,14 +118,16 @@ async function scanReal(dir = path.join(ROOT, 'assets/img'), prefix = 'assets/im
 const manifest = [];
 
 function imageFor(kind, gameSlug, id, { width, height, title, subtitle, accent }) {
-  const key = `${kind}/${gameSlug}/${id}`;
+  // Keep file names inside Windows path limits.
+  const fileId = id.length > 60 ? id.slice(0, 60).replace(/-[^-]*$/, '') : id;
+  const key = `${kind}/${gameSlug}/${fileId}`;
   const real = realImages.get(key);
   if (real) {
-    manifest.push({ kind, game: gameSlug, id, path: real, width, height, status: 'real', alt: title });
+    manifest.push({ kind, game: gameSlug, id: fileId, record: id, path: real, width, height, status: 'real', alt: title });
     return real;
   }
-  const rel = `assets/img/${kind}/${gameSlug}/${id}.svg`;
-  manifest.push({ kind, game: gameSlug, id, path: rel, width, height, status: 'placeholder', alt: title });
+  const rel = `assets/img/${kind}/${gameSlug}/${fileId}.svg`;
+  manifest.push({ kind, game: gameSlug, id: fileId, record: id, path: rel, width, height, status: 'placeholder', alt: title });
   return rel;
 }
 

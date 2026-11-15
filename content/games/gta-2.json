@@ -1,76 +1,930 @@
 {
   "meta": {
-    "sources": ["GTA 2 in-game district and gang systems", "Rockstar Games GTA 2 materials"],
+    "sources": [
+      "GTA 2 in-game district and gang systems",
+      "Rockstar Games GTA 2 materials"
+    ],
     "notes": "Retro-futuristic 2013 setting. Gangs grant respect; missions are issued by gang bosses by phone."
   },
   "characters": {
     "coverage": "limited",
     "items": [
-      {"id":"claude-speed","name":"Claude Speed","role":"Protagonist","affiliations":["Independent"],"summary":"A nameless-until-the-ending criminal working for Anywhere City's seven gangs.","status":"Varies","first_appearance":"Grand Theft Auto 2","verified":true},
-      {"id":"zaibatsu-boss","name":"Zaibatsu boss","role":"Corporation boss","affiliations":["Zaibatsu Corporation"],"summary":"Head of the Zaibatsu Corporation, the city's dominant corporate power.","status":"Alive","verified":false},
-      {"id":"loonies-leader","name":"Loonies leader","role":"Gang leader","affiliations":["Loonies"],"summary":"Leader of the insane asylum-based Loonies gang.","status":"Alive","verified":false},
-      {"id":"yakuza-boss","name":"Yakuza boss","role":"Gang leader","affiliations":["Yakuza"],"summary":"Head of the Yakuza in Anywhere City's Downtown district.","status":"Alive","verified":false},
-      {"id":"rednecks-leader","name":"Rednecks leader","role":"Gang leader","affiliations":["Rednecks"],"summary":"Leader of the Rednecks in the Industrial district.","status":"Alive","verified":false},
-      {"id":"srs-leader","name":"SRS leader","role":"Gang leader","affiliations":["SRS Scientists"],"summary":"Leader of the SRS Scientists, a research-gang operating from a lab.","status":"Alive","verified":false},
-      {"id":"hare-krishna-leader","name":"Hare Krishna leader","role":"Gang leader","affiliations":["Hare Krishna"],"summary":"Leader of the Hare Krishna gang.","status":"Alive","verified":false},
-      {"id":"russian-boss","name":"Russian boss","role":"Gang leader","affiliations":["Russian Mafia"],"summary":"Head of the Russian Mafia in Anywhere City.","status":"Alive","verified":false}
+      {
+        "id": "claude-speed",
+        "name": "Claude Speed",
+        "role": "Protagonist",
+        "affiliations": [
+          "Independent"
+        ],
+        "summary": "A nameless-until-the-ending criminal working for Anywhere City's seven gangs.",
+        "status": "Varies",
+        "first_appearance": "Grand Theft Auto 2",
+        "verified": true
+      },
+      {
+        "id": "zaibatsu-boss",
+        "name": "Zaibatsu boss",
+        "role": "Corporation boss",
+        "affiliations": [
+          "Zaibatsu Corporation"
+        ],
+        "summary": "Head of the Zaibatsu Corporation, the city's dominant corporate power.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "loonies-leader",
+        "name": "Loonies leader",
+        "role": "Gang leader",
+        "affiliations": [
+          "Loonies"
+        ],
+        "summary": "Leader of the insane asylum-based Loonies gang.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "yakuza-boss",
+        "name": "Yakuza boss",
+        "role": "Gang leader",
+        "affiliations": [
+          "Yakuza"
+        ],
+        "summary": "Head of the Yakuza in Anywhere City's Downtown district.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "rednecks-leader",
+        "name": "Rednecks leader",
+        "role": "Gang leader",
+        "affiliations": [
+          "Rednecks"
+        ],
+        "summary": "Leader of the Rednecks in the Industrial district.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "srs-leader",
+        "name": "SRS leader",
+        "role": "Gang leader",
+        "affiliations": [
+          "SRS Scientists"
+        ],
+        "summary": "Leader of the SRS Scientists, a research-gang operating from a lab.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "hare-krishna-leader",
+        "name": "Hare Krishna leader",
+        "role": "Gang leader",
+        "affiliations": [
+          "Hare Krishna"
+        ],
+        "summary": "Leader of the Hare Krishna gang.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "russian-boss",
+        "name": "Russian boss",
+        "role": "Gang leader",
+        "affiliations": [
+          "Russian Mafia"
+        ],
+        "summary": "Head of the Russian Mafia in Anywhere City.",
+        "status": "Alive",
+        "verified": false
+      }
     ]
   },
   "missions": {
     "coverage": "limited",
     "items": [
-      {"id":"downtown-jobs","order":1,"name":"Downtown jobs","type":"Story","giver":"Downtown gang bosses","location":"Downtown","reward":{"money":0,"other":"Respect with Downtown gangs"},"summary":"First district mission chain; completing jobs raises respect and unlocks better weapons.","verified":true},
-      {"id":"residential-jobs","order":2,"name":"Residential jobs","type":"Story","giver":"Residential gang bosses","location":"Residential","reward":{"money":0,"other":"Respect progression"},"summary":"Second district chain with tougher rivals and better payouts.","verified":true},
-      {"id":"industrial-jobs","order":3,"name":"Industrial jobs","type":"Story","giver":"Industrial gang bosses","location":"Industrial","reward":{"money":0,"other":"Respect progression"},"summary":"Third district chain based around the docks and factories.","verified":true},
-      {"id":"final-jobs","order":4,"name":"Final jobs","type":"Story","giver":"Zaibatsu","location":"Anywhere City","reward":{"money":0,"other":"Ending"},"summary":"Endgame chain against the Zaibatsu Corporation.","verified":false}
+      {
+        "id": "downtown-jobs",
+        "order": 1,
+        "name": "Downtown jobs",
+        "type": "Story",
+        "giver": "Downtown gang bosses",
+        "location": "Downtown",
+        "reward": {
+          "money": 0,
+          "other": "Respect with Downtown gangs"
+        },
+        "summary": "First district mission chain; completing jobs raises respect and unlocks better weapons.",
+        "verified": true
+      },
+      {
+        "id": "residential-jobs",
+        "order": 2,
+        "name": "Residential jobs",
+        "type": "Story",
+        "giver": "Residential gang bosses",
+        "location": "Residential",
+        "reward": {
+          "money": 0,
+          "other": "Respect progression"
+        },
+        "summary": "Second district chain with tougher rivals and better payouts.",
+        "verified": true
+      },
+      {
+        "id": "industrial-jobs",
+        "order": 3,
+        "name": "Industrial jobs",
+        "type": "Story",
+        "giver": "Industrial gang bosses",
+        "location": "Industrial",
+        "reward": {
+          "money": 0,
+          "other": "Respect progression"
+        },
+        "summary": "Third district chain based around the docks and factories.",
+        "verified": true
+      },
+      {
+        "id": "final-jobs",
+        "order": 4,
+        "name": "Final jobs",
+        "type": "Story",
+        "giver": "Zaibatsu",
+        "location": "Anywhere City",
+        "reward": {
+          "money": 0,
+          "other": "Ending"
+        },
+        "summary": "Endgame chain against the Zaibatsu Corporation.",
+        "verified": false
+      }
     ]
   },
   "vehicles": {
     "coverage": "limited",
     "items": [
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"taxi","name":"Taxi","category":"Car","class":"Taxi","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"bus","name":"Bus","category":"Industrial","class":"Bus","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"ice-cream-van","name":"Ice Cream Van","category":"Van","class":"Special","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"fire-truck","name":"Fire Truck","category":"Emergency","class":"Fire","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"tank","name":"Tank","category":"Military","class":"Tank","top_speed_kph":null,"seats":1,"verified":true},
-      {"id":"garbage-truck","name":"Garbage Truck","category":"Industrial","class":"Truck","top_speed_kph":null,"seats":2,"verified":true}
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Car",
+        "class": "Taxi",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "bus",
+        "name": "Bus",
+        "category": "Industrial",
+        "class": "Bus",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "ice-cream-van",
+        "name": "Ice Cream Van",
+        "category": "Van",
+        "class": "Special",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "police-car",
+        "name": "Police Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "class": "Medical",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "class": "Fire",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "tank",
+        "name": "Tank",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": null,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "garbage-truck",
+        "name": "Garbage Truck",
+        "category": "Industrial",
+        "class": "Truck",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      }
     ]
   },
   "weapons": {
     "coverage": "limited",
     "items": [
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Default","verified":true},
-      {"id":"silenced-uzi","name":"Silenced Uzi","type":"Submachine gun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"Shells","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"Rockets","price":null,"unlock":"Pickups","verified":true},
-      {"id":"flamethrower","name":"Flamethrower","type":"Heavy","damage_tier":"Very high","ammo":"Fuel","price":null,"unlock":"Pickups","verified":true},
-      {"id":"electro-gun","name":"Electro Gun","type":"Heavy","damage_tier":"High","ammo":"Charge","price":null,"unlock":"Pickups","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true},
-      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true}
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "silenced-uzi",
+        "name": "Silenced Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "Shells",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "Rockets",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "Heavy",
+        "damage_tier": "Very high",
+        "ammo": "Fuel",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "electro-gun",
+        "name": "Electro Gun",
+        "type": "Heavy",
+        "damage_tier": "High",
+        "ammo": "Charge",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      }
     ]
   },
   "cheats": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
-      {"id":"all-weapons","effect":"All weapons","codes":[{"platform":"PC","code":"GUNSGUNSGUNS","input":"keyboard"}],"verified":false,"source":"Community cheat lists — string must be verified against the GTA 2 PC build"}
+      {
+        "id": "all-levels-unlocked",
+        "effect": "All levels unlocked",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "ITSALLUP",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "TUMYFROG",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "SESAME",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "invincibility",
+        "effect": "Invincibility*",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "LIVELONG",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "RSJABBER",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "INFINITY",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "all-weapons",
+        "effect": "All weapons",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "NAVARONE",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "GODOFGTA",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "BIGGUNS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "turbo-mode",
+        "effect": "Turbo mode",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "IGNITION",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "no-police",
+        "effect": "No police",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "LOSEFEDS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "LOSEFEDS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "LAWLESS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "display-coordinates",
+        "effect": "Display coordinates",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "WUGGLES",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "maximum-wanted-level",
+        "effect": "Maximum wanted level",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "DESIRES",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "BADBOYS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "5x-multiplier",
+        "effect": "5x multiplier",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "HIGHFIVE",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "BOYAKASH",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "get-10-million-points",
+        "effect": "Get 10 million points",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "BIGSCORE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "debug-basic-scripts",
+        "effect": "Debug basic scripts",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "NOFRILLS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "get-10-000-000",
+        "effect": "Get $10,000,000",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "IAMDAVEJ",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "ULTIMATE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "get-500-000",
+        "effect": "Get $500,000",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "MUCHCASH",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PC",
+            "code": "MUCHCASH",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "MUCHCASH",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "player-get-points",
+        "effect": "Player get points",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "DANISGOD",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlimited-cash",
+        "effect": "Unlimited cash",
+        "codes": [
+          {
+            "platform": "PlayStation",
+            "code": "IAMPLAYA",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "more-blood",
+        "effect": "More blood",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "GOREFEST",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "WOUNDED",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "max-respect-from-all-gangs",
+        "effect": "Max respect from all gangs",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "MADEMAN",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "ALLFREND",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "free-shopping",
+        "effect": "Free shopping",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "EATSOUP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "99-lives",
+        "effect": "99 lives",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "CUTIE1",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "BIGCATS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "keep-weapons-after-death",
+        "effect": "Keep weapons after death",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ARSESTAR",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "LOSTTOYS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "10x-multiplier",
+        "effect": "10x multiplier",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SEGARULZ",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "skip-exploding-scores",
+        "effect": "Skip exploding scores",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "COCKTART",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "basic-set-of-weapons-and-max-ammo",
+        "effect": "Basic set of weapons and max ammo",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "DAVEMOON",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "electro-gun-with-infinite-ammo",
+        "effect": "Electro Gun with infinite ammo",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "VOLTFEST",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "BIGFRIES",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "flame-thrower-with-infinite-ammo",
+        "effect": "Flame Thrower with infinite ammo",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "FLAMEON",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "TOASTIES",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlimited-double-damage",
+        "effect": "Unlimited double damage",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SCHURULZ",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "DBLWAMMY",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "invisibility",
+        "effect": "Invisibility",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "HUNSRUS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "SCOOBYDO",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlimited-get-out-of-jail-free-cards",
+        "effect": "Unlimited \"get out of jail free\" cards",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "JAILBAIT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "only-mugger-peds-spawn",
+        "effect": "Only mugger peds spawn",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BUCKFAST",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "all-peds-are-naked",
+        "effect": "All peds are naked",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "NEKKID",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "only-elvis-peds-spawn",
+        "effect": "Only Elvis peds spawn",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "LASVEGAS",
+            "input": "keyboard"
+          },
+          {
+            "platform": "Dreamcast",
+            "code": "ERRHUH",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "all-cars-are-mini-cars",
+        "effect": "All cars are mini cars",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "FISHFLAP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlock-levels-one-and-two",
+        "effect": "Unlock levels one and two",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "GINGERRR",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      },
+      {
+        "id": "unlock-three-main-levels",
+        "effect": "Unlock three main levels",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "UKGAMER",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true,
+        "source": "GTA Wiki cheat code tables (per-platform codes)"
+      }
     ]
   },
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"anywhere-city","name":"Anywhere City","type":"City","parent":null,"summary":"Dystopian city of 2013 split into three districts by bridges and water.","verified":true},
-      {"id":"downtown","name":"Downtown","type":"District","parent":"Anywhere City","summary":"Corporate skyscrapers, the Zaibatsu tower and Yakuza turf.","verified":true},
-      {"id":"residential","name":"Residential","type":"District","parent":"Anywhere City","summary":"Suburban and asylum district, home to the Loonies.","verified":true},
-      {"id":"industrial","name":"Industrial","type":"District","parent":"Anywhere City","summary":"Docks, factories and the Rednecks.","verified":true}
+      {
+        "id": "anywhere-city",
+        "name": "Anywhere City",
+        "type": "City",
+        "parent": null,
+        "summary": "Dystopian city of 2013 split into three districts by bridges and water.",
+        "verified": true
+      },
+      {
+        "id": "downtown",
+        "name": "Downtown",
+        "type": "District",
+        "parent": "Anywhere City",
+        "summary": "Corporate skyscrapers, the Zaibatsu tower and Yakuza turf.",
+        "verified": true
+      },
+      {
+        "id": "residential",
+        "name": "Residential",
+        "type": "District",
+        "parent": "Anywhere City",
+        "summary": "Suburban and asylum district, home to the Loonies.",
+        "verified": true
+      },
+      {
+        "id": "industrial",
+        "name": "Industrial",
+        "type": "District",
+        "parent": "Anywhere City",
+        "summary": "Docks, factories and the Rednecks.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "limited",
     "items": [
-      {"id":"kf-radio-tokens","name":"Kill Frenzy tokens","type":"Token","total":0,"reward":"Cash and weapons; part of 100% completion","verified":false,"source":"Count varies by platform"}
+      {
+        "id": "kf-radio-tokens",
+        "name": "Kill Frenzy tokens",
+        "type": "Token",
+        "total": 0,
+        "reward": "Cash and weapons; part of 100% completion",
+        "verified": false,
+        "source": "Count varies by platform"
+      }
     ]
   }
 }

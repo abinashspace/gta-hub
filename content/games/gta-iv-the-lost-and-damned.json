@@ -4,7 +4,10 @@
       "TLAD in-game mission list",
       "Rockstar Games Episodes from Liberty City materials"
     ],
-    "notes": "Episode from the Lost MC perspective, running parallel to GTA IV's diamond storyline. Bike-focused."
+    "notes": [
+      "Episode from the Lost MC perspective, running parallel to GTA IV's diamond storyline. Bike-focused.",
+      "These episodes ship without cheat codes: The Lost and Damned and The Ballad of Gay Tony have none, unlike GTA IV, which uses phone cheats."
+    ]
   },
   "characters": {
     "coverage": "partial",
@@ -676,7 +679,7 @@
     ]
   },
   "cheats": {
-    "coverage": "limited",
+    "coverage": "empty",
     "items": []
   },
   "locations": {

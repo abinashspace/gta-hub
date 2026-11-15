@@ -4,7 +4,10 @@
       "TBoGT in-game mission list",
       "Rockstar Games Episodes from Liberty City materials"
     ],
-    "notes": "Nightlife-focused episode. Adds parachutes, base jumping, club management and golden gun collectibles."
+    "notes": [
+      "Nightlife-focused episode. Adds parachutes, base jumping, club management and golden gun collectibles.",
+      "These episodes ship without cheat codes: The Lost and Damned and The Ballad of Gay Tony have none, unlike GTA IV, which uses phone cheats."
+    ]
   },
   "characters": {
     "coverage": "partial",
@@ -726,7 +729,7 @@
     ]
   },
   "cheats": {
-    "coverage": "limited",
+    "coverage": "empty",
     "items": []
   },
   "locations": {

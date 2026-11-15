@@ -101,7 +101,7 @@ export async function validate() {
         }
         if (row.verified === false && !row.source && !bundle.meta?.sources) warn(w, 'unverified record without source');
       }
-      if (items.length === 0) warn(at, 'section is empty');
+      if (items.length === 0 && sec.coverage !== 'empty') warn(at, 'section is empty');
       if (items.length > 0 && !sec.coverage) warn(at, 'missing coverage flag');
     }
   }
