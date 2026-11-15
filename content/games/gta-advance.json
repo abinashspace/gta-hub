@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "sources": ["GTA Advance in-game mission list", "Digital Eclipse / Rockstar GBA release materials"],
+    "notes": "Game Boy Advance top-down entry set in Liberty City in 2000, one year before GTA III. Smallest cheat set in the series."
+  },
+  "characters": {
+    "coverage": "limited",
+    "items": [
+      {"id":"mike","name":"Mike","role":"Protagonist","affiliations":["Independent","Vinnie's crew"],"summary":"A small-time Liberty City criminal trying to buy his way out after a job goes wrong.","status":"Alive","first_appearance":"GTA Advance","verified":true},
+      {"id":"vinnie","name":"Vinnie","role":"Partner, antagonist","affiliations":["Liberty City underworld"],"summary":"Mike's partner whose betrayal drives the story.","status":"Deceased","verified":true},
+      {"id":"8-ball","name":"8-Ball","role":"Explosives expert","affiliations":["Liberty City underworld"],"summary":"Bomb-maker who appears before the events of GTA III.","status":"Alive","verified":true},
+      {"id":"asuka-kasen","name":"Asuka Kasen","role":"Yakuza co-leader","affiliations":["Yakuza"],"summary":"Already running Yakuza operations in 2000.","status":"Alive","verified":true},
+      {"id":"king-courtney","name":"King Courtney","role":"Yardies leader","affiliations":["Yardies"],"summary":"Yardie boss active in Liberty City before GTA III.","status":"Alive","verified":true},
+      {"id":"cisco","name":"Cisco","role":"Associate","affiliations":["Liberty City underworld"],"summary":"A contact in Mike's early jobs.","status":"Alive","verified":false},
+      {"id":"uncle-fu-advance","name":"Uncle Fu","role":"Antagonist","affiliations":["Liberty City Triads"],"summary":"A crime figure involved in the game's central betrayal.","status":"Deceased","verified":false}
+    ]
+  },
+  "missions": {
+    "coverage": "limited",
+    "items": [
+      {"id":"opening-job","order":1,"name":"Opening job","type":"Story","giver":"Vinnie","location":"Liberty City","reward":{"money":0},"summary":"Mike and Vinnie attempt a job that leaves Mike without his share.","verified":false},
+      {"id":"payback","order":2,"name":"Payback","type":"Story","giver":"Vinnie","location":"Portland","reward":{"money":0},"summary":"Mike starts working off his debt across Portland.","verified":false},
+      {"id":"yakuza-work","order":3,"name":"Yakuza work","type":"Story","giver":"Asuka Kasen","location":"Staunton Island","reward":{"money":0},"summary":"Jobs for the Yakuza as Mike climbs the Liberty City ladder.","verified":false},
+      {"id":"yardie-work","order":4,"name":"Yardie work","type":"Story","giver":"King Courtney","location":"Staunton Island","reward":{"money":0},"summary":"Yardie missions in Staunton.","verified":false},
+      {"id":"finale","order":5,"name":"Finale","type":"Story","giver":"—","location":"Liberty City","reward":{"money":0},"summary":"Confrontation over the stolen money and Vinnie's betrayal.","verified":false}
+    ]
+  },
+  "vehicles": {
+    "coverage": "limited",
+    "items": [
+      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"kuruma","name":"Kuruma","category":"Car","class":"Sedan","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"taxi","name":"Taxi","category":"Car","class":"Taxi","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":null,"seats":1,"verified":false}
+    ]
+  },
+  "weapons": {
+    "coverage": "limited",
+    "items": [
+      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Default","verified":true},
+      {"id":"uzi","name":"Uzi","type":"Submachine gun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"Shells","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"ak-47","name":"AK-47","type":"Assault rifle","damage_tier":"High","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"Rockets","price":null,"unlock":"Pickups","verified":true},
+      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true}
+    ]
+  },
+  "cheats": {
+    "coverage": "limited",
+    "items": []
+  },
+  "locations": {
+    "coverage": "partial",
+    "items": [
+      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"Liberty City in 2000, rendered top-down for the GBA.","verified":true},
+      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial island.","verified":true},
+      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial island.","verified":true},
+      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island.","verified":true}
+    ]
+  },
+  "collectibles": {
+    "coverage": "empty",
+    "items": []
+  }
+}

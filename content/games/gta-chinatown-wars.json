@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "sources": ["Chinatown Wars in-game mission list", "Rockstar Leeds DS/PSP release materials"],
+    "notes": "Top-down DS/PSP entry set in Liberty City in 2009. Adds a drug-trading economy and touchscreen minigames."
+  },
+  "characters": {
+    "coverage": "partial",
+    "items": [
+      {"id":"huang-lee","name":"Huang Lee","role":"Protagonist","affiliations":["Liberty City Triads"],"summary":"Returns to Liberty City with a stolen sword and a murdered father's legacy to untangle.","status":"Alive","first_appearance":"GTA: Chinatown Wars","verified":true},
+      {"id":"wu-lee","name":"Wu Lee","role":"Uncle, Triad elder","affiliations":["Liberty City Triads"],"summary":"Huang's uncle and the Triad elder he reports to.","status":"Deceased","verified":true},
+      {"id":"hsin-jaoming","name":"Hsin Jaoming","role":"Triad boss","affiliations":["Liberty City Triads"],"summary":"Aging Triad leader whose succession struggle drives the plot.","status":"Alive","verified":true},
+      {"id":"chan-jaoming","name":"Chan Jaoming","role":"Triad heir","affiliations":["Liberty City Triads"],"summary":"Hsin's son and one claimant to the Triad leadership.","status":"Alive","verified":true},
+      {"id":"zhou-ming","name":"Zhou Ming","role":"Triad rival","affiliations":["Liberty City Triads"],"summary":"The other claimant to the Triad leadership.","status":"Alive","verified":true},
+      {"id":"rudy-davanzo","name":"Rudy D'Avanzo","role":"Mafia associate","affiliations":["Liberty City Mafia"],"summary":"Italian mob contact who pulls Huang into Mafia business.","status":"Alive","verified":true},
+      {"id":"melanie-mallard","name":"Melanie Mallard","role":"Journalist","affiliations":["Liberty City press"],"summary":"Investigative journalist working the Triad succession story.","status":"Alive","verified":true},
+      {"id":"wade-heston","name":"Wade Heston","role":"Undercover agent","affiliations":["Federal law enforcement"],"summary":"Undercover operative who recruits Huang's help.","status":"Alive","verified":true},
+      {"id":"lester-leroc","name":"Lester Leroc","role":"Crime scene investigator","affiliations":["Liberty City forensics"],"summary":"Forensics contact who provides Huang with information.","status":"Alive","verified":false},
+      {"id":"ling","name":"Ling","role":"Ally","affiliations":["Liberty City Triads"],"summary":"Huang's ally within the Triad power struggle.","status":"Alive","verified":false}
+    ]
+  },
+  "missions": {
+    "coverage": "limited",
+    "items": [
+      {"id":"counterfeit-gangster","order":1,"name":"Counterfeit Gangster","type":"Story","giver":"Wu Lee","location":"Liberty City","reward":{"money":0},"summary":"Opening arc: Huang's arrival and the stolen sword go wrong.","verified":true},
+      {"id":"the-sword","order":2,"name":"The Sword","type":"Story","giver":"Wu Lee","location":"Chinatown","reward":{"money":0},"summary":"Recover the family sword from the people who took it.","verified":false},
+      {"id":"triad-succession","order":3,"name":"Triad succession","type":"Story","giver":"Hsin Jaoming","location":"Chinatown","reward":{"money":0},"summary":"Huang works both claimants in the Triad succession fight.","verified":false},
+      {"id":"mafia-favour","order":4,"name":"Mafia favour","type":"Story","giver":"Rudy D'Avanzo","location":"Portland","reward":{"money":0},"summary":"Jobs for the Liberty City Mafia.","verified":false},
+      {"id":"undercover-work","order":5,"name":"Undercover work","type":"Story","giver":"Wade Heston","location":"Liberty City","reward":{"money":0},"summary":"Federal operation that pulls Huang deeper into the conspiracy.","verified":false},
+      {"id":"finale","order":6,"name":"Finale","type":"Story","giver":"—","location":"Liberty City","reward":{"money":0},"summary":"Resolution of the Triad succession and the sword's fate.","verified":false}
+    ]
+  },
+  "vehicles": {
+    "coverage": "limited",
+    "items": [
+      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"infernus","name":"Infernus","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"taxi","name":"Taxi","category":"Car","class":"Taxi","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":null,"seats":4,"verified":true},
+      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"fire-truck","name":"Fire Truck","category":"Emergency","class":"Fire","top_speed_kph":null,"seats":2,"verified":true},
+      {"id":"maverick","name":"Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":null,"seats":4,"verified":false},
+      {"id":"predator","name":"Predator","category":"Boat","class":"Police boat","top_speed_kph":null,"seats":2,"verified":false}
+    ]
+  },
+  "weapons": {
+    "coverage": "limited",
+    "items": [
+      {"id":"fists","name":"Fists","type":"Melee","damage_tier":"Low","ammo":"—","price":null,"unlock":"Default","verified":true},
+      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"katana","name":"Katana","type":"Melee","damage_tier":"High","ammo":"—","price":null,"unlock":"Story","verified":true},
+      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Ammu-Nation equivalent","verified":true},
+      {"id":"micro-smg","name":"Micro SMG","type":"Submachine gun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"Shells","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"rifle","name":"Rifle","type":"Assault rifle","damage_tier":"High","ammo":"Magazine","price":null,"unlock":"Later missions","verified":true},
+      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"Rockets","price":null,"unlock":"Pickups","verified":true},
+      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true},
+      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true}
+    ]
+  },
+  "cheats": {
+    "coverage": "limited",
+    "items": []
+  },
+  "locations": {
+    "coverage": "partial",
+    "items": [
+      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"Liberty City in 2009, rendered top-down with a stylised cel-shaded look.","verified":true},
+      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial island.","verified":true},
+      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial island.","verified":true},
+      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island.","verified":true},
+      {"id":"chinatown","name":"Chinatown","type":"District","parent":"Portland","summary":"Triad heartland and the game's opening area.","verified":true}
+    ]
+  },
+  "collectibles": {
+    "coverage": "partial",
+    "items": [
+      {"id":"drug-deals","name":"Drug deals","type":"Trade","total":0,"reward":"Profit and safehouse upgrades","verified":false,"source":"Continuous economy, not a fixed collectible set"},
+      {"id":"lions-of-south","name":"Lions of South America","type":"Collectible","total":0,"reward":"Cash and 100% progress","verified":false}
+    ]
+  }
+}

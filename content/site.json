@@ -1,0 +1,21 @@
+{
+  "title": "GTA Hub",
+  "tagline": "Every Grand Theft Auto game, every record, one static repository.",
+  "description": "A machine-first encyclopedia of the Grand Theft Auto series: characters, missions, vehicles, weapons, cheats, locations and collectibles for all 17 games, published as static HTML and portable JSON.",
+  "base_url": "https://abinashspace.github.io/gta-hub",
+  "language": "en",
+  "author": "abinashspace",
+  "repo": "https://github.com/abinashspace/gta-hub",
+  "license": "Code MIT; game names, trademarks and art belong to Rockstar Games / Take-Two Interactive.",
+  "build": {
+    "out_dir": "docs",
+    "og_image": "/assets/img/brand/og.png",
+    "generate_placeholders": true
+  },
+  "nav": [
+    { "label": "Games", "href": "/" },
+    { "label": "Data", "href": "/data/" },
+    { "label": "Search", "href": "/search/" },
+    { "label": "About", "href": "/about/" }
+  ]
+}

@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate data
+        run: node tools/validate.mjs
+      - name: Build site
+        run: node tools/build.mjs
+      - name: Check internal links and assets
+        run: node tools/linkcheck.mjs
+      - name: Fail if committed docs/ is stale
+        run: |
+          if [ -n "$(git status --porcelain docs)" ]; then
+            echo "docs/ is out of date. Run: node tools/build.mjs and commit the result."
+            git status --porcelain docs
+            exit 1
+          fi

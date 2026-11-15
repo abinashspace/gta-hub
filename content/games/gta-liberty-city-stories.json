@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "sources": ["LCS in-game mission list", "Rockstar Leeds PSP/PS2 release notes"],
+    "notes": "Prequel to GTA III set in 1998. PSP and PS2 editions share content; cheat input differs by platform."
+  },
+  "characters": {
+    "coverage": "partial",
+    "items": [
+      {"id":"toni-cipriani","name":"Toni Cipriani","role":"Protagonist","affiliations":["Leone Crime Family"],"summary":"Returns to Liberty City after killing a made man and works to earn back Salvatore's trust.","status":"Alive","first_appearance":"GTA: Liberty City Stories","verified":true},
+      {"id":"salvatore-leone","name":"Salvatore Leone","role":"Leone don","affiliations":["Leone Crime Family"],"summary":"The don Toni serves, fighting off Sicilian and Forelli challenges to his rule.","status":"Alive","verified":true},
+      {"id":"maria-latare","name":"Maria Latore","role":"Salvatore's girlfriend","affiliations":["Leone Crime Family"],"summary":"Salvatore's partner and a recurring source of chaos for Toni.","status":"Alive","verified":true},
+      {"id":"vincenzo-cilli","name":"Vincenzo Cilli","role":"Leone associate","affiliations":["Leone Crime Family"],"summary":"Toni's early employer and rival within the family.","status":"Deceased","verified":true},
+      {"id":"jd-otoole","name":"JD O'Toole","role":"Pimp, informant","affiliations":["Leone Crime Family","Sindacco Family"],"summary":"A pimp and police informant who drags Toni into Triad and Sindacco trouble.","status":"Deceased","verified":true},
+      {"id":"leon-mcaffrey","name":"Leon McAffrey","role":"Corrupt cop","affiliations":["Liberty City Police Department"],"summary":"A corrupt detective who hires Toni for off-the-books work.","status":"Alive","verified":true},
+      {"id":"donald-love","name":"Donald Love","role":"Media mogul","affiliations":["Love Media"],"summary":"A young Donald Love building his media empire in 1998.","status":"Alive","verified":true},
+      {"id":"8-ball","name":"8-Ball","role":"Explosives expert","affiliations":["Liberty City underworld"],"summary":"Bomb-maker and fixer, already established before GTA III.","status":"Alive","verified":true},
+      {"id":"luigi-goterelli","name":"Luigi Goterelli","role":"Leone capo","affiliations":["Leone Crime Family"],"summary":"Runs the Red Light District club before the events of GTA III.","status":"Alive","verified":true},
+      {"id":"joey-leone","name":"Joey Leone","role":"Leone capo","affiliations":["Leone Crime Family"],"summary":"Salvatore's son, running the Portland garage.","status":"Alive","verified":true},
+      {"id":"ma-cipriani","name":"Ma Cipriani","role":"Toni's mother","affiliations":["Cipriani family"],"summary":"Toni's overbearing mother and a side-mission contact.","status":"Alive","verified":true},
+      {"id":"paulie-sindacco","name":"Paulie Sindacco","role":"Sindacco boss","affiliations":["Sindacco Family"],"summary":"Head of the Sindacco family pushing into Liberty City.","status":"Alive","verified":true},
+      {"id":"franco-forelli","name":"Franco Forelli","role":"Forelli boss","affiliations":["Forelli Crime Family"],"summary":"Forelli leader attempting to take over Leone territory.","status":"Deceased","verified":true},
+      {"id":"massimo-torini","name":"Massimo Torini","role":"Antagonist, Sicilian don","affiliations":["Sicilian Mafia"],"summary":"Sicilian envoy manipulating the Liberty City families.","status":"Deceased","verified":true}
+    ]
+  },
+  "missions": {
+    "coverage": "partial",
+    "items": [
+      {"id":"home-sweet-home","order":1,"name":"Home Sweet Home","type":"Story","giver":"Salvatore Leone","location":"Portland","reward":{"money":0},"summary":"Toni returns to Liberty City and reports to Salvatore.","verified":true},
+      {"id":"slacker","order":2,"name":"Slacker","type":"Story","giver":"Vincenzo Cilli","location":"Atlantic Quays","reward":{"money":0},"summary":"Escort Vincenzo's contact through the docks.","verified":true},
+      {"id":"dealing-revenge","order":3,"name":"Dealing Revenge","type":"Story","giver":"Vincenzo Cilli","location":"Portland","reward":{"money":0},"summary":"Steal a car and deal with a rival dealer.","verified":true},
+      {"id":"snuff","order":4,"name":"Snuff","type":"Story","giver":"JD O'Toole","location":"Red Light District","reward":{"money":0},"summary":"Stop a snuff film being made in the Red Light District.","verified":true},
+      {"id":"the-portland-chainsaw-masquerade","order":5,"name":"The Portland Chainsaw Masquerade","type":"Story","giver":"Vincenzo Cilli","location":"Atlantic Quays","reward":{"money":0},"summary":"Survive a chainsaw ambush arranged by Vincenzo.","verified":true},
+      {"id":"big-rumble-in-little-china","order":6,"name":"Big Rumble in Little China","type":"Story","giver":"JD O'Toole","location":"Chinatown","reward":{"money":0},"summary":"A massive street fight in Chinatown.","verified":true},
+      {"id":"grease-sucho","order":7,"name":"Grease Sucho","type":"Story","giver":"JD O'Toole","location":"Portland","reward":{"money":0},"summary":"Kill a mechanic who has been informing on the family.","verified":true},
+      {"id":"dead-meat","order":8,"name":"Dead Meat","type":"Story","giver":"JD O'Toole","location":"Portland","reward":{"money":0},"summary":"Dispose of a body for JD.","verified":true},
+      {"id":"no-son-of-mine","order":9,"name":"No Son of Mine","type":"Story","giver":"Salvatore Leone","location":"Saint Mark's","reward":{"money":0},"summary":"Deal with a traitor inside the Leone family.","verified":true},
+      {"id":"the-trouble-with-triads","order":10,"name":"The Trouble with Triads","type":"Story","giver":"Salvatore Leone","location":"Chinatown","reward":{"money":0},"summary":"Hit the Triads to protect Leone interests.","verified":true},
+      {"id":"a-walk-in-the-park","order":11,"name":"A Walk in the Park","type":"Story","giver":"Leon McAffrey","location":"Belleville Park","reward":{"money":0},"summary":"Kill a target walking through Belleville Park.","verified":true},
+      {"id":"making-toni","order":12,"name":"Making Toni","type":"Story","giver":"Salvatore Leone","location":"Saint Mark's","reward":{"money":0},"summary":"Earn recognition and become a made man.","verified":true},
+      {"id":"the-shoreside-redemption","order":13,"name":"The Shoreside Redemption","type":"Story","giver":"Salvatore Leone","location":"Shoreside Vale","reward":{"money":0},"summary":"Late-game Leone operation on Shoreside Vale.","verified":false},
+      {"id":"the-sicilian-gambit","order":14,"name":"The Sicilian Gambit","type":"Story","giver":"Salvatore Leone","location":"Portland","reward":{"money":0},"summary":"Final mission: stop the Sicilian takeover.","verified":true}
+    ]
+  },
+  "vehicles": {
+    "coverage": "partial",
+    "items": [
+      {"id":"infernus","name":"Infernus","category":"Car","class":"Sports","top_speed_kph":220,"seats":2,"verified":true},
+      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":225,"seats":2,"verified":true},
+      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":210,"seats":2,"verified":true},
+      {"id":"stinger","name":"Stinger","category":"Car","class":"Sports","top_speed_kph":205,"seats":2,"verified":true},
+      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":175,"seats":4,"verified":true},
+      {"id":"kuruma","name":"Kuruma","category":"Car","class":"Sedan","top_speed_kph":170,"seats":4,"verified":true},
+      {"id":"stallion","name":"Stallion","category":"Car","class":"Muscle","top_speed_kph":190,"seats":2,"verified":true},
+      {"id":"patriot","name":"Patriot","category":"Car","class":"SUV","top_speed_kph":175,"seats":4,"verified":true},
+      {"id":"pcj-600","name":"PCJ-600","category":"Motorcycle","class":"Sport bike","top_speed_kph":200,"seats":2,"verified":true},
+      {"id":"freeway","name":"Freeway","category":"Motorcycle","class":"Cruiser","top_speed_kph":180,"seats":2,"verified":true},
+      {"id":"sanchez","name":"Sanchez","category":"Motorcycle","class":"Dirt bike","top_speed_kph":170,"seats":2,"verified":true},
+      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":60,"seats":1,"verified":true},
+      {"id":"maverick","name":"Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":4,"verified":true},
+      {"id":"police-maverick","name":"Police Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":3,"verified":true},
+      {"id":"predator","name":"Predator","category":"Boat","class":"Police boat","top_speed_kph":95,"seats":2,"verified":true},
+      {"id":"speeder","name":"Speeder","category":"Boat","class":"Speedboat","top_speed_kph":105,"seats":2,"verified":true}
+    ]
+  },
+  "weapons": {
+    "coverage": "partial",
+    "items": [
+      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
+      {"id":"chainsaw","name":"Chainsaw","type":"Melee","damage_tier":"Very high","ammo":"—","price":null,"unlock":"Mission reward","verified":true},
+      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"17 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"uzi","name":"Uzi","type":"Submachine gun","damage_tier":"Medium","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"8 shells","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"ak-47","name":"AK-47","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"m4","name":"M4","type":"Assault rifle","damage_tier":"Very high","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"sniper-rifle","name":"Sniper Rifle","type":"Sniper","damage_tier":"Very high","ammo":"5 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Pickups","verified":true},
+      {"id":"flamethrower","name":"Flamethrower","type":"Heavy","damage_tier":"Very high","ammo":"Continuous","price":null,"unlock":"Pickups","verified":true},
+      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Ammu-Nation","verified":true},
+      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Street pickups","verified":true}
+    ]
+  },
+  "cheats": {
+    "coverage": "limited",
+    "items": []
+  },
+  "locations": {
+    "coverage": "partial",
+    "items": [
+      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"The 1998 version of Liberty City, three years before GTA III.","verified":true},
+      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial island and Leone heartland.","verified":true},
+      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial island with Belleville Park and Bedford Point.","verified":true},
+      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island with the airport and dam.","verified":true},
+      {"id":"red-light-district","name":"Red Light District","type":"District","parent":"Portland","summary":"Luigi's club and JD O'Toole's territory.","verified":true},
+      {"id":"chinatown","name":"Chinatown","type":"District","parent":"Portland","summary":"Triad territory in Portland.","verified":true},
+      {"id":"atlantic-quays","name":"Atlantic Quays","type":"District","parent":"Portland","summary":"Docks where Vincenzo operates.","verified":true},
+      {"id":"saint-marks","name":"Saint Mark's","type":"District","parent":"Portland","summary":"Leone stronghold and Salvatore's mansion.","verified":true},
+      {"id":"belleville-park","name":"Belleville Park","type":"District","parent":"Staunton Island","summary":"Central park and mission location.","verified":true},
+      {"id":"torrington","name":"Torrington","type":"District","parent":"Staunton Island","summary":"Business district.","verified":true}
+    ]
+  },
+  "collectibles": {
+    "coverage": "complete",
+    "items": [
+      {"id":"hidden-packages","name":"Hidden Packages","type":"Package","total":100,"reward":"Weapons at safehouses","verified":true},
+      {"id":"rampages","name":"Rampages","type":"Rampage","total":20,"reward":"Cash","verified":true},
+      {"id":"unique-jumps","name":"Unique Jumps","type":"Stunt","total":26,"reward":"Cash toward 100%","verified":true},
+      {"id":"avenging-angels","name":"Avenging Angels","type":"Side job","total":15,"reward":"Cash and weapon rewards","verified":true},
+      {"id":"trash-dash","name":"Trash Dash","type":"Side job","total":1,"reward":"Cash","verified":false}
+    ]
+  }
+}
