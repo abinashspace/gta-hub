@@ -1579,17 +1579,21 @@
     ]
   },
   "weapons": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
       {
-        "id": "baseball-bat",
-        "name": "Baseball Bat",
-        "type": "Melee",
-        "damage_tier": "Medium",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
+        "id": "advanced-mg",
+        "name": "Advanced MG",
+        "type": "Assault Rifles & Light Machine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "advanced-sniper",
+        "name": "Advanced Sniper",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "ap-pistol",
@@ -1602,6 +1606,158 @@
         "verified": true
       },
       {
+        "id": "assault-rifle",
+        "name": "Assault Rifle",
+        "type": "Assault Rifles & Light Machine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "assault-smg",
+        "name": "Assault SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "unlock": "Pickups"
+      },
+      {
+        "id": "automatic-shotgun",
+        "name": "Automatic Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "carbine-rifle",
+        "name": "Carbine Rifle",
+        "type": "Assault Rifles & Light Machine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "30 rounds",
+        "unlock": "Later missions"
+      },
+      {
+        "id": "combat-pistol",
+        "name": "Combat Pistol",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "combat-shotgun",
+        "name": "Combat Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "combat-sniper",
+        "name": "Combat Sniper",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "fist",
+        "name": "Fist",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "gold-smg",
+        "name": "Gold SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "grenade",
+        "name": "Grenade",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "grenade-launcher",
+        "name": "Grenade Launcher",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "knife",
+        "name": "Knife",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "micro-smg",
+        "name": "Micro SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "molotov-cocktail",
+        "name": "Molotov Cocktail",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pistol-44",
+        "name": "Pistol .44",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pump-shotgun",
+        "name": "Pump Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "random-pickable-objects",
+        "name": "Random Pickable Objects",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "rpg",
+        "name": "RPG",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "unlock": "Yusuf Amir"
+      },
+      {
         "id": "sawn-off-shotgun",
         "name": "Sawn-off Shotgun",
         "type": "Shotgun",
@@ -1612,54 +1768,31 @@
         "verified": true
       },
       {
-        "id": "assault-smg",
-        "name": "Assault SMG",
-        "type": "Submachine gun",
-        "damage_tier": "High",
-        "ammo": "30 rounds",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
-      },
-      {
-        "id": "carbine-rifle",
-        "name": "Carbine Rifle",
-        "type": "Assault rifle",
-        "damage_tier": "Very high",
-        "ammo": "30 rounds",
-        "price": null,
-        "unlock": "Later missions",
-        "verified": true
+        "id": "smg",
+        "name": "SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "sniper-rifle",
         "name": "Sniper Rifle",
-        "type": "Sniper",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "Very high",
         "ammo": "5 rounds",
-        "price": null,
-        "unlock": "Mission",
-        "verified": true
-      },
-      {
-        "id": "rpg",
-        "name": "RPG",
-        "type": "Heavy",
-        "damage_tier": "Lethal",
-        "ammo": "5 rockets",
-        "price": null,
-        "unlock": "Yusuf Amir",
-        "verified": true
+        "unlock": "Mission"
       },
       {
         "id": "sticky-bombs",
         "name": "Sticky Bombs",
-        "type": "Thrown",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "Lethal",
         "ammo": "Count",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "unlock": "Pickups"
       }
     ]
   },

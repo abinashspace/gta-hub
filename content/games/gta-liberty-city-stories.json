@@ -1794,57 +1794,21 @@
     ]
   },
   "weapons": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
       {
-        "id": "baseball-bat",
-        "name": "Baseball Bat",
-        "type": "Melee",
-        "damage_tier": "Medium",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
+        "id": "357",
+        "name": ".357",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "chainsaw",
-        "name": "Chainsaw",
-        "type": "Melee",
-        "damage_tier": "Very high",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Mission reward",
-        "verified": true
-      },
-      {
-        "id": "pistol",
-        "name": "Pistol",
-        "type": "Handgun",
-        "damage_tier": "Medium",
-        "ammo": "17 rounds",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
-      },
-      {
-        "id": "uzi",
-        "name": "Uzi",
-        "type": "Submachine gun",
-        "damage_tier": "Medium",
-        "ammo": "30 rounds",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
-      },
-      {
-        "id": "shotgun",
-        "name": "Shotgun",
-        "type": "Shotgun",
-        "damage_tier": "High",
-        "ammo": "8 shells",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
+        "id": "ak",
+        "name": "AK",
+        "type": "Assault Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "ak-47",
@@ -1857,34 +1821,66 @@
         "verified": true
       },
       {
-        "id": "m4",
-        "name": "M4",
-        "type": "Assault rifle",
-        "damage_tier": "Very high",
-        "ammo": "30 rounds",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "unlock": "Street pickups"
       },
       {
-        "id": "sniper-rifle",
-        "name": "Sniper Rifle",
-        "type": "Sniper",
-        "damage_tier": "Very high",
-        "ammo": "5 rounds",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
+        "id": "brass-knuckles",
+        "name": "Brass Knuckles",
+        "type": "Unarmed",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "rocket-launcher",
-        "name": "Rocket Launcher",
-        "type": "Heavy",
-        "damage_tier": "Lethal",
-        "ammo": "5 rockets",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "id": "camera",
+        "name": "Camera",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "chainsaw",
+        "name": "Chainsaw",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "—",
+        "unlock": "Mission reward"
+      },
+      {
+        "id": "chisel",
+        "name": "Chisel",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "detonator",
+        "name": "Detonator",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "fist",
+        "name": "Fist",
+        "type": "Unarmed",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "flame-thrower",
+        "name": "Flame-Thrower",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "flamethrower",
@@ -1897,6 +1893,13 @@
         "verified": true
       },
       {
+        "id": "grenade",
+        "name": "Grenade",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
         "id": "grenades",
         "name": "Grenades",
         "type": "Thrown",
@@ -1907,6 +1910,100 @@
         "verified": true
       },
       {
+        "id": "hand-axe",
+        "name": "Hand Axe",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "hockey-stick",
+        "name": "Hockey Stick",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "katana",
+        "name": "Katana",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "knife",
+        "name": "Knife",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "laser-sighted-sniper-rifle",
+        "name": "Laser Sighted Sniper Rifle",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "m4",
+        "name": "M4",
+        "type": "Assault Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "30 rounds",
+        "unlock": "Ammu-Nation"
+      },
+      {
+        "id": "m60",
+        "name": "M60",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "mac-10",
+        "name": "Mac-10",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "machete",
+        "name": "Machete",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "meat-cleaver",
+        "name": "Meat Cleaver",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "micro-smg",
+        "name": "Micro SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "minigun",
+        "name": "Minigun",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "molotov-cocktail",
+        "name": "Molotov Cocktail",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
         "id": "molotov",
         "name": "Molotov Cocktail",
         "type": "Thrown",
@@ -1914,6 +2011,105 @@
         "ammo": "20",
         "price": null,
         "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "nightstick",
+        "name": "Nightstick",
+        "type": "Melee Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "unlock": "Ammu-Nation"
+      },
+      {
+        "id": "remote-grenade",
+        "name": "Remote Grenade",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "unlock": "Pickups"
+      },
+      {
+        "id": "spas-12",
+        "name": "S.P.A.S. 12",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "8 shells",
+        "unlock": "Ammu-Nation"
+      },
+      {
+        "id": "smg",
+        "name": "SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "5 rounds",
+        "unlock": "Ammu-Nation"
+      },
+      {
+        "id": "stubby-shotgun",
+        "name": "Stubby Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "tear-gas",
+        "name": "Tear Gas",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "tec-9",
+        "name": "Tec 9",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
         "verified": true
       }
     ]

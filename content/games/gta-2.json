@@ -661,57 +661,14 @@
     ]
   },
   "weapons": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
       {
-        "id": "pistol",
-        "name": "Pistol",
-        "type": "Handgun",
-        "damage_tier": "Medium",
-        "ammo": "Magazine",
-        "price": null,
-        "unlock": "Default",
-        "verified": true
-      },
-      {
-        "id": "silenced-uzi",
-        "name": "Silenced Uzi",
-        "type": "Submachine gun",
-        "damage_tier": "Medium",
-        "ammo": "Magazine",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
-      },
-      {
-        "id": "shotgun",
-        "name": "Shotgun",
-        "type": "Shotgun",
-        "damage_tier": "High",
-        "ammo": "Shells",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
-      },
-      {
-        "id": "rocket-launcher",
-        "name": "Rocket Launcher",
-        "type": "Heavy",
-        "damage_tier": "Lethal",
-        "ammo": "Rockets",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
-      },
-      {
-        "id": "flamethrower",
-        "name": "Flamethrower",
-        "type": "Heavy",
-        "damage_tier": "Very high",
-        "ammo": "Fuel",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "id": "dual-pistol",
+        "name": "Dual Pistol",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "electro-gun",
@@ -724,14 +681,52 @@
         "verified": true
       },
       {
+        "id": "electrobaton",
+        "name": "ElectroBaton",
+        "type": "Deleted weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "electrogun",
+        "name": "ElectroGun",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "Fuel",
+        "unlock": "Pickups"
+      },
+      {
         "id": "grenades",
         "name": "Grenades",
-        "type": "Thrown",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "High",
         "ammo": "Count",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "unlock": "Pickups"
+      },
+      {
+        "id": "instant-vehicle-bomb",
+        "name": "Instant Vehicle Bomb",
+        "type": "Deleted weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "melee-attack",
+        "name": "Melee attack",
+        "type": "Weapon",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "molotov",
@@ -742,6 +737,95 @@
         "price": null,
         "unlock": "Pickups",
         "verified": true
+      },
+      {
+        "id": "molotov-cocktails",
+        "name": "Molotov Cocktails",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "unlock": "Default"
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Lethal",
+        "ammo": "Rockets",
+        "unlock": "Pickups"
+      },
+      {
+        "id": "s-uzi-machine-gun",
+        "name": "S-Uzi Machine Gun",
+        "type": "Weapon",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "Shells",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "silenced-s-uzi-machine-gun",
+        "name": "Silenced S-Uzi Machine Gun",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "silenced-uzi",
+        "name": "Silenced Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "vehicle-bomb",
+        "name": "Vehicle Bomb",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "vehicle-machine-guns",
+        "name": "Vehicle Machine Guns",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "vehicle-mines",
+        "name": "Vehicle Mines",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "vehicle-oil-slick",
+        "name": "Vehicle Oil Slick",
+        "type": "Weapons introduced in GTA 2",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       }
     ]
   },

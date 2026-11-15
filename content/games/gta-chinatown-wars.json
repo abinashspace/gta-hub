@@ -1469,8 +1469,74 @@
     ]
   },
   "weapons": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
+      {
+        "id": "assault-rifle",
+        "name": "Assault Rifle",
+        "type": "Assault Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "carbine-rifle",
+        "name": "Carbine Rifle",
+        "type": "Assault Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "chainsaw",
+        "name": "Chainsaw",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "crates",
+        "name": "Crates",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "detonator",
+        "name": "Detonator",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "double-barreled-shotgun",
+        "name": "Double Barreled Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "drug-sample",
+        "name": "Drug Sample",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "fist",
+        "name": "Fist",
+        "type": "Unarmed",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
       {
         "id": "fists",
         "name": "Fists",
@@ -1482,14 +1548,28 @@
         "verified": true
       },
       {
-        "id": "baseball-bat",
-        "name": "Baseball Bat",
-        "type": "Melee",
-        "damage_tier": "Medium",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
+        "id": "flame-thrower",
+        "name": "Flame Thrower",
+        "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "flashbangs",
+        "name": "Flashbangs",
+        "type": "Thrown",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "unlock": "Pickups"
       },
       {
         "id": "katana",
@@ -1502,34 +1582,69 @@
         "verified": true
       },
       {
-        "id": "pistol",
-        "name": "Pistol",
-        "type": "Handgun",
-        "damage_tier": "Medium",
-        "ammo": "Magazine",
-        "price": null,
-        "unlock": "Ammu-Nation equivalent",
-        "verified": true
-      },
-      {
         "id": "micro-smg",
         "name": "Micro SMG",
-        "type": "Submachine gun",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "Medium",
         "ammo": "Magazine",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "minigun",
+        "name": "Minigun",
+        "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
         "price": null,
-        "unlock": "Street pickups",
+        "unlock": "Pickups",
         "verified": true
       },
       {
-        "id": "shotgun",
-        "name": "Shotgun",
-        "type": "Shotgun",
-        "damage_tier": "High",
-        "ammo": "Shells",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
+        "id": "molotov-cocktails",
+        "name": "Molotov Cocktails",
+        "type": "Thrown",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "night-stick",
+        "name": "Night Stick",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "unlock": "Ammu-Nation equivalent"
+      },
+      {
+        "id": "proximity-mines",
+        "name": "Proximity Mines",
+        "type": "Thrown",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "revolver",
+        "name": "Revolver",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "rifle",
@@ -1552,24 +1667,70 @@
         "verified": true
       },
       {
-        "id": "grenades",
-        "name": "Grenades",
-        "type": "Thrown",
-        "damage_tier": "High",
-        "ammo": "Count",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "id": "rpg",
+        "name": "RPG",
+        "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "molotov",
-        "name": "Molotov Cocktail",
-        "type": "Thrown",
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "High",
-        "ammo": "Count",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "ammo": "Shells",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "smg",
+        "name": "SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "stubby-shotgun",
+        "name": "Stubby Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "sword",
+        "name": "Sword",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "teaser",
+        "name": "Teaser",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "time-bomb",
+        "name": "Time Bomb",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "twin-pistols",
+        "name": "Twin Pistols",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       }
     ]
   },

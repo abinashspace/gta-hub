@@ -826,38 +826,8 @@
     ]
   },
   "weapons": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
-      {
-        "id": "pistol",
-        "name": "Pistol",
-        "type": "Handgun",
-        "damage_tier": "Medium",
-        "ammo": "Magazine",
-        "price": null,
-        "unlock": "Default",
-        "verified": true
-      },
-      {
-        "id": "uzi",
-        "name": "Uzi",
-        "type": "Submachine gun",
-        "damage_tier": "Medium",
-        "ammo": "Magazine",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
-      },
-      {
-        "id": "shotgun",
-        "name": "Shotgun",
-        "type": "Shotgun",
-        "damage_tier": "High",
-        "ammo": "Shells",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
-      },
       {
         "id": "ak-47",
         "name": "AK-47",
@@ -869,14 +839,53 @@
         "verified": true
       },
       {
-        "id": "rocket-launcher",
-        "name": "Rocket Launcher",
-        "type": "Heavy",
-        "damage_tier": "Lethal",
-        "ammo": "Rockets",
-        "price": null,
-        "unlock": "Pickups",
-        "verified": true
+        "id": "assault-rifle",
+        "name": "Assault Rifle",
+        "type": "Basic Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "car-bomb",
+        "name": "Car Bomb",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "detonator",
+        "name": "Detonator",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "fist",
+        "name": "Fist",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "grenade",
+        "name": "Grenade",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "grenades",
@@ -886,6 +895,81 @@
         "ammo": "Count",
         "price": null,
         "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "katana",
+        "name": "Katana",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "minigun",
+        "name": "Minigun",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "molotov-cocktail",
+        "name": "Molotov Cocktail",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "oil-slick",
+        "name": "Oil Slick",
+        "type": "Cut",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Basic Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "unlock": "Default"
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Lethal",
+        "ammo": "Rockets",
+        "unlock": "Pickups"
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Basic Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "Shells",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "uz-i",
+        "name": "Uz-I",
+        "type": "Basic Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Street pickups",
         "verified": true
       }
     ]

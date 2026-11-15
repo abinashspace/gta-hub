@@ -1778,58 +1778,8 @@
     ]
   },
   "weapons": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
-      {
-        "id": "fist",
-        "name": "Fists",
-        "type": "Melee",
-        "damage_tier": "Low",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Default",
-        "verified": true
-      },
-      {
-        "id": "baseball-bat",
-        "name": "Baseball Bat",
-        "type": "Melee",
-        "damage_tier": "Medium",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
-      },
-      {
-        "id": "pistol",
-        "name": "Pistol",
-        "type": "Handgun",
-        "damage_tier": "Medium",
-        "ammo": "17 rounds",
-        "price": null,
-        "unlock": "Default sidearm; Ammu-Nation",
-        "verified": true
-      },
-      {
-        "id": "uzi",
-        "name": "Uzi",
-        "type": "Submachine gun",
-        "damage_tier": "Medium",
-        "ammo": "25 rounds",
-        "price": null,
-        "unlock": "Ammu-Nation / 8-Ball",
-        "verified": true
-      },
-      {
-        "id": "shotgun",
-        "name": "Shotgun",
-        "type": "Shotgun",
-        "damage_tier": "High",
-        "ammo": "8 shells",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
-      },
       {
         "id": "ak-47",
         "name": "AK-47",
@@ -1841,44 +1791,76 @@
         "verified": true
       },
       {
-        "id": "m16",
-        "name": "M16",
-        "type": "Assault rifle",
-        "damage_tier": "Very high",
-        "ammo": "60 rounds",
-        "price": null,
-        "unlock": "Hidden packages reward",
-        "verified": true
+        "id": "ak47",
+        "name": "AK47",
+        "type": "Large Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "sniper-rifle",
-        "name": "Sniper Rifle",
-        "type": "Sniper",
-        "damage_tier": "Very high",
-        "ammo": "5 rounds",
-        "price": null,
-        "unlock": "Ammu-Nation",
-        "verified": true
+        "id": "arms-shortage",
+        "name": "Arms Shortage",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "rocket-launcher",
-        "name": "Rocket Launcher",
-        "type": "Heavy",
-        "damage_tier": "Lethal",
-        "ammo": "5 rockets",
-        "price": null,
-        "unlock": "Phil Cassidy / hidden packages",
-        "verified": true
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "bomb-da-base-act-ii",
+        "name": "Bomb Da Base: Act II",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "detonator",
+        "name": "Detonator",
+        "type": "Special",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "dont-spank-ma-bitch-up",
+        "name": "Don't Spank Ma Bitch Up",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "fist",
+        "name": "Fist",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Low",
+        "ammo": "—",
+        "unlock": "Default"
       },
       {
         "id": "flamethrower",
         "name": "Flamethrower",
         "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "Very high",
         "ammo": "Continuous",
-        "price": null,
-        "unlock": "El Burro mission / pickups",
-        "verified": true
+        "unlock": "El Burro mission / pickups"
+      },
+      {
+        "id": "grenade",
+        "name": "Grenade",
+        "type": "Thrown",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "grenades",
@@ -1891,6 +1873,30 @@
         "verified": true
       },
       {
+        "id": "m16",
+        "name": "M16",
+        "type": "Large Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "60 rounds",
+        "unlock": "Hidden packages reward"
+      },
+      {
+        "id": "marked-man",
+        "name": "Marked Man",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "molotov-cocktail",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
         "id": "molotov",
         "name": "Molotov Cocktail",
         "type": "Thrown",
@@ -1899,6 +1905,98 @@
         "price": null,
         "unlock": "Street pickups",
         "verified": true
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Small Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "unlock": "Default sidearm; Ammu-Nation"
+      },
+      {
+        "id": "pump-action-pimp",
+        "name": "Pump-Action Pimp",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "unlock": "Phil Cassidy / hidden packages"
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Large Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "8 shells",
+        "unlock": "Ammu-Nation"
+      },
+      {
+        "id": "silence-the-sneak",
+        "name": "Silence the Sneak",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Large Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "5 rounds",
+        "unlock": "Ammu-Nation"
+      },
+      {
+        "id": "taking-out-the-laundry",
+        "name": "Taking Out the Laundry",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "trial-by-fire",
+        "name": "Trial By Fire",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "type": "Small Firearms",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "25 rounds",
+        "unlock": "Ammu-Nation / 8-Ball"
+      },
+      {
+        "id": "uzi-money",
+        "name": "Uzi Money",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "uzi-rider",
+        "name": "Uzi Rider",
+        "type": "Additional Information",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       }
     ]
   },

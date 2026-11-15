@@ -120,10 +120,10 @@ export const SECTIONS = {
     fields: {
       name: { type: 'string', required: true },
       type: { type: 'string', required: true },
-      damage_tier: { type: 'string', required: true, enum: ['Very low', 'Low', 'Medium', 'High', 'Very high', 'Lethal'] },
-      ammo: { type: 'string', required: true },
+      damage_tier: { type: 'string', enum: ['Very low', 'Low', 'Medium', 'High', 'Very high', 'Lethal'], description: 'Omitted when the game does not tabulate damage.' },
+      ammo: { type: 'string', description: 'Omitted when the game does not tabulate an ammo cap.' },
       price: { type: ['integer', 'null'] },
-      unlock: { type: 'string', required: true },
+      unlock: { type: 'string', description: 'Where or when the weapon becomes available; omitted when unknown.' },
       image: { type: ['string', 'null'] },
       verified: { type: 'boolean', required: true },
       source: { type: 'string' },

@@ -2348,8 +2348,76 @@
     ]
   },
   "weapons": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
+      {
+        "id": "assault-rifle",
+        "name": "Assault Rifle",
+        "type": "Assault Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "unlock": "Little Jacob"
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "unlock": "Street pickups"
+      },
+      {
+        "id": "carbine-rifle",
+        "name": "Carbine Rifle",
+        "type": "Assault Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "30 rounds",
+        "unlock": "Little Jacob (later)"
+      },
+      {
+        "id": "combat-pistol",
+        "name": "Combat Pistol",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "combat-shotgun",
+        "name": "Combat Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "combat-sniper",
+        "name": "Combat Sniper",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "desert-eagle",
+        "name": "Desert Eagle",
+        "type": "Handgun",
+        "damage_tier": "Very high",
+        "ammo": "7 rounds",
+        "price": null,
+        "unlock": "Little Jacob / gun van",
+        "verified": true
+      },
+      {
+        "id": "fist",
+        "name": "Fist",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
       {
         "id": "fists",
         "name": "Fists",
@@ -2358,26 +2426,6 @@
         "ammo": "—",
         "price": null,
         "unlock": "Default",
-        "verified": true
-      },
-      {
-        "id": "baseball-bat",
-        "name": "Baseball Bat",
-        "type": "Melee",
-        "damage_tier": "Medium",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
-      },
-      {
-        "id": "knife",
-        "name": "Knife",
-        "type": "Melee",
-        "damage_tier": "Medium",
-        "ammo": "—",
-        "price": null,
-        "unlock": "Street pickups",
         "verified": true
       },
       {
@@ -2391,23 +2439,57 @@
         "verified": true
       },
       {
-        "id": "desert-eagle",
-        "name": "Desert Eagle",
-        "type": "Handgun",
-        "damage_tier": "Very high",
-        "ammo": "7 rounds",
+        "id": "grenade",
+        "name": "Grenade",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "25",
         "price": null,
-        "unlock": "Little Jacob / gun van",
+        "unlock": "Little Jacob",
         "verified": true
+      },
+      {
+        "id": "knife",
+        "name": "Knife",
+        "type": "Melee",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "unlock": "Street pickups"
       },
       {
         "id": "micro-smg",
         "name": "Micro SMG",
-        "type": "Submachine gun",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "Medium",
         "ammo": "30 rounds",
+        "unlock": "Little Jacob"
+      },
+      {
+        "id": "molotov-cocktail",
+        "name": "Molotov Cocktail",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "25",
         "price": null,
-        "unlock": "Little Jacob",
+        "unlock": "Street pickups",
         "verified": true
       },
       {
@@ -2421,74 +2503,55 @@
         "verified": true
       },
       {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
+      },
+      {
         "id": "pump-shotgun",
         "name": "Pump Shotgun",
-        "type": "Shotgun",
+        "type": "Shotguns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "High",
         "ammo": "8 shells",
-        "price": null,
-        "unlock": "Little Jacob",
-        "verified": true
+        "unlock": "Little Jacob"
       },
       {
-        "id": "assault-rifle",
-        "name": "Assault Rifle",
-        "type": "Assault rifle",
-        "damage_tier": "High",
-        "ammo": "30 rounds",
-        "price": null,
-        "unlock": "Little Jacob",
-        "verified": true
-      },
-      {
-        "id": "carbine-rifle",
-        "name": "Carbine Rifle",
-        "type": "Assault rifle",
-        "damage_tier": "Very high",
-        "ammo": "30 rounds",
-        "price": null,
-        "unlock": "Little Jacob (later)",
-        "verified": true
-      },
-      {
-        "id": "sniper-rifle",
-        "name": "Sniper Rifle",
-        "type": "Sniper",
-        "damage_tier": "Very high",
-        "ammo": "5 rounds",
-        "price": null,
-        "unlock": "Little Jacob",
-        "verified": true
+        "id": "random-pickable-objects",
+        "name": "Random Pickable Objects",
+        "type": "Thrown Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "rpg",
         "name": "RPG",
-        "type": "Heavy",
+        "type": "Heavy Weapons",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
         "damage_tier": "Lethal",
         "ammo": "5 rockets",
-        "price": null,
-        "unlock": "Little Jacob",
-        "verified": true
+        "unlock": "Little Jacob"
       },
       {
-        "id": "grenades",
-        "name": "Grenades",
-        "type": "Thrown",
-        "damage_tier": "High",
-        "ammo": "25",
-        "price": null,
-        "unlock": "Little Jacob",
-        "verified": true
+        "id": "smg",
+        "name": "SMG",
+        "type": "Submachine Guns",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "molotov",
-        "name": "Molotov Cocktail",
-        "type": "Thrown",
-        "damage_tier": "High",
-        "ammo": "25",
-        "price": null,
-        "unlock": "Street pickups",
-        "verified": true
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Sniper Rifles",
+        "verified": true,
+        "source": "GTA Wiki weapon list (names and weapon class)",
+        "damage_tier": "Very high",
+        "ammo": "5 rounds",
+        "unlock": "Little Jacob"
       }
     ]
   },
