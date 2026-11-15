@@ -1315,241 +1315,913 @@
     ]
   },
   "vehicles": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
+      {
+        "id": "9f",
+        "name": "9F",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "9f-cabrio",
+        "name": "9F Cabrio",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
       {
         "id": "adder",
         "name": "Adder",
-        "category": "Car",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Super",
         "top_speed_kph": 400,
-        "seats": 2,
-        "verified": true
+        "seats": 2
       },
       {
-        "id": "entity-xf",
-        "name": "Entity XF",
-        "category": "Car",
-        "class": "Super",
-        "top_speed_kph": 390,
-        "seats": 2,
-        "verified": true
+        "id": "airport-bus",
+        "name": "Airport Bus",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "z-type",
-        "name": "Z-Type",
-        "category": "Car",
-        "class": "Sports classic",
-        "top_speed_kph": 300,
-        "seats": 2,
-        "verified": true
+        "id": "airtug",
+        "name": "Airtug",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "cheetah",
-        "name": "Cheetah",
-        "category": "Car",
-        "class": "Super",
-        "top_speed_kph": 380,
-        "seats": 2,
-        "verified": true
+        "id": "akuma",
+        "name": "Akuma",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "infernus",
-        "name": "Infernus",
-        "category": "Car",
-        "class": "Super",
-        "top_speed_kph": 370,
-        "seats": 2,
-        "verified": true
+        "id": "alpha",
+        "name": "Alpha",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "turismo-r",
-        "name": "Turismo R",
-        "category": "Car",
-        "class": "Super",
-        "top_speed_kph": 380,
-        "seats": 2,
-        "verified": true
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Medical",
+        "top_speed_kph": 165,
+        "seats": 2
+      },
+      {
+        "id": "army-trailer",
+        "name": "Army Trailer",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "asea",
+        "name": "Asea",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "asea-snowed",
+        "name": "Asea (snowed)",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "asterope",
+        "name": "Asterope",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "atomic-blimp",
+        "name": "Atomic Blimp",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bagger",
+        "name": "Bagger",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "baller",
+        "name": "Baller",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "banshee",
         "name": "Banshee",
-        "category": "Car",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Sports",
         "top_speed_kph": 330,
-        "seats": 2,
-        "verified": true
+        "seats": 2
       },
       {
-        "id": "comet",
-        "name": "Comet",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 320,
-        "seats": 2,
-        "verified": true
+        "id": "barracks",
+        "name": "Barracks",
+        "category": "Military",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "elegy-rh8",
-        "name": "Elegy RH8",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 330,
-        "seats": 2,
-        "verified": true
+        "id": "barracks-semi",
+        "name": "Barracks Semi",
+        "category": "Military",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "sultan",
-        "name": "Sultan",
-        "category": "Car",
-        "class": "Sports sedan",
-        "top_speed_kph": 300,
-        "seats": 4,
-        "verified": true
+        "id": "bati-801",
+        "name": "Bati 801",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "buffalo",
-        "name": "Buffalo",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": 300,
-        "seats": 2,
-        "verified": true
+        "id": "bati-801rr",
+        "name": "Bati 801RR",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "dominator",
-        "name": "Dominator",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": 310,
-        "seats": 2,
-        "verified": true
+        "id": "beejay-xl",
+        "name": "BeeJay XL",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "gauntlet",
-        "name": "Gauntlet",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": 305,
-        "seats": 2,
-        "verified": true
+        "id": "benson",
+        "name": "Benson",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "phoenix",
-        "name": "Phoenix",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": 300,
-        "seats": 2,
-        "verified": true
+        "id": "besra",
+        "name": "Besra",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "sabre-turbo",
-        "name": "Sabre Turbo",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": 305,
-        "seats": 2,
-        "verified": true
+        "id": "biff",
+        "name": "Biff",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "sentinel",
-        "name": "Sentinel",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 280,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "tailgater",
-        "name": "Tailgater",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 280,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "schafter",
-        "name": "Schafter",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 285,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "carbonizzare",
-        "name": "Carbonizzare",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 330,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "sultan-rs",
-        "name": "Sultan RS",
-        "category": "Car",
-        "class": "Super",
-        "top_speed_kph": 360,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "sandking-xl",
-        "name": "Sandking XL",
-        "category": "Car",
-        "class": "Off-road",
-        "top_speed_kph": 250,
-        "seats": 4,
-        "verified": true
+        "id": "bifta",
+        "name": "Bifta",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "bison",
         "name": "Bison",
-        "category": "Car",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Pickup",
         "top_speed_kph": 260,
-        "seats": 4,
-        "verified": true
+        "seats": 4
       },
       {
-        "id": "insurgent",
-        "name": "Insurgent",
-        "category": "Car",
-        "class": "Armored",
-        "top_speed_kph": 260,
-        "seats": 4,
-        "verified": true
+        "id": "blade",
+        "name": "Blade",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "rhino",
-        "name": "Rhino",
-        "category": "Military",
-        "class": "Tank",
-        "top_speed_kph": 60,
-        "seats": 1,
-        "verified": true
+        "id": "blazer",
+        "name": "Blazer",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "blazer-lifeguard",
+        "name": "Blazer Lifeguard",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "blista",
+        "name": "Blista",
+        "category": "Compacts",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "blista-compact",
+        "name": "Blista Compact",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bmx",
+        "name": "BMX",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "boat-trailer",
+        "name": "Boat Trailer",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bobcat-xl",
+        "name": "Bobcat XL",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bodhi",
+        "name": "Bodhi",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "boxville",
+        "name": "Boxville",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "brawler",
+        "name": "Brawler",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "buccaneer",
+        "name": "Buccaneer",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "buffalo",
+        "name": "Buffalo",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "top_speed_kph": 300,
+        "seats": 2
+      },
+      {
+        "id": "buffalo-s",
+        "name": "Buffalo S",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bugstars-burrito",
+        "name": "Bugstars Burrito",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bullet",
+        "name": "Bullet",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "burger-shot-stallion",
+        "name": "Burger Shot Stallion",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "burrito",
+        "name": "Burrito",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bus",
+        "name": "Bus",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "buzzard",
         "name": "Buzzard",
-        "category": "Aircraft",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Attack helicopter",
         "top_speed_kph": 250,
-        "seats": 4,
-        "verified": true
+        "seats": 4
       },
       {
-        "id": "savage",
-        "name": "Savage",
-        "category": "Aircraft",
-        "class": "Attack helicopter",
-        "top_speed_kph": 250,
-        "seats": 4,
-        "verified": true
+        "id": "buzzard-attack-chopper",
+        "name": "Buzzard Attack Chopper",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cable-car",
+        "name": "Cable Car",
+        "category": "Trains",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "caddy",
+        "name": "Caddy",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "camper",
+        "name": "Camper",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "carbon-rs",
+        "name": "Carbon RS",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "carbonizzare",
+        "name": "Carbonizzare",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
+        "top_speed_kph": 330,
+        "seats": 2
+      },
+      {
+        "id": "cargo-plane",
+        "name": "Cargo Plane",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cargobob",
+        "name": "Cargobob",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Transport helicopter",
+        "top_speed_kph": 220,
+        "seats": 4
+      },
+      {
+        "id": "cavalcade",
+        "name": "Cavalcade",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Super",
+        "top_speed_kph": 380,
+        "seats": 2
+      },
+      {
+        "id": "chino",
+        "name": "Chino",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "clown-van",
+        "name": "Clown Van",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cognoscenti-cabrio",
+        "name": "Cognoscenti Cabrio",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "comet",
+        "name": "Comet",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
+        "top_speed_kph": 320,
+        "seats": 2
+      },
+      {
+        "id": "coquette",
+        "name": "Coquette",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "coquette-blackfin",
+        "name": "Coquette BlackFin",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "coquette-classic",
+        "name": "Coquette Classic",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cruiser",
+        "name": "Cruiser",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "crusader",
+        "name": "Crusader",
+        "category": "Military",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cuban-800",
+        "name": "Cuban 800",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "cutter",
+        "name": "Cutter",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "daemon",
+        "name": "Daemon",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dashound",
+        "name": "Dashound",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dilettante",
+        "name": "Dilettante",
+        "category": "Compacts",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dinghy",
+        "name": "Dinghy",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dock-handler",
+        "name": "Dock Handler",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dock-trailer",
+        "name": "Dock Trailer",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "docktug",
+        "name": "Docktug",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dodo",
+        "name": "Dodo",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dominator",
+        "name": "Dominator",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "top_speed_kph": 310,
+        "seats": 2
+      },
+      {
+        "id": "double-t",
+        "name": "Double T",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dozer",
+        "name": "Dozer",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dubsta",
+        "name": "Dubsta",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dubsta-6x6",
+        "name": "Dubsta 6x6",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "duke-odeath",
+        "name": "Duke O'Death",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dukes",
+        "name": "Dukes",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dump",
+        "name": "Dump",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "dune-buggy",
+        "name": "Dune Buggy",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "duneloader",
+        "name": "Duneloader",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "duster",
+        "name": "Duster",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "elegy-rh8",
+        "name": "Elegy RH8",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
+        "top_speed_kph": 330,
+        "seats": 2
+      },
+      {
+        "id": "emperor",
+        "name": "Emperor",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "endurex-race-bike",
+        "name": "Endurex Race Bike",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "entity-xf",
+        "name": "Entity XF",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Super",
+        "top_speed_kph": 390,
+        "seats": 2
+      },
+      {
+        "id": "exemplar",
+        "name": "Exemplar",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "f620",
+        "name": "F620",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "faggio",
+        "name": "Faggio",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "felon",
+        "name": "Felon",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "felon-gt",
+        "name": "Felon GT",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "feltzer",
+        "name": "Feltzer",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fib",
+        "name": "FIB",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fieldmaster",
+        "name": "Fieldmaster",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Fire",
+        "top_speed_kph": 150,
+        "seats": 2
+      },
+      {
+        "id": "fixter",
+        "name": "Fixter",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "flatbed",
+        "name": "Flatbed",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "forklift",
+        "name": "Forklift",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fq-2",
+        "name": "FQ 2",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "freight-trailer",
+        "name": "Freight Trailer",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "freight-train",
+        "name": "Freight Train",
+        "category": "Trains",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "frogger",
+        "name": "Frogger",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fugitive",
+        "name": "Fugitive",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "furore-gt",
+        "name": "Furore GT",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fusilade",
+        "name": "Fusilade",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "futo",
+        "name": "Futo",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "gang-burrito",
+        "name": "Gang Burrito",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "gauntlet",
+        "name": "Gauntlet",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "top_speed_kph": 305,
+        "seats": 2
+      },
+      {
+        "id": "glendale",
+        "name": "Glendale",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "go-go-monkey-blista",
+        "name": "Go Go Monkey Blista",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "granger",
+        "name": "Granger",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "gresley",
+        "name": "Gresley",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "habanero",
+        "name": "Habanero",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hakuchou",
+        "name": "Hakuchou",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hauler",
+        "name": "Hauler",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hexer",
+        "name": "Hexer",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hot-rod-blazer",
+        "name": "Hot Rod Blazer",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hotknife",
+        "name": "Hotknife",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "huntley-s",
+        "name": "Huntley S",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "hydra",
@@ -1561,6 +2233,298 @@
         "verified": true
       },
       {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Super",
+        "top_speed_kph": 370,
+        "seats": 2
+      },
+      {
+        "id": "ingot",
+        "name": "Ingot",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "injection",
+        "name": "Injection",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "innovation",
+        "name": "Innovation",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "insurgent",
+        "name": "Insurgent",
+        "category": "Car",
+        "class": "Armored",
+        "top_speed_kph": 260,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "intruder",
+        "name": "Intruder",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "issi",
+        "name": "Issi",
+        "category": "Compacts",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jackal",
+        "name": "Jackal",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jb-700",
+        "name": "JB 700",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jester",
+        "name": "Jester",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jester-racecar",
+        "name": "Jester (Racecar)",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jet",
+        "name": "Jet",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jetmax",
+        "name": "Jetmax",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "journey",
+        "name": "Journey",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "kalahari",
+        "name": "Kalahari",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "kraken",
+        "name": "Kraken",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "landstalker",
+        "name": "Landstalker",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "lawn-mower",
+        "name": "Lawn Mower",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "liberator",
+        "name": "Liberator",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "lifeguard",
+        "name": "Lifeguard",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "luxor",
+        "name": "Luxor",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "luxor-deluxe",
+        "name": "Luxor Deluxe",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mallard",
+        "name": "Mallard",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mammatus",
+        "name": "Mammatus",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "manana",
+        "name": "Manana",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "marquis",
+        "name": "Marquis",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "marshall",
+        "name": "Marshall",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "massacro",
+        "name": "Massacro",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "massacro-racecar",
+        "name": "Massacro (Racecar)",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "maverick",
+        "name": "Maverick",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mesa",
+        "name": "Mesa",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "metrotrain",
+        "name": "Metrotrain",
+        "category": "Trains",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "miljet",
+        "name": "Miljet",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "minivan",
+        "name": "Minivan",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mixer",
+        "name": "Mixer",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "monroe",
+        "name": "Monroe",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mule",
+        "name": "Mule",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "nemesis",
+        "name": "Nemesis",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "oracle",
+        "name": "Oracle",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "oracle-xs",
+        "name": "Oracle XS",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "osiris",
+        "name": "Osiris",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
         "id": "lazer",
         "name": "P-996 Lazer",
         "category": "Aircraft",
@@ -1570,67 +2534,973 @@
         "verified": true
       },
       {
-        "id": "titan",
-        "name": "Titan",
-        "category": "Aircraft",
-        "class": "Cargo plane",
-        "top_speed_kph": 400,
-        "seats": 4,
-        "verified": true
+        "id": "p-996-lazer",
+        "name": "P-996 LAZER",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "cargobob",
-        "name": "Cargobob",
-        "category": "Aircraft",
-        "class": "Transport helicopter",
-        "top_speed_kph": 220,
-        "seats": 4,
-        "verified": true
+        "id": "packer",
+        "name": "Packer",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "seashark",
-        "name": "Seashark",
-        "category": "Boat",
-        "class": "Jet ski",
-        "top_speed_kph": 110,
-        "seats": 2,
-        "verified": true
+        "id": "panto",
+        "name": "Panto",
+        "category": "Compacts",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "speeder",
-        "name": "Speeder",
-        "category": "Boat",
-        "class": "Speedboat",
-        "top_speed_kph": 140,
-        "seats": 2,
-        "verified": true
+        "id": "paradise",
+        "name": "Paradise",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "park-ranger",
+        "name": "Park Ranger",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "patriot",
+        "name": "Patriot",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "pcj-600",
+        "name": "PCJ 600",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "penumbra",
+        "name": "Penumbra",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "peyote",
+        "name": "Peyote",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "phantom",
+        "name": "Phantom",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "phoenix",
+        "name": "Phoenix",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "top_speed_kph": 300,
+        "seats": 2
+      },
+      {
+        "id": "picador",
+        "name": "Picador",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "pigalle",
+        "name": "Pigalle",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "pi-wasser-dominator",
+        "name": "Pißwasser Dominator",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-bike",
+        "name": "Police Bike",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "police-cruiser",
         "name": "Police Cruiser",
         "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Police",
         "top_speed_kph": 290,
+        "seats": 4
+      },
+      {
+        "id": "police-maverick",
+        "name": "Police Maverick",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-predator",
+        "name": "Police Predator",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-rancher",
+        "name": "Police Rancher",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-riot",
+        "name": "Police Riot",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-roadcruiser",
+        "name": "Police Roadcruiser",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-transporter",
+        "name": "Police Transporter",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "pony",
+        "name": "Pony",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "pounder",
+        "name": "Pounder",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "prairie",
+        "name": "Prairie",
+        "category": "Compacts",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "premier",
+        "name": "Premier",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "primo",
+        "name": "Primo",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "prison-bus",
+        "name": "Prison Bus",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "prop-trailer",
+        "name": "Prop Trailer",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "radius",
+        "name": "Radius",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rancher-xl",
+        "name": "Rancher XL",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rapid-gt",
+        "name": "Rapid GT",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rat-loader",
+        "name": "Rat-Loader",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rat-truck",
+        "name": "Rat-Truck",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rebel",
+        "name": "Rebel",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "redwood-gauntlet",
+        "name": "Redwood Gauntlet",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "regina",
+        "name": "Regina",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rental-shuttle-bus",
+        "name": "Rental Shuttle Bus",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rhapsody",
+        "name": "Rhapsody",
+        "category": "Compacts",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": 60,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "rhino-tank",
+        "name": "Rhino Tank",
+        "category": "Military",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ripley",
+        "name": "Ripley",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rocoto",
+        "name": "Rocoto",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "romero-hearse",
+        "name": "Romero Hearse",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "roosevelt",
+        "name": "Roosevelt",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rubble",
+        "name": "Rubble",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ruffian",
+        "name": "Ruffian",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ruiner",
+        "name": "Ruiner",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rumpo",
+        "name": "Rumpo",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "rusty-rebel",
+        "name": "Rusty Rebel",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sabre-turbo",
+        "name": "Sabre Turbo",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "top_speed_kph": 305,
+        "seats": 2
+      },
+      {
+        "id": "sadler",
+        "name": "Sadler",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sadler-snowed",
+        "name": "Sadler (snowed)",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sanchez",
+        "name": "Sanchez",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sandking-swb",
+        "name": "Sandking SWB",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sandking-xl",
+        "name": "Sandking XL",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Off-road",
+        "top_speed_kph": 250,
+        "seats": 4
+      },
+      {
+        "id": "savage",
+        "name": "Savage",
+        "category": "Aircraft",
+        "class": "Attack helicopter",
+        "top_speed_kph": 250,
         "seats": 4,
         "verified": true
       },
       {
-        "id": "fire-truck",
-        "name": "Fire Truck",
+        "id": "schafter",
+        "name": "Schafter",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 285,
+        "seats": 4
+      },
+      {
+        "id": "schwartzer",
+        "name": "Schwartzer",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "scorcher",
+        "name": "Scorcher",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "scrap-truck",
+        "name": "Scrap Truck",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "seashark",
+        "name": "Seashark",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Jet ski",
+        "top_speed_kph": 110,
+        "seats": 2
+      },
+      {
+        "id": "seminole",
+        "name": "Seminole",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 280,
+        "seats": 4
+      },
+      {
+        "id": "sentinel-xs",
+        "name": "Sentinel XS",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "serrano",
+        "name": "Serrano",
+        "category": "SUVs",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "shamal",
+        "name": "Shamal",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sheriff-cruiser",
+        "name": "Sheriff Cruiser",
         "category": "Emergency",
-        "class": "Fire",
-        "top_speed_kph": 150,
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sheriff-suv",
+        "name": "Sheriff SUV",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "skylift",
+        "name": "Skylift",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "slamvan",
+        "name": "Slamvan",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sovereign",
+        "name": "Sovereign",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "space-docker",
+        "name": "Space Docker",
+        "category": "Off-Road",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "speeder",
+        "name": "Speeder",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Speedboat",
+        "top_speed_kph": 140,
+        "seats": 2
+      },
+      {
+        "id": "speedo",
+        "name": "Speedo",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sprunk-buffalo",
+        "name": "Sprunk Buffalo",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "squalo",
+        "name": "Squalo",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stallion",
+        "name": "Stallion",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stanier",
+        "name": "Stanier",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stinger",
+        "name": "Stinger",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stirling-gt",
+        "name": "Stirling GT",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stockade",
+        "name": "Stockade",
+        "category": "Commercial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stratum",
+        "name": "Stratum",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stretch",
+        "name": "Stretch",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "submersible",
+        "name": "Submersible",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sultan",
+        "name": "Sultan",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports sedan",
+        "top_speed_kph": 300,
+        "seats": 4
+      },
+      {
+        "id": "sultan-rs",
+        "name": "Sultan RS",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 360,
         "seats": 2,
         "verified": true
       },
       {
-        "id": "ambulance",
-        "name": "Ambulance",
+        "id": "suntrap",
+        "name": "Suntrap",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "super-diamond",
+        "name": "Super Diamond",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "surano",
+        "name": "Surano",
+        "category": "Sports",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "surfer",
+        "name": "Surfer",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "surge",
+        "name": "Surge",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "swift",
+        "name": "Swift",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "swift-deluxe",
+        "name": "Swift Deluxe",
+        "category": "Helicopters",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "t20",
+        "name": "T20",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "taco-van",
+        "name": "Taco Van",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tailgater",
+        "name": "Tailgater",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 280,
+        "seats": 4
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "thrust",
+        "name": "Thrust",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tipper",
+        "name": "Tipper",
+        "category": "Industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "titan",
+        "name": "Titan",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Cargo plane",
+        "top_speed_kph": 400,
+        "seats": 4
+      },
+      {
+        "id": "tornado",
+        "name": "Tornado",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "toro",
+        "name": "Toro",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tour-bus",
+        "name": "Tour Bus",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tow-truck",
+        "name": "Tow Truck",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tractor",
+        "name": "Tractor",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "trailer",
+        "name": "Trailer",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "trashmaster",
+        "name": "Trashmaster",
+        "category": "Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tri-cycles-race-bike",
+        "name": "Tri-Cycles Race Bike",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tropic",
+        "name": "Tropic",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "turismo-r",
+        "name": "Turismo R",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Super",
+        "top_speed_kph": 380,
+        "seats": 2
+      },
+      {
+        "id": "unmarked-cruiser",
+        "name": "Unmarked Cruiser",
         "category": "Emergency",
-        "class": "Medical",
-        "top_speed_kph": 165,
-        "seats": 2,
-        "verified": true
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "utility-truck",
+        "name": "Utility Truck",
+        "category": "Utility",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "vacca",
+        "name": "Vacca",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "vader",
+        "name": "Vader",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "velum",
+        "name": "Velum",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "vestra",
+        "name": "Vestra",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "vigero",
+        "name": "Vigero",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "vindicator",
+        "name": "Vindicator",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "virgo",
+        "name": "Virgo",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "voltic",
+        "name": "Voltic",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "voodoo",
+        "name": "Voodoo",
+        "category": "Muscle",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "warrener",
+        "name": "Warrener",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "washington",
+        "name": "Washington",
+        "category": "Sedans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "whippet-race-bike",
+        "name": "Whippet Race Bike",
+        "category": "Cycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "windsor",
+        "name": "Windsor",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "xero-blimp",
+        "name": "Xero Blimp",
+        "category": "Planes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "youga",
+        "name": "Youga",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "z-type",
+        "name": "Z-Type",
+        "category": "Sports Classics",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports classic",
+        "top_speed_kph": 300,
+        "seats": 2
+      },
+      {
+        "id": "zentorno",
+        "name": "Zentorno",
+        "category": "Super",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "zion",
+        "name": "Zion",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "zion-cabrio",
+        "name": "Zion Cabrio",
+        "category": "Coupes",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       }
     ]
   },

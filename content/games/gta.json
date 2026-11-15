@@ -1263,8 +1263,31 @@
     ]
   },
   "vehicles": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
+      {
+        "id": "29-special",
+        "name": "29 Special",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "4-x-4",
+        "name": "4 x 4",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Medical",
+        "seats": 2
+      },
       {
         "id": "banshee",
         "name": "Banshee",
@@ -1273,6 +1296,64 @@
         "top_speed_kph": null,
         "seats": 2,
         "verified": true
+      },
+      {
+        "id": "beast-gts",
+        "name": "Beast GTS",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bike",
+        "name": "Bike",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "boat",
+        "name": "Boat",
+        "category": "Miscellaneous",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "brigham",
+        "name": "Brigham",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bug",
+        "name": "Bug",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bulldog",
+        "name": "Bulldog",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bus",
+        "name": "Bus",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Bus",
+        "seats": 4
+      },
+      {
+        "id": "challenger",
+        "name": "Challenger",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "cheetah",
@@ -1284,31 +1365,181 @@
         "verified": true
       },
       {
-        "id": "stallion",
-        "name": "Stallion",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": null,
-        "seats": 2,
-        "verified": true
+        "id": "classic",
+        "name": "Classic",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "taxi",
-        "name": "Taxi",
-        "category": "Car",
-        "class": "Taxi",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
+        "id": "coach",
+        "name": "Coach",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "bus",
-        "name": "Bus",
-        "category": "Industrial",
-        "class": "Bus",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
+        "id": "cossie",
+        "name": "Cossie",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "counthash",
+        "name": "Counthash",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "f-19",
+        "name": "F-19",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Fire",
+        "seats": 2
+      },
+      {
+        "id": "flamer",
+        "name": "Flamer",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "helicopter",
+        "name": "Helicopter",
+        "category": "Miscellaneous",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hotrod",
+        "name": "Hotrod",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "impaler",
+        "name": "Impaler",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "itali",
+        "name": "Itali",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "itali-gtb",
+        "name": "Itali GTB",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "itali-gto",
+        "name": "Itali GTO",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "juggernaut",
+        "name": "Juggernaut",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jugular",
+        "name": "Jugular",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "lebonham",
+        "name": "LeBonham",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "limousine",
+        "name": "Limousine",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "love-wagon",
+        "name": "Love Wagon",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mamba",
+        "name": "Mamba",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "model-car",
+        "name": "Model Car",
+        "category": "Miscellaneous",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "monster-bug",
+        "name": "Monster Bug",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mundano",
+        "name": "Mundano",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "panther",
+        "name": "Panther",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "penetrator",
+        "name": "Penetrator",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "pickup",
+        "name": "Pickup",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "police-car",
@@ -1320,31 +1551,157 @@
         "verified": true
       },
       {
-        "id": "ambulance",
-        "name": "Ambulance",
-        "category": "Emergency",
-        "class": "Medical",
-        "top_speed_kph": null,
-        "seats": 2,
-        "verified": true
+        "id": "porka",
+        "name": "Porka",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
-        "id": "fire-truck",
-        "name": "Fire Truck",
-        "category": "Emergency",
-        "class": "Fire",
-        "top_speed_kph": null,
-        "seats": 2,
-        "verified": true
+        "id": "porka-turbo",
+        "name": "Porka Turbo",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "portsmouth",
+        "name": "Portsmouth",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "regal",
+        "name": "Regal",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "repair-van",
+        "name": "Repair Van",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "roadster",
+        "name": "Roadster",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "speeder",
+        "name": "Speeder",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "squad-car",
+        "name": "Squad Car",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stallion",
+        "name": "Stallion",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "seats": 2
+      },
+      {
+        "id": "stinger",
+        "name": "Stinger",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "stinger-z29",
+        "name": "Stinger Z29",
+        "category": "Sports, Muscle and Customized Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "superbike",
+        "name": "Superbike",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "tank",
         "name": "Tank",
-        "category": "Military",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Tank",
-        "top_speed_kph": null,
-        "seats": 1,
-        "verified": true
+        "seats": 1
+      },
+      {
+        "id": "tanker",
+        "name": "Tanker",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Taxi",
+        "seats": 4
+      },
+      {
+        "id": "thunderhead",
+        "name": "Thunderhead",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "train",
+        "name": "Train",
+        "category": "Railway",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tram",
+        "name": "Tram",
+        "category": "Railway",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "transit-van",
+        "name": "Transit Van",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tv-van",
+        "name": "TV Van",
+        "category": "SUVs, Trucks, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "vulture",
+        "name": "Vulture",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       }
     ]
   },

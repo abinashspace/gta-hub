@@ -147,25 +147,72 @@
     ]
   },
   "vehicles": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
       {
-        "id": "london-cab",
-        "name": "London Cab",
-        "category": "Car",
-        "class": "Taxi",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Medical",
+        "seats": 2
       },
       {
-        "id": "mini",
-        "name": "Mini",
-        "category": "Car",
-        "class": "Compact",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
+        "id": "beagle-3",
+        "name": "Beagle 3",
+        "category": "4x4s, Lorries, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bentover",
+        "name": "Bentover",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "big-bends",
+        "name": "Big Bends",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bike",
+        "name": "Bike",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "camper",
+        "name": "Camper",
+        "category": "4x4s, Lorries, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "characters",
+        "name": "Characters",
+        "category": "Navigation",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "copper",
+        "name": "Copper",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "double-decker",
+        "name": "Double Decker",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "double-decker-bus",
@@ -177,6 +224,108 @@
         "verified": true
       },
       {
+        "id": "fab",
+        "name": "Fab",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fat",
+        "name": "Fat",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ferocious-250",
+        "name": "Ferocious 250",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ferocious-312",
+        "name": "Ferocious 312",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "garden-shed",
+        "name": "Garden Shed",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jug-d-type",
+        "name": "Jug D Type",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "jug-swinger",
+        "name": "Jug Swinger",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "lewd-lorry",
+        "name": "Lewd Lorry",
+        "category": "4x4s, Lorries, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "london-cab",
+        "name": "London Cab",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Taxi",
+        "seats": 4
+      },
+      {
+        "id": "mcmk2",
+        "name": "MCMK2",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mini",
+        "name": "Mini",
+        "category": "Car",
+        "class": "Compact",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "mod-scooter",
+        "name": "Mod Scooter",
+        "category": "Motorcycles",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "myni",
+        "name": "Myni",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
         "id": "police-car",
         "name": "Police Car",
         "category": "Emergency",
@@ -186,13 +335,116 @@
         "verified": true
       },
       {
-        "id": "ambulance",
-        "name": "Ambulance",
-        "category": "Emergency",
-        "class": "Medical",
-        "top_speed_kph": null,
-        "seats": 2,
-        "verified": true
+        "id": "porka-910",
+        "name": "Porka 910",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "potato-truck",
+        "name": "Potato Truck",
+        "category": "4x4s, Lorries, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "ranger",
+        "name": "Ranger",
+        "category": "4x4s, Lorries, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "raver-2000",
+        "name": "Raver 2000",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "safari",
+        "name": "Safari",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "spider",
+        "name": "Spider",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "squealey",
+        "name": "Squealey",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sweets-van",
+        "name": "Sweets Van",
+        "category": "4x4s, Lorries, and Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tiger-tank",
+        "name": "Tiger Tank",
+        "category": "Government and Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tour-bus",
+        "name": "Tour Bus",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tramp-tr3",
+        "name": "Tramp TR3",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tramp-tr4",
+        "name": "Tramp TR4",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tv-van",
+        "name": "TV Van",
+        "category": "Public Service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "voxel-concept",
+        "name": "Voxel Concept",
+        "category": "Sports Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "wheelchair",
+        "name": "Wheelchair",
+        "category": "Miscellaneous",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "wimp",
+        "name": "Wimp",
+        "category": "Standard Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       }
     ]
   },

@@ -1189,430 +1189,144 @@
     ]
   },
   "vehicles": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
       {
-        "id": "banshee",
-        "name": "Banshee",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 200,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "cheetah",
-        "name": "Cheetah",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 220,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "infernus",
-        "name": "Infernus",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 220,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "stinger",
-        "name": "Stinger",
-        "category": "Car",
-        "class": "Sports",
-        "top_speed_kph": 200,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "stallion",
-        "name": "Stallion",
-        "category": "Car",
-        "class": "Muscle",
-        "top_speed_kph": 190,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "sentinel",
-        "name": "Sentinel",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 175,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "kuruma",
-        "name": "Kuruma",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 170,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "idaho",
-        "name": "Idaho",
-        "category": "Car",
-        "class": "Coupe",
-        "top_speed_kph": 165,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "esperanto",
-        "name": "Esperanto",
-        "category": "Car",
-        "class": "Coupe",
-        "top_speed_kph": 165,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "manana",
-        "name": "Manana",
-        "category": "Car",
-        "class": "Coupe",
-        "top_speed_kph": 160,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "perennial",
-        "name": "Perennial",
-        "category": "Car",
-        "class": "Station wagon",
-        "top_speed_kph": 150,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "bobcat",
-        "name": "Bobcat",
-        "category": "Car",
-        "class": "Pickup",
-        "top_speed_kph": 155,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "landstalker",
-        "name": "Landstalker",
-        "category": "Car",
-        "class": "SUV",
-        "top_speed_kph": 160,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "patriot",
-        "name": "Patriot",
-        "category": "Car",
-        "class": "SUV",
-        "top_speed_kph": 170,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "stretch",
-        "name": "Stretch",
-        "category": "Car",
-        "class": "Limousine",
-        "top_speed_kph": 170,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "taxi",
-        "name": "Taxi",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 170,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "cabbie",
-        "name": "Cabbie",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": 165,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "borgnine",
-        "name": "Borgnine",
-        "category": "Car",
-        "class": "Taxi",
-        "top_speed_kph": 165,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "moonbeam",
-        "name": "Moonbeam",
-        "category": "Car",
-        "class": "Van",
-        "top_speed_kph": 150,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "rumpo",
-        "name": "Rumpo",
-        "category": "Van",
-        "class": "Van",
-        "top_speed_kph": 145,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "pony",
-        "name": "Pony",
-        "category": "Van",
-        "class": "Van",
-        "top_speed_kph": 145,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "mule",
-        "name": "Mule",
-        "category": "Industrial",
-        "class": "Truck",
-        "top_speed_kph": 120,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "yankee",
-        "name": "Yankee",
-        "category": "Industrial",
-        "class": "Truck",
-        "top_speed_kph": 115,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "linerunner",
-        "name": "Linerunner",
-        "category": "Industrial",
-        "class": "Semi",
-        "top_speed_kph": 110,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "flatbed",
-        "name": "Flatbed",
-        "category": "Industrial",
-        "class": "Truck",
-        "top_speed_kph": 110,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "trashmaster",
-        "name": "Trashmaster",
-        "category": "Industrial",
-        "class": "Truck",
-        "top_speed_kph": 100,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "firetruck",
-        "name": "Fire Truck",
-        "category": "Emergency",
-        "class": "Fire",
-        "top_speed_kph": 120,
-        "seats": 2,
-        "verified": true
+        "id": "airtrain",
+        "name": "Airtrain",
+        "category": "Aircraft",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "ambulance",
         "name": "Ambulance",
-        "category": "Emergency",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Medical",
         "top_speed_kph": 140,
-        "seats": 2,
-        "verified": true
+        "seats": 2
       },
       {
-        "id": "police-car",
-        "name": "Police Car",
-        "category": "Emergency",
-        "class": "Police",
-        "top_speed_kph": 180,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "fbi-car",
-        "name": "FBI Car",
-        "category": "Emergency",
-        "class": "Police",
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Sports & supercars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
         "top_speed_kph": 200,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "enforcer",
-        "name": "Enforcer",
-        "category": "Emergency",
-        "class": "Police van",
-        "top_speed_kph": 130,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "rhino",
-        "name": "Rhino",
-        "category": "Military",
-        "class": "Tank",
-        "top_speed_kph": 60,
-        "seats": 1,
-        "verified": true
+        "seats": 2
       },
       {
         "id": "barracks-ol",
         "name": "Barracks OL",
-        "category": "Military",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Truck",
         "top_speed_kph": 90,
-        "seats": 2,
-        "verified": true
+        "seats": 2
       },
       {
         "id": "bf-injection",
         "name": "BF Injection",
-        "category": "Car",
+        "category": "Miscellaneous",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Buggy",
         "top_speed_kph": 175,
-        "seats": 2,
-        "verified": true
+        "seats": 2
       },
       {
-        "id": "diablo-stallion",
-        "name": "Diablo Stallion",
-        "category": "Car",
-        "class": "Gang",
-        "top_speed_kph": 195,
-        "seats": 2,
-        "verified": true
+        "id": "bobcat",
+        "name": "Bobcat",
+        "category": "SUVs and offroad",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Pickup",
+        "top_speed_kph": 155,
+        "seats": 2
       },
       {
-        "id": "yardie-lobo",
-        "name": "Yardie Lobo",
-        "category": "Car",
-        "class": "Gang",
-        "top_speed_kph": 185,
-        "seats": 4,
-        "verified": true
+        "id": "borgnine",
+        "name": "Borgnine",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Taxi",
+        "top_speed_kph": 165,
+        "seats": 4
+      },
+      {
+        "id": "bus",
+        "name": "Bus",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Bus",
+        "top_speed_kph": 110,
+        "seats": 4
+      },
+      {
+        "id": "cabbie",
+        "name": "Cabbie",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 165,
+        "seats": 4
       },
       {
         "id": "cartel-cruiser",
         "name": "Cartel Cruiser",
-        "category": "Car",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Gang",
         "top_speed_kph": 190,
-        "seats": 4,
-        "verified": true
+        "seats": 4
       },
       {
-        "id": "hoods-rumpo-xl",
-        "name": "Hoods Rumpo XL",
-        "category": "Van",
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Sports & supercars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
+        "top_speed_kph": 220,
+        "seats": 2
+      },
+      {
+        "id": "coach",
+        "name": "Coach",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Bus",
+        "top_speed_kph": 120,
+        "seats": 4
+      },
+      {
+        "id": "diablo-stallion",
+        "name": "Diablo Stallion",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Gang",
-        "top_speed_kph": 150,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "predator",
-        "name": "Predator",
-        "category": "Boat",
-        "class": "Police boat",
-        "top_speed_kph": 90,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "reefer",
-        "name": "Reefer",
-        "category": "Boat",
-        "class": "Boat",
-        "top_speed_kph": 60,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "speeder",
-        "name": "Speeder",
-        "category": "Boat",
-        "class": "Speedboat",
-        "top_speed_kph": 100,
-        "seats": 2,
-        "verified": true
+        "top_speed_kph": 195,
+        "seats": 2
       },
       {
         "id": "dodo",
         "name": "Dodo",
         "category": "Aircraft",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Plane",
         "top_speed_kph": 180,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "maverick",
-        "name": "Maverick",
-        "category": "Aircraft",
-        "class": "Helicopter",
-        "top_speed_kph": 200,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "police-maverick",
-        "name": "Police Maverick",
-        "category": "Aircraft",
-        "class": "Helicopter",
-        "top_speed_kph": 200,
-        "seats": 3,
-        "verified": true
-      },
-      {
-        "id": "securicar",
-        "name": "Securicar",
-        "category": "Industrial",
-        "class": "Armored van",
-        "top_speed_kph": 110,
-        "seats": 2,
-        "verified": true
-      },
-      {
-        "id": "coach",
-        "name": "Coach",
-        "category": "Industrial",
-        "class": "Bus",
-        "top_speed_kph": 120,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "bus",
-        "name": "Bus",
-        "category": "Industrial",
-        "class": "Bus",
-        "top_speed_kph": 110,
-        "seats": 4,
-        "verified": true
+        "seats": 2
       },
       {
         "id": "dozer",
@@ -1633,6 +1347,189 @@
         "verified": true
       },
       {
+        "id": "enforcer",
+        "name": "Enforcer",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Police van",
+        "top_speed_kph": 130,
+        "seats": 4
+      },
+      {
+        "id": "esperanto",
+        "name": "Esperanto",
+        "category": "2-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Coupe",
+        "top_speed_kph": 165,
+        "seats": 2
+      },
+      {
+        "id": "fbi-car",
+        "name": "Fbi Car",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Police",
+        "top_speed_kph": 200,
+        "seats": 4
+      },
+      {
+        "id": "firetruck",
+        "name": "Firetruck",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Fire",
+        "top_speed_kph": 120,
+        "seats": 2
+      },
+      {
+        "id": "flatbed",
+        "name": "Flatbed",
+        "category": "Commercial & industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Truck",
+        "top_speed_kph": 110,
+        "seats": 2
+      },
+      {
+        "id": "ghost",
+        "name": "Ghost",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "helicopter",
+        "name": "Helicopter",
+        "category": "Aircraft",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hoods-rumpo-xl",
+        "name": "Hoods Rumpo XL",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Gang",
+        "top_speed_kph": 150,
+        "seats": 4
+      },
+      {
+        "id": "idaho",
+        "name": "Idaho",
+        "category": "2-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Coupe",
+        "top_speed_kph": 165,
+        "seats": 2
+      },
+      {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Sports & supercars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
+        "top_speed_kph": 220,
+        "seats": 2
+      },
+      {
+        "id": "kuruma",
+        "name": "Kuruma",
+        "category": "4-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 170,
+        "seats": 4
+      },
+      {
+        "id": "landstalker",
+        "name": "Landstalker",
+        "category": "SUVs and offroad",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "SUV",
+        "top_speed_kph": 160,
+        "seats": 4
+      },
+      {
+        "id": "linerunner",
+        "name": "Linerunner",
+        "category": "Commercial & industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Semi",
+        "top_speed_kph": 110,
+        "seats": 2
+      },
+      {
+        "id": "mafia-sentinel",
+        "name": "Mafia Sentinel",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "manana",
+        "name": "Manana",
+        "category": "2-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Coupe",
+        "top_speed_kph": 160,
+        "seats": 2
+      },
+      {
+        "id": "maverick",
+        "name": "Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "moonbeam",
+        "name": "Moonbeam",
+        "category": "Car",
+        "class": "Van",
+        "top_speed_kph": 150,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "mr-whoopee",
+        "name": "Mr Whoopee",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mr-wongs",
+        "name": "Mr. Wongs",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "mule",
+        "name": "Mule",
+        "category": "Commercial & industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Truck",
+        "top_speed_kph": 120,
+        "seats": 2
+      },
+      {
         "id": "packer",
         "name": "Packer",
         "category": "Industrial",
@@ -1640,6 +1537,243 @@
         "top_speed_kph": 110,
         "seats": 2,
         "verified": true
+      },
+      {
+        "id": "panlantic",
+        "name": "Panlantic",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "patriot",
+        "name": "Patriot",
+        "category": "SUVs and offroad",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "SUV",
+        "top_speed_kph": 170,
+        "seats": 4
+      },
+      {
+        "id": "perennial",
+        "name": "Perennial",
+        "category": "4-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Station wagon",
+        "top_speed_kph": 150,
+        "seats": 4
+      },
+      {
+        "id": "police",
+        "name": "Police",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "police-car",
+        "name": "Police Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "police-maverick",
+        "name": "Police Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 3,
+        "verified": true
+      },
+      {
+        "id": "pony",
+        "name": "Pony",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Van",
+        "top_speed_kph": 145,
+        "seats": 4
+      },
+      {
+        "id": "predator",
+        "name": "Predator",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Police boat",
+        "top_speed_kph": 90,
+        "seats": 2
+      },
+      {
+        "id": "rc-bandit",
+        "name": "RC Bandit",
+        "category": "Miscellaneous",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "reefer",
+        "name": "Reefer",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Boat",
+        "top_speed_kph": 60,
+        "seats": 2
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Emergency, rescue & government",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Tank",
+        "top_speed_kph": 60,
+        "seats": 1
+      },
+      {
+        "id": "rumpo",
+        "name": "Rumpo",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Van",
+        "top_speed_kph": 145,
+        "seats": 4
+      },
+      {
+        "id": "securicar",
+        "name": "Securicar",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Armored van",
+        "top_speed_kph": 110,
+        "seats": 2
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "4-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 175,
+        "seats": 4
+      },
+      {
+        "id": "speeder",
+        "name": "Speeder",
+        "category": "Boats",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Speedboat",
+        "top_speed_kph": 100,
+        "seats": 2
+      },
+      {
+        "id": "stallion",
+        "name": "Stallion",
+        "category": "2-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Muscle",
+        "top_speed_kph": 190,
+        "seats": 2
+      },
+      {
+        "id": "stinger",
+        "name": "Stinger",
+        "category": "Sports & supercars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sports",
+        "top_speed_kph": 200,
+        "seats": 2
+      },
+      {
+        "id": "stretch",
+        "name": "Stretch",
+        "category": "4-door",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Limousine",
+        "top_speed_kph": 170,
+        "seats": 4
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "top_speed_kph": 170,
+        "seats": 4
+      },
+      {
+        "id": "toyz",
+        "name": "TOYZ",
+        "category": "Vans",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "train",
+        "name": "Train",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "trashmaster",
+        "name": "Trashmaster",
+        "category": "Public service",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Truck",
+        "top_speed_kph": 100,
+        "seats": 2
+      },
+      {
+        "id": "triad-fish-van",
+        "name": "Triad Fish Van",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "yakuza-stinger",
+        "name": "Yakuza Stinger",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "yankee",
+        "name": "Yankee",
+        "category": "Commercial & industrial",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Truck",
+        "top_speed_kph": 115,
+        "seats": 2
+      },
+      {
+        "id": "yardie-lobo",
+        "name": "Yardie Lobo",
+        "category": "Gang cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Gang",
+        "top_speed_kph": 185,
+        "seats": 4
       }
     ]
   },

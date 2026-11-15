@@ -588,16 +588,60 @@
     ]
   },
   "vehicles": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Medical",
+        "seats": 2
+      },
       {
         "id": "banshee",
         "name": "Banshee",
-        "category": "Car",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Sports",
-        "top_speed_kph": null,
-        "seats": 2,
-        "verified": true
+        "seats": 2
+      },
+      {
+        "id": "barracks",
+        "name": "Barracks",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "belly",
+        "name": "Belly",
+        "category": "Vans & Trucks",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "bf-injection",
+        "name": "BF Injection",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "borgnine",
+        "name": "Borgnine",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "brit",
+        "name": "Brit",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "cheetah",
@@ -609,13 +653,60 @@
         "verified": true
       },
       {
-        "id": "sentinel",
-        "name": "Sentinel",
-        "category": "Car",
-        "class": "Sedan",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
+        "id": "coach",
+        "name": "Coach",
+        "category": "Vans & Trucks",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "diablo",
+        "name": "Diablo",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "esperanto",
+        "name": "Esperanto",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "f1",
+        "name": "F1",
+        "category": "Misc",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fbi-car",
+        "name": "FBI Car",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "hoods",
+        "name": "Hoods",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "idaho",
+        "name": "Idaho",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "kuruma",
@@ -627,31 +718,27 @@
         "verified": true
       },
       {
-        "id": "taxi",
-        "name": "Taxi",
-        "category": "Car",
-        "class": "Taxi",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
+        "id": "manana",
+        "name": "Manana",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "monster-truck",
+        "name": "Monster Truck",
+        "category": "Vans & Trucks",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       },
       {
         "id": "police-car",
         "name": "Police Car",
         "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
         "class": "Police",
-        "top_speed_kph": null,
-        "seats": 4,
-        "verified": true
-      },
-      {
-        "id": "ambulance",
-        "name": "Ambulance",
-        "category": "Emergency",
-        "class": "Medical",
-        "top_speed_kph": null,
-        "seats": 2,
-        "verified": true
+        "seats": 4
       },
       {
         "id": "rhino",
@@ -661,6 +748,80 @@
         "top_speed_kph": null,
         "seats": 1,
         "verified": false
+      },
+      {
+        "id": "rumpo",
+        "name": "Rumpo",
+        "category": "Vans & Trucks",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Sedan",
+        "seats": 4
+      },
+      {
+        "id": "stretch",
+        "name": "Stretch",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "swat-van",
+        "name": "SWAT Van",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "tank",
+        "name": "Tank",
+        "category": "Emergency",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)",
+        "class": "Taxi",
+        "seats": 4
+      },
+      {
+        "id": "wong",
+        "name": "Wong",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "yakuza",
+        "name": "Yakuza",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "yakuza-asuka",
+        "name": "Yakuza (Asuka)",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
+      },
+      {
+        "id": "yardie",
+        "name": "Yardie",
+        "category": "Gang Cars",
+        "verified": true,
+        "source": "GTA Wiki vehicle list (model names and class grouping)"
       }
     ]
   },
