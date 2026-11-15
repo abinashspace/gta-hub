@@ -5,7 +5,7 @@ seven sections each, every record available as HTML **and** portable JSON. No se
 no build service, no external requests — GitHub Pages serves the whole thing for free.
 
 ```
-17 games · 7 sections · 687 pages · 1,395 tracked images · 0 runtime dependencies
+17 games · 7 sections · 1,201 pages · 3,807 tracked image slots · 0 runtime dependencies
 ```
 
 ## What's here
@@ -22,6 +22,35 @@ no build service, no external requests — GitHub Pages serves the whole thing f
 
 Every record carries `verified` (boolean) and optional `source`. Every section carries a
 `coverage` flag so "partial" never gets mistaken for "complete".
+
+## Current coverage
+
+Records per game and section (— means the game genuinely has none, which is recorded as
+`coverage: empty` rather than left blank):
+
+| Game | Characters | Missions | Vehicles | Weapons | Cheats | Locations | Collectibles |
+|---|---|---|---|---|---|---|---|
+| [Grand Theft Auto 2](../games/gta-2/) | 9 | 4 | 68 | 20 | 33 | 4 | 1 |
+| [Grand Theft Auto Advance](../games/gta-advance/) | 7 | 41 | 31 | 18 | 10 | 4 | 2 |
+| [Grand Theft Auto: Chinatown Wars](../games/gta-chinatown-wars/) | 10 | 58 | 75 | 33 | 20 | 5 | 2 |
+| [Grand Theft Auto III](../games/gta-iii/) | 19 | 68 | 63 | 26 | 23 | 18 | 3 |
+| [GTA IV: The Lost and Damned](../games/gta-iv-the-lost-and-damned/) | 12 | 22 | 143 | 24 | — | 6 | 3 |
+| [Grand Theft Auto IV](../games/gta-iv/) | 26 | 90 | 122 | 23 | 32 | 12 | 4 |
+| [GTA: Liberty City Stories](../games/gta-liberty-city-stories/) | 17 | 71 | 81 | 40 | 43 | 10 | 5 |
+| [GTA: London 1961](../games/gta-london-1961/) | 2 | 9 | 41 | 6 | 1 | 1 | — |
+| [GTA: London 1969](../games/gta-london-1969/) | 3 | 47 | 42 | 6 | 28 | 4 | — |
+| [Grand Theft Auto Online](../games/gta-online/) | 11 | 8 | 8 | 6 | — | 5 | 3 |
+| [Grand Theft Auto: San Andreas](../games/gta-san-andreas/) | 24 | 101 | 171 | 90 | 101 | 22 | 6 |
+| [GTA: The Ballad of Gay Tony](../games/gta-the-ballad-of-gay-tony/) | 12 | 26 | 144 | 27 | — | 7 | 4 |
+| [Grand Theft Auto V](../games/gta-v/) | 24 | 75 | 298 | 62 | 36 | 14 | 6 |
+| [Grand Theft Auto VI](../games/gta-vi/) | 2 | — | — | — | — | 2 | — |
+| [GTA: Vice City Stories](../games/gta-vice-city-stories/) | 15 | 59 | 106 | 42 | 31 | 10 | 5 |
+| [Grand Theft Auto: Vice City](../games/gta-vice-city/) | 24 | 61 | 107 | 59 | 59 | 17 | 4 |
+| [Grand Theft Auto](../games/gta/) | 4 | 100 | 60 | 8 | 35 | 3 | 1 |
+
+GTA VI is deliberately official-information-only: Jason, Lucia, Leonida and Vice City, with
+no invented missions, vehicles, weapons, cheats or collectibles. Its empty sections carry
+`coverage: empty` and a note explaining why.
 
 ## Local development
 

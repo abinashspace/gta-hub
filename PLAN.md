@@ -157,3 +157,31 @@ and the validator — one definition, four consumers.
 
 See `docs/data/index.json` → `coverage`, or the matrix table on the home page.
 Build writes `docs/data/status.json` with per-game, per-section counts and completion flags.
+
+## 9. Progress log
+
+### Done
+
+- Session 0: build engine, schemas, design system, 17 game bundles, CI, GitHub Pages live.
+- Session 1-2: full mission chains sourced from published mission tables:
+  GTA 1 (100), London 1969 (47), London 1961 (9), GTA III (68), Vice City (61),
+  San Andreas (101), Advance (41), LCS (71), VCS (59), GTA IV (90, both endings),
+  TLAD (22), TBoGT (26), GTA V (75, all approaches and endings), Chinatown Wars (58).
+- Session 3: complete cheat tables for 11 games (per-platform button sequences and
+  keyboard/phone codes); TLAD, TBoGT and GTA Online documented as having no cheats.
+- Session 4: full vehicle rosters for 15 games (GTA V 298, San Andreas 171, IV 122,
+  VC 107, VCS 106, LCS 81, Chinatown Wars 75, GTA 2 68, III 63, GTA 1 60, London 42/41).
+- Session 5: full weapon tables for 15 games (San Andreas 90, GTA V 62, VC 59, VCS 42, LCS 40).
+- Session 6: mission-giver characters derived from the mission tables (27 added).
+- Validator: 0 errors, 0 warnings. Linkcheck: 1,202 files, 26,330 internal refs, 0 broken.
+
+### Open
+
+- Real artwork: every one of the 3,807 image slots is a generated placeholder. Official
+  Rockstar art cannot be redistributed from here, so the site ships drop-in slots instead:
+  put a file at `assets/img/<kind>/<game>/<id>.jpg|png|webp|avif` and rebuild.
+- Characters below full cast for every game (main cast plus all mission givers).
+- Weapon damage/ammo/price only where a game tabulates it; the fields are optional and
+  omitted rather than invented.
+- GTA 2 missions are summaries of the three district chains rather than per-mission rows.
+- GTA VI stays official-information-only by design.
