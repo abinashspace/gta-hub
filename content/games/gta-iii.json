@@ -1,214 +1,2128 @@
 {
   "meta": {
-    "sources": ["In-game mission list and pause-menu statistics", "Rockstar Games official GTA III materials"],
+    "sources": [
+      "In-game mission list and pause-menu statistics",
+      "Rockstar Games official GTA III materials"
+    ],
     "notes": "Story mission order follows the in-game sequence. Side missions are listed after the main chain."
   },
   "characters": {
     "coverage": "partial",
     "items": [
-      {"id":"claude","name":"Claude","role":"Protagonist","affiliations":["Independent","Leone Crime Family (associate)","Yakuza (associate)"],"summary":"A silent career criminal shot and left for dead by Catalina, who works his way up through Liberty City's underworld to settle the score.","status":"Alive","first_appearance":"Grand Theft Auto III","verified":true},
-      {"id":"8-ball","name":"8-Ball","role":"Explosives expert, first ally","affiliations":["Liberty City underworld","Leone Crime Family"],"summary":"Frees Claude from the police convoy at the start of the game and runs a bomb shop in Portland.","status":"Alive","first_appearance":"Grand Theft Auto III","verified":true},
-      {"id":"luigi-goterelli","name":"Luigi Goterelli","role":"Strip club owner, Leone capo","affiliations":["Leone Crime Family"],"summary":"Runs Luigi's Sex Club 7 and gives Claude his first paying work in Portland.","status":"Alive","verified":true},
-      {"id":"joey-leone","name":"Joey Leone","role":"Garage owner, Leone capo","affiliations":["Leone Crime Family"],"summary":"Salvatore's son, based at a Portland garage; assigns car-theft and disposal jobs.","status":"Alive","verified":true},
-      {"id":"toni-cipriani","name":"Toni Cipriani","role":"Leone capo","affiliations":["Leone Crime Family"],"summary":"Salvatore's trusted enforcer in Portland. Later the protagonist of Liberty City Stories.","status":"Alive","verified":true},
-      {"id":"salvatore-leone","name":"Salvatore Leone","role":"Don of the Leone family","affiliations":["Leone Crime Family"],"summary":"Aging head of the Leone family who takes Claude on before suspecting him of betrayal.","status":"Alive","verified":true},
-      {"id":"maria-latare","name":"Maria Latore","role":"Salvatore's girlfriend","affiliations":["Leone Crime Family"],"summary":"Salvatore's unpredictable partner, who attaches herself to Claude after leaving the don.","status":"Alive","verified":true},
-      {"id":"asuka-kasen","name":"Asuka Kasen","role":"Yakuza co-leader","affiliations":["Yakuza"],"summary":"Runs the Yakuza's Staunton Island operations and becomes Claude's main employer after Portland.","status":"Deceased","verified":true},
-      {"id":"kenji-kasen","name":"Kenji Kasen","role":"Yakuza co-leader","affiliations":["Yakuza"],"summary":"Asuka's brother, based at a Staunton casino; assigns jobs against the Triads and Cartel.","status":"Deceased","verified":true},
-      {"id":"ray-machowski","name":"Ray Machowski","role":"Corrupt LCPD detective","affiliations":["Liberty City Police Department","Yakuza"],"summary":"A dirty cop selling protection and information, eventually forced to flee the city.","status":"Alive","verified":true},
-      {"id":"donald-love","name":"Donald Love","role":"Media mogul","affiliations":["Love Media"],"summary":"A reclusive businessman whose real-estate ambitions involve the Cartel and the Colombian drug trade.","status":"Alive","verified":true},
-      {"id":"catalina","name":"Catalina","role":"Antagonist, Colombian Cartel","affiliations":["Colombian Cartel"],"summary":"Claude's ex-girlfriend who shoots him at the start and later leads the Cartel.","status":"Deceased","verified":true},
-      {"id":"miguel","name":"Miguel","role":"Cartel lieutenant","affiliations":["Colombian Cartel"],"summary":"Catalina's partner in the Cartel's SPANK drug operation.","status":"Deceased","verified":true},
-      {"id":"phil-cassidy","name":"Phil Cassidy","role":"Gun runner","affiliations":["Liberty City underworld"],"summary":"One-armed arms dealer operating out of a Portland warehouse.","status":"Alive","verified":true},
-      {"id":"el-burro","name":"El Burro","role":"Diablos leader","affiliations":["Diablos"],"summary":"Puerto Rican gang leader in Hepburn Heights who pays in vehicles and cash for chaos.","status":"Alive","verified":true},
-      {"id":"king-courtney","name":"King Courtney","role":"Yardies leader","affiliations":["Yardies"],"summary":"Jamaican gang boss in Staunton who sets Claude up during a later job.","status":"Alive","verified":true},
-      {"id":"d-ice","name":"D-Ice","role":"Red Jacks leader","affiliations":["Red Jacks"],"summary":"Wichita Gardens gang leader whose phone missions target the Purple Nines.","status":"Alive","verified":true},
-      {"id":"marty-chonks","name":"Marty Chonks","role":"Cannibal business owner","affiliations":["Bitch'n' Dog Food"],"summary":"Runs a dog food factory and asks Claude to dispose of people who threaten him.","status":"Deceased","verified":true},
-      {"id":"toni-the-tiger","name":"Toni the Tiger","role":"Triad enforcer","affiliations":["Liberty City Triads"],"summary":"A Triad figure involved in the fish factory and Chinatown disputes.","status":"Alive","verified":false}
+      {
+        "id": "claude",
+        "name": "Claude",
+        "role": "Protagonist",
+        "affiliations": [
+          "Independent",
+          "Leone Crime Family (associate)",
+          "Yakuza (associate)"
+        ],
+        "summary": "A silent career criminal shot and left for dead by Catalina, who works his way up through Liberty City's underworld to settle the score.",
+        "status": "Alive",
+        "first_appearance": "Grand Theft Auto III",
+        "verified": true
+      },
+      {
+        "id": "8-ball",
+        "name": "8-Ball",
+        "role": "Explosives expert, first ally",
+        "affiliations": [
+          "Liberty City underworld",
+          "Leone Crime Family"
+        ],
+        "summary": "Frees Claude from the police convoy at the start of the game and runs a bomb shop in Portland.",
+        "status": "Alive",
+        "first_appearance": "Grand Theft Auto III",
+        "verified": true
+      },
+      {
+        "id": "luigi-goterelli",
+        "name": "Luigi Goterelli",
+        "role": "Strip club owner, Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Runs Luigi's Sex Club 7 and gives Claude his first paying work in Portland.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "joey-leone",
+        "name": "Joey Leone",
+        "role": "Garage owner, Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's son, based at a Portland garage; assigns car-theft and disposal jobs.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "toni-cipriani",
+        "name": "Toni Cipriani",
+        "role": "Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's trusted enforcer in Portland. Later the protagonist of Liberty City Stories.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "salvatore-leone",
+        "name": "Salvatore Leone",
+        "role": "Don of the Leone family",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Aging head of the Leone family who takes Claude on before suspecting him of betrayal.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "maria-latare",
+        "name": "Maria Latore",
+        "role": "Salvatore's girlfriend",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's unpredictable partner, who attaches herself to Claude after leaving the don.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "asuka-kasen",
+        "name": "Asuka Kasen",
+        "role": "Yakuza co-leader",
+        "affiliations": [
+          "Yakuza"
+        ],
+        "summary": "Runs the Yakuza's Staunton Island operations and becomes Claude's main employer after Portland.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "kenji-kasen",
+        "name": "Kenji Kasen",
+        "role": "Yakuza co-leader",
+        "affiliations": [
+          "Yakuza"
+        ],
+        "summary": "Asuka's brother, based at a Staunton casino; assigns jobs against the Triads and Cartel.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "ray-machowski",
+        "name": "Ray Machowski",
+        "role": "Corrupt LCPD detective",
+        "affiliations": [
+          "Liberty City Police Department",
+          "Yakuza"
+        ],
+        "summary": "A dirty cop selling protection and information, eventually forced to flee the city.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "donald-love",
+        "name": "Donald Love",
+        "role": "Media mogul",
+        "affiliations": [
+          "Love Media"
+        ],
+        "summary": "A reclusive businessman whose real-estate ambitions involve the Cartel and the Colombian drug trade.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "catalina",
+        "name": "Catalina",
+        "role": "Antagonist, Colombian Cartel",
+        "affiliations": [
+          "Colombian Cartel"
+        ],
+        "summary": "Claude's ex-girlfriend who shoots him at the start and later leads the Cartel.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "miguel",
+        "name": "Miguel",
+        "role": "Cartel lieutenant",
+        "affiliations": [
+          "Colombian Cartel"
+        ],
+        "summary": "Catalina's partner in the Cartel's SPANK drug operation.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "phil-cassidy",
+        "name": "Phil Cassidy",
+        "role": "Gun runner",
+        "affiliations": [
+          "Liberty City underworld"
+        ],
+        "summary": "One-armed arms dealer operating out of a Portland warehouse.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "el-burro",
+        "name": "El Burro",
+        "role": "Diablos leader",
+        "affiliations": [
+          "Diablos"
+        ],
+        "summary": "Puerto Rican gang leader in Hepburn Heights who pays in vehicles and cash for chaos.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "king-courtney",
+        "name": "King Courtney",
+        "role": "Yardies leader",
+        "affiliations": [
+          "Yardies"
+        ],
+        "summary": "Jamaican gang boss in Staunton who sets Claude up during a later job.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "d-ice",
+        "name": "D-Ice",
+        "role": "Red Jacks leader",
+        "affiliations": [
+          "Red Jacks"
+        ],
+        "summary": "Wichita Gardens gang leader whose phone missions target the Purple Nines.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "marty-chonks",
+        "name": "Marty Chonks",
+        "role": "Cannibal business owner",
+        "affiliations": [
+          "Bitch'n' Dog Food"
+        ],
+        "summary": "Runs a dog food factory and asks Claude to dispose of people who threaten him.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "toni-the-tiger",
+        "name": "Toni the Tiger",
+        "role": "Triad enforcer",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "A Triad figure involved in the fish factory and Chinatown disputes.",
+        "status": "Alive",
+        "verified": false
+      }
     ]
   },
   "missions": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
-      {"id":"give-me-liberty","order":1,"name":"Give Me Liberty","type":"Story","giver":"8-Ball","location":"Portland","reward":{"money":0},"summary":"Opening sequence: escape the police convoy with 8-Ball and reach the Portland hideout.","verified":true},
-      {"id":"luigis-girls","order":2,"name":"Luigi's Girls","type":"Story","giver":"Luigi Goterelli","location":"Luigi's Sex Club 7, Red Light District","reward":{"money":1500},"summary":"Drive Misty to Luigi's club and learn the basics of the Portland job loop.","verified":true},
-      {"id":"dont-spank-ma-bitch-up","order":3,"name":"Don't Spank Ma Bitch Up","type":"Story","giver":"Luigi Goterelli","location":"Portland","reward":{"money":2000},"summary":"Beat up Luigi's abusive client and leave him in the street.","verified":true},
-      {"id":"drive-misty-for-me","order":4,"name":"Drive Misty for Me","type":"Story","giver":"Luigi Goterelli","location":"Red Light District","reward":{"money":3000},"summary":"Chauffeur Misty to a meeting while rivals try to run her off the road.","verified":true},
-      {"id":"pump-action-pimp","order":5,"name":"Pump-Action Pimp","type":"Story","giver":"Luigi Goterelli","location":"Hepburn Heights","reward":{"money":4000},"summary":"Kill a rival pimp and take his girls off the street.","verified":true},
-      {"id":"the-fuzz-ball","order":6,"name":"The Fuzz Ball","type":"Story","giver":"Luigi Goterelli","location":"Portland","reward":{"money":5000},"summary":"Escort two prostitutes past corrupt cops without letting them get arrested.","verified":true},
-      {"id":"mike-lips-last-lunch","order":7,"name":"Mike Lips Last Lunch","type":"Story","giver":"Joey Leone","location":"Saint Mark's","reward":{"money":10000},"summary":"Steal Mike Lips' car, rig it with a bomb and return it before he drives off.","verified":true},
-      {"id":"farewell-chunky-lee-chong","order":8,"name":"Farewell 'Chunky' Lee Chong","type":"Story","giver":"Joey Leone","location":"Chinatown","reward":{"money":10000},"summary":"Break into a Triad fish factory and kill Chunky Lee Chong with a meat cleaver.","verified":true},
-      {"id":"van-heist","order":9,"name":"Van Heist","type":"Story","giver":"Joey Leone","location":"Portland Harbor","reward":{"money":10000},"summary":"Hijack an armored van and deliver it to Joey's garage intact.","verified":true},
-      {"id":"ciprianis-chauffeur","order":10,"name":"Cipriani's Chauffeur","type":"Story","giver":"Joey Leone","location":"Trenton","reward":{"money":10000},"summary":"Drive Toni Cipriani to a sit-down and get him out alive.","verified":true},
-      {"id":"dead-skunk-in-the-trunk","order":11,"name":"Dead Skunk in the Trunk","type":"Story","giver":"Joey Leone","location":"Harwood","reward":{"money":10000},"summary":"Dispose of a Triad body in the back of a car before the police find it.","verified":true},
-      {"id":"the-getaway","order":12,"name":"The Getaway","type":"Story","giver":"Joey Leone","location":"Portland","reward":{"money":20000},"summary":"Drive three robbers away from a botched bank job and lose the cops.","verified":true},
-      {"id":"taking-out-the-laundry","order":13,"name":"Taking Out the Laundry","type":"Story","giver":"Toni Cipriani","location":"Trenton","reward":{"money":20000},"summary":"Destroy three Triad laundry vans without wrecking your own ride.","verified":true},
-      {"id":"the-pickup","order":14,"name":"The Pickup","type":"Story","giver":"Toni Cipriani","location":"Portland Harbor","reward":{"money":20000},"summary":"Collect a protection payment from a Triad laundry and survive the ambush.","verified":true},
-      {"id":"salvatores-called-a-meeting","order":15,"name":"Salvatore's Called a Meeting","type":"Story","giver":"Toni Cipriani","location":"Saint Mark's","reward":{"money":20000},"summary":"Pick up the Leone capos from the airport and bring them to Salvatore's mansion.","verified":true},
-      {"id":"triads-and-tribulations","order":16,"name":"Triads and Tribulations","type":"Story","giver":"Toni Cipriani","location":"Chinatown","reward":{"money":20000},"summary":"Wipe out a Triad meeting in Chinatown.","verified":true},
-      {"id":"blow-fish","order":17,"name":"Blow Fish","type":"Story","giver":"Toni Cipriani","location":"Portland Harbor","reward":{"money":20000},"summary":"Destroy the Triad fish factory using a truck bomb.","verified":true},
-      {"id":"cutting-the-grass","order":18,"name":"Cutting the Grass","type":"Story","giver":"Salvatore Leone","location":"Saint Mark's","reward":{"money":30000},"summary":"Follow a suspected informant and eliminate him without being seen.","verified":true},
-      {"id":"bomb-da-base-act-i","order":19,"name":"Bomb da Base: Act I","type":"Story","giver":"Salvatore Leone","location":"Portland Harbor","reward":{"money":30000},"summary":"Snipe the Cartel guards on the freighter to clear the way for the bombing run.","verified":true},
-      {"id":"bomb-da-base-act-ii","order":20,"name":"Bomb da Base: Act II","type":"Story","giver":"8-Ball","location":"Portland Harbor","reward":{"money":30000},"summary":"Plant eight bombs on the Cartel freighter while under fire.","verified":true},
-      {"id":"last-requests","order":21,"name":"Last Requests","type":"Story","giver":"Salvatore Leone","location":"Saint Mark's","reward":{"money":30000},"summary":"Salvatore turns on Claude; escape the mansion ambush and leave Portland.","verified":true},
-      {"id":"sayonara-salvatore","order":22,"name":"Sayonara Salvatore","type":"Story","giver":"Asuka Kasen","location":"Saint Mark's","reward":{"money":30000},"summary":"Assassinate Salvatore Leone outside his own club.","verified":true},
-      {"id":"under-surveillance","order":23,"name":"Under Surveillance","type":"Story","giver":"Asuka Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Kill the Cartel men watching Asuka's construction site.","verified":true},
-      {"id":"paparazzi-purge","order":24,"name":"Paparazzi Purge","type":"Story","giver":"Asuka Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Take out a photographer who has compromising pictures of Asuka.","verified":true},
-      {"id":"payday-for-ray","order":25,"name":"Payday for Ray","type":"Story","giver":"Asuka Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Collect Ray Machowski's bribe money and shake off the tail he sent.","verified":true},
-      {"id":"two-faced-tanner","order":26,"name":"Two-Faced Tanner","type":"Story","giver":"Asuka Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Kill an undercover cop who is following Ray.","verified":true},
-      {"id":"kanbu-bust-out","order":27,"name":"Kanbu Bust-out","type":"Story","giver":"Kenji Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Break a Yakuza associate out of police custody.","verified":true},
-      {"id":"grand-theft-auto","order":28,"name":"Grand Theft Auto","type":"Story","giver":"Kenji Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Steal three specific cars for Kenji's showroom.","verified":true},
-      {"id":"deal-steal","order":29,"name":"Deal Steal","type":"Story","giver":"Kenji Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Ambush a Cartel drug deal and take the cash.","verified":true},
-      {"id":"shima","order":30,"name":"Shima","type":"Story","giver":"Kenji Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Protect Kenji during a meeting with a Triad boss.","verified":true},
-      {"id":"smack-down","order":31,"name":"Smack Down","type":"Story","giver":"Kenji Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Kill eight SPANK dealers across Staunton before time runs out.","verified":true},
-      {"id":"silence-the-sneak","order":32,"name":"Silence the Sneak","type":"Story","giver":"Kenji Kasen","location":"Staunton Island","reward":{"money":30000},"summary":"Kill a witness before he reaches the courthouse.","verified":true},
-      {"id":"arms-shortage","order":33,"name":"Arms Shortage","type":"Story","giver":"Ray Machowski","location":"Staunton Island","reward":{"money":30000},"summary":"Defend Phil Cassidy's warehouse from a Cartel raid.","verified":true},
-      {"id":"evidence-dash","order":34,"name":"Evidence Dash","type":"Story","giver":"Ray Machowski","location":"Staunton Island","reward":{"money":30000},"summary":"Destroy a police vehicle carrying evidence against Ray.","verified":true},
-      {"id":"gone-fishing","order":35,"name":"Gone Fishing","type":"Story","giver":"Ray Machowski","location":"Staunton Island","reward":{"money":30000},"summary":"Kill a cop who is about to testify, then escape by boat.","verified":true},
-      {"id":"plaster-blaster","order":36,"name":"Plaster Blaster","type":"Story","giver":"Ray Machowski","location":"Staunton Island","reward":{"money":30000},"summary":"Ambush a police convoy and destroy the armored van.","verified":true},
-      {"id":"liberator","order":37,"name":"Liberator","type":"Story","giver":"Ray Machowski","location":"Staunton Island","reward":{"money":30000},"summary":"Rescue an undercover operative from a Cartel stronghold.","verified":true},
-      {"id":"waka-gashira-wipeout","order":38,"name":"Waka-Gashira Wipeout!","type":"Story","giver":"Donald Love","location":"Staunton Island","reward":{"money":30000},"summary":"Kill Kenji Kasen while disguised as a Cartel gunman to start a gang war.","verified":true},
-      {"id":"a-drop-in-the-ocean","order":39,"name":"A Drop in the Ocean","type":"Story","giver":"Donald Love","location":"Staunton Island","reward":{"money":30000},"summary":"Pick up a floating package dropped by plane and deliver it to Love.","verified":true},
-      {"id":"grand-theft-aero","order":40,"name":"Grand Theft Aero","type":"Story","giver":"Donald Love","location":"Francis International Airport","reward":{"money":30000},"summary":"Steal a plane from the airport and deliver it to Love's contact.","verified":true},
-      {"id":"escort-service","order":41,"name":"Escort Service","type":"Story","giver":"Donald Love","location":"Staunton Island","reward":{"money":30000},"summary":"Escort a Securicar full of evidence through Cartel roadblocks.","verified":true},
-      {"id":"decoy","order":42,"name":"Decoy","type":"Story","giver":"Donald Love","location":"Staunton Island","reward":{"money":30000},"summary":"Survive a Cartel assault while a decoy convoy draws them off.","verified":true},
-      {"id":"loves-disappearance","order":43,"name":"Love's Disappearance","type":"Story","giver":"Donald Love","location":"Staunton Island","reward":{"money":30000},"summary":"Find out why Donald Love has vanished from his own building.","verified":true},
-      {"id":"bait","order":44,"name":"Bait","type":"Story","giver":"Asuka Kasen","location":"Shoreside Vale","reward":{"money":30000},"summary":"Use yourself as bait to draw three Cartel kill-squads into the open.","verified":true},
-      {"id":"espresso-2-go","order":45,"name":"Espresso-2-Go!","type":"Story","giver":"Asuka Kasen","location":"Liberty City","reward":{"money":30000},"summary":"Destroy all SPANK stands across the three islands before the Cartel expands.","verified":true},
-      {"id":"s-a-m","order":46,"name":"S.A.M.","type":"Story","giver":"Asuka Kasen","location":"Francis International Airport","reward":{"money":30000},"summary":"Destroy the Cartel seaplane delivering a drug shipment.","verified":true},
-      {"id":"ransom","order":47,"name":"Ransom","type":"Story","giver":"Asuka Kasen","location":"Shoreside Vale","reward":{"money":30000},"summary":"Deliver a ransom and survive the Cartel trap.","verified":true},
-      {"id":"the-exchange","order":48,"name":"The Exchange","type":"Story","giver":"Catalina","location":"Cochrane Dam","reward":{"money":30000},"summary":"Final mission: assault Catalina's Cartel base and rescue Maria.","verified":true},
-      {"id":"turismo","order":49,"name":"Turismo","type":"Vehicle","giver":"El Burro","location":"Portland","reward":{"money":5000},"summary":"Win an illegal street race through Portland.","verified":true},
-      {"id":"i-scream-you-scream","order":50,"name":"I Scream, You Scream","type":"Vehicle","giver":"El Burro","location":"Portland","reward":{"money":5000},"summary":"Use an ice cream van to kill a rival gang member.","verified":true},
-      {"id":"trial-by-fire","order":51,"name":"Trial by Fire","type":"Side","giver":"El Burro","location":"Hepburn Heights","reward":{"money":5000},"summary":"Kill 25 Diablos within a time limit using a flamethrower.","verified":true},
-      {"id":"bling-bling-scramble","order":52,"name":"Bling-Bling Scramble","type":"Side","giver":"King Courtney","location":"Staunton Island","reward":{"money":5000},"summary":"Collect 15 packages in a Yardie gang car within the time limit.","verified":true},
-      {"id":"kingdom-come","order":53,"name":"Kingdom Come","type":"Side","giver":"King Courtney","location":"Staunton Island","reward":{"money":5000},"summary":"Drive a car rigged with a bomb to a Yardie target.","verified":true},
-      {"id":"uzi-rider","order":54,"name":"Uzi Rider","type":"Side","giver":"D-Ice","location":"Wichita Gardens","reward":{"money":5000},"summary":"Kill 20 Purple Nines with an Uzi.","verified":true},
-      {"id":"gangcar-round-up","order":55,"name":"Gangcar Round-up","type":"Vehicle","giver":"D-Ice","location":"Wichita Gardens","reward":{"money":5000},"summary":"Steal three gang cars and deliver them to D-Ice.","verified":true},
-      {"id":"the-crook","order":56,"name":"The Crook","type":"Side","giver":"Marty Chonks","location":"Trenton","reward":{"money":2000},"summary":"Kill a thief who tried to rob Marty's factory.","verified":true},
-      {"id":"the-wife","order":57,"name":"The Wife","type":"Side","giver":"Marty Chonks","location":"Trenton","reward":{"money":2000},"summary":"Dispose of Marty's wife after she discovers his operation.","verified":true}
+      {
+        "id": "introduction",
+        "order": 1,
+        "name": "Introduction",
+        "type": "Story",
+        "giver": "Introduction",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Cutscenes depicting Catalina's betrayal of Claude , and the explosion which leaves Portland isolated from the rest of the city and Claude's escape with 8-Ball .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "give-me-liberty",
+        "order": 2,
+        "name": "Give Me Liberty",
+        "type": "Story",
+        "giver": "Introduction",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Opening sequence: escape the police convoy with 8-Ball and reach the Portland hideout.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "luigis-girls",
+        "order": 3,
+        "name": "Luigi's Girls",
+        "type": "Story",
+        "giver": "Introduction",
+        "location": "Portland",
+        "reward": {
+          "money": 1500,
+          "other": "Portland Safehouse"
+        },
+        "summary": "Drive Misty to Luigi's club and learn the basics of the Portland job loop.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "dont-spank-ma-bitch-up",
+        "order": 4,
+        "name": "Don't Spank Ma Bitch Up",
+        "type": "Story",
+        "giver": "Luigi Goterelli",
+        "location": "Portland",
+        "reward": {
+          "money": 4000
+        },
+        "summary": "Beat up Luigi's abusive client and leave him in the street.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "drive-misty-for-me",
+        "order": 5,
+        "name": "Drive Misty For Me",
+        "type": "Story",
+        "giver": "Luigi Goterelli",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Chauffeur Misty to a meeting while rivals try to run her off the road.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "pump-action-pimp",
+        "order": 6,
+        "name": "Pump-Action Pimp",
+        "type": "Story",
+        "giver": "Luigi Goterelli",
+        "location": "Portland",
+        "reward": {
+          "money": 4000,
+          "other": "Pistol available in Ammu-Nation"
+        },
+        "summary": "Kill a rival pimp and take his girls off the street.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-fuzz-ball",
+        "order": 7,
+        "name": "The Fuzz Ball",
+        "type": "Story",
+        "giver": "Luigi Goterelli",
+        "location": "Portland",
+        "reward": {
+          "money": 2000,
+          "other": "–"
+        },
+        "summary": "Escort two prostitutes past corrupt cops without letting them get arrested.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "mike-lips-last-lunch",
+        "order": 8,
+        "name": "Mike Lips Last Lunch",
+        "type": "Story",
+        "giver": "Joey Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Steal Mike Lips' car, rig it with a bomb and return it before he drives off.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "farewell-chunky-lee-chong",
+        "order": 9,
+        "name": "Farewell 'Chunky' Lee Chong",
+        "type": "Story",
+        "giver": "Joey Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 10000,
+          "other": "Pistol available in Ammu-Nation"
+        },
+        "summary": "Break into a Triad fish factory and kill Chunky Lee Chong with a meat cleaver.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "van-heist",
+        "order": 10,
+        "name": "Van Heist",
+        "type": "Story",
+        "giver": "Joey Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 20000
+        },
+        "summary": "Hijack an armored van and deliver it to Joey's garage intact.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "ciprianis-chauffeur",
+        "order": 11,
+        "name": "Cipriani's Chauffeur",
+        "type": "Story",
+        "giver": "Joey Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 3000,
+          "other": "Uzi available in Ammu-Nation"
+        },
+        "summary": "Drive Toni Cipriani to a sit-down and get him out alive.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "dead-skunk-in-the-trunk",
+        "order": 12,
+        "name": "Dead Skunk In The Trunk",
+        "type": "Story",
+        "giver": "Joey Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Dispose of a Triad body in the back of a car before the police find it.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-getaway",
+        "order": 13,
+        "name": "The Getaway",
+        "type": "Story",
+        "giver": "Joey Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 10000,
+          "other": "–"
+        },
+        "summary": "Drive three robbers away from a botched bank job and lose the cops.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "taking-out-the-laundry",
+        "order": 14,
+        "name": "Taking Out the Laundry",
+        "type": "Story",
+        "giver": "Toni Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 20000
+        },
+        "summary": "Destroy three Triad laundry vans without wrecking your own ride.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-pick-up",
+        "order": 15,
+        "name": "The Pick-Up",
+        "type": "Story",
+        "giver": "Toni Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Pick up a briefcase, waste the Triads and take it to the Cipriani Restaurant .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "salvatores-called-a-meeting",
+        "order": 16,
+        "name": "Salvatore's Called a Meeting",
+        "type": "Story",
+        "giver": "Toni Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 15000
+        },
+        "summary": "Pick up the Leone capos from the airport and bring them to Salvatore's mansion.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "chaperone",
+        "order": 17,
+        "name": "Chaperone",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Drive Maria to Chico and a party in Atlantic Quays before driving her back to Salvatore's mansion .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "triads-and-tribulations",
+        "order": 18,
+        "name": "Triads and Tribulations",
+        "type": "Story",
+        "giver": "Toni Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 30000
+        },
+        "summary": "Wipe out a Triad meeting in Chinatown.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "blow-fish",
+        "order": 19,
+        "name": "Blow Fish",
+        "type": "Story",
+        "giver": "Toni Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 30000
+        },
+        "summary": "Destroy the Triad fish factory using a truck bomb.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "cutting-the-grass",
+        "order": 20,
+        "name": "Cutting the Grass",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 15000
+        },
+        "summary": "Follow a suspected informant and eliminate him without being seen.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bomb-da-base-act-i",
+        "order": 21,
+        "name": "Bomb Da Base: Act I",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Snipe the Cartel guards on the freighter to clear the way for the bombing run.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bomb-da-base-act-ii",
+        "order": 22,
+        "name": "Bomb Da Base: Act II",
+        "type": "Story",
+        "giver": "8-Ball",
+        "location": "Portland",
+        "reward": {
+          "money": 150000
+        },
+        "summary": "Plant eight bombs on the Cartel freighter while under fire.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "last-requests",
+        "order": 23,
+        "name": "Last Requests",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 20000,
+          "other": "access to Staunton Island Staunton Island Safehouse ability to gain five-star wanted level"
+        },
+        "summary": "Salvatore turns on Claude; escape the mansion ambush and leave Portland.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-crook",
+        "order": 24,
+        "name": "The Crook",
+        "type": "Story",
+        "giver": "Marty Chonks",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Kill a thief who tried to rob Marty's factory.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-thieves",
+        "order": 25,
+        "name": "The Thieves",
+        "type": "Story",
+        "giver": "Marty Chonks",
+        "location": "Portland",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Bring two thieves to the food factory and respray Marty's car.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-wife",
+        "order": 26,
+        "name": "The Wife",
+        "type": "Story",
+        "giver": "Marty Chonks",
+        "location": "Portland",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Dispose of Marty's wife after she discovers his operation.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "her-lover",
+        "order": 27,
+        "name": "Her Lover",
+        "type": "Story",
+        "giver": "Marty Chonks",
+        "location": "Portland",
+        "reward": {
+          "money": 4000
+        },
+        "summary": "Bring Carl to the food factory.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "turismo",
+        "order": 28,
+        "name": "Turismo",
+        "type": "Story",
+        "giver": "El Burro",
+        "location": "Portland",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Win an illegal street race through Portland.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "i-scream-you-scream",
+        "order": 29,
+        "name": "I Scream, You Scream",
+        "type": "Story",
+        "giver": "El Burro",
+        "location": "Portland",
+        "reward": {
+          "money": 8000
+        },
+        "summary": "Use an ice cream van to kill a rival gang member.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "trial-by-fire",
+        "order": 30,
+        "name": "Trial By Fire",
+        "type": "Story",
+        "giver": "El Burro",
+        "location": "Portland",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Kill 25 Diablos within a time limit using a flamethrower.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bignveiny",
+        "order": 31,
+        "name": "Big'n'Veiny",
+        "type": "Story",
+        "giver": "El Burro",
+        "location": "Portland",
+        "reward": {
+          "money": 20000
+        },
+        "summary": "Pick up some magazines and take them to XXXMags in Red Light District.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "sayonara-salvatore",
+        "order": 32,
+        "name": "Sayonara Salvatore",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 25000
+        },
+        "summary": "Assassinate Salvatore Leone outside his own club.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "under-surveillance",
+        "order": 33,
+        "name": "Under Surveillance",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 15000
+        },
+        "summary": "Kill the Cartel men watching Asuka's construction site.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "paparazzi-purge",
+        "order": 34,
+        "name": "Paparazzi Purge",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Take out a photographer who has compromising pictures of Asuka.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "payday-for-ray",
+        "order": 35,
+        "name": "Payday For Ray",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 11000
+        },
+        "summary": "Collect Ray Machowski's bribe money and shake off the tail he sent.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "two-faced-tanner",
+        "order": 36,
+        "name": "Two-Faced Tanner",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 20000
+        },
+        "summary": "Kill an undercover cop who is following Ray.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "kanbu-bust-out",
+        "order": 37,
+        "name": "Kanbu Bust-out",
+        "type": "Story",
+        "giver": "Kenji Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 30000
+        },
+        "summary": "Break a Yakuza associate out of police custody.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "grand-theft-auto",
+        "order": 38,
+        "name": "Grand Theft Auto",
+        "type": "Story",
+        "giver": "Kenji Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 25000
+        },
+        "summary": "Steal three specific cars for Kenji's showroom.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "deal-steal",
+        "order": 39,
+        "name": "Deal Steal",
+        "type": "Story",
+        "giver": "Kenji Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 25000
+        },
+        "summary": "Ambush a Cartel drug deal and take the cash.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "shima",
+        "order": 40,
+        "name": "Shima",
+        "type": "Story",
+        "giver": "Kenji Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Protect Kenji during a meeting with a Triad boss.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "smack-down",
+        "order": 41,
+        "name": "Smack Down",
+        "type": "Story",
+        "giver": "Kenji Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000,
+          "other": "- for each dealer killed"
+        },
+        "summary": "Kill eight SPANK dealers across Staunton before time runs out.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "silence-the-sneak",
+        "order": 42,
+        "name": "Silence the Sneak",
+        "type": "Story",
+        "giver": "Ray Machowski",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 30000
+        },
+        "summary": "Kill a witness before he reaches the courthouse.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "arms-shortage",
+        "order": 43,
+        "name": "Arms Shortage",
+        "type": "Story",
+        "giver": "Ray Machowski",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000,
+          "other": "Phil's Army Surplus"
+        },
+        "summary": "Defend Phil Cassidy's warehouse from a Cartel raid.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "evidence-dash",
+        "order": 44,
+        "name": "Evidence Dash",
+        "type": "Story",
+        "giver": "Ray Machowski",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Destroy a police vehicle carrying evidence against Ray.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "gone-fishing",
+        "order": 45,
+        "name": "Gone Fishing",
+        "type": "Story",
+        "giver": "Ray Machowski",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 15000
+        },
+        "summary": "Kill a cop who is about to testify, then escape by boat.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "plaster-blaster",
+        "order": 46,
+        "name": "Plaster Blaster",
+        "type": "Story",
+        "giver": "Ray Machowski",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Ambush a police convoy and destroy the armored van.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "liberator",
+        "order": 47,
+        "name": "Liberator",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 40000
+        },
+        "summary": "Rescue an undercover operative from a Cartel stronghold.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "waka-gashira-wipeout",
+        "order": 48,
+        "name": "Waka-Gashira Wipeout!",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 30000
+        },
+        "summary": "Kill Kenji Kasen while disguised as a Cartel gunman to start a gang war.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "a-drop-in-the-ocean",
+        "order": 49,
+        "name": "A Drop in the Ocean",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000,
+          "other": "access to Shoreside Vale Shoreside Vale Safehouse ability to gain six-star wanted level"
+        },
+        "summary": "Pick up a floating package dropped by plane and deliver it to Love.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "grand-theft-aero",
+        "order": 50,
+        "name": "Grand Theft Aero",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 50000
+        },
+        "summary": "Steal a plane from the airport and deliver it to Love's contact.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "escort-service",
+        "order": 51,
+        "name": "Escort Service",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 40000
+        },
+        "summary": "Escort a Securicar full of evidence through Cartel roadblocks.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "decoy",
+        "order": 52,
+        "name": "Decoy",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 35000
+        },
+        "summary": "Survive a Cartel assault while a decoy convoy draws them off.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "loves-disappearance",
+        "order": 53,
+        "name": "Love's Disappearance",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Find out why Donald Love has vanished from his own building.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "marked-man",
+        "order": 54,
+        "name": "Marked Man",
+        "type": "Story",
+        "giver": "Ray Machowski",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 20000,
+          "other": "bulletproof Patriot Sniper Rifle , M16 , Rocket Launcher and Flamethrower"
+        },
+        "summary": "Take Ray to the airport and then go to his lock-up.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bait",
+        "order": 55,
+        "name": "Bait",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 35000
+        },
+        "summary": "Use yourself as bait to draw three Cartel kill-squads into the open.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "espresso-2-go",
+        "order": 56,
+        "name": "Espresso-2-Go!",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 40000
+        },
+        "summary": "Destroy all SPANK stands across the three islands before the Cartel expands.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "sam",
+        "order": 57,
+        "name": "S.A.M.",
+        "type": "Story",
+        "giver": "Asuka Kasen",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 45000
+        },
+        "summary": "Blow up a Dodo with a rocket launcher and bring the SPANK packages to Asuka.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "ransom",
+        "order": 58,
+        "name": "Ransom",
+        "type": "Story",
+        "giver": "Catalina",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 45000
+        },
+        "summary": "Deliver a ransom and survive the Cartel trap.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bling-bling-scramble",
+        "order": 59,
+        "name": "Bling-bling Scramble",
+        "type": "Story",
+        "giver": "King Courtney",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 15000,
+          "other": "Up to"
+        },
+        "summary": "Collect 15 packages in a Yardie gang car within the time limit.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "uzi-rider",
+        "order": 60,
+        "name": "Uzi Rider",
+        "type": "Story",
+        "giver": "King Courtney",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Kill 20 Purple Nines with an Uzi.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "gangcar-round-up",
+        "order": 61,
+        "name": "Gangcar Round-up",
+        "type": "Story",
+        "giver": "King Courtney",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Steal three gang cars and deliver them to D-Ice.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "kingdom-come",
+        "order": 62,
+        "name": "Kingdom Come",
+        "type": "Story",
+        "giver": "King Courtney",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Drive a car rigged with a bomb to a Yardie target.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "uzi-money",
+        "order": 63,
+        "name": "Uzi Money",
+        "type": "Story",
+        "giver": "D-Ice",
+        "location": "Liberty City",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Drive-by 25 Purple Nines in two minutes.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "toyminator",
+        "order": 64,
+        "name": "Toyminator",
+        "type": "Story",
+        "giver": "D-Ice",
+        "location": "Liberty City",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Destroy three gang cars with an RC Bandit.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "rigged-to-blow",
+        "order": 65,
+        "name": "Rigged to Blow",
+        "type": "Story",
+        "giver": "D-Ice",
+        "location": "Liberty City",
+        "reward": {
+          "money": 20000
+        },
+        "summary": "Bring an armed car to a garage before it explodes.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bullion-run",
+        "order": 66,
+        "name": "Bullion Run",
+        "type": "Story",
+        "giver": "D-Ice",
+        "location": "Liberty City",
+        "reward": {
+          "money": 25000
+        },
+        "summary": "Pick up as many pieces of bullion as possible and take them to a garage.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "rumble",
+        "order": 67,
+        "name": "Rumble",
+        "type": "Story",
+        "giver": "D-Ice",
+        "location": "Liberty City",
+        "reward": {
+          "money": 10000
+        },
+        "summary": "Kill all remaining Purple Nines in a final battle using only baseball bats.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-exchange",
+        "order": 68,
+        "name": "The Exchange",
+        "type": "Story",
+        "giver": "Catalina",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1000000,
+          "other": "Rhino at Phil's Army Surplus"
+        },
+        "summary": "Final mission: assault Catalina's Cartel base and rescue Maria.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      }
     ]
   },
   "vehicles": {
     "coverage": "partial",
     "items": [
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":200,"seats":2,"verified":true},
-      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":220,"seats":2,"verified":true},
-      {"id":"infernus","name":"Infernus","category":"Car","class":"Sports","top_speed_kph":220,"seats":2,"verified":true},
-      {"id":"stinger","name":"Stinger","category":"Car","class":"Sports","top_speed_kph":200,"seats":2,"verified":true},
-      {"id":"stallion","name":"Stallion","category":"Car","class":"Muscle","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":175,"seats":4,"verified":true},
-      {"id":"kuruma","name":"Kuruma","category":"Car","class":"Sedan","top_speed_kph":170,"seats":4,"verified":true},
-      {"id":"idaho","name":"Idaho","category":"Car","class":"Coupe","top_speed_kph":165,"seats":2,"verified":true},
-      {"id":"esperanto","name":"Esperanto","category":"Car","class":"Coupe","top_speed_kph":165,"seats":2,"verified":true},
-      {"id":"manana","name":"Manana","category":"Car","class":"Coupe","top_speed_kph":160,"seats":2,"verified":true},
-      {"id":"perennial","name":"Perennial","category":"Car","class":"Station wagon","top_speed_kph":150,"seats":4,"verified":true},
-      {"id":"bobcat","name":"Bobcat","category":"Car","class":"Pickup","top_speed_kph":155,"seats":2,"verified":true},
-      {"id":"landstalker","name":"Landstalker","category":"Car","class":"SUV","top_speed_kph":160,"seats":4,"verified":true},
-      {"id":"patriot","name":"Patriot","category":"Car","class":"SUV","top_speed_kph":170,"seats":4,"verified":true},
-      {"id":"stretch","name":"Stretch","category":"Car","class":"Limousine","top_speed_kph":170,"seats":4,"verified":true},
-      {"id":"taxi","name":"Taxi","category":"Car","class":"Sedan","top_speed_kph":170,"seats":4,"verified":true},
-      {"id":"cabbie","name":"Cabbie","category":"Car","class":"Sedan","top_speed_kph":165,"seats":4,"verified":true},
-      {"id":"borgnine","name":"Borgnine","category":"Car","class":"Taxi","top_speed_kph":165,"seats":4,"verified":true},
-      {"id":"moonbeam","name":"Moonbeam","category":"Car","class":"Van","top_speed_kph":150,"seats":4,"verified":true},
-      {"id":"rumpo","name":"Rumpo","category":"Van","class":"Van","top_speed_kph":145,"seats":4,"verified":true},
-      {"id":"pony","name":"Pony","category":"Van","class":"Van","top_speed_kph":145,"seats":4,"verified":true},
-      {"id":"mule","name":"Mule","category":"Industrial","class":"Truck","top_speed_kph":120,"seats":2,"verified":true},
-      {"id":"yankee","name":"Yankee","category":"Industrial","class":"Truck","top_speed_kph":115,"seats":2,"verified":true},
-      {"id":"linerunner","name":"Linerunner","category":"Industrial","class":"Semi","top_speed_kph":110,"seats":2,"verified":true},
-      {"id":"flatbed","name":"Flatbed","category":"Industrial","class":"Truck","top_speed_kph":110,"seats":2,"verified":true},
-      {"id":"trashmaster","name":"Trashmaster","category":"Industrial","class":"Truck","top_speed_kph":100,"seats":2,"verified":true},
-      {"id":"firetruck","name":"Fire Truck","category":"Emergency","class":"Fire","top_speed_kph":120,"seats":2,"verified":true},
-      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":140,"seats":2,"verified":true},
-      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"fbi-car","name":"FBI Car","category":"Emergency","class":"Police","top_speed_kph":200,"seats":4,"verified":true},
-      {"id":"enforcer","name":"Enforcer","category":"Emergency","class":"Police van","top_speed_kph":130,"seats":4,"verified":true},
-      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":60,"seats":1,"verified":true},
-      {"id":"barracks-ol","name":"Barracks OL","category":"Military","class":"Truck","top_speed_kph":90,"seats":2,"verified":true},
-      {"id":"bf-injection","name":"BF Injection","category":"Car","class":"Buggy","top_speed_kph":175,"seats":2,"verified":true},
-      {"id":"diablo-stallion","name":"Diablo Stallion","category":"Car","class":"Gang","top_speed_kph":195,"seats":2,"verified":true},
-      {"id":"yardie-lobo","name":"Yardie Lobo","category":"Car","class":"Gang","top_speed_kph":185,"seats":4,"verified":true},
-      {"id":"cartel-cruiser","name":"Cartel Cruiser","category":"Car","class":"Gang","top_speed_kph":190,"seats":4,"verified":true},
-      {"id":"hoods-rumpo-xl","name":"Hoods Rumpo XL","category":"Van","class":"Gang","top_speed_kph":150,"seats":4,"verified":true},
-      {"id":"predator","name":"Predator","category":"Boat","class":"Police boat","top_speed_kph":90,"seats":2,"verified":true},
-      {"id":"reefer","name":"Reefer","category":"Boat","class":"Boat","top_speed_kph":60,"seats":2,"verified":true},
-      {"id":"speeder","name":"Speeder","category":"Boat","class":"Speedboat","top_speed_kph":100,"seats":2,"verified":true},
-      {"id":"dodo","name":"Dodo","category":"Aircraft","class":"Plane","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"maverick","name":"Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":4,"verified":true},
-      {"id":"police-maverick","name":"Police Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":3,"verified":true},
-      {"id":"securicar","name":"Securicar","category":"Industrial","class":"Armored van","top_speed_kph":110,"seats":2,"verified":true},
-      {"id":"coach","name":"Coach","category":"Industrial","class":"Bus","top_speed_kph":120,"seats":4,"verified":true},
-      {"id":"bus","name":"Bus","category":"Industrial","class":"Bus","top_speed_kph":110,"seats":4,"verified":true},
-      {"id":"dozer","name":"Dozer","category":"Industrial","class":"Construction","top_speed_kph":30,"seats":1,"verified":true},
-      {"id":"dumper","name":"Dumper","category":"Industrial","class":"Construction","top_speed_kph":50,"seats":2,"verified":true},
-      {"id":"packer","name":"Packer","category":"Industrial","class":"Car carrier","top_speed_kph":110,"seats":2,"verified":true}
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 200,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 220,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 220,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "stinger",
+        "name": "Stinger",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 200,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "stallion",
+        "name": "Stallion",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 175,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "kuruma",
+        "name": "Kuruma",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 170,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "idaho",
+        "name": "Idaho",
+        "category": "Car",
+        "class": "Coupe",
+        "top_speed_kph": 165,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "esperanto",
+        "name": "Esperanto",
+        "category": "Car",
+        "class": "Coupe",
+        "top_speed_kph": 165,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "manana",
+        "name": "Manana",
+        "category": "Car",
+        "class": "Coupe",
+        "top_speed_kph": 160,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "perennial",
+        "name": "Perennial",
+        "category": "Car",
+        "class": "Station wagon",
+        "top_speed_kph": 150,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "bobcat",
+        "name": "Bobcat",
+        "category": "Car",
+        "class": "Pickup",
+        "top_speed_kph": 155,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "landstalker",
+        "name": "Landstalker",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 160,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "patriot",
+        "name": "Patriot",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 170,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "stretch",
+        "name": "Stretch",
+        "category": "Car",
+        "class": "Limousine",
+        "top_speed_kph": 170,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 170,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "cabbie",
+        "name": "Cabbie",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 165,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "borgnine",
+        "name": "Borgnine",
+        "category": "Car",
+        "class": "Taxi",
+        "top_speed_kph": 165,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "moonbeam",
+        "name": "Moonbeam",
+        "category": "Car",
+        "class": "Van",
+        "top_speed_kph": 150,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "rumpo",
+        "name": "Rumpo",
+        "category": "Van",
+        "class": "Van",
+        "top_speed_kph": 145,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "pony",
+        "name": "Pony",
+        "category": "Van",
+        "class": "Van",
+        "top_speed_kph": 145,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "mule",
+        "name": "Mule",
+        "category": "Industrial",
+        "class": "Truck",
+        "top_speed_kph": 120,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "yankee",
+        "name": "Yankee",
+        "category": "Industrial",
+        "class": "Truck",
+        "top_speed_kph": 115,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "linerunner",
+        "name": "Linerunner",
+        "category": "Industrial",
+        "class": "Semi",
+        "top_speed_kph": 110,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "flatbed",
+        "name": "Flatbed",
+        "category": "Industrial",
+        "class": "Truck",
+        "top_speed_kph": 110,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "trashmaster",
+        "name": "Trashmaster",
+        "category": "Industrial",
+        "class": "Truck",
+        "top_speed_kph": 100,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "firetruck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "class": "Fire",
+        "top_speed_kph": 120,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "class": "Medical",
+        "top_speed_kph": 140,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "police-car",
+        "name": "Police Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "fbi-car",
+        "name": "FBI Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 200,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "enforcer",
+        "name": "Enforcer",
+        "category": "Emergency",
+        "class": "Police van",
+        "top_speed_kph": 130,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": 60,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "barracks-ol",
+        "name": "Barracks OL",
+        "category": "Military",
+        "class": "Truck",
+        "top_speed_kph": 90,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bf-injection",
+        "name": "BF Injection",
+        "category": "Car",
+        "class": "Buggy",
+        "top_speed_kph": 175,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "diablo-stallion",
+        "name": "Diablo Stallion",
+        "category": "Car",
+        "class": "Gang",
+        "top_speed_kph": 195,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "yardie-lobo",
+        "name": "Yardie Lobo",
+        "category": "Car",
+        "class": "Gang",
+        "top_speed_kph": 185,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "cartel-cruiser",
+        "name": "Cartel Cruiser",
+        "category": "Car",
+        "class": "Gang",
+        "top_speed_kph": 190,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "hoods-rumpo-xl",
+        "name": "Hoods Rumpo XL",
+        "category": "Van",
+        "class": "Gang",
+        "top_speed_kph": 150,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "predator",
+        "name": "Predator",
+        "category": "Boat",
+        "class": "Police boat",
+        "top_speed_kph": 90,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "reefer",
+        "name": "Reefer",
+        "category": "Boat",
+        "class": "Boat",
+        "top_speed_kph": 60,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "speeder",
+        "name": "Speeder",
+        "category": "Boat",
+        "class": "Speedboat",
+        "top_speed_kph": 100,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "dodo",
+        "name": "Dodo",
+        "category": "Aircraft",
+        "class": "Plane",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "maverick",
+        "name": "Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "police-maverick",
+        "name": "Police Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 3,
+        "verified": true
+      },
+      {
+        "id": "securicar",
+        "name": "Securicar",
+        "category": "Industrial",
+        "class": "Armored van",
+        "top_speed_kph": 110,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "coach",
+        "name": "Coach",
+        "category": "Industrial",
+        "class": "Bus",
+        "top_speed_kph": 120,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "bus",
+        "name": "Bus",
+        "category": "Industrial",
+        "class": "Bus",
+        "top_speed_kph": 110,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "dozer",
+        "name": "Dozer",
+        "category": "Industrial",
+        "class": "Construction",
+        "top_speed_kph": 30,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "dumper",
+        "name": "Dumper",
+        "category": "Industrial",
+        "class": "Construction",
+        "top_speed_kph": 50,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "packer",
+        "name": "Packer",
+        "category": "Industrial",
+        "class": "Car carrier",
+        "top_speed_kph": 110,
+        "seats": 2,
+        "verified": true
+      }
     ]
   },
   "weapons": {
     "coverage": "partial",
     "items": [
-      {"id":"fist","name":"Fists","type":"Melee","damage_tier":"Low","ammo":"—","price":null,"unlock":"Default","verified":true},
-      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"17 rounds","price":null,"unlock":"Default sidearm; Ammu-Nation","verified":true},
-      {"id":"uzi","name":"Uzi","type":"Submachine gun","damage_tier":"Medium","ammo":"25 rounds","price":null,"unlock":"Ammu-Nation / 8-Ball","verified":true},
-      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"8 shells","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"ak-47","name":"AK-47","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation (later)","verified":true},
-      {"id":"m16","name":"M16","type":"Assault rifle","damage_tier":"Very high","ammo":"60 rounds","price":null,"unlock":"Hidden packages reward","verified":true},
-      {"id":"sniper-rifle","name":"Sniper Rifle","type":"Sniper","damage_tier":"Very high","ammo":"5 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Phil Cassidy / hidden packages","verified":true},
-      {"id":"flamethrower","name":"Flamethrower","type":"Heavy","damage_tier":"Very high","ammo":"Continuous","price":null,"unlock":"El Burro mission / pickups","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Street pickups","verified":true}
+      {
+        "id": "fist",
+        "name": "Fists",
+        "type": "Melee",
+        "damage_tier": "Low",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "price": null,
+        "unlock": "Default sidearm; Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "25 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation / 8-Ball",
+        "verified": true
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "8 shells",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "ak-47",
+        "name": "AK-47",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation (later)",
+        "verified": true
+      },
+      {
+        "id": "m16",
+        "name": "M16",
+        "type": "Assault rifle",
+        "damage_tier": "Very high",
+        "ammo": "60 rounds",
+        "price": null,
+        "unlock": "Hidden packages reward",
+        "verified": true
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Sniper",
+        "damage_tier": "Very high",
+        "ammo": "5 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "price": null,
+        "unlock": "Phil Cassidy / hidden packages",
+        "verified": true
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "Heavy",
+        "damage_tier": "Very high",
+        "ammo": "Continuous",
+        "price": null,
+        "unlock": "El Burro mission / pickups",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "20",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "20",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      }
     ]
   },
   "cheats": {
     "coverage": "partial",
     "items": [
-      {"id":"full-health","effect":"Full health","codes":[{"platform":"PC","code":"GESUNDHEIT","input":"keyboard"},{"platform":"PlayStation 2","code":"R2 R2 L1 R1 L2 L2 L2 L1","input":"button"}],"verified":true},
-      {"id":"full-armor","effect":"Full armor","codes":[{"platform":"PC","code":"TURTOISE","input":"keyboard"}],"verified":true},
-      {"id":"all-weapons","effect":"All weapons","codes":[{"platform":"PC","code":"GUNSGUNSGUNS","input":"keyboard"}],"verified":true},
-      {"id":"money","effect":"$250,000","codes":[{"platform":"PC","code":"IFIWEREARICHMAN","input":"keyboard"}],"verified":true},
-      {"id":"wanted-up","effect":"Increase wanted level","codes":[{"platform":"PC","code":"MOREPOLICEPLEASE","input":"keyboard"}],"verified":true},
-      {"id":"wanted-clear","effect":"Clear wanted level","codes":[{"platform":"PC","code":"NOPOLICEPLEASE","input":"keyboard"}],"verified":true},
-      {"id":"spawn-tank","effect":"Spawn a Rhino tank","codes":[{"platform":"PC","code":"GIVEUSATANK","input":"keyboard"}],"verified":true},
-      {"id":"blow-up-cars","effect":"Destroy all vehicles","codes":[{"platform":"PC","code":"BANGBANGBANG","input":"keyboard"}],"verified":true},
-      {"id":"flying-cars","effect":"Cars can fly","codes":[{"platform":"PC","code":"CHITTYCHITTYBB","input":"keyboard"}],"verified":true},
-      {"id":"pedestrians-riot","effect":"Pedestrians riot","codes":[{"platform":"PC","code":"NASTYLIMBSCHEAT","input":"keyboard"}],"verified":false,"source":"Community cheat databases — spelling varies by edition"},
-      {"id":"pedestrians-attack","effect":"Pedestrians attack you","codes":[{"platform":"PC","code":"NOBODYLIKESME","input":"keyboard"}],"verified":false},
-      {"id":"change-clothes","effect":"Change player clothes","codes":[{"platform":"PC","code":"ILIKEDRESSINGUP","input":"keyboard"}],"verified":false},
-      {"id":"slow-motion","effect":"Slow motion","codes":[{"platform":"PC","code":"BOOOOORING","input":"keyboard"}],"verified":false},
-      {"id":"fast-time","effect":"Faster game clock","codes":[{"platform":"PC","code":"TIME FLIES BY WHEN YOU'RE DRIVING","input":"keyboard"}],"verified":false}
+      {
+        "id": "full-health",
+        "effect": "Full health",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "GESUNDHEIT",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation 2",
+            "code": "R2 R2 L1 R1 L2 L2 L2 L1",
+            "input": "button"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "full-armor",
+        "effect": "Full armor",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TURTOISE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "all-weapons",
+        "effect": "All weapons",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "GUNSGUNSGUNS",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "money",
+        "effect": "$250,000",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "IFIWEREARICHMAN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "wanted-up",
+        "effect": "Increase wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "MOREPOLICEPLEASE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "wanted-clear",
+        "effect": "Clear wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "NOPOLICEPLEASE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "spawn-tank",
+        "effect": "Spawn a Rhino tank",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "GIVEUSATANK",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "blow-up-cars",
+        "effect": "Destroy all vehicles",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BANGBANGBANG",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "flying-cars",
+        "effect": "Cars can fly",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "CHITTYCHITTYBB",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "pedestrians-riot",
+        "effect": "Pedestrians riot",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "NASTYLIMBSCHEAT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false,
+        "source": "Community cheat databases — spelling varies by edition"
+      },
+      {
+        "id": "pedestrians-attack",
+        "effect": "Pedestrians attack you",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "NOBODYLIKESME",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false
+      },
+      {
+        "id": "change-clothes",
+        "effect": "Change player clothes",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ILIKEDRESSINGUP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false
+      },
+      {
+        "id": "slow-motion",
+        "effect": "Slow motion",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BOOOOORING",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false
+      },
+      {
+        "id": "fast-time",
+        "effect": "Faster game clock",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TIME FLIES BY WHEN YOU'RE DRIVING",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false
+      }
     ]
   },
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"The game's setting: three islands modelled on New York City.","verified":true},
-      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial starting island with the Leone heartland and the docks.","verified":true},
-      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial and financial island, unlocked after Last Requests.","verified":true},
-      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island with the airport, dam and Cochrane Dam finale.","verified":true},
-      {"id":"saint-marks","name":"Saint Mark's","type":"District","parent":"Portland","summary":"Leone family stronghold and Salvatore's mansion.","verified":true},
-      {"id":"red-light-district","name":"Red Light District","type":"District","parent":"Portland","summary":"Luigi's Sex Club 7 and the early mission hub.","verified":true},
-      {"id":"chinatown","name":"Chinatown","type":"District","parent":"Portland","summary":"Triad territory and the fish factory.","verified":true},
-      {"id":"hephurn-heights","name":"Hepburn Heights","type":"District","parent":"Portland","summary":"Diablos territory and El Burro's base.","verified":true},
-      {"id":"trenton","name":"Trenton","type":"District","parent":"Portland","summary":"Industrial district with Marty Chonks' dog food factory.","verified":true},
-      {"id":"harwood","name":"Harwood","type":"District","parent":"Portland","summary":"Industrial area near the Callahan Bridge.","verified":true},
-      {"id":"bedford-point","name":"Bedford Point","type":"District","parent":"Staunton Island","summary":"Downtown district with the Liberty Tree offices.","verified":true},
-      {"id":"belleville-park","name":"Belleville Park","type":"District","parent":"Staunton Island","summary":"Central park area of Staunton.","verified":true},
-      {"id":"torrington","name":"Torrington","type":"District","parent":"Staunton Island","summary":"Business district and Asuka's construction site.","verified":true},
-      {"id":"cedar-grove","name":"Cedar Grove","type":"District","parent":"Shoreside Vale","summary":"Affluent hillside district with the Cartel mansion.","verified":true},
-      {"id":"pike-creek","name":"Pike Creek","type":"District","parent":"Shoreside Vale","summary":"Residential area near the dam.","verified":true},
-      {"id":"wichita-gardens","name":"Wichita Gardens","type":"District","parent":"Shoreside Vale","summary":"Housing projects and Red Jacks territory.","verified":true},
-      {"id":"cochrane-dam","name":"Cochrane Dam","type":"Landmark","parent":"Shoreside Vale","summary":"The dam where the final mission takes place.","verified":true},
-      {"id":"francis-international-airport","name":"Francis International Airport","type":"Landmark","parent":"Shoreside Vale","summary":"Airport used in A Drop in the Ocean and S.A.M.","verified":true}
+      {
+        "id": "liberty-city",
+        "name": "Liberty City",
+        "type": "City",
+        "parent": null,
+        "summary": "The game's setting: three islands modelled on New York City.",
+        "verified": true
+      },
+      {
+        "id": "portland",
+        "name": "Portland",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Industrial starting island with the Leone heartland and the docks.",
+        "verified": true
+      },
+      {
+        "id": "staunton-island",
+        "name": "Staunton Island",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Commercial and financial island, unlocked after Last Requests.",
+        "verified": true
+      },
+      {
+        "id": "shoreside-vale",
+        "name": "Shoreside Vale",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Suburban island with the airport, dam and Cochrane Dam finale.",
+        "verified": true
+      },
+      {
+        "id": "saint-marks",
+        "name": "Saint Mark's",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Leone family stronghold and Salvatore's mansion.",
+        "verified": true
+      },
+      {
+        "id": "red-light-district",
+        "name": "Red Light District",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Luigi's Sex Club 7 and the early mission hub.",
+        "verified": true
+      },
+      {
+        "id": "chinatown",
+        "name": "Chinatown",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Triad territory and the fish factory.",
+        "verified": true
+      },
+      {
+        "id": "hephurn-heights",
+        "name": "Hepburn Heights",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Diablos territory and El Burro's base.",
+        "verified": true
+      },
+      {
+        "id": "trenton",
+        "name": "Trenton",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Industrial district with Marty Chonks' dog food factory.",
+        "verified": true
+      },
+      {
+        "id": "harwood",
+        "name": "Harwood",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Industrial area near the Callahan Bridge.",
+        "verified": true
+      },
+      {
+        "id": "bedford-point",
+        "name": "Bedford Point",
+        "type": "District",
+        "parent": "Staunton Island",
+        "summary": "Downtown district with the Liberty Tree offices.",
+        "verified": true
+      },
+      {
+        "id": "belleville-park",
+        "name": "Belleville Park",
+        "type": "District",
+        "parent": "Staunton Island",
+        "summary": "Central park area of Staunton.",
+        "verified": true
+      },
+      {
+        "id": "torrington",
+        "name": "Torrington",
+        "type": "District",
+        "parent": "Staunton Island",
+        "summary": "Business district and Asuka's construction site.",
+        "verified": true
+      },
+      {
+        "id": "cedar-grove",
+        "name": "Cedar Grove",
+        "type": "District",
+        "parent": "Shoreside Vale",
+        "summary": "Affluent hillside district with the Cartel mansion.",
+        "verified": true
+      },
+      {
+        "id": "pike-creek",
+        "name": "Pike Creek",
+        "type": "District",
+        "parent": "Shoreside Vale",
+        "summary": "Residential area near the dam.",
+        "verified": true
+      },
+      {
+        "id": "wichita-gardens",
+        "name": "Wichita Gardens",
+        "type": "District",
+        "parent": "Shoreside Vale",
+        "summary": "Housing projects and Red Jacks territory.",
+        "verified": true
+      },
+      {
+        "id": "cochrane-dam",
+        "name": "Cochrane Dam",
+        "type": "Landmark",
+        "parent": "Shoreside Vale",
+        "summary": "The dam where the final mission takes place.",
+        "verified": true
+      },
+      {
+        "id": "francis-international-airport",
+        "name": "Francis International Airport",
+        "type": "Landmark",
+        "parent": "Shoreside Vale",
+        "summary": "Airport used in A Drop in the Ocean and S.A.M.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "complete",
     "items": [
-      {"id":"hidden-packages","name":"Hidden Packages","type":"Package","total":100,"reward":"Weapons at safehouses at 10/20/30/40/50/60/70/80/90/100 packages","verified":true},
-      {"id":"rampages","name":"Rampages","type":"Rampage","total":20,"reward":"Cash and weapon pickups","verified":true},
-      {"id":"unique-jumps","name":"Unique Jumps","type":"Stunt","total":20,"reward":"Cash, counted toward 100% completion","verified":false}
+      {
+        "id": "hidden-packages",
+        "name": "Hidden Packages",
+        "type": "Package",
+        "total": 100,
+        "reward": "Weapons at safehouses at 10/20/30/40/50/60/70/80/90/100 packages",
+        "verified": true
+      },
+      {
+        "id": "rampages",
+        "name": "Rampages",
+        "type": "Rampage",
+        "total": 20,
+        "reward": "Cash and weapon pickups",
+        "verified": true
+      },
+      {
+        "id": "unique-jumps",
+        "name": "Unique Jumps",
+        "type": "Stunt",
+        "total": 20,
+        "reward": "Cash, counted toward 100% completion",
+        "verified": false
+      }
     ]
   }
 }

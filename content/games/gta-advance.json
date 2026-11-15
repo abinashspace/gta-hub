@@ -1,52 +1,732 @@
 {
   "meta": {
-    "sources": ["GTA Advance in-game mission list", "Digital Eclipse / Rockstar GBA release materials"],
+    "sources": [
+      "GTA Advance in-game mission list",
+      "Digital Eclipse / Rockstar GBA release materials"
+    ],
     "notes": "Game Boy Advance top-down entry set in Liberty City in 2000, one year before GTA III. Smallest cheat set in the series."
   },
   "characters": {
     "coverage": "limited",
     "items": [
-      {"id":"mike","name":"Mike","role":"Protagonist","affiliations":["Independent","Vinnie's crew"],"summary":"A small-time Liberty City criminal trying to buy his way out after a job goes wrong.","status":"Alive","first_appearance":"GTA Advance","verified":true},
-      {"id":"vinnie","name":"Vinnie","role":"Partner, antagonist","affiliations":["Liberty City underworld"],"summary":"Mike's partner whose betrayal drives the story.","status":"Deceased","verified":true},
-      {"id":"8-ball","name":"8-Ball","role":"Explosives expert","affiliations":["Liberty City underworld"],"summary":"Bomb-maker who appears before the events of GTA III.","status":"Alive","verified":true},
-      {"id":"asuka-kasen","name":"Asuka Kasen","role":"Yakuza co-leader","affiliations":["Yakuza"],"summary":"Already running Yakuza operations in 2000.","status":"Alive","verified":true},
-      {"id":"king-courtney","name":"King Courtney","role":"Yardies leader","affiliations":["Yardies"],"summary":"Yardie boss active in Liberty City before GTA III.","status":"Alive","verified":true},
-      {"id":"cisco","name":"Cisco","role":"Associate","affiliations":["Liberty City underworld"],"summary":"A contact in Mike's early jobs.","status":"Alive","verified":false},
-      {"id":"uncle-fu-advance","name":"Uncle Fu","role":"Antagonist","affiliations":["Liberty City Triads"],"summary":"A crime figure involved in the game's central betrayal.","status":"Deceased","verified":false}
+      {
+        "id": "mike",
+        "name": "Mike",
+        "role": "Protagonist",
+        "affiliations": [
+          "Independent",
+          "Vinnie's crew"
+        ],
+        "summary": "A small-time Liberty City criminal trying to buy his way out after a job goes wrong.",
+        "status": "Alive",
+        "first_appearance": "GTA Advance",
+        "verified": true
+      },
+      {
+        "id": "vinnie",
+        "name": "Vinnie",
+        "role": "Partner, antagonist",
+        "affiliations": [
+          "Liberty City underworld"
+        ],
+        "summary": "Mike's partner whose betrayal drives the story.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "8-ball",
+        "name": "8-Ball",
+        "role": "Explosives expert",
+        "affiliations": [
+          "Liberty City underworld"
+        ],
+        "summary": "Bomb-maker who appears before the events of GTA III.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "asuka-kasen",
+        "name": "Asuka Kasen",
+        "role": "Yakuza co-leader",
+        "affiliations": [
+          "Yakuza"
+        ],
+        "summary": "Already running Yakuza operations in 2000.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "king-courtney",
+        "name": "King Courtney",
+        "role": "Yardies leader",
+        "affiliations": [
+          "Yardies"
+        ],
+        "summary": "Yardie boss active in Liberty City before GTA III.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "cisco",
+        "name": "Cisco",
+        "role": "Associate",
+        "affiliations": [
+          "Liberty City underworld"
+        ],
+        "summary": "A contact in Mike's early jobs.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "uncle-fu-advance",
+        "name": "Uncle Fu",
+        "role": "Antagonist",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "A crime figure involved in the game's central betrayal.",
+        "status": "Deceased",
+        "verified": false
+      }
     ]
   },
   "missions": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
-      {"id":"opening-job","order":1,"name":"Opening job","type":"Story","giver":"Vinnie","location":"Liberty City","reward":{"money":0},"summary":"Mike and Vinnie attempt a job that leaves Mike without his share.","verified":false},
-      {"id":"payback","order":2,"name":"Payback","type":"Story","giver":"Vinnie","location":"Portland","reward":{"money":0},"summary":"Mike starts working off his debt across Portland.","verified":false},
-      {"id":"yakuza-work","order":3,"name":"Yakuza work","type":"Story","giver":"Asuka Kasen","location":"Staunton Island","reward":{"money":0},"summary":"Jobs for the Yakuza as Mike climbs the Liberty City ladder.","verified":false},
-      {"id":"yardie-work","order":4,"name":"Yardie work","type":"Story","giver":"King Courtney","location":"Staunton Island","reward":{"money":0},"summary":"Yardie missions in Staunton.","verified":false},
-      {"id":"finale","order":5,"name":"Finale","type":"Story","giver":"—","location":"Liberty City","reward":{"money":0},"summary":"Confrontation over the stolen money and Vinnie's betrayal.","verified":false}
+      {
+        "id": "jump-start",
+        "order": 1,
+        "name": "Jump Start",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Drive Vinnie to a meeting with the mafia at Mamma's Family Restaurant , then go to your hideout .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "dirty-laundry",
+        "order": 2,
+        "name": "Dirty Laundry",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Chase and kill Federico .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "hot-wheels",
+        "order": 3,
+        "name": "Hot Wheels",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Steal a Banshee located in Atlantic Quays .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "ill-gotten",
+        "order": 4,
+        "name": "Ill-Gotten",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Collect 3 briefcases of money for the mafia.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "payback",
+        "order": 5,
+        "name": "Payback",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Kill 3 criminals in Trenton .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "fake-ids",
+        "order": 6,
+        "name": "Fake IDs",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Meet 8-Ball and obtain the fake IDs.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "getaway",
+        "order": 7,
+        "name": "Getaway",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Meet Vinnie at Callahan Point and then meet 8-Ball at his pad.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "twisted-metal",
+        "order": 8,
+        "name": "Twisted Metal",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Take Vinnie's car to the Harwood Autocrusher and Junkyard .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "ill-repute",
+        "order": 9,
+        "name": "Ill Repute",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Drive 3 of 8-Ball's girls to their destinations.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "droppin-bombs",
+        "order": 10,
+        "name": "Droppin' Bombs",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Deliver 8-Ball's shipment to his customer in Hepburn Heights .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "scorelli",
+        "order": 11,
+        "name": "Scorelli",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Kill some of Scorelli's goons and steal his car .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "love-boat",
+        "order": 12,
+        "name": "Love Boat",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Meet Jonnie and get him back to his bar safely.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "times-up",
+        "order": 13,
+        "name": "Time's Up",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Kill 4 criminals that owe Jonnie in debt.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "sober-driver",
+        "order": 14,
+        "name": "Sober Driver",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Drive Jonnie's girlfriend to Harwood and then to Portland Harbor .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "happy-hour",
+        "order": 15,
+        "name": "Happy Hour",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Collect 5 ingredients for Jonnie's \"brew\".",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "grand-opening",
+        "order": 16,
+        "name": "Grand Opening",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Use the rigged Idaho to blow up Diamond Sky .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "pocket-rocket",
+        "order": 17,
+        "name": "Pocket Rocket",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Steal a Rocket Launcher and secure the weapons back to Jonnie.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "political-will",
+        "order": 18,
+        "name": "Political Will",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Beat up a senator who is trying to ban smoking in bars.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "show-the-money",
+        "order": 19,
+        "name": "Show the Money",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Collect some money from Freddy or kill him, and also meet King Courtney.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "race-to-run",
+        "order": 20,
+        "name": "Race to Run",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Win a race against the Yakuza.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "latin-coffee",
+        "order": 21,
+        "name": "Latin Coffee",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Collect 12 cans of coffee the Cartel have delivered.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "the-big-score",
+        "order": 22,
+        "name": "The Big Score",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Ambush a meeting between the Cartel leader Cisco 's lieutenants.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "fine-dining",
+        "order": 23,
+        "name": "Fine Dining",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Confront Cisco at Belleville Park .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "flying-high",
+        "order": 24,
+        "name": "Flying High",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Deliver Cisco's shoe's to his shops on Staunton Island .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "factory-wages",
+        "order": 25,
+        "name": "Factory Wages",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Blow up a factory making surveillance equipment.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "schools-out",
+        "order": 26,
+        "name": "School's Out",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Kidnap the Yakuza Co-Leader Asuka Kasen 's niece Yuka .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "kids-a-hero",
+        "order": 27,
+        "name": "Kid's a Hero",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Rescue Yuka from the Cartel.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "ante-up",
+        "order": 28,
+        "name": "Ante Up",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Torch a casino or kill a corrupt police officer .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "two-hand-toss",
+        "order": 29,
+        "name": "Two-Hand Toss",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Beat up a star quarterback .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "scorned-lover",
+        "order": 30,
+        "name": "Scorned Lover",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Take out Biff Rock 's bodyguards and steal his shoes.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "sue-me-sushi",
+        "order": 31,
+        "name": "Sue Me Sushi",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Pursuade 3 truck drivers to deliver their supplies to Asuka.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "down-the-river",
+        "order": 32,
+        "name": "Down the River",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Enlist Mafia members to board Asuka's boat.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "bad-pimpin",
+        "order": 33,
+        "name": "Bad Pimpin'",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Staunton Island",
+        "reward": {},
+        "summary": "Kill a pimp stealing Asuka's prostitutes and confront the bomber .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "mystery-killer",
+        "order": 34,
+        "name": "Mystery Killer",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Go to an exchange at Wichita Gardens or/and meet Cisco at the airport .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "decoy-disaster",
+        "order": 35,
+        "name": "Decoy Disaster",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Act as a decoy to lure Cisco's enemies away from a drug conference.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "truth-revealed",
+        "order": 36,
+        "name": "Truth Revealed",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Chase and kill Vinnie .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "love-of-money",
+        "order": 37,
+        "name": "Love of Money",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Escape from an ambush set by the Cartel.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "taking-revenge",
+        "order": 38,
+        "name": "Taking Revenge",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Beat up the new Cartel Boss to find out who is after Mike .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "smackdown",
+        "order": 39,
+        "name": "Smackdown",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Kill 10 Yardies in 4 minutes.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "assault-joint",
+        "order": 40,
+        "name": "Assault Joint",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Defeat King Courtney .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      },
+      {
+        "id": "freedom-flies",
+        "order": 41,
+        "name": "Freedom Flies",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Shoreside Vale",
+        "reward": {},
+        "summary": "Escape Liberty City by plane before the police catch you.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, chapter, description and rewards"
+      }
     ]
   },
   "vehicles": {
     "coverage": "limited",
     "items": [
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"kuruma","name":"Kuruma","category":"Car","class":"Sedan","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"taxi","name":"Taxi","category":"Car","class":"Taxi","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":null,"seats":1,"verified":false}
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "kuruma",
+        "name": "Kuruma",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Car",
+        "class": "Taxi",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "police-car",
+        "name": "Police Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "class": "Medical",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": null,
+        "seats": 1,
+        "verified": false
+      }
     ]
   },
   "weapons": {
     "coverage": "limited",
     "items": [
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Default","verified":true},
-      {"id":"uzi","name":"Uzi","type":"Submachine gun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"Shells","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"ak-47","name":"AK-47","type":"Assault rifle","damage_tier":"High","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"Rockets","price":null,"unlock":"Pickups","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true}
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "Shells",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "ak-47",
+        "name": "AK-47",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "Rockets",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      }
     ]
   },
   "cheats": {
@@ -56,10 +736,38 @@
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"Liberty City in 2000, rendered top-down for the GBA.","verified":true},
-      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial island.","verified":true},
-      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial island.","verified":true},
-      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island.","verified":true}
+      {
+        "id": "liberty-city",
+        "name": "Liberty City",
+        "type": "City",
+        "parent": null,
+        "summary": "Liberty City in 2000, rendered top-down for the GBA.",
+        "verified": true
+      },
+      {
+        "id": "portland",
+        "name": "Portland",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Industrial island.",
+        "verified": true
+      },
+      {
+        "id": "staunton-island",
+        "name": "Staunton Island",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Commercial island.",
+        "verified": true
+      },
+      {
+        "id": "shoreside-vale",
+        "name": "Shoreside Vale",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Suburban island.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {

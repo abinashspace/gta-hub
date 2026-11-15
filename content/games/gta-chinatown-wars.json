@@ -1,62 +1,1121 @@
 {
   "meta": {
-    "sources": ["Chinatown Wars in-game mission list", "Rockstar Leeds DS/PSP release materials"],
+    "sources": [
+      "Chinatown Wars in-game mission list",
+      "Rockstar Leeds DS/PSP release materials"
+    ],
     "notes": "Top-down DS/PSP entry set in Liberty City in 2009. Adds a drug-trading economy and touchscreen minigames."
   },
   "characters": {
     "coverage": "partial",
     "items": [
-      {"id":"huang-lee","name":"Huang Lee","role":"Protagonist","affiliations":["Liberty City Triads"],"summary":"Returns to Liberty City with a stolen sword and a murdered father's legacy to untangle.","status":"Alive","first_appearance":"GTA: Chinatown Wars","verified":true},
-      {"id":"wu-lee","name":"Wu Lee","role":"Uncle, Triad elder","affiliations":["Liberty City Triads"],"summary":"Huang's uncle and the Triad elder he reports to.","status":"Deceased","verified":true},
-      {"id":"hsin-jaoming","name":"Hsin Jaoming","role":"Triad boss","affiliations":["Liberty City Triads"],"summary":"Aging Triad leader whose succession struggle drives the plot.","status":"Alive","verified":true},
-      {"id":"chan-jaoming","name":"Chan Jaoming","role":"Triad heir","affiliations":["Liberty City Triads"],"summary":"Hsin's son and one claimant to the Triad leadership.","status":"Alive","verified":true},
-      {"id":"zhou-ming","name":"Zhou Ming","role":"Triad rival","affiliations":["Liberty City Triads"],"summary":"The other claimant to the Triad leadership.","status":"Alive","verified":true},
-      {"id":"rudy-davanzo","name":"Rudy D'Avanzo","role":"Mafia associate","affiliations":["Liberty City Mafia"],"summary":"Italian mob contact who pulls Huang into Mafia business.","status":"Alive","verified":true},
-      {"id":"melanie-mallard","name":"Melanie Mallard","role":"Journalist","affiliations":["Liberty City press"],"summary":"Investigative journalist working the Triad succession story.","status":"Alive","verified":true},
-      {"id":"wade-heston","name":"Wade Heston","role":"Undercover agent","affiliations":["Federal law enforcement"],"summary":"Undercover operative who recruits Huang's help.","status":"Alive","verified":true},
-      {"id":"lester-leroc","name":"Lester Leroc","role":"Crime scene investigator","affiliations":["Liberty City forensics"],"summary":"Forensics contact who provides Huang with information.","status":"Alive","verified":false},
-      {"id":"ling","name":"Ling","role":"Ally","affiliations":["Liberty City Triads"],"summary":"Huang's ally within the Triad power struggle.","status":"Alive","verified":false}
+      {
+        "id": "huang-lee",
+        "name": "Huang Lee",
+        "role": "Protagonist",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "Returns to Liberty City with a stolen sword and a murdered father's legacy to untangle.",
+        "status": "Alive",
+        "first_appearance": "GTA: Chinatown Wars",
+        "verified": true
+      },
+      {
+        "id": "wu-lee",
+        "name": "Wu Lee",
+        "role": "Uncle, Triad elder",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "Huang's uncle and the Triad elder he reports to.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "hsin-jaoming",
+        "name": "Hsin Jaoming",
+        "role": "Triad boss",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "Aging Triad leader whose succession struggle drives the plot.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "chan-jaoming",
+        "name": "Chan Jaoming",
+        "role": "Triad heir",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "Hsin's son and one claimant to the Triad leadership.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "zhou-ming",
+        "name": "Zhou Ming",
+        "role": "Triad rival",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "The other claimant to the Triad leadership.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "rudy-davanzo",
+        "name": "Rudy D'Avanzo",
+        "role": "Mafia associate",
+        "affiliations": [
+          "Liberty City Mafia"
+        ],
+        "summary": "Italian mob contact who pulls Huang into Mafia business.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "melanie-mallard",
+        "name": "Melanie Mallard",
+        "role": "Journalist",
+        "affiliations": [
+          "Liberty City press"
+        ],
+        "summary": "Investigative journalist working the Triad succession story.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "wade-heston",
+        "name": "Wade Heston",
+        "role": "Undercover agent",
+        "affiliations": [
+          "Federal law enforcement"
+        ],
+        "summary": "Undercover operative who recruits Huang's help.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "lester-leroc",
+        "name": "Lester Leroc",
+        "role": "Crime scene investigator",
+        "affiliations": [
+          "Liberty City forensics"
+        ],
+        "summary": "Forensics contact who provides Huang with information.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "ling",
+        "name": "Ling",
+        "role": "Ally",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "Huang's ally within the Triad power struggle.",
+        "status": "Alive",
+        "verified": false
+      }
     ]
   },
   "missions": {
-    "coverage": "limited",
+    "coverage": "complete",
     "items": [
-      {"id":"counterfeit-gangster","order":1,"name":"Counterfeit Gangster","type":"Story","giver":"Wu Lee","location":"Liberty City","reward":{"money":0},"summary":"Opening arc: Huang's arrival and the stolen sword go wrong.","verified":true},
-      {"id":"the-sword","order":2,"name":"The Sword","type":"Story","giver":"Wu Lee","location":"Chinatown","reward":{"money":0},"summary":"Recover the family sword from the people who took it.","verified":false},
-      {"id":"triad-succession","order":3,"name":"Triad succession","type":"Story","giver":"Hsin Jaoming","location":"Chinatown","reward":{"money":0},"summary":"Huang works both claimants in the Triad succession fight.","verified":false},
-      {"id":"mafia-favour","order":4,"name":"Mafia favour","type":"Story","giver":"Rudy D'Avanzo","location":"Portland","reward":{"money":0},"summary":"Jobs for the Liberty City Mafia.","verified":false},
-      {"id":"undercover-work","order":5,"name":"Undercover work","type":"Story","giver":"Wade Heston","location":"Liberty City","reward":{"money":0},"summary":"Federal operation that pulls Huang deeper into the conspiracy.","verified":false},
-      {"id":"finale","order":6,"name":"Finale","type":"Story","giver":"—","location":"Liberty City","reward":{"money":0},"summary":"Resolution of the Triad succession and the sword's fate.","verified":false}
+      {
+        "id": "yu-jian",
+        "order": 1,
+        "name": "Yu Jian",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50,
+          "other": "Safehouse in Cerveza Heights"
+        },
+        "summary": "Go to Kenny's home .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "pursuit-farce",
+        "order": 2,
+        "name": "Pursuit Farce",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50
+        },
+        "summary": "Take Ling Shan and lose the cops.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "under-the-gun",
+        "order": 3,
+        "name": "Under the Gun",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50
+        },
+        "summary": "Practice the fighting skills with Ling Shan and kill the goons attacking one of Kenny's restaurants, while witnessing Ling's death.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "payback",
+        "order": 4,
+        "name": "Payback",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50
+        },
+        "summary": "Avenge Ling's death.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-wheelman",
+        "order": 5,
+        "name": "The Wheelman",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50
+        },
+        "summary": "Steal 3 cars for Chan Jaoming in 6 hours.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "tricks-of-the-triad",
+        "order": 6,
+        "name": "Tricks of the Triad",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "Drug Dealing"
+        },
+        "summary": "Do a drug deal with two drug dealers , then stash the drugs in the apartment.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "pimp-his-ride",
+        "order": 7,
+        "name": "Pimp His Ride",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50
+        },
+        "summary": "Sabotage the race car of Chan's opponent.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "natural-burn-killer",
+        "order": 8,
+        "name": "Natural Burn Killer",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50,
+          "other": "Liberty City Gun Club : Grenades"
+        },
+        "summary": "Burn down 2 stores who won't pay their rent.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "recruitment-drive",
+        "order": 9,
+        "name": "Recruitment Drive",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50,
+          "other": "Tattoo Parlors"
+        },
+        "summary": "Recruit new crime victims and recruit them as Triads.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "whack-the-racers",
+        "order": 10,
+        "name": "Whack the Racers",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 100,
+          "other": "Turf map available in the PDA Races become available across the city Liberty City Gun Club : MP5"
+        },
+        "summary": "Help Chan win a race by taking out the other racers.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "stealing-the-show",
+        "order": 11,
+        "name": "Stealing the Show",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 150
+        },
+        "summary": "Sneak onto the back of a delivery truck and toss the merchandise to Zhou .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "jackin-chan",
+        "order": 12,
+        "name": "Jackin' Chan",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 150
+        },
+        "summary": "Rescue Chan from the&#160; Irish-American Killers .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "flatliner",
+        "order": 13,
+        "name": "Flatliner",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 150
+        },
+        "summary": "Steal an Ambulance containing Zhou's old friend Uri from Francis International Airport and drive it back to Zhou's house.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bomb-disposal",
+        "order": 14,
+        "name": "Bomb Disposal",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Disarm three of Hsin 's vans containing bombs meant to destroy Zhou's drug stash cars, and stop further attempts to do so.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "carpe-dime",
+        "order": 15,
+        "name": "Carpe 'Dime'",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "Lancaster Safehouse Ability to steal gang Burritos for drugs Liberty City Gun Club : Pump Shotgun"
+        },
+        "summary": "Steal a Spanish Lord 's van to check for the Yu Jian.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "store-wars",
+        "order": 16,
+        "name": "Store Wars",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 50
+        },
+        "summary": "Defend a store from the Spanish Lords .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "driven-to-destruction",
+        "order": 17,
+        "name": "Driven to Destruction",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 150
+        },
+        "summary": "Drive Zhou on his Bobcat to African-American drug dealers and let him shoot them with his minigun, until the Carnage meter is filled.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "raw-deal",
+        "order": 18,
+        "name": "Raw Deal",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200,
+          "other": "Safehouse in South Bohan"
+        },
+        "summary": "Protect Chan from the Spanish Lords during a drug deal.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-tow-job",
+        "order": 19,
+        "name": "The Tow Job",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Steal a Korean's car, gain police attention and park it outside the police station in Bohan.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-tail-bagging-the-dogs",
+        "order": 20,
+        "name": "The Tail Bagging the Dogs",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Kill the Korean and all his underbosses.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "trail-blazer",
+        "order": 21,
+        "name": "Trail Blazer",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 300
+        },
+        "summary": "Destroy a gambling den by ramming a leaking&#160; Tanker &#160;into it.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "copter-carnage",
+        "order": 22,
+        "name": "Copter Carnage",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 400
+        },
+        "summary": "Defend Kenny's merchandise from the Spanish Lords and tail the copter back to their warehouse.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "kenny-strikes-back",
+        "order": 23,
+        "name": "Kenny Strikes Back",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "3 bags of Coke"
+        },
+        "summary": "Steal merchandise from the Spanish Lord's warehouse.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "weapons-of-mass-distraction",
+        "order": 24,
+        "name": "Weapons of Mass Distraction",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Distract the Midtown Gangsters while Heston plants a bug in their base.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "street-of-rage",
+        "order": 25,
+        "name": "Street of Rage",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Rescue Heston from the Wonsu Assassins .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "missed-the-boat",
+        "order": 26,
+        "name": "Missed the Boat?",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "10 bags of Heroin Lower Easton Safehouse"
+        },
+        "summary": "Take a boat out to a drug deal and escape from the coast guards before bringing the drugs back to shore.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "cash-and-burn",
+        "order": 27,
+        "name": "Cash & Burn",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Burn all of the Korean's goods at a construction site and kill the security forces.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "dragon-haul-z",
+        "order": 28,
+        "name": "Dragon Haul Z",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Steal a truck containing a dragon costume and after Zhou robs a bank, do the instructed moves in the dragon costume without arrousing too much suspicion and escape.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "sa-boat-age",
+        "order": 29,
+        "name": "Sa-Boat-Age",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "12 bags of Ecstasy"
+        },
+        "summary": "Race Chan and protect him from the Spanish Lords.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-offshore-offload",
+        "order": 30,
+        "name": "The Offshore Offload",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 700,
+          "other": "Fully Cocked License available at AmmuNation.net"
+        },
+        "summary": "Rescue Hsin's men from the Feds, pick up Hsin's accountant and take them all to&#160; Castle Gardens .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "one-shot-one-kill",
+        "order": 31,
+        "name": "One Shot, One Kill",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "Liberty City Gun Club : Sniper Rifle"
+        },
+        "summary": "Snipe an&#160; FIB &#160;informant against&#160; Chan Jaoming &#160;and lose the wanted level.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "counterfeit-gangster",
+        "order": 32,
+        "name": "Counterfeit Gangster",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Opening arc: Huang's arrival and the stolen sword go wrong.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "slaying-with-fire",
+        "order": 33,
+        "name": "Slaying With Fire",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 250
+        },
+        "summary": "Kill all of Chan's entourage.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-fandom-menace",
+        "order": 34,
+        "name": "The Fandom Menace",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Escort Zhou and two other Triad members while avoiding paparazzi.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "operation-northwood",
+        "order": 35,
+        "name": "Operation Northwood",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Chase a drug dealer to his warehouse, then destroy it with the car bomb.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "torpedo-run",
+        "order": 36,
+        "name": "Torpedo Run",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Destroy Zhou Ming's&#160; drug boat &#160;then take out his escaping gang members.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "so-near-yet-sonar",
+        "order": 37,
+        "name": "So Near, Yet Sonar",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "15 bags of Acid"
+        },
+        "summary": "Recover sunken goods from Zhou's sunken ship using a sonar.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "by-myriads-of-swords",
+        "order": 38,
+        "name": "By Myriads of Swords",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Kill two of the Midtown Gangster leaders unfaithful to Hsin and collect their IDs.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "a-shadow-of-doubt",
+        "order": 39,
+        "name": "A Shadow of Doubt",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Tail two Koreans to their hideout.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "double-trouble",
+        "order": 40,
+        "name": "Double Trouble",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Take out some of&#160; The Lost &#160;gangsters and use the&#160; Monoglobe &#160;to destroy a building with The Lost members.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "grave-situation",
+        "order": 41,
+        "name": "Grave Situation",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 250,
+          "other": "Safehouse in Northwood"
+        },
+        "summary": "Protect D'Avanzo from Jimmy Capra 's men.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "faster-pusher-man-sell-sell",
+        "order": 42,
+        "name": "Faster Pusher Man! Sell! Sell!",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "other": "10 bags of Coke"
+        },
+        "summary": "Sell all of the&#160; AoD 's drugs before the rivals do.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "friend-or-foe",
+        "order": 43,
+        "name": "Friend or Foe?",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Breach the Koreans' hideout and obtain the FIB files.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "scrambled",
+        "order": 44,
+        "name": "Scrambled",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Destroy 3 scramblers.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "steal-the-wheels",
+        "order": 45,
+        "name": "Steal the Wheels",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Steal Jimmy Capra's car.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "arms-out-of-harms-way",
+        "order": 46,
+        "name": "Arms Out of Harm's Way",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Kill the Midtown Gangsters' arms dealer.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-wages-of-hsin",
+        "order": 47,
+        "name": "The Wages of Hsin",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2500
+        },
+        "summary": "Destroy the Koreans' hideout with explosives.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "convoy-conflict",
+        "order": 48,
+        "name": "Convoy Conflict",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Protect the Angels of Death convoy from The Lost MC members.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-worlds-a-stooge",
+        "order": 49,
+        "name": "The World's a Stooge",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Take out three men mentioned in the record from Jimmy Capra's car.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "evidence-dash",
+        "order": 50,
+        "name": "Evidence Dash",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Destroy evidence in Heston's&#160; Admiral .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "oversights",
+        "order": 51,
+        "name": "Oversights",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 250
+        },
+        "summary": "Snipe&#160; Jimmy Capra &#160;and his men.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "a-rude-awakening",
+        "order": 52,
+        "name": "A Rude Awakening",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Chase and kill&#160; Rudy D'Avanzo .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "see-no-evil",
+        "order": 53,
+        "name": "See No Evil",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Protect Lester and Meredith from the&#160; Angels of Death &#160;as he transports her to her house, without frightening her.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "wi-find",
+        "order": 54,
+        "name": "Wi-Find",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 200
+        },
+        "summary": "Hack the&#160; FIB &#160;files to identify the Triad's rat.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "rat-race",
+        "order": 55,
+        "name": "Rat Race",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Defend Kenny while he drives to warn&#160; Hsin Jaoming &#160;of&#160; Zhou Ming &#160;and&#160; Chan Jaoming 's betrayal.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "clear-the-pier",
+        "order": 56,
+        "name": "Clear the Pier",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Chase and kill Chan Jaoming.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "hit-from-the-tong",
+        "order": 57,
+        "name": "Hit from the Tong",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Kill Zhou Ming.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "salt-in-the-wound",
+        "order": 58,
+        "name": "Salt in the Wound",
+        "type": "Story",
+        "giver": "Unspecified",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Chase and kill the real traitor .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      }
     ]
   },
   "vehicles": {
     "coverage": "limited",
     "items": [
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"infernus","name":"Infernus","category":"Car","class":"Sports","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"taxi","name":"Taxi","category":"Car","class":"Taxi","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":null,"seats":4,"verified":true},
-      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"fire-truck","name":"Fire Truck","category":"Emergency","class":"Fire","top_speed_kph":null,"seats":2,"verified":true},
-      {"id":"maverick","name":"Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":null,"seats":4,"verified":false},
-      {"id":"predator","name":"Predator","category":"Boat","class":"Police boat","top_speed_kph":null,"seats":2,"verified":false}
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "taxi",
+        "name": "Taxi",
+        "category": "Car",
+        "class": "Taxi",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "police-car",
+        "name": "Police Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "class": "Medical",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "class": "Fire",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "maverick",
+        "name": "Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": null,
+        "seats": 4,
+        "verified": false
+      },
+      {
+        "id": "predator",
+        "name": "Predator",
+        "category": "Boat",
+        "class": "Police boat",
+        "top_speed_kph": null,
+        "seats": 2,
+        "verified": false
+      }
     ]
   },
   "weapons": {
     "coverage": "limited",
     "items": [
-      {"id":"fists","name":"Fists","type":"Melee","damage_tier":"Low","ammo":"—","price":null,"unlock":"Default","verified":true},
-      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"katana","name":"Katana","type":"Melee","damage_tier":"High","ammo":"—","price":null,"unlock":"Story","verified":true},
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Ammu-Nation equivalent","verified":true},
-      {"id":"micro-smg","name":"Micro SMG","type":"Submachine gun","damage_tier":"Medium","ammo":"Magazine","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"Shells","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"rifle","name":"Rifle","type":"Assault rifle","damage_tier":"High","ammo":"Magazine","price":null,"unlock":"Later missions","verified":true},
-      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"Rockets","price":null,"unlock":"Pickups","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true},
-      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Pickups","verified":true}
+      {
+        "id": "fists",
+        "name": "Fists",
+        "type": "Melee",
+        "damage_tier": "Low",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "katana",
+        "name": "Katana",
+        "type": "Melee",
+        "damage_tier": "High",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Story",
+        "verified": true
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Ammu-Nation equivalent",
+        "verified": true
+      },
+      {
+        "id": "micro-smg",
+        "name": "Micro SMG",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "Shells",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "rifle",
+        "name": "Rifle",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "Magazine",
+        "price": null,
+        "unlock": "Later missions",
+        "verified": true
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "Rockets",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      }
     ]
   },
   "cheats": {
@@ -66,18 +1125,68 @@
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"Liberty City in 2009, rendered top-down with a stylised cel-shaded look.","verified":true},
-      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial island.","verified":true},
-      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial island.","verified":true},
-      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island.","verified":true},
-      {"id":"chinatown","name":"Chinatown","type":"District","parent":"Portland","summary":"Triad heartland and the game's opening area.","verified":true}
+      {
+        "id": "liberty-city",
+        "name": "Liberty City",
+        "type": "City",
+        "parent": null,
+        "summary": "Liberty City in 2009, rendered top-down with a stylised cel-shaded look.",
+        "verified": true
+      },
+      {
+        "id": "portland",
+        "name": "Portland",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Industrial island.",
+        "verified": true
+      },
+      {
+        "id": "staunton-island",
+        "name": "Staunton Island",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Commercial island.",
+        "verified": true
+      },
+      {
+        "id": "shoreside-vale",
+        "name": "Shoreside Vale",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Suburban island.",
+        "verified": true
+      },
+      {
+        "id": "chinatown",
+        "name": "Chinatown",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Triad heartland and the game's opening area.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "partial",
     "items": [
-      {"id":"drug-deals","name":"Drug deals","type":"Trade","total":0,"reward":"Profit and safehouse upgrades","verified":false,"source":"Continuous economy, not a fixed collectible set"},
-      {"id":"lions-of-south","name":"Lions of South America","type":"Collectible","total":0,"reward":"Cash and 100% progress","verified":false}
+      {
+        "id": "drug-deals",
+        "name": "Drug deals",
+        "type": "Trade",
+        "total": 0,
+        "reward": "Profit and safehouse upgrades",
+        "verified": false,
+        "source": "Continuous economy, not a fixed collectible set"
+      },
+      {
+        "id": "lions-of-south",
+        "name": "Lions of South America",
+        "type": "Collectible",
+        "total": 0,
+        "reward": "Cash and 100% progress",
+        "verified": false
+      }
     ]
   }
 }

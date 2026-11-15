@@ -1,82 +1,1451 @@
 {
   "meta": {
-    "sources": ["LCS in-game mission list", "Rockstar Leeds PSP/PS2 release notes"],
+    "sources": [
+      "LCS in-game mission list",
+      "Rockstar Leeds PSP/PS2 release notes"
+    ],
     "notes": "Prequel to GTA III set in 1998. PSP and PS2 editions share content; cheat input differs by platform."
   },
   "characters": {
     "coverage": "partial",
     "items": [
-      {"id":"toni-cipriani","name":"Toni Cipriani","role":"Protagonist","affiliations":["Leone Crime Family"],"summary":"Returns to Liberty City after killing a made man and works to earn back Salvatore's trust.","status":"Alive","first_appearance":"GTA: Liberty City Stories","verified":true},
-      {"id":"salvatore-leone","name":"Salvatore Leone","role":"Leone don","affiliations":["Leone Crime Family"],"summary":"The don Toni serves, fighting off Sicilian and Forelli challenges to his rule.","status":"Alive","verified":true},
-      {"id":"maria-latare","name":"Maria Latore","role":"Salvatore's girlfriend","affiliations":["Leone Crime Family"],"summary":"Salvatore's partner and a recurring source of chaos for Toni.","status":"Alive","verified":true},
-      {"id":"vincenzo-cilli","name":"Vincenzo Cilli","role":"Leone associate","affiliations":["Leone Crime Family"],"summary":"Toni's early employer and rival within the family.","status":"Deceased","verified":true},
-      {"id":"jd-otoole","name":"JD O'Toole","role":"Pimp, informant","affiliations":["Leone Crime Family","Sindacco Family"],"summary":"A pimp and police informant who drags Toni into Triad and Sindacco trouble.","status":"Deceased","verified":true},
-      {"id":"leon-mcaffrey","name":"Leon McAffrey","role":"Corrupt cop","affiliations":["Liberty City Police Department"],"summary":"A corrupt detective who hires Toni for off-the-books work.","status":"Alive","verified":true},
-      {"id":"donald-love","name":"Donald Love","role":"Media mogul","affiliations":["Love Media"],"summary":"A young Donald Love building his media empire in 1998.","status":"Alive","verified":true},
-      {"id":"8-ball","name":"8-Ball","role":"Explosives expert","affiliations":["Liberty City underworld"],"summary":"Bomb-maker and fixer, already established before GTA III.","status":"Alive","verified":true},
-      {"id":"luigi-goterelli","name":"Luigi Goterelli","role":"Leone capo","affiliations":["Leone Crime Family"],"summary":"Runs the Red Light District club before the events of GTA III.","status":"Alive","verified":true},
-      {"id":"joey-leone","name":"Joey Leone","role":"Leone capo","affiliations":["Leone Crime Family"],"summary":"Salvatore's son, running the Portland garage.","status":"Alive","verified":true},
-      {"id":"ma-cipriani","name":"Ma Cipriani","role":"Toni's mother","affiliations":["Cipriani family"],"summary":"Toni's overbearing mother and a side-mission contact.","status":"Alive","verified":true},
-      {"id":"paulie-sindacco","name":"Paulie Sindacco","role":"Sindacco boss","affiliations":["Sindacco Family"],"summary":"Head of the Sindacco family pushing into Liberty City.","status":"Alive","verified":true},
-      {"id":"franco-forelli","name":"Franco Forelli","role":"Forelli boss","affiliations":["Forelli Crime Family"],"summary":"Forelli leader attempting to take over Leone territory.","status":"Deceased","verified":true},
-      {"id":"massimo-torini","name":"Massimo Torini","role":"Antagonist, Sicilian don","affiliations":["Sicilian Mafia"],"summary":"Sicilian envoy manipulating the Liberty City families.","status":"Deceased","verified":true}
+      {
+        "id": "toni-cipriani",
+        "name": "Toni Cipriani",
+        "role": "Protagonist",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Returns to Liberty City after killing a made man and works to earn back Salvatore's trust.",
+        "status": "Alive",
+        "first_appearance": "GTA: Liberty City Stories",
+        "verified": true
+      },
+      {
+        "id": "salvatore-leone",
+        "name": "Salvatore Leone",
+        "role": "Leone don",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "The don Toni serves, fighting off Sicilian and Forelli challenges to his rule.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "maria-latare",
+        "name": "Maria Latore",
+        "role": "Salvatore's girlfriend",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's partner and a recurring source of chaos for Toni.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "vincenzo-cilli",
+        "name": "Vincenzo Cilli",
+        "role": "Leone associate",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Toni's early employer and rival within the family.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "jd-otoole",
+        "name": "JD O'Toole",
+        "role": "Pimp, informant",
+        "affiliations": [
+          "Leone Crime Family",
+          "Sindacco Family"
+        ],
+        "summary": "A pimp and police informant who drags Toni into Triad and Sindacco trouble.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "leon-mcaffrey",
+        "name": "Leon McAffrey",
+        "role": "Corrupt cop",
+        "affiliations": [
+          "Liberty City Police Department"
+        ],
+        "summary": "A corrupt detective who hires Toni for off-the-books work.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "donald-love",
+        "name": "Donald Love",
+        "role": "Media mogul",
+        "affiliations": [
+          "Love Media"
+        ],
+        "summary": "A young Donald Love building his media empire in 1998.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "8-ball",
+        "name": "8-Ball",
+        "role": "Explosives expert",
+        "affiliations": [
+          "Liberty City underworld"
+        ],
+        "summary": "Bomb-maker and fixer, already established before GTA III.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "luigi-goterelli",
+        "name": "Luigi Goterelli",
+        "role": "Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Runs the Red Light District club before the events of GTA III.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "joey-leone",
+        "name": "Joey Leone",
+        "role": "Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's son, running the Portland garage.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ma-cipriani",
+        "name": "Ma Cipriani",
+        "role": "Toni's mother",
+        "affiliations": [
+          "Cipriani family"
+        ],
+        "summary": "Toni's overbearing mother and a side-mission contact.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "paulie-sindacco",
+        "name": "Paulie Sindacco",
+        "role": "Sindacco boss",
+        "affiliations": [
+          "Sindacco Family"
+        ],
+        "summary": "Head of the Sindacco family pushing into Liberty City.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "franco-forelli",
+        "name": "Franco Forelli",
+        "role": "Forelli boss",
+        "affiliations": [
+          "Forelli Crime Family"
+        ],
+        "summary": "Forelli leader attempting to take over Leone territory.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "massimo-torini",
+        "name": "Massimo Torini",
+        "role": "Antagonist, Sicilian don",
+        "affiliations": [
+          "Sicilian Mafia"
+        ],
+        "summary": "Sicilian envoy manipulating the Liberty City families.",
+        "status": "Deceased",
+        "verified": true
+      }
     ]
   },
   "missions": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
-      {"id":"home-sweet-home","order":1,"name":"Home Sweet Home","type":"Story","giver":"Salvatore Leone","location":"Portland","reward":{"money":0},"summary":"Toni returns to Liberty City and reports to Salvatore.","verified":true},
-      {"id":"slacker","order":2,"name":"Slacker","type":"Story","giver":"Vincenzo Cilli","location":"Atlantic Quays","reward":{"money":0},"summary":"Escort Vincenzo's contact through the docks.","verified":true},
-      {"id":"dealing-revenge","order":3,"name":"Dealing Revenge","type":"Story","giver":"Vincenzo Cilli","location":"Portland","reward":{"money":0},"summary":"Steal a car and deal with a rival dealer.","verified":true},
-      {"id":"snuff","order":4,"name":"Snuff","type":"Story","giver":"JD O'Toole","location":"Red Light District","reward":{"money":0},"summary":"Stop a snuff film being made in the Red Light District.","verified":true},
-      {"id":"the-portland-chainsaw-masquerade","order":5,"name":"The Portland Chainsaw Masquerade","type":"Story","giver":"Vincenzo Cilli","location":"Atlantic Quays","reward":{"money":0},"summary":"Survive a chainsaw ambush arranged by Vincenzo.","verified":true},
-      {"id":"big-rumble-in-little-china","order":6,"name":"Big Rumble in Little China","type":"Story","giver":"JD O'Toole","location":"Chinatown","reward":{"money":0},"summary":"A massive street fight in Chinatown.","verified":true},
-      {"id":"grease-sucho","order":7,"name":"Grease Sucho","type":"Story","giver":"JD O'Toole","location":"Portland","reward":{"money":0},"summary":"Kill a mechanic who has been informing on the family.","verified":true},
-      {"id":"dead-meat","order":8,"name":"Dead Meat","type":"Story","giver":"JD O'Toole","location":"Portland","reward":{"money":0},"summary":"Dispose of a body for JD.","verified":true},
-      {"id":"no-son-of-mine","order":9,"name":"No Son of Mine","type":"Story","giver":"Salvatore Leone","location":"Saint Mark's","reward":{"money":0},"summary":"Deal with a traitor inside the Leone family.","verified":true},
-      {"id":"the-trouble-with-triads","order":10,"name":"The Trouble with Triads","type":"Story","giver":"Salvatore Leone","location":"Chinatown","reward":{"money":0},"summary":"Hit the Triads to protect Leone interests.","verified":true},
-      {"id":"a-walk-in-the-park","order":11,"name":"A Walk in the Park","type":"Story","giver":"Leon McAffrey","location":"Belleville Park","reward":{"money":0},"summary":"Kill a target walking through Belleville Park.","verified":true},
-      {"id":"making-toni","order":12,"name":"Making Toni","type":"Story","giver":"Salvatore Leone","location":"Saint Mark's","reward":{"money":0},"summary":"Earn recognition and become a made man.","verified":true},
-      {"id":"the-shoreside-redemption","order":13,"name":"The Shoreside Redemption","type":"Story","giver":"Salvatore Leone","location":"Shoreside Vale","reward":{"money":0},"summary":"Late-game Leone operation on Shoreside Vale.","verified":false},
-      {"id":"the-sicilian-gambit","order":14,"name":"The Sicilian Gambit","type":"Story","giver":"Salvatore Leone","location":"Portland","reward":{"money":0},"summary":"Final mission: stop the Sicilian takeover.","verified":true}
+      {
+        "id": "introduction",
+        "order": 1,
+        "name": "Introduction",
+        "type": "Story",
+        "giver": "Introduction",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Opening cutscene, where Toni Cipriani arrives back home to Liberty City .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "home-sweet-home",
+        "order": 2,
+        "name": "Home Sweet Home",
+        "type": "Story",
+        "giver": "Introduction",
+        "location": "Portland",
+        "reward": {
+          "money": 100,
+          "other": "Portland Safehouse Leone's Suit"
+        },
+        "summary": "Toni returns to Liberty City and reports to Salvatore.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "slacker",
+        "order": 3,
+        "name": "Slacker",
+        "type": "Story",
+        "giver": "Vincenzo Cilli",
+        "location": "Portland",
+        "reward": {
+          "money": 100
+        },
+        "summary": "Escort Vincenzo's contact through the docks.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "dealing-revenge",
+        "order": 4,
+        "name": "Dealing Revenge",
+        "type": "Story",
+        "giver": "Vincenzo Cilli",
+        "location": "Portland",
+        "reward": {
+          "money": 500,
+          "other": "Baseball Bat becomes available at all three safehouses"
+        },
+        "summary": "Steal a car and deal with a rival dealer.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "snuff",
+        "order": 5,
+        "name": "Snuff",
+        "type": "Story",
+        "giver": "Vincenzo Cilli",
+        "location": "Portland",
+        "reward": {
+          "money": 500,
+          "other": "Hellenbach GT Pistol available in Ammu-Nation Cellphone"
+        },
+        "summary": "Stop a snuff film being made in the Red Light District.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "smash-and-grab",
+        "order": 6,
+        "name": "Smash and Grab",
+        "type": "Story",
+        "giver": "Vincenzo Cilli",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Rescue Leone Crime Family members from the cops after a botched raid",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "hot-wheels",
+        "order": 7,
+        "name": "Hot Wheels",
+        "type": "Story",
+        "giver": "Vincenzo Cilli",
+        "location": "Portland",
+        "reward": {
+          "other": "Money received from crushing the Banshee"
+        },
+        "summary": "Pick up Vincenzo's car full of drugs and escape the Police",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bone-voyeur",
+        "order": 8,
+        "name": "Bone Voyeur!",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Gather JD's money from the prostitutes around the Red Light District .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "don-in-60-seconds",
+        "order": 9,
+        "name": "Don in 60 Seconds",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 1000,
+          "other": "Micro SMG available in Ammu-Nation"
+        },
+        "summary": "Drive Salvatore away from Paulie's Revue Bar and the cops.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "a-volatile-situation",
+        "order": 10,
+        "name": "A Volatile Situation",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Defend a Leone Casino from the Sindaccos .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "blow-up-dolls",
+        "order": 11,
+        "name": "Blow Up 'Dolls'",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Blow up the Sindacco owned brothel-casino .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "snappy-dresser",
+        "order": 12,
+        "name": "Snappy Dresser",
+        "type": "Story",
+        "giver": "Mrs. Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 100
+        },
+        "summary": "Follow Giovanni Casa and take embarrassing photos of him.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "big-rumble-in-little-china",
+        "order": 13,
+        "name": "Big Rumble in Little China",
+        "type": "Story",
+        "giver": "Mrs. Cipriani",
+        "location": "Portland",
+        "reward": {},
+        "summary": "A massive street fight in Chinatown.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "grease-sucho",
+        "order": 14,
+        "name": "Grease Sucho",
+        "type": "Story",
+        "giver": "Mrs. Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Kill a mechanic who has been informing on the family.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "dead-meat",
+        "order": 15,
+        "name": "Dead Meat",
+        "type": "Story",
+        "giver": "Mrs. Cipriani",
+        "location": "Portland",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Dispose of a body for JD.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "no-son-of-mine",
+        "order": 16,
+        "name": "No Son of Mine",
+        "type": "Story",
+        "giver": "Mrs. Cipriani",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Deal with a traitor inside the Leone family.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-offer",
+        "order": 17,
+        "name": "The Offer",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Deliver a bribe to Jane Hopper and escape her ambush.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "ho-selecta",
+        "order": 18,
+        "name": "Ho Selecta!",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Gather up prostitutes and deliver them to the docks .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "frighteners",
+        "order": 19,
+        "name": "Frighteners",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 1000,
+          "other": "Avenging Angel's Fatigues"
+        },
+        "summary": "Scare three union bosses into submission.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "rollercoaster-ride",
+        "order": 20,
+        "name": "Rollercoaster Ride",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 1000,
+          "other": "Chauffeur's Clothes"
+        },
+        "summary": "Scare Jane Hopper into submission by recklessly driving her limo .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "shop-til-you-strop",
+        "order": 21,
+        "name": "Shop 'til You Strop",
+        "type": "Story",
+        "giver": "Maria Latore",
+        "location": "Portland",
+        "reward": {
+          "money": 100
+        },
+        "summary": "Take Maria out shopping.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "taken-for-a-ride",
+        "order": 22,
+        "name": "Taken for a Ride",
+        "type": "Story",
+        "giver": "Maria Latore",
+        "location": "Portland",
+        "reward": {
+          "money": 500
+        },
+        "summary": "Take Maria to her dealer and rescue her from the Sindaccos .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "booby-prize",
+        "order": 23,
+        "name": "Booby Prize",
+        "type": "Story",
+        "giver": "Maria Latore",
+        "location": "Portland",
+        "reward": {},
+        "summary": "Win a bike race.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "biker-heat",
+        "order": 24,
+        "name": "Biker Heat",
+        "type": "Story",
+        "giver": "Maria Latore",
+        "location": "Portland",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Kill Cedric 'Wayne' Fotheringay .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "overdose-of-trouble",
+        "order": 25,
+        "name": "Overdose of Trouble",
+        "type": "Story",
+        "giver": "Maria Latore",
+        "location": "Portland",
+        "reward": {
+          "other": "Goodfella Outfit"
+        },
+        "summary": "Find Maria's \"zap\" to prevent her from dying on a drug overdose.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "contra-banned",
+        "order": 26,
+        "name": "Contra-Banned",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Go to a drug deal in Portland Harbor and escape the Police.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "salvatores-salvation",
+        "order": 27,
+        "name": "Salvatore's Salvation",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Rescue Salvatore from his kidnappers.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-guns-of-leone",
+        "order": 28,
+        "name": "The Guns of Leone",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Protect Salvatore as he goes on a Sindacco killing rampage.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "calm-before-the-storm",
+        "order": 29,
+        "name": "Calm Before the Storm",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Follow Massimo Torini around town.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-made-man",
+        "order": 30,
+        "name": "The Made Man",
+        "type": "Story",
+        "giver": "JD O'Toole",
+        "location": "Portland",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Take JD to be 'made'.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-portland-chainsaw-masquerade",
+        "order": 31,
+        "name": "The Portland Chainsaw Masquerade",
+        "type": "Story",
+        "giver": "Vincenzo Cilli",
+        "location": "Portland",
+        "reward": {
+          "money": 3000,
+          "other": "Overalls Outfit"
+        },
+        "summary": "Survive a chainsaw ambush arranged by Vincenzo.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "sindacco-sabotage",
+        "order": 32,
+        "name": "Sindacco Sabotage",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Defend Red Light District from the Diablos .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-trouble-with-triads",
+        "order": 33,
+        "name": "The Trouble With Triads",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Hit the Triads to protect Leone interests.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "driving-mr-leone",
+        "order": 34,
+        "name": "Driving Mr Leone",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Portland",
+        "reward": {
+          "money": 4000,
+          "other": "Staunton Island Safehouse Access to Staunton Island Ability to gain a five-star wanted level"
+        },
+        "summary": "Escape from the cops in Portland to Staunton Island with Salvatore.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "a-walk-in-the-park",
+        "order": 35,
+        "name": "A Walk in the Park",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500,
+          "other": "Sweats Outfit"
+        },
+        "summary": "Kill a target walking through Belleville Park.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "making-toni",
+        "order": 36,
+        "name": "Making Toni",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000,
+          "other": "Antonio Outfit Ma's Hitmen cease attempting to kill Toni"
+        },
+        "summary": "Earn recognition and become a made man.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-morgue-party-candidate",
+        "order": 37,
+        "name": "The Morgue Party Candidate",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Steal a corpse for Donald Love.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "steering-the-vote",
+        "order": 38,
+        "name": "Steering the Vote",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500,
+          "other": "-"
+        },
+        "summary": "Campaign for Donald Love by driving his campaign van around Staunton Island.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "cam-pain",
+        "order": 39,
+        "name": "Cam-Pain",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Kill Miles O'Donovan's campaigners.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "friggin-the-riggin",
+        "order": 40,
+        "name": "Friggin' the Riggin'",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500,
+          "other": "Shotgun , M4 and Flamethrower available in Phil Cassidy's Fully Cocked Gun Shop"
+        },
+        "summary": "Burn down a Forelli warehouse full of voting machines and fake ballots.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "love-and-bullets",
+        "order": 41,
+        "name": "Love & Bullets",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Protect Donald from the Forellis.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "counterfeit-count",
+        "order": 42,
+        "name": "Counterfeit Count",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2500
+        },
+        "summary": "Steal uncounted votes from couriers.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "lc-confidential",
+        "order": 43,
+        "name": "L.C. Confidential",
+        "type": "Story",
+        "giver": "Ned Burner",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Steal a report and deliver it to Liberty Tree .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-passion-of-the-heist",
+        "order": 44,
+        "name": "The Passion of the Heist",
+        "type": "Story",
+        "giver": "Ned Burner",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Steal stolen diamonds and deliver them to Liberty Tree.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "karmageddon",
+        "order": 45,
+        "name": "Karmageddon",
+        "type": "Story",
+        "giver": "Ned Burner",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Use a firetruck to cause havoc and destruction.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "false-idols",
+        "order": 46,
+        "name": "False Idols",
+        "type": "Story",
+        "giver": "Ned Burner",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500,
+          "other": "Rocket Launcher available in Phil Cassidy's Fully Cocked Gun Shop"
+        },
+        "summary": "Kill three celebrities: DB-P , Black Lightman and Faith W.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "caught-in-the-act",
+        "order": 47,
+        "name": "Caught in the Act",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Protect Salvatore from the mayor's secret service as he interrogates the Mayor's Assistant .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "search-and-rescue",
+        "order": 48,
+        "name": "Search and Rescue",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Rescue Salvatore from the Forellis in Fort Staunton .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "taking-the-peace",
+        "order": 49,
+        "name": "Taking the Peace",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2500
+        },
+        "summary": "Remote control Paulie Sindacco's car to botch his meeting with the Forellis.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "shoot-the-messenger",
+        "order": 50,
+        "name": "Shoot the Messenger",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 3000,
+          "other": "Wiseguy Outfit"
+        },
+        "summary": "Kill the Forelli wiseguy.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "sayonara-sindaccos",
+        "order": 51,
+        "name": "Sayonara Sindaccos",
+        "type": "Story",
+        "giver": "Leon McAffrey",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 1500
+        },
+        "summary": "Kill a lot of Sindaccos with Leon McAffrey.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-whole-9-yardies",
+        "order": 52,
+        "name": "The Whole 9 Yardies",
+        "type": "Story",
+        "giver": "Leon McAffrey",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Lure Forellis into a Yardie ambush.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "crazy-69",
+        "order": 53,
+        "name": "Crazy '69'",
+        "type": "Story",
+        "giver": "Leon McAffrey",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000,
+          "other": "Dragon Outfit"
+        },
+        "summary": "Kill 20 Forellis in Belleville Park with a katana .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "night-of-the-livid-dreads",
+        "order": 54,
+        "name": "Night of the Livid Dreads",
+        "type": "Story",
+        "giver": "Leon McAffrey",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Protect Yardies from attacking Sindaccos.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "munitions-dump",
+        "order": 55,
+        "name": "Munitions Dump",
+        "type": "Story",
+        "giver": "Leon McAffrey",
+        "location": "Staunton Island",
+        "reward": {
+          "money": 2500
+        },
+        "summary": "Destroy Forelli weapon trucks before they reach their destination.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "love-on-the-rocks",
+        "order": 56,
+        "name": "Love on the Rocks",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Staunton Island",
+        "reward": {
+          "other": "Shoreside Vale Safehouse Access to Shoreside Vale Ability to gain a six-star wanted level"
+        },
+        "summary": "Steal the evidence linking Donald Love to the Leone Crime Family .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "rough-justice",
+        "order": 57,
+        "name": "Rough Justice",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2500
+        },
+        "summary": "Exact revenge on the Forellis in Wichita Gardens .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "dead-reckoning",
+        "order": 58,
+        "name": "Dead Reckoning",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Liberty City",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Kill Paulie Sindacco .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "shogun-showdown",
+        "order": 59,
+        "name": "Shogun Showdown",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Liberty City",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Infiltrate Yakuza's compound and destroy their tank .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "panlantic-land-grab",
+        "order": 60,
+        "name": "Panlantic Land Grab",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Liberty City",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Kill Avery Carrington and steal his redevelopment plans.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "stop-the-press",
+        "order": 61,
+        "name": "Stop the Press",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Kill Ned Burner .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "morgue-party-resurrection",
+        "order": 62,
+        "name": "Morgue Party Resurrection",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Collect the bodies of Avery Carrington and Ned Burner for Donald.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "more-deadly-than-the-male",
+        "order": 63,
+        "name": "More Deadly Than the Male",
+        "type": "Story",
+        "giver": "Toshiko Kasen",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000,
+          "other": "Minigun available in Phil Cassidy's Fully Cocked Gun Shop"
+        },
+        "summary": "Steal a Yakuza arms shipment.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "cash-clash",
+        "order": 64,
+        "name": "Cash Clash",
+        "type": "Story",
+        "giver": "Toshiko Kasen",
+        "location": "Liberty City",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Destroy three Yakuza money shipments before they reach their destination.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "a-date-with-death",
+        "order": 65,
+        "name": "A Date With Death",
+        "type": "Story",
+        "giver": "Toshiko Kasen",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000,
+          "other": "Tuxedo Outfit"
+        },
+        "summary": "Take Toshiko to an Opera and escape the Forellis.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "cash-in-kazukis-chips",
+        "order": 66,
+        "name": "Cash in Kazuki's Chips",
+        "type": "Story",
+        "giver": "Toshiko Kasen",
+        "location": "Liberty City",
+        "reward": {
+          "money": 4000
+        },
+        "summary": "Kill Kazuki Kasen .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "no-money-mo-problems",
+        "order": 67,
+        "name": "No Money, Mo' Problems",
+        "type": "Story",
+        "giver": "8-Ball",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Get $ 20,000 to pay 8-Ball for his explosives.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bringing-the-house-down",
+        "order": 68,
+        "name": "Bringing the House Down",
+        "type": "Story",
+        "giver": "8-Ball",
+        "location": "Liberty City",
+        "reward": {
+          "money": 5000
+        },
+        "summary": "Rig explosives in the tunnels under Fort Staunton and blow up the whole district.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "love-on-the-run",
+        "order": 69,
+        "name": "Love on the Run",
+        "type": "Story",
+        "giver": "Donald Love",
+        "location": "Liberty City",
+        "reward": {
+          "money": 6000
+        },
+        "summary": "Defend Donald from the Colombian Cartel and take him to the airport .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-shoreside-redemption",
+        "order": 70,
+        "name": "The Shoreside Redemption",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Liberty City",
+        "reward": {
+          "money": 4000
+        },
+        "summary": "Late-game Leone operation on Shoreside Vale.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "the-sicilian-gambit",
+        "order": 71,
+        "name": "The Sicilian Gambit",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Liberty City",
+        "reward": {
+          "money": 500000,
+          "other": "King Jumpsuit"
+        },
+        "summary": "Final mission: stop the Sicilian takeover.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      }
     ]
   },
   "vehicles": {
     "coverage": "partial",
     "items": [
-      {"id":"infernus","name":"Infernus","category":"Car","class":"Sports","top_speed_kph":220,"seats":2,"verified":true},
-      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":225,"seats":2,"verified":true},
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":210,"seats":2,"verified":true},
-      {"id":"stinger","name":"Stinger","category":"Car","class":"Sports","top_speed_kph":205,"seats":2,"verified":true},
-      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":175,"seats":4,"verified":true},
-      {"id":"kuruma","name":"Kuruma","category":"Car","class":"Sedan","top_speed_kph":170,"seats":4,"verified":true},
-      {"id":"stallion","name":"Stallion","category":"Car","class":"Muscle","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"patriot","name":"Patriot","category":"Car","class":"SUV","top_speed_kph":175,"seats":4,"verified":true},
-      {"id":"pcj-600","name":"PCJ-600","category":"Motorcycle","class":"Sport bike","top_speed_kph":200,"seats":2,"verified":true},
-      {"id":"freeway","name":"Freeway","category":"Motorcycle","class":"Cruiser","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"sanchez","name":"Sanchez","category":"Motorcycle","class":"Dirt bike","top_speed_kph":170,"seats":2,"verified":true},
-      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":60,"seats":1,"verified":true},
-      {"id":"maverick","name":"Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":4,"verified":true},
-      {"id":"police-maverick","name":"Police Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":3,"verified":true},
-      {"id":"predator","name":"Predator","category":"Boat","class":"Police boat","top_speed_kph":95,"seats":2,"verified":true},
-      {"id":"speeder","name":"Speeder","category":"Boat","class":"Speedboat","top_speed_kph":105,"seats":2,"verified":true}
+      {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 220,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 225,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 210,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "stinger",
+        "name": "Stinger",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 205,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 175,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "kuruma",
+        "name": "Kuruma",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 170,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "stallion",
+        "name": "Stallion",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "patriot",
+        "name": "Patriot",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 175,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "pcj-600",
+        "name": "PCJ-600",
+        "category": "Motorcycle",
+        "class": "Sport bike",
+        "top_speed_kph": 200,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "freeway",
+        "name": "Freeway",
+        "category": "Motorcycle",
+        "class": "Cruiser",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sanchez",
+        "name": "Sanchez",
+        "category": "Motorcycle",
+        "class": "Dirt bike",
+        "top_speed_kph": 170,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": 60,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "maverick",
+        "name": "Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "police-maverick",
+        "name": "Police Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 3,
+        "verified": true
+      },
+      {
+        "id": "predator",
+        "name": "Predator",
+        "category": "Boat",
+        "class": "Police boat",
+        "top_speed_kph": 95,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "speeder",
+        "name": "Speeder",
+        "category": "Boat",
+        "class": "Speedboat",
+        "top_speed_kph": 105,
+        "seats": 2,
+        "verified": true
+      }
     ]
   },
   "weapons": {
     "coverage": "partial",
     "items": [
-      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"chainsaw","name":"Chainsaw","type":"Melee","damage_tier":"Very high","ammo":"—","price":null,"unlock":"Mission reward","verified":true},
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"17 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"uzi","name":"Uzi","type":"Submachine gun","damage_tier":"Medium","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"8 shells","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"ak-47","name":"AK-47","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"m4","name":"M4","type":"Assault rifle","damage_tier":"Very high","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"sniper-rifle","name":"Sniper Rifle","type":"Sniper","damage_tier":"Very high","ammo":"5 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Pickups","verified":true},
-      {"id":"flamethrower","name":"Flamethrower","type":"Heavy","damage_tier":"Very high","ammo":"Continuous","price":null,"unlock":"Pickups","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Street pickups","verified":true}
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "chainsaw",
+        "name": "Chainsaw",
+        "type": "Melee",
+        "damage_tier": "Very high",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Mission reward",
+        "verified": true
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "uzi",
+        "name": "Uzi",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "8 shells",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "ak-47",
+        "name": "AK-47",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "m4",
+        "name": "M4",
+        "type": "Assault rifle",
+        "damage_tier": "Very high",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Sniper",
+        "damage_tier": "Very high",
+        "ammo": "5 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "Heavy",
+        "damage_tier": "Very high",
+        "ammo": "Continuous",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "20",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "20",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      }
     ]
   },
   "cheats": {
@@ -86,26 +1455,131 @@
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"The 1998 version of Liberty City, three years before GTA III.","verified":true},
-      {"id":"portland","name":"Portland","type":"Island","parent":"Liberty City","summary":"Industrial island and Leone heartland.","verified":true},
-      {"id":"staunton-island","name":"Staunton Island","type":"Island","parent":"Liberty City","summary":"Commercial island with Belleville Park and Bedford Point.","verified":true},
-      {"id":"shoreside-vale","name":"Shoreside Vale","type":"Island","parent":"Liberty City","summary":"Suburban island with the airport and dam.","verified":true},
-      {"id":"red-light-district","name":"Red Light District","type":"District","parent":"Portland","summary":"Luigi's club and JD O'Toole's territory.","verified":true},
-      {"id":"chinatown","name":"Chinatown","type":"District","parent":"Portland","summary":"Triad territory in Portland.","verified":true},
-      {"id":"atlantic-quays","name":"Atlantic Quays","type":"District","parent":"Portland","summary":"Docks where Vincenzo operates.","verified":true},
-      {"id":"saint-marks","name":"Saint Mark's","type":"District","parent":"Portland","summary":"Leone stronghold and Salvatore's mansion.","verified":true},
-      {"id":"belleville-park","name":"Belleville Park","type":"District","parent":"Staunton Island","summary":"Central park and mission location.","verified":true},
-      {"id":"torrington","name":"Torrington","type":"District","parent":"Staunton Island","summary":"Business district.","verified":true}
+      {
+        "id": "liberty-city",
+        "name": "Liberty City",
+        "type": "City",
+        "parent": null,
+        "summary": "The 1998 version of Liberty City, three years before GTA III.",
+        "verified": true
+      },
+      {
+        "id": "portland",
+        "name": "Portland",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Industrial island and Leone heartland.",
+        "verified": true
+      },
+      {
+        "id": "staunton-island",
+        "name": "Staunton Island",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Commercial island with Belleville Park and Bedford Point.",
+        "verified": true
+      },
+      {
+        "id": "shoreside-vale",
+        "name": "Shoreside Vale",
+        "type": "Island",
+        "parent": "Liberty City",
+        "summary": "Suburban island with the airport and dam.",
+        "verified": true
+      },
+      {
+        "id": "red-light-district",
+        "name": "Red Light District",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Luigi's club and JD O'Toole's territory.",
+        "verified": true
+      },
+      {
+        "id": "chinatown",
+        "name": "Chinatown",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Triad territory in Portland.",
+        "verified": true
+      },
+      {
+        "id": "atlantic-quays",
+        "name": "Atlantic Quays",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Docks where Vincenzo operates.",
+        "verified": true
+      },
+      {
+        "id": "saint-marks",
+        "name": "Saint Mark's",
+        "type": "District",
+        "parent": "Portland",
+        "summary": "Leone stronghold and Salvatore's mansion.",
+        "verified": true
+      },
+      {
+        "id": "belleville-park",
+        "name": "Belleville Park",
+        "type": "District",
+        "parent": "Staunton Island",
+        "summary": "Central park and mission location.",
+        "verified": true
+      },
+      {
+        "id": "torrington",
+        "name": "Torrington",
+        "type": "District",
+        "parent": "Staunton Island",
+        "summary": "Business district.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "complete",
     "items": [
-      {"id":"hidden-packages","name":"Hidden Packages","type":"Package","total":100,"reward":"Weapons at safehouses","verified":true},
-      {"id":"rampages","name":"Rampages","type":"Rampage","total":20,"reward":"Cash","verified":true},
-      {"id":"unique-jumps","name":"Unique Jumps","type":"Stunt","total":26,"reward":"Cash toward 100%","verified":true},
-      {"id":"avenging-angels","name":"Avenging Angels","type":"Side job","total":15,"reward":"Cash and weapon rewards","verified":true},
-      {"id":"trash-dash","name":"Trash Dash","type":"Side job","total":1,"reward":"Cash","verified":false}
+      {
+        "id": "hidden-packages",
+        "name": "Hidden Packages",
+        "type": "Package",
+        "total": 100,
+        "reward": "Weapons at safehouses",
+        "verified": true
+      },
+      {
+        "id": "rampages",
+        "name": "Rampages",
+        "type": "Rampage",
+        "total": 20,
+        "reward": "Cash",
+        "verified": true
+      },
+      {
+        "id": "unique-jumps",
+        "name": "Unique Jumps",
+        "type": "Stunt",
+        "total": 26,
+        "reward": "Cash toward 100%",
+        "verified": true
+      },
+      {
+        "id": "avenging-angels",
+        "name": "Avenging Angels",
+        "type": "Side job",
+        "total": 15,
+        "reward": "Cash and weapon rewards",
+        "verified": true
+      },
+      {
+        "id": "trash-dash",
+        "name": "Trash Dash",
+        "type": "Side job",
+        "total": 1,
+        "reward": "Cash",
+        "verified": false
+      }
     ]
   }
 }

@@ -1,74 +1,678 @@
 {
   "meta": {
-    "sources": ["TLAD in-game mission list", "Rockstar Games Episodes from Liberty City materials"],
+    "sources": [
+      "TLAD in-game mission list",
+      "Rockstar Games Episodes from Liberty City materials"
+    ],
     "notes": "Episode from the Lost MC perspective, running parallel to GTA IV's diamond storyline. Bike-focused."
   },
   "characters": {
     "coverage": "partial",
     "items": [
-      {"id":"johnny-klebitz","name":"Johnny Klebitz","role":"Protagonist","affiliations":["The Lost MC"],"summary":"Vice-president of the Lost MC's Liberty City chapter, trying to hold the club together.","status":"Varies","first_appearance":"GTA IV: The Lost and Damned","verified":true},
-      {"id":"billy-grey","name":"Billy Grey","role":"Club president, antagonist","affiliations":["The Lost MC"],"summary":"The Lost's unstable president, whose feud with the Angels of Death escalates everything.","status":"Varies","verified":true},
-      {"id":"jim-fitzgerald","name":"Jim Fitzgerald","role":"Treasurer, ally","affiliations":["The Lost MC"],"summary":"Johnny's most trusted club brother and the chapter's voice of reason.","status":"Deceased","verified":true},
-      {"id":"terry-thorpe","name":"Terry Thorpe","role":"Sergeant-at-arms","affiliations":["The Lost MC"],"summary":"Heavy weapons specialist and loyal club member.","status":"Alive","verified":true},
-      {"id":"clay-simons","name":"Clay Simons","role":"Road captain","affiliations":["The Lost MC"],"summary":"The club's road captain and Johnny's right hand.","status":"Alive","verified":true},
-      {"id":"brian-jeremy","name":"Brian Jeremy","role":"Club member, antagonist","affiliations":["The Lost MC"],"summary":"Billy loyalist who turns on Johnny after the leadership split.","status":"Varies","verified":true},
-      {"id":"angus-martin","name":"Angus Martin","role":"Club member","affiliations":["The Lost MC"],"summary":"Wheelchair-bound club member and mechanic.","status":"Alive","verified":true},
-      {"id":"ashley-butler","name":"Ashley Butler","role":"Johnny's ex","affiliations":["The Lost MC"],"summary":"Johnny's ex-girlfriend, struggling with addiction and tied to Billy.","status":"Alive","verified":true},
-      {"id":"ray-boccino","name":"Ray Boccino","role":"Associate","affiliations":["Pegorino Crime Family"],"summary":"The mob contact who hires the Lost for diamond-related work.","status":"Varies","verified":true},
-      {"id":"elizabeta-torres","name":"Elizabeta Torres","role":"Associate","affiliations":["Bohan drug trade"],"summary":"Bohan drug queenpin connected to the Lost's business.","status":"Alive","verified":true},
-      {"id":"thomas-stubbs","name":"Thomas Stubbs","role":"Politician","affiliations":["Liberty City politics"],"summary":"Corrupt congressman who pays the Lost for dirty work.","status":"Alive","verified":true},
-      {"id":"niko-bellic","name":"Niko Bellic","role":"Crossover character","affiliations":["Independent"],"summary":"Appears in shared scenes during the diamond storyline.","status":"Varies","verified":true}
+      {
+        "id": "johnny-klebitz",
+        "name": "Johnny Klebitz",
+        "role": "Protagonist",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "Vice-president of the Lost MC's Liberty City chapter, trying to hold the club together.",
+        "status": "Varies",
+        "first_appearance": "GTA IV: The Lost and Damned",
+        "verified": true
+      },
+      {
+        "id": "billy-grey",
+        "name": "Billy Grey",
+        "role": "Club president, antagonist",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "The Lost's unstable president, whose feud with the Angels of Death escalates everything.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "jim-fitzgerald",
+        "name": "Jim Fitzgerald",
+        "role": "Treasurer, ally",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "Johnny's most trusted club brother and the chapter's voice of reason.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "terry-thorpe",
+        "name": "Terry Thorpe",
+        "role": "Sergeant-at-arms",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "Heavy weapons specialist and loyal club member.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "clay-simons",
+        "name": "Clay Simons",
+        "role": "Road captain",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "The club's road captain and Johnny's right hand.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "brian-jeremy",
+        "name": "Brian Jeremy",
+        "role": "Club member, antagonist",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "Billy loyalist who turns on Johnny after the leadership split.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "angus-martin",
+        "name": "Angus Martin",
+        "role": "Club member",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "Wheelchair-bound club member and mechanic.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ashley-butler",
+        "name": "Ashley Butler",
+        "role": "Johnny's ex",
+        "affiliations": [
+          "The Lost MC"
+        ],
+        "summary": "Johnny's ex-girlfriend, struggling with addiction and tied to Billy.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ray-boccino",
+        "name": "Ray Boccino",
+        "role": "Associate",
+        "affiliations": [
+          "Pegorino Crime Family"
+        ],
+        "summary": "The mob contact who hires the Lost for diamond-related work.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "elizabeta-torres",
+        "name": "Elizabeta Torres",
+        "role": "Associate",
+        "affiliations": [
+          "Bohan drug trade"
+        ],
+        "summary": "Bohan drug queenpin connected to the Lost's business.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "thomas-stubbs",
+        "name": "Thomas Stubbs",
+        "role": "Politician",
+        "affiliations": [
+          "Liberty City politics"
+        ],
+        "summary": "Corrupt congressman who pays the Lost for dirty work.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "niko-bellic",
+        "name": "Niko Bellic",
+        "role": "Crossover character",
+        "affiliations": [
+          "Independent"
+        ],
+        "summary": "Appears in shared scenes during the diamond storyline.",
+        "status": "Varies",
+        "verified": true
+      }
     ]
   },
   "missions": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
-      {"id":"clean-and-serene","order":1,"name":"Clean and Serene","type":"Story","giver":"Billy Grey","location":"Alderney","reward":{"money":0},"summary":"Opening: collect Billy from prison and ride back to the clubhouse.","verified":true},
-      {"id":"angels-in-america","order":2,"name":"Angels in America","type":"Story","giver":"Billy Grey","location":"Alderney","reward":{"money":0},"summary":"Hit an Angels of Death clubhouse.","verified":true},
-      {"id":"its-war","order":3,"name":"It's War","type":"Story","giver":"Billy Grey","location":"Alderney","reward":{"money":0},"summary":"Retaliate after the Angels strike back.","verified":true},
-      {"id":"action-reaction","order":4,"name":"Action/Reaction","type":"Story","giver":"Billy Grey","location":"Liberty City","reward":{"money":0},"summary":"A robbery that raises the stakes with the club's rivals.","verified":true},
-      {"id":"buyers-market","order":5,"name":"Buyer's Market","type":"Story","giver":"Billy Grey","location":"Liberty City","reward":{"money":0},"summary":"A drug deal that goes sideways.","verified":true},
-      {"id":"politics","order":6,"name":"Politics","type":"Story","giver":"Thomas Stubbs","location":"Liberty City","reward":{"money":0},"summary":"Dirty work for Congressman Stubbs.","verified":true},
-      {"id":"coming-down","order":7,"name":"Coming Down","type":"Story","giver":"Ashley Butler","location":"Bohan","reward":{"money":0},"summary":"Rescue Ashley from a drug den.","verified":true},
-      {"id":"off-route","order":8,"name":"Off Route","type":"Story","giver":"Jim Fitzgerald","location":"Alderney","reward":{"money":0},"summary":"Hijack a prison transport.","verified":true},
-      {"id":"shifting-weight","order":9,"name":"Shifting Weight","type":"Story","giver":"Jim Fitzgerald","location":"Liberty City","reward":{"money":0},"summary":"Move a heroin shipment under police pressure.","verified":true},
-      {"id":"heavy-toll","order":10,"name":"Heavy Toll","type":"Story","giver":"Jim Fitzgerald","location":"Alderney","reward":{"money":0},"summary":"Rob an armored truck on the turnpike.","verified":true},
-      {"id":"bad-standing","order":11,"name":"Bad Standing","type":"Story","giver":"Johnny Klebitz","location":"Alderney","reward":{"money":0},"summary":"Deal with Billy loyalists inside the club.","verified":true},
-      {"id":"diamonds-in-the-rough","order":12,"name":"Diamonds in the Rough","type":"Story","giver":"Ray Boccino","location":"Liberty City","reward":{"money":0},"summary":"The diamond exchange seen from the Lost's side.","verified":true},
-      {"id":"was-it-worth-it","order":13,"name":"Was It Worth It?","type":"Story","giver":"Ray Boccino","location":"Liberty City","reward":{"money":0},"summary":"Aftermath of the diamond deal.","verified":true},
-      {"id":"get-lost","order":14,"name":"Get Lost","type":"Story","giver":"Johnny Klebitz","location":"Alderney","reward":{"money":0},"summary":"Final mission: settle the club's future.","verified":true}
+      {
+        "id": "clean-and-serene",
+        "order": 1,
+        "name": "Clean and Serene",
+        "type": "Story",
+        "giver": "Billy Grey",
+        "location": "Liberty City",
+        "reward": {
+          "money": 750,
+          "other": "Hexer Sawed-Off Shotgun The Lost MC Clubhouse One Percenter achievement/trophy"
+        },
+        "summary": "Opening: collect Billy from prison and ride back to the clubhouse.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "angels-in-america",
+        "order": 2,
+        "name": "Angels in America",
+        "type": "Story",
+        "giver": "Billy Grey",
+        "location": "Liberty City",
+        "reward": {
+          "money": 750,
+          "other": "Diabolus can now be requested from Clay"
+        },
+        "summary": "Hit an Angels of Death clubhouse.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "its-war",
+        "order": 3,
+        "name": "It's War",
+        "type": "Story",
+        "giver": "Billy Grey",
+        "location": "Liberty City",
+        "reward": {
+          "money": 750
+        },
+        "summary": "Retaliate after the Angels strike back.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "action-reaction",
+        "order": 4,
+        "name": "Action/Reaction",
+        "type": "Story",
+        "giver": "Billy Grey",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1000,
+          "other": "Grenade Launcher Hellfury can now be requested from Clay"
+        },
+        "summary": "A robbery that raises the stakes with the club's rivals.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "liberty-city-choppers",
+        "order": 5,
+        "name": "Liberty City Choppers",
+        "type": "Story",
+        "giver": "Jim Fitzgerald",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1000,
+          "other": "Zombie can now be requested from Clay."
+        },
+        "summary": "Steal bikes from the Angels of Death with Jim",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bad-cop-drop",
+        "order": 6,
+        "name": "Bad Cop Drop",
+        "type": "Story",
+        "giver": "Jim Fitzgerald",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000,
+          "other": "Automatic 9mm"
+        },
+        "summary": "Lure corrupt cops Jimmy Matthews and Ed McCornish into an ambush and kill them.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "buyers-market",
+        "order": 7,
+        "name": "Buyer's Market",
+        "type": "Story",
+        "giver": "Elizabeta Torres",
+        "location": "Liberty City",
+        "reward": {
+          "other": "Integrity 2.0 as a radio station"
+        },
+        "summary": "A drug deal that goes sideways.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "politics",
+        "order": 8,
+        "name": "Politics",
+        "type": "Story",
+        "giver": "Thomas Stubbs",
+        "location": "Liberty City",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Dirty work for Congressman Stubbs.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "off-route",
+        "order": 9,
+        "name": "Off Route",
+        "type": "Story",
+        "giver": "Thomas Stubbs",
+        "location": "Liberty City",
+        "reward": {
+          "money": 5000
+        },
+        "summary": "Hijack a prison transport.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "coming-down",
+        "order": 10,
+        "name": "Coming Down",
+        "type": "Story",
+        "giver": "Ashley Butler",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Rescue Ashley from a drug den.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "this-shits-cursed",
+        "order": 11,
+        "name": "This Shit's Cursed",
+        "type": "Story",
+        "giver": "Billy Grey",
+        "location": "Liberty City",
+        "reward": {
+          "other": "Johnny becomes President of the Lost MC Alderney Chapter Revenant can now be requested from Clay The Lost Boy achievement/trophy"
+        },
+        "summary": "Attend a heroin deal with the Triads and escape their ambush with Jim , then watch Billy getting arrested.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "hit-the-pipe",
+        "order": 12,
+        "name": "Hit the Pipe",
+        "type": "Story",
+        "giver": "Jim Fitzgerald",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000,
+          "other": "Pipe Bombs"
+        },
+        "summary": "Destroy Angels of Death vans with pipe bombs .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "end-of-chapter",
+        "order": 13,
+        "name": "End of Chapter",
+        "type": "Story",
+        "giver": "Jim Fitzgerald",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Meet up with Brian and his faction and survive their ambush.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "bad-standing",
+        "order": 14,
+        "name": "Bad Standing",
+        "type": "Story",
+        "giver": "Jim Fitzgerald",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000,
+          "other": "Brian Jeremy's Safehouse"
+        },
+        "summary": "Deal with Billy loyalists inside the club.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "heavy-toll",
+        "order": 15,
+        "name": "Heavy Toll",
+        "type": "Story",
+        "giver": "Elizabeta Torres",
+        "location": "Liberty City",
+        "reward": {
+          "money": 1000,
+          "other": "Assault Shotgun"
+        },
+        "summary": "Rob an armored truck on the turnpike.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "marta-full-of-grace",
+        "order": 16,
+        "name": "Marta Full of Grace",
+        "type": "Story",
+        "giver": "Elizabeta Torres",
+        "location": "Liberty City",
+        "reward": {
+          "money": 2000
+        },
+        "summary": "Pick up Marta from the airport and bring her to Elizabeta's apartment after losing the cops.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "shifting-weight",
+        "order": 17,
+        "name": "Shifting Weight",
+        "type": "Story",
+        "giver": "Elizabeta Torres",
+        "location": "Liberty City",
+        "reward": {
+          "money": 3000,
+          "other": "Double T can now be requested from Clay"
+        },
+        "summary": "Move a heroin shipment under police pressure.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "romans-holiday",
+        "order": 18,
+        "name": "Roman's Holiday",
+        "type": "Story",
+        "giver": "Ashley Butler",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Kidnap Roman Bellic with Malc in orders of Dimitri Rascalov's men .",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "diamonds-in-the-rough",
+        "order": 19,
+        "name": "Diamonds in the Rough",
+        "type": "Story",
+        "giver": "Ray Boccino",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "The diamond exchange seen from the Lost's side.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "collectors-item",
+        "order": 20,
+        "name": "Collector's Item",
+        "type": "Story",
+        "giver": "Ray Boccino",
+        "location": "Liberty City",
+        "reward": {
+          "money": 10000,
+          "other": "Lycan can now be requested from Clay"
+        },
+        "summary": "Attend the diamond deal with Niko Bellic at The Libertonian and escape with the money.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "was-it-worth-it",
+        "order": 21,
+        "name": "Was It Worth It?",
+        "type": "Story",
+        "giver": "Ray Boccino",
+        "location": "Liberty City",
+        "reward": {},
+        "summary": "Aftermath of the diamond deal.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      },
+      {
+        "id": "get-lost",
+        "order": 22,
+        "name": "Get Lost",
+        "type": "Story",
+        "giver": "Thomas Stubbs",
+        "location": "Liberty City",
+        "reward": {
+          "money": 7000
+        },
+        "summary": "Final mission: settle the club's future.",
+        "verified": true,
+        "source": "GTA Wiki mission list: order, giver, description and rewards"
+      }
     ]
   },
   "vehicles": {
     "coverage": "partial",
     "items": [
-      {"id":"hexer","name":"Hexer","category":"Motorcycle","class":"Custom cruiser","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"lycan","name":"Lycan","category":"Motorcycle","class":"Custom cruiser","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"wolfsbane","name":"Wolfsbane","category":"Motorcycle","class":"Custom cruiser","top_speed_kph":185,"seats":2,"verified":true},
-      {"id":"nightblade","name":"Nightblade","category":"Motorcycle","class":"Custom cruiser","top_speed_kph":185,"seats":2,"verified":true},
-      {"id":"revenant","name":"Revenant","category":"Motorcycle","class":"Custom cruiser","top_speed_kph":185,"seats":2,"verified":true},
-      {"id":"daemon","name":"Daemon","category":"Motorcycle","class":"Cruiser","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"bagger","name":"Bagger","category":"Motorcycle","class":"Cruiser","top_speed_kph":175,"seats":2,"verified":true},
-      {"id":"innovation","name":"Innovation","category":"Motorcycle","class":"Cruiser","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"double-t","name":"Double T","category":"Motorcycle","class":"Sport bike","top_speed_kph":240,"seats":2,"verified":true},
-      {"id":"bati-800","name":"Bati 800","category":"Motorcycle","class":"Sport bike","top_speed_kph":250,"seats":2,"verified":true},
-      {"id":"slamvan","name":"Slamvan","category":"Car","class":"Lowrider","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"gang-burrito","name":"Gang Burrito","category":"Van","class":"Gang","top_speed_kph":160,"seats":4,"verified":true},
-      {"id":"police-cruiser","name":"Police Cruiser","category":"Emergency","class":"Police","top_speed_kph":225,"seats":4,"verified":true},
-      {"id":"fbi-buffalo","name":"FBI Buffalo","category":"Emergency","class":"Police","top_speed_kph":250,"seats":2,"verified":true}
+      {
+        "id": "hexer",
+        "name": "Hexer",
+        "category": "Motorcycle",
+        "class": "Custom cruiser",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "lycan",
+        "name": "Lycan",
+        "category": "Motorcycle",
+        "class": "Custom cruiser",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "wolfsbane",
+        "name": "Wolfsbane",
+        "category": "Motorcycle",
+        "class": "Custom cruiser",
+        "top_speed_kph": 185,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "nightblade",
+        "name": "Nightblade",
+        "category": "Motorcycle",
+        "class": "Custom cruiser",
+        "top_speed_kph": 185,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "revenant",
+        "name": "Revenant",
+        "category": "Motorcycle",
+        "class": "Custom cruiser",
+        "top_speed_kph": 185,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "daemon",
+        "name": "Daemon",
+        "category": "Motorcycle",
+        "class": "Cruiser",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bagger",
+        "name": "Bagger",
+        "category": "Motorcycle",
+        "class": "Cruiser",
+        "top_speed_kph": 175,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "innovation",
+        "name": "Innovation",
+        "category": "Motorcycle",
+        "class": "Cruiser",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "double-t",
+        "name": "Double T",
+        "category": "Motorcycle",
+        "class": "Sport bike",
+        "top_speed_kph": 240,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bati-800",
+        "name": "Bati 800",
+        "category": "Motorcycle",
+        "class": "Sport bike",
+        "top_speed_kph": 250,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "slamvan",
+        "name": "Slamvan",
+        "category": "Car",
+        "class": "Lowrider",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "gang-burrito",
+        "name": "Gang Burrito",
+        "category": "Van",
+        "class": "Gang",
+        "top_speed_kph": 160,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "police-cruiser",
+        "name": "Police Cruiser",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 225,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "fbi-buffalo",
+        "name": "FBI Buffalo",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 250,
+        "seats": 2,
+        "verified": true
+      }
     ]
   },
   "weapons": {
     "coverage": "partial",
     "items": [
-      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"pipe-bomb","name":"Pipe Bomb","type":"Thrown","damage_tier":"High","ammo":"Count","price":null,"unlock":"Club supply","verified":true},
-      {"id":"glock-17","name":"Glock 17","type":"Handgun","damage_tier":"Medium","ammo":"17 rounds","price":null,"unlock":"Default","verified":true},
-      {"id":"sawn-off-shotgun","name":"Sawn-off Shotgun","type":"Shotgun","damage_tier":"Very high","ammo":"2 shells","price":null,"unlock":"Club supply","verified":true},
-      {"id":"micro-smg","name":"Micro SMG","type":"Submachine gun","damage_tier":"Medium","ammo":"30 rounds","price":null,"unlock":"Club supply","verified":true},
-      {"id":"assault-rifle","name":"Assault Rifle","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Terry Thorpe","verified":true},
-      {"id":"grenade-launcher","name":"Grenade Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"6 rounds","price":null,"unlock":"Club supply","verified":true},
-      {"id":"rpg","name":"RPG","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Club supply","verified":true}
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "pipe-bomb",
+        "name": "Pipe Bomb",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "Count",
+        "price": null,
+        "unlock": "Club supply",
+        "verified": true
+      },
+      {
+        "id": "glock-17",
+        "name": "Glock 17",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "sawn-off-shotgun",
+        "name": "Sawn-off Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "Very high",
+        "ammo": "2 shells",
+        "price": null,
+        "unlock": "Club supply",
+        "verified": true
+      },
+      {
+        "id": "micro-smg",
+        "name": "Micro SMG",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Club supply",
+        "verified": true
+      },
+      {
+        "id": "assault-rifle",
+        "name": "Assault Rifle",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Terry Thorpe",
+        "verified": true
+      },
+      {
+        "id": "grenade-launcher",
+        "name": "Grenade Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "6 rounds",
+        "price": null,
+        "unlock": "Club supply",
+        "verified": true
+      },
+      {
+        "id": "rpg",
+        "name": "RPG",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "price": null,
+        "unlock": "Club supply",
+        "verified": true
+      }
     ]
   },
   "cheats": {
@@ -78,20 +682,83 @@
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"liberty-city","name":"Liberty City","type":"City","parent":null,"summary":"Same map as GTA IV, used from the Lost's Alderney base.","verified":true},
-      {"id":"alderney","name":"Alderney","type":"State","parent":"Liberty City","summary":"The Lost MC clubhouse and main operating area.","verified":true},
-      {"id":"acton-hill","name":"Acton Hill","type":"Neighbourhood","parent":"Alderney","summary":"Industrial area near the Lost clubhouse.","verified":true},
-      {"id":"broker","name":"Broker","type":"Borough","parent":"Liberty City","summary":"Eastern borough visited during club business.","verified":true},
-      {"id":"bohan","name":"Bohan","type":"Borough","parent":"Liberty City","summary":"Northern borough, Ashley's drug den and Elizabeta's turf.","verified":true},
-      {"id":"algonquin","name":"Algonquin","type":"Borough","parent":"Liberty City","summary":"Manhattan analogue used for diamond-related missions.","verified":true}
+      {
+        "id": "liberty-city",
+        "name": "Liberty City",
+        "type": "City",
+        "parent": null,
+        "summary": "Same map as GTA IV, used from the Lost's Alderney base.",
+        "verified": true
+      },
+      {
+        "id": "alderney",
+        "name": "Alderney",
+        "type": "State",
+        "parent": "Liberty City",
+        "summary": "The Lost MC clubhouse and main operating area.",
+        "verified": true
+      },
+      {
+        "id": "acton-hill",
+        "name": "Acton Hill",
+        "type": "Neighbourhood",
+        "parent": "Alderney",
+        "summary": "Industrial area near the Lost clubhouse.",
+        "verified": true
+      },
+      {
+        "id": "broker",
+        "name": "Broker",
+        "type": "Borough",
+        "parent": "Liberty City",
+        "summary": "Eastern borough visited during club business.",
+        "verified": true
+      },
+      {
+        "id": "bohan",
+        "name": "Bohan",
+        "type": "Borough",
+        "parent": "Liberty City",
+        "summary": "Northern borough, Ashley's drug den and Elizabeta's turf.",
+        "verified": true
+      },
+      {
+        "id": "algonquin",
+        "name": "Algonquin",
+        "type": "Borough",
+        "parent": "Liberty City",
+        "summary": "Manhattan analogue used for diamond-related missions.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "partial",
     "items": [
-      {"id":"seagulls","name":"Seagulls","type":"Seagull","total":50,"reward":"Weapons at the clubhouse","verified":true},
-      {"id":"gang-wars","name":"Gang Wars","type":"Side job","total":1,"reward":"Club territory and weapon caches","verified":true},
-      {"id":"bike-races","name":"Bike Races","type":"Race","total":1,"reward":"Cash and bike unlocks","verified":true}
+      {
+        "id": "seagulls",
+        "name": "Seagulls",
+        "type": "Seagull",
+        "total": 50,
+        "reward": "Weapons at the clubhouse",
+        "verified": true
+      },
+      {
+        "id": "gang-wars",
+        "name": "Gang Wars",
+        "type": "Side job",
+        "total": 1,
+        "reward": "Club territory and weapon caches",
+        "verified": true
+      },
+      {
+        "id": "bike-races",
+        "name": "Bike Races",
+        "type": "Race",
+        "total": 1,
+        "reward": "Cash and bike unlocks",
+        "verified": true
+      }
     ]
   }
 }
