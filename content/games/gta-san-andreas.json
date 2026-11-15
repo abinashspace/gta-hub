@@ -1,261 +1,2965 @@
 {
   "meta": {
-    "sources": ["In-game mission and statistics menus", "Rockstar Games official San Andreas materials"],
+    "sources": [
+      "In-game mission and statistics menus",
+      "Rockstar Games official San Andreas materials"
+    ],
     "notes": "Story order follows the three-act structure: Los Santos, Badlands/San Fierro, Las Venturas, return to Los Santos."
   },
   "characters": {
     "coverage": "partial",
     "items": [
-      {"id":"carl-johnson","name":"Carl 'CJ' Johnson","role":"Protagonist","affiliations":["Grove Street Families"],"summary":"Returns to Los Santos after five years away for his mother's funeral and rebuilds the Grove Street Families.","status":"Alive","first_appearance":"Grand Theft Auto: San Andreas","verified":true},
-      {"id":"sweet","name":"Sean 'Sweet' Johnson","role":"Grove Street leader, brother","affiliations":["Grove Street Families"],"summary":"CJ's older brother and the stubborn leader of Grove Street.","status":"Alive","verified":true},
-      {"id":"big-smoke","name":"Melvin 'Big Smoke' Harris","role":"Antagonist, former Grove member","affiliations":["Grove Street Families (former)","Ballas (secretly)"],"summary":"CJ's childhood friend whose ambition leads him to betray Grove Street.","status":"Deceased","verified":true},
-      {"id":"ryder","name":"Lance 'Ryder' Wilson","role":"Antagonist, former Grove member","affiliations":["Grove Street Families (former)","Ballas (secretly)"],"summary":"Hot-headed Grove member who turns on the family.","status":"Deceased","verified":true},
-      {"id":"kendl","name":"Kendl Johnson","role":"CJ's sister","affiliations":["Grove Street Families"],"summary":"CJ and Sweet's sister, partner of Cesar Vialpando.","status":"Alive","verified":true},
-      {"id":"cesar-vialpando","name":"Cesar Vialpando","role":"Ally, Aztecas leader","affiliations":["Varrios Los Aztecas"],"summary":"Kendl's boyfriend and leader of the Aztecas; CJ's most reliable ally.","status":"Alive","verified":true},
-      {"id":"og-loc","name":"OG Loc","role":"Rapper, comic relief","affiliations":["Grove Street Families"],"summary":"Aspiring rapper whose career CJ helps launch by stealing Madd Dogg's rhymes.","status":"Alive","verified":true},
-      {"id":"frank-tenpenny","name":"Frank Tenpenny","role":"Antagonist, corrupt C.R.A.S.H. officer","affiliations":["C.R.A.S.H.","Los Santos Police Department"],"summary":"The primary antagonist, a corrupt cop who manipulates every gang in the state.","status":"Deceased","verified":true},
-      {"id":"eddie-pulaski","name":"Eddie Pulaski","role":"Antagonist, corrupt officer","affiliations":["C.R.A.S.H."],"summary":"Tenpenny's brutal partner, killed by CJ in the desert.","status":"Deceased","verified":true},
-      {"id":"hernandez","name":"Jimmy Hernandez","role":"Corrupt officer, informant","affiliations":["C.R.A.S.H."],"summary":"The youngest C.R.A.S.H. officer, torn between loyalty and doing the right thing.","status":"Deceased","verified":true},
-      {"id":"catalina","name":"Catalina","role":"Ally, robber","affiliations":["Independent"],"summary":"CJ's brief girlfriend in the Badlands; robs stores with him in a series of missions.","status":"Alive","verified":true},
-      {"id":"the-truth","name":"The Truth","role":"Ally, conspiracy theorist","affiliations":["Independent"],"summary":"A hippie conspiracy theorist who supplies CJ with vehicles and information.","status":"Alive","verified":true},
-      {"id":"wu-zi-mu","name":"Wu Zi Mu ('Woozie')","role":"Ally, Triad leader","affiliations":["San Fierro Triads"],"summary":"Blind Triad boss who becomes CJ's business partner in San Fierro and Las Venturas.","status":"Alive","verified":true},
-      {"id":"ran-fa-li","name":"Ran Fa Li","role":"Triad elder","affiliations":["San Fierro Triads"],"summary":"Senior Triad figure whose protection is a recurring obligation.","status":"Alive","verified":true},
-      {"id":"mike-toreno","name":"Mike Toreno","role":"Ally, covert agent","affiliations":["US government (covert)"],"summary":"A shadowy federal agent who blackmails CJ into running missions for him.","status":"Alive","verified":true},
-      {"id":"zero","name":"Zero","role":"Ally, electronics expert","affiliations":["Zero's RC"],"summary":"RC hobbyist and electronics genius with a shop in San Fierro.","status":"Alive","verified":true},
-      {"id":"madd-dogg","name":"Madd Dogg","role":"Rapper","affiliations":["Madd Dogg Records"],"summary":"Famous rapper whose career CJ manages after OG Loc steals his work.","status":"Alive","verified":true},
-      {"id":"jizzy-b","name":"Jizzy B","role":"Pimp, drug dealer","affiliations":["Loco Syndicate"],"summary":"Pimp whose club fronts the Loco Syndicate's drug operation.","status":"Deceased","verified":true},
-      {"id":"ken-rosenberg","name":"Ken Rosenberg","role":"Lawyer, casino manager","affiliations":["Leone Crime Family","Caligula's Palace"],"summary":"Vice City lawyer now managing a Las Venturas casino for the mob.","status":"Alive","verified":true},
-      {"id":"kent-paul","name":"Kent Paul","role":"Music manager","affiliations":["Madd Dogg Records"],"summary":"Lewd music-business fixer encountered in San Fierro and Las Venturas.","status":"Alive","verified":true},
-      {"id":"salvatore-leone","name":"Salvatore Leone","role":"Leone don","affiliations":["Leone Crime Family"],"summary":"Liberty City don who owns Caligula's Palace and is targeted by the Triads.","status":"Alive","verified":true},
-      {"id":"millie-perkins","name":"Millie Perkins","role":"Caligula's manager","affiliations":["Caligula's Palace"],"summary":"Casino manager CJ dates to obtain the key card for the Caligula's heist.","status":"Alive","verified":true},
-      {"id":"denise-robinson","name":"Denise Robinson","role":"Girlfriend","affiliations":["Grove Street Families"],"summary":"Grove Street affiliate and one of CJ's girlfriends.","status":"Alive","verified":true}
+      {
+        "id": "carl-johnson",
+        "name": "Carl 'CJ' Johnson",
+        "role": "Protagonist",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "Returns to Los Santos after five years away for his mother's funeral and rebuilds the Grove Street Families.",
+        "status": "Alive",
+        "first_appearance": "Grand Theft Auto: San Andreas",
+        "verified": true
+      },
+      {
+        "id": "sweet",
+        "name": "Sean 'Sweet' Johnson",
+        "role": "Grove Street leader, brother",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "CJ's older brother and the stubborn leader of Grove Street.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "big-smoke",
+        "name": "Melvin 'Big Smoke' Harris",
+        "role": "Antagonist, former Grove member",
+        "affiliations": [
+          "Grove Street Families (former)",
+          "Ballas (secretly)"
+        ],
+        "summary": "CJ's childhood friend whose ambition leads him to betray Grove Street.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "ryder",
+        "name": "Lance 'Ryder' Wilson",
+        "role": "Antagonist, former Grove member",
+        "affiliations": [
+          "Grove Street Families (former)",
+          "Ballas (secretly)"
+        ],
+        "summary": "Hot-headed Grove member who turns on the family.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "kendl",
+        "name": "Kendl Johnson",
+        "role": "CJ's sister",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "CJ and Sweet's sister, partner of Cesar Vialpando.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "cesar-vialpando",
+        "name": "Cesar Vialpando",
+        "role": "Ally, Aztecas leader",
+        "affiliations": [
+          "Varrios Los Aztecas"
+        ],
+        "summary": "Kendl's boyfriend and leader of the Aztecas; CJ's most reliable ally.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "og-loc",
+        "name": "OG Loc",
+        "role": "Rapper, comic relief",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "Aspiring rapper whose career CJ helps launch by stealing Madd Dogg's rhymes.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "frank-tenpenny",
+        "name": "Frank Tenpenny",
+        "role": "Antagonist, corrupt C.R.A.S.H. officer",
+        "affiliations": [
+          "C.R.A.S.H.",
+          "Los Santos Police Department"
+        ],
+        "summary": "The primary antagonist, a corrupt cop who manipulates every gang in the state.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "eddie-pulaski",
+        "name": "Eddie Pulaski",
+        "role": "Antagonist, corrupt officer",
+        "affiliations": [
+          "C.R.A.S.H."
+        ],
+        "summary": "Tenpenny's brutal partner, killed by CJ in the desert.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "hernandez",
+        "name": "Jimmy Hernandez",
+        "role": "Corrupt officer, informant",
+        "affiliations": [
+          "C.R.A.S.H."
+        ],
+        "summary": "The youngest C.R.A.S.H. officer, torn between loyalty and doing the right thing.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "catalina",
+        "name": "Catalina",
+        "role": "Ally, robber",
+        "affiliations": [
+          "Independent"
+        ],
+        "summary": "CJ's brief girlfriend in the Badlands; robs stores with him in a series of missions.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "the-truth",
+        "name": "The Truth",
+        "role": "Ally, conspiracy theorist",
+        "affiliations": [
+          "Independent"
+        ],
+        "summary": "A hippie conspiracy theorist who supplies CJ with vehicles and information.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "wu-zi-mu",
+        "name": "Wu Zi Mu ('Woozie')",
+        "role": "Ally, Triad leader",
+        "affiliations": [
+          "San Fierro Triads"
+        ],
+        "summary": "Blind Triad boss who becomes CJ's business partner in San Fierro and Las Venturas.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ran-fa-li",
+        "name": "Ran Fa Li",
+        "role": "Triad elder",
+        "affiliations": [
+          "San Fierro Triads"
+        ],
+        "summary": "Senior Triad figure whose protection is a recurring obligation.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "mike-toreno",
+        "name": "Mike Toreno",
+        "role": "Ally, covert agent",
+        "affiliations": [
+          "US government (covert)"
+        ],
+        "summary": "A shadowy federal agent who blackmails CJ into running missions for him.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "zero",
+        "name": "Zero",
+        "role": "Ally, electronics expert",
+        "affiliations": [
+          "Zero's RC"
+        ],
+        "summary": "RC hobbyist and electronics genius with a shop in San Fierro.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "madd-dogg",
+        "name": "Madd Dogg",
+        "role": "Rapper",
+        "affiliations": [
+          "Madd Dogg Records"
+        ],
+        "summary": "Famous rapper whose career CJ manages after OG Loc steals his work.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "jizzy-b",
+        "name": "Jizzy B",
+        "role": "Pimp, drug dealer",
+        "affiliations": [
+          "Loco Syndicate"
+        ],
+        "summary": "Pimp whose club fronts the Loco Syndicate's drug operation.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "ken-rosenberg",
+        "name": "Ken Rosenberg",
+        "role": "Lawyer, casino manager",
+        "affiliations": [
+          "Leone Crime Family",
+          "Caligula's Palace"
+        ],
+        "summary": "Vice City lawyer now managing a Las Venturas casino for the mob.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "kent-paul",
+        "name": "Kent Paul",
+        "role": "Music manager",
+        "affiliations": [
+          "Madd Dogg Records"
+        ],
+        "summary": "Lewd music-business fixer encountered in San Fierro and Las Venturas.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "salvatore-leone",
+        "name": "Salvatore Leone",
+        "role": "Leone don",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Liberty City don who owns Caligula's Palace and is targeted by the Triads.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "millie-perkins",
+        "name": "Millie Perkins",
+        "role": "Caligula's manager",
+        "affiliations": [
+          "Caligula's Palace"
+        ],
+        "summary": "Casino manager CJ dates to obtain the key card for the Caligula's heist.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "denise-robinson",
+        "name": "Denise Robinson",
+        "role": "Girlfriend",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "Grove Street affiliate and one of CJ's girlfriends.",
+        "status": "Alive",
+        "verified": true
+      }
     ]
   },
   "missions": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
-      {"id":"in-the-beginning","order":1,"name":"In the Beginning","type":"Story","giver":"—","location":"Los Santos","reward":{"money":0},"summary":"Opening: CJ returns to Los Santos and is picked up by Tenpenny and Pulaski.","verified":true},
-      {"id":"big-smoke","order":2,"name":"Big Smoke","type":"Story","giver":"Big Smoke","location":"Ganton","reward":{"money":0},"summary":"Ride with Big Smoke and take out the Ballas chasing him.","verified":true},
-      {"id":"sweets-girl","order":3,"name":"Sweet's Girl","type":"Story","giver":"Sweet","location":"Idlewood","reward":{"money":0},"summary":"Rescue Sweet and his girlfriend from Ballas in a house shootout.","verified":true},
-      {"id":"cesar-vialpando","order":4,"name":"Cesar Vialpando","type":"Story","giver":"Sweet","location":"El Corona","reward":{"money":0},"summary":"Enter a low-rider hydraulic competition to win money for Sweet.","verified":true},
-      {"id":"robbing-uncle-sam","order":5,"name":"Robbing Uncle Sam","type":"Story","giver":"Ryder","location":"Ocean Docks","reward":{"money":0},"summary":"Raid the National Guard depot with Ryder using a forklift.","verified":true},
-      {"id":"tagging-up-turf","order":6,"name":"Tagging Up Turf","type":"Story","giver":"Sweet","location":"Ganton","reward":{"money":0},"summary":"Spray over Ballas graffiti across the neighbourhood.","verified":true},
-      {"id":"cleaning-the-hood","order":7,"name":"Cleaning the Hood","type":"Story","giver":"Sweet","location":"Ganton","reward":{"money":0},"summary":"Clear drug dealers out of Grove Street territory.","verified":true},
-      {"id":"drive-thru","order":8,"name":"Drive-Thru","type":"Story","giver":"Sweet","location":"Ganton","reward":{"money":0},"summary":"Chase down Ballas who shot up a Cluckin' Bell drive-thru.","verified":true},
-      {"id":"nines-and-aks","order":9,"name":"Nines and AK's","type":"Story","giver":"Sweet","location":"Ganton","reward":{"money":0},"summary":"Buy guns from Emmet and practise shooting with Sweet.","verified":true},
-      {"id":"drive-by","order":10,"name":"Drive-By","type":"Story","giver":"Sweet","location":"Glen Park","reward":{"money":0},"summary":"Drive through Ballas territory and eliminate rival gang members.","verified":true},
-      {"id":"sweet-girl","order":11,"name":"Sweet's Girl","type":"Story","giver":"Sweet","location":"Idlewood","reward":{"money":0},"summary":"Rescue Sweet's girlfriend from a Ballas ambush.","verified":false,"source":"Order reported differently across guides"},
-      {"id":"doberman","order":12,"name":"Doberman","type":"Story","giver":"Sweet","location":"Glen Park","reward":{"money":0},"summary":"Take over the first Ballas territory to start the gang war system.","verified":true},
-      {"id":"los-sepulcros","order":13,"name":"Los Sepulcros","type":"Story","giver":"Sweet","location":"Los Sepulcros","reward":{"money":0},"summary":"Hit a Ballas funeral to weaken their leadership.","verified":true},
-      {"id":"house-party","order":14,"name":"House Party","type":"Story","giver":"OG Loc","location":"Ganton","reward":{"money":0},"summary":"Defend OG Loc's house party from a Ballas attack.","verified":true},
-      {"id":"reuniting-the-families","order":15,"name":"Reuniting the Families","type":"Story","giver":"Sweet","location":"Jefferson Motel","reward":{"money":0},"summary":"Escape a police raid on the Grove Street leadership meeting.","verified":true},
-      {"id":"the-green-sabre","order":16,"name":"The Green Sabre","type":"Story","giver":"Cesar Vialpando","location":"Mulholland Intersection","reward":{"money":0},"summary":"Act one finale: discover the traitors and lose everything in Los Santos.","verified":true},
-      {"id":"badlands","order":17,"name":"Badlands","type":"Story","giver":"Cesar Vialpando","location":"Whetstone","reward":{"money":0},"summary":"Reach the Badlands safehouse and shake the police tail.","verified":true},
-      {"id":"tanker-commander","order":18,"name":"Tanker Commander","type":"Story","giver":"Catalina","location":"Dillimore","reward":{"money":0},"summary":"Steal a tanker truck for Catalina's robbery crew.","verified":true},
-      {"id":"against-all-odds","order":19,"name":"Against All Odds","type":"Story","giver":"Catalina","location":"Las Barrancas","reward":{"money":0},"summary":"Robbing spree with Catalina across the Badlands.","verified":true},
-      {"id":"local-liquor-store","order":20,"name":"Local Liquor Store","type":"Story","giver":"Catalina","location":"Blueberry","reward":{"money":0},"summary":"Rob a liquor store with Catalina and escape the cops.","verified":true},
-      {"id":"small-town-bank","order":21,"name":"Small Town Bank","type":"Story","giver":"Catalina","location":"Fort Carson","reward":{"money":0},"summary":"Rob a small-town bank with Catalina.","verified":true},
-      {"id":"body-harvest","order":22,"name":"Body Harvest","type":"Story","giver":"The Truth","location":"Leafy Hollow","reward":{"money":0},"summary":"Steal a combine harvester for the Truth's farm.","verified":true},
-      {"id":"first-date","order":23,"name":"First Date","type":"Story","giver":"The Truth","location":"Leafy Hollow","reward":{"money":0},"summary":"Take Catalina on a date that turns into a police chase.","verified":true},
-      {"id":"king-in-exile","order":24,"name":"King in Exile","type":"Story","giver":"The Truth","location":"Leafy Hollow","reward":{"money":0},"summary":"Meet the Truth and learn about the San Fierro connection.","verified":true},
-      {"id":"wu-zi-mu","order":25,"name":"Wu Zi Mu","type":"Story","giver":"The Truth","location":"Whetstone","reward":{"money":0},"summary":"Race Wu Zi Mu's associate to earn a meeting with the Triads.","verified":true},
-      {"id":"farewell-my-love","order":26,"name":"Farewell, My Love...","type":"Story","giver":"The Truth","location":"Whetstone","reward":{"money":0},"summary":"Race Catalina on a winding mountain road.","verified":true},
-      {"id":"are-you-going-to-san-fierro","order":27,"name":"Are You Going to San Fierro?","type":"Story","giver":"The Truth","location":"San Fierro","reward":{"money":0},"summary":"Burn the Truth's weed farm and drive to San Fierro.","verified":true},
-      {"id":"wear-flowers-in-your-hair","order":28,"name":"Wear Flowers in Your Hair","type":"Story","giver":"The Truth","location":"San Fierro","reward":{"money":0},"summary":"Recruit the Truth's associates and open the San Fierro safehouse.","verified":true},
-      {"id":"555-we-tip","order":29,"name":"555 WE TIP","type":"Story","giver":"Cesar Vialpando","location":"San Fierro","reward":{"money":0},"summary":"Plant evidence on a D.A.'s car to discredit him.","verified":true},
-      {"id":"deconstruction","order":30,"name":"Deconstruction","type":"Story","giver":"Kendl","location":"Doherty","reward":{"money":0},"summary":"Destroy a construction site to protect the garage.","verified":true},
-      {"id":"photo-opportunity","order":31,"name":"Photo Opportunity","type":"Story","giver":"Cesar Vialpando","location":"San Fierro","reward":{"money":0},"summary":"Photograph a Loco Syndicate meeting from a rooftop.","verified":true},
-      {"id":"jizzy","order":32,"name":"Jizzy","type":"Story","giver":"Jizzy B","location":"San Fierro","reward":{"money":0},"summary":"Work for Jizzy to infiltrate the Loco Syndicate.","verified":true},
-      {"id":"outrider","order":33,"name":"Outrider","type":"Story","giver":"Jizzy B","location":"San Fierro","reward":{"money":0},"summary":"Escort a drug shipment across the city.","verified":true},
-      {"id":"ice-cold-killa","order":34,"name":"Ice Cold Killa","type":"Story","giver":"Jizzy B","location":"San Fierro","reward":{"money":0},"summary":"Kill Jizzy B and take his club.","verified":true},
-      {"id":"pier-69","order":35,"name":"Pier 69","type":"Story","giver":"Cesar Vialpando","location":"Pier 69","reward":{"money":0},"summary":"Ambush the Loco Syndicate at the pier.","verified":true},
-      {"id":"torenos-last-flight","order":36,"name":"Toreno's Last Flight","type":"Story","giver":"Wu Zi Mu","location":"Easter Basin","reward":{"money":0},"summary":"Destroy Toreno's helicopter before it leaves the docks.","verified":true},
-      {"id":"mountain-cloud-boys","order":37,"name":"Mountain Cloud Boys","type":"Story","giver":"Wu Zi Mu","location":"Chinatown","reward":{"money":0},"summary":"Earn Wu Zi Mu's trust by helping the Triads.","verified":true},
-      {"id":"ran-fa-li","order":38,"name":"Ran Fa Li","type":"Story","giver":"Wu Zi Mu","location":"Chinatown","reward":{"money":0},"summary":"Pick up Ran Fa Li from the airport while hitmen pursue.","verified":true},
-      {"id":"lure","order":39,"name":"Lure","type":"Story","giver":"Wu Zi Mu","location":"Chinatown","reward":{"money":0},"summary":"Draw Da Nang boys away from the Triad headquarters.","verified":true},
-      {"id":"amphibious-assault","order":40,"name":"Amphibious Assault","type":"Story","giver":"Wu Zi Mu","location":"Bayside","reward":{"money":0},"summary":"Swim to a cargo ship and steal the manifest.","verified":true},
-      {"id":"the-da-nang-thang","order":41,"name":"The Da Nang Thang","type":"Story","giver":"Wu Zi Mu","location":"Easter Basin","reward":{"money":0},"summary":"Clear the Da Nang gang from a freighter.","verified":true},
-      {"id":"monster","order":42,"name":"Monster","type":"Story","giver":"Mike Toreno","location":"Las Barrancas","reward":{"money":0},"summary":"Drive a Monster truck through a desert checkpoint course.","verified":true},
-      {"id":"highjack","order":43,"name":"Highjack","type":"Story","giver":"Mike Toreno","location":"Las Venturas","reward":{"money":0},"summary":"Hijack a truck on the highway for Toreno.","verified":true},
-      {"id":"interdiction","order":44,"name":"Interdiction","type":"Story","giver":"Mike Toreno","location":"Las Brujas","reward":{"money":0},"summary":"Recover a package from a desert airstrip.","verified":true},
-      {"id":"verdant-meadows","order":45,"name":"Verdant Meadows","type":"Story","giver":"Mike Toreno","location":"Verdant Meadows","reward":{"money":0},"summary":"Buy the abandoned airstrip to unlock flight school.","verified":true},
-      {"id":"learning-to-fly","order":46,"name":"Learning to Fly","type":"Story","giver":"Mike Toreno","location":"Verdant Meadows","reward":{"money":0},"summary":"Complete flight school tests to earn a pilot's licence.","verified":true},
-      {"id":"n-o-e","order":47,"name":"N.O.E.","type":"Story","giver":"Mike Toreno","location":"Verdant Meadows","reward":{"money":0},"summary":"Fly a plane low under radar to drop supplies.","verified":true},
-      {"id":"stowaway","order":48,"name":"Stowaway","type":"Story","giver":"Mike Toreno","location":"Verdant Meadows","reward":{"money":0},"summary":"Board a moving plane and plant a bomb.","verified":true},
-      {"id":"black-project","order":49,"name":"Black Project","type":"Story","giver":"Mike Toreno","location":"Area 69","reward":{"money":0},"summary":"Infiltrate Area 69 and steal the jetpack.","verified":true},
-      {"id":"green-goo","order":50,"name":"Green Goo","type":"Story","giver":"Mike Toreno","location":"Area 69","reward":{"money":0},"summary":"Use the jetpack to steal a train shipment.","verified":true},
-      {"id":"fender-ketchup","order":51,"name":"Fender Ketchup","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Intimidate a casino manager by hanging him from a car.","verified":true},
-      {"id":"explosive-situation","order":52,"name":"Explosive Situation","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Steal explosives from a quarry for the casino heist.","verified":true},
-      {"id":"youve-had-your-chips","order":53,"name":"You've Had Your Chips","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Destroy a counterfeit chip factory.","verified":true},
-      {"id":"don-peyote","order":54,"name":"Don Peyote","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Rescue Kent Paul and Maccer from a desert cult.","verified":true},
-      {"id":"architectural-espionage","order":55,"name":"Architectural Espionage","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Steal the Caligula's Palace blueprints.","verified":true},
-      {"id":"key-to-her-heart","order":56,"name":"Key to Her Heart","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Date Millie to obtain the casino key card.","verified":true},
-      {"id":"dam-and-blast","order":57,"name":"Dam and Blast","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Sabotage the dam's power supply before the heist.","verified":true},
-      {"id":"cop-wheels","order":58,"name":"Cop Wheels","type":"Story","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Steal four police bikes for the heist crew.","verified":true},
-      {"id":"up-up-and-away","order":59,"name":"Up, Up and Away!","type":"Heist","giver":"Wu Zi Mu","location":"Las Venturas","reward":{"money":0},"summary":"Steal a helicopter from a military convoy.","verified":true},
-      {"id":"breaking-the-bank-at-caligulas","order":60,"name":"Breaking the Bank at Caligula's","type":"Heist","giver":"Wu Zi Mu","location":"Caligula's Palace","reward":{"money":0},"summary":"Rob Caligula's Palace casino.","verified":true},
-      {"id":"a-home-in-the-hills","order":61,"name":"A Home in the Hills","type":"Story","giver":"Wu Zi Mu","location":"Mulholland","reward":{"money":0},"summary":"Reclaim Madd Dogg's mansion from Big Poppa.","verified":true},
-      {"id":"vertical-bird","order":62,"name":"Vertical Bird","type":"Story","giver":"Mike Toreno","location":"Las Venturas","reward":{"money":0},"summary":"Steal a Harrier jet from an aircraft carrier.","verified":true},
-      {"id":"home-coming","order":63,"name":"Home Coming","type":"Story","giver":"Mike Toreno","location":"Los Santos","reward":{"money":0},"summary":"Return to Los Santos and rejoin Sweet.","verified":true},
-      {"id":"cut-throat-business","order":64,"name":"Cut Throat Business","type":"Story","giver":"Sweet","location":"Los Santos","reward":{"money":0},"summary":"Chase down a record producer who cheated Madd Dogg.","verified":true},
-      {"id":"beat-down-on-b-dup","order":65,"name":"Beat Down on B Dup","type":"Story","giver":"Sweet","location":"Ganton","reward":{"money":0},"summary":"Take back Grove Street territory from B Dup.","verified":true},
-      {"id":"grove-4-life","order":66,"name":"Grove 4 Life","type":"Story","giver":"Sweet","location":"Ganton","reward":{"money":0},"summary":"Defend Grove Street from a Ballas assault.","verified":true},
-      {"id":"riot","order":67,"name":"Riot","type":"Story","giver":"Sweet","location":"Los Santos","reward":{"money":0},"summary":"Survive the city-wide riots after Tenpenny's trial.","verified":true},
-      {"id":"los-desperados","order":68,"name":"Los Desperados","type":"Story","giver":"Cesar Vialpando","location":"El Corona","reward":{"money":0},"summary":"Help Cesar retake Aztecas territory.","verified":true},
-      {"id":"end-of-the-line","order":69,"name":"End of the Line","type":"Story","giver":"Sweet","location":"Los Santos","reward":{"money":0},"summary":"Final mission: assault Big Smoke's crack palace and confront Tenpenny.","verified":true}
+      {
+        "id": "in-the-beginning",
+        "order": 1,
+        "name": "In the Beginning",
+        "type": "Story",
+        "giver": "Introduction",
+        "location": "Los Santos",
+        "reward": {
+          "other": "Chapter opening"
+        },
+        "summary": "Opening sequence: CJ returns to Los Santos for his mother's funeral and is picked up by C.R.A.S.H.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "big-smoke",
+        "order": 2,
+        "name": "Big Smoke",
+        "type": "Story",
+        "giver": "Big Smoke",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Ride with Big Smoke and take out the Ballas chasing him through the streets.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "sweet-and-kendl",
+        "order": 3,
+        "name": "Sweet & Kendl",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect; the Johnson House"
+        },
+        "summary": "Meet Sweet and Kendl after the funeral and deal with the Ballas who interrupt it.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "ryder",
+        "order": 4,
+        "name": "Ryder",
+        "type": "Story",
+        "giver": "Ryder",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect; barbers, restaurants and tattoo parlours"
+        },
+        "summary": "Pick up Ryder and rob a pizza restaurant to prove CJ is still Grove.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "tagging-up-turf",
+        "order": 5,
+        "name": "Tagging Up Turf",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "money": 200,
+          "other": "Respect; spray can at the Johnson House"
+        },
+        "summary": "Spray over Ballas graffiti across the neighbourhood with Sweet and Ryder.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "cleaning-the-hood",
+        "order": 6,
+        "name": "Cleaning the Hood",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Clear drug dealers out of Grove Street territory.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "drive-thru",
+        "order": 7,
+        "name": "Drive-Thru",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "money": 200,
+          "other": "Respect; gyms open"
+        },
+        "summary": "Chase down the Ballas who shot up a Cluckin' Bell drive-thru.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "nines-and-aks",
+        "order": 8,
+        "name": "Nines and AK's",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect; Binco, Sub Urban and ProLaps clothing"
+        },
+        "summary": "Buy guns from Emmet and practise shooting with Sweet.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "drive-by",
+        "order": 9,
+        "name": "Drive-By",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Glen Park",
+        "reward": {
+          "money": 500,
+          "other": "Respect"
+        },
+        "summary": "Drive through Ballas territory and eliminate rival gang members from the car.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "sweets-girl",
+        "order": 10,
+        "name": "Sweet's Girl",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Idlewood",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Rescue Sweet and his girlfriend from a Ballas ambush in Idlewood.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "cesar-vialpando",
+        "order": 11,
+        "name": "Cesar Vialpando",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "El Corona",
+        "reward": {
+          "money": 50,
+          "other": "Wager pays $50 to $1,000; Loco Low Co. and TransFender"
+        },
+        "summary": "Enter a low-rider hydraulic competition against Cesar Vialpando's crew.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "home-invasion",
+        "order": 12,
+        "name": "Home Invasion",
+        "type": "Story",
+        "giver": "Ryder",
+        "location": "Willowfield",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Break into a house with Ryder and steal military equipment before the owners return.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "catalyst",
+        "order": 13,
+        "name": "Catalyst",
+        "type": "Story",
+        "giver": "Ryder",
+        "location": "Willowfield",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Collect explosives from a train with Ryder and hold off the Ballas.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "robbing-uncle-sam",
+        "order": 14,
+        "name": "Robbing Uncle Sam",
+        "type": "Story",
+        "giver": "Ryder",
+        "location": "Ocean Docks",
+        "reward": {
+          "other": "Respect; SMG at Ammu-Nation after Doberman"
+        },
+        "summary": "Raid the National Guard depot with Ryder using a forklift.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "og-loc",
+        "order": 15,
+        "name": "OG Loc",
+        "type": "Story",
+        "giver": "Big Smoke",
+        "location": "Jefferson",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Break OG Loc out of police custody during a prisoner transfer.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "running-dog",
+        "order": 16,
+        "name": "Running Dog",
+        "type": "Story",
+        "giver": "Big Smoke",
+        "location": "East Los Santos",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Chase down a Vagos runner for Big Smoke.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "wrong-side-of-the-tracks",
+        "order": 17,
+        "name": "Wrong Side of the Tracks",
+        "type": "Story",
+        "giver": "Big Smoke",
+        "location": "East Los Santos",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Ride the train and kill the Vagos on the roof with Big Smoke.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "just-business",
+        "order": 18,
+        "name": "Just Business",
+        "type": "Story",
+        "giver": "Big Smoke",
+        "location": "East Los Santos",
+        "reward": {
+          "other": "Respect; Sawn-off Shotgun at Ammu-Nation after Doberman"
+        },
+        "summary": "Cover Big Smoke during a deal that turns into a running highway shootout.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "lifes-a-beach",
+        "order": 19,
+        "name": "Life's a Beach",
+        "type": "Story",
+        "giver": "OG Loc",
+        "location": "Verona Beach",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Steal a sound system from a beach party for OG Loc.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "madd-doggs-rhymes",
+        "order": 20,
+        "name": "Madd Dogg's Rhymes",
+        "type": "Story",
+        "giver": "OG Loc",
+        "location": "Mulholland",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Break into Madd Dogg's mansion and steal his rhyme book.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "management-issues",
+        "order": 21,
+        "name": "Management Issues",
+        "type": "Story",
+        "giver": "OG Loc",
+        "location": "Mulholland",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Kill Madd Dogg's manager and take his place at the studio.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "house-party",
+        "order": 22,
+        "name": "House Party",
+        "type": "Story",
+        "giver": "OG Loc",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Defend OG Loc's house party from a Ballas attack.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "burning-desire",
+        "order": 23,
+        "name": "Burning Desire",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "Idlewood",
+        "reward": {
+          "other": "Denise Robinson as a girlfriend"
+        },
+        "summary": "Firebomb a house for Tenpenny and rescue Denise from the flames.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "gray-imports",
+        "order": 24,
+        "name": "Gray Imports",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "Ocean Docks",
+        "reward": {
+          "other": "Silenced 9mm at Ammu-Nation after Doberman"
+        },
+        "summary": "Raid a Vagos warehouse and destroy the imported weapons.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "doberman",
+        "order": 25,
+        "name": "Doberman",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Glen Park",
+        "reward": {
+          "other": "Respect; Ammu-Nation opens"
+        },
+        "summary": "Take over the first Ballas territory to start the gang war system.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "los-sepulcros",
+        "order": 26,
+        "name": "Los Sepulcros",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Los Sepulcros",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Hit a Ballas funeral to weaken their leadership.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "high-stakes-low-rider",
+        "order": 27,
+        "name": "High Stakes, Low-Rider",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Los Santos",
+        "reward": {
+          "money": 1000,
+          "other": "Respect"
+        },
+        "summary": "Win a low-rider race against Cesar's rivals for cash.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "reuniting-the-families",
+        "order": 28,
+        "name": "Reuniting the Families",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Jefferson Motel",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Escape a police raid on the Grove Street leadership meeting.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "the-green-sabre",
+        "order": 29,
+        "name": "The Green Sabre",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Mulholland Intersection",
+        "reward": {
+          "other": "Flint County, Whetstone and San Fierro open"
+        },
+        "summary": "Act one finale: discover the traitors and lose everything in Los Santos.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "badlands",
+        "order": 30,
+        "name": "Badlands",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "Whetstone",
+        "reward": {},
+        "summary": "Reach the Badlands safehouse and shake the police tail.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "first-date-then-tanker-commander",
+        "order": 31,
+        "name": "First Date then Tanker Commander",
+        "type": "Story",
+        "giver": "Catalina",
+        "location": "Dillimore",
+        "reward": {
+          "money": 5000,
+          "other": "Robbery payout"
+        },
+        "summary": "Take Catalina on a date that turns into the hijacking of a tanker truck.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "body-harvest",
+        "order": 32,
+        "name": "Body Harvest",
+        "type": "Story",
+        "giver": "The Truth",
+        "location": "Leafy Hollow",
+        "reward": {
+          "other": "Respect; Rifle at Ammu-Nation"
+        },
+        "summary": "Steal a combine harvester for the Truth's farm.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "king-in-exile",
+        "order": 33,
+        "name": "King in Exile",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Whetstone",
+        "reward": {},
+        "summary": "Meet the Truth and learn about the San Fierro connection.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "first-base-then-local-liquor-store",
+        "order": 34,
+        "name": "First Base then Local Liquor Store",
+        "type": "Story",
+        "giver": "Catalina",
+        "location": "Blueberry",
+        "reward": {
+          "money": 1000,
+          "other": "Catalina's hideout"
+        },
+        "summary": "Rob a liquor store with Catalina and escape the police.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "gone-courting-then-against-all-odds",
+        "order": 35,
+        "name": "Gone Courting then Against All Odds",
+        "type": "Story",
+        "giver": "Catalina",
+        "location": "Las Barrancas",
+        "reward": {
+          "money": 2000,
+          "other": "Remote explosives at Ammu-Nation"
+        },
+        "summary": "Rob a betting shop with Catalina and outrun the cops.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "made-in-heaven-then-small-town-bank",
+        "order": 36,
+        "name": "Made in Heaven then Small Town Bank",
+        "type": "Story",
+        "giver": "Catalina",
+        "location": "Fort Carson",
+        "reward": {
+          "money": 10000,
+          "other": "Robbing spree conclusion"
+        },
+        "summary": "Rob a small-town bank with Catalina.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "wu-zi-mu",
+        "order": 37,
+        "name": "Wu Zi Mu",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Whetstone",
+        "reward": {
+          "money": 5000
+        },
+        "summary": "Race Wu Zi Mu's associate on a winding country road to earn a meeting with the Triads.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "farewell-my-love",
+        "order": 38,
+        "name": "Farewell, My Love...",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Whetstone",
+        "reward": {
+          "other": "ZR-350"
+        },
+        "summary": "Race Catalina on a mountain road and win her ZR-350.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "are-you-going-to-san-fierro",
+        "order": 39,
+        "name": "Are You Going to San Fierro?",
+        "type": "Story",
+        "giver": "The Truth",
+        "location": "Flint County",
+        "reward": {
+          "other": "San Fierro safehouses on sale; five-star wanted level possible"
+        },
+        "summary": "Burn the Truth's weed farm and drive to San Fierro.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "wear-flowers-in-your-hair",
+        "order": 40,
+        "name": "Wear Flowers in Your Hair",
+        "type": "Story",
+        "giver": "Carl Johnson",
+        "location": "Doherty",
+        "reward": {
+          "other": "Zero RC shop purchasable"
+        },
+        "summary": "Recruit the Truth's associates and open the San Fierro safehouse.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "555-we-tip",
+        "order": 41,
+        "name": "555 We Tip",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "San Fierro",
+        "reward": {
+          "other": "Valet uniform"
+        },
+        "summary": "Plant evidence on a district attorney's car to discredit him.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "deconstruction",
+        "order": 42,
+        "name": "Deconstruction",
+        "type": "Story",
+        "giver": "Carl Johnson",
+        "location": "Doherty",
+        "reward": {},
+        "summary": "Destroy a construction site that threatens the garage.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "photo-opportunity",
+        "order": 43,
+        "name": "Photo Opportunity",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "San Fierro",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Photograph a Loco Syndicate meeting from a rooftop.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "jizzy",
+        "order": 44,
+        "name": "Jizzy",
+        "type": "Story",
+        "giver": "Loco Syndicate",
+        "location": "San Fierro",
+        "reward": {
+          "money": 3000,
+          "other": "Respect"
+        },
+        "summary": "Work for Jizzy to infiltrate the Loco Syndicate.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "air-raid",
+        "order": 45,
+        "name": "Air Raid",
+        "type": "Story",
+        "giver": "Zero",
+        "location": "Zero's RC, Doherty",
+        "reward": {
+          "money": 3000
+        },
+        "summary": "Defend Zero's shop from RC planes using a minigun.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "supply-lines",
+        "order": 46,
+        "name": "Supply Lines...",
+        "type": "Story",
+        "giver": "Zero",
+        "location": "Zero's RC, Doherty",
+        "reward": {
+          "money": 5000
+        },
+        "summary": "Fly an RC plane and destroy the rival delivery bikes before fuel runs out.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "new-model-army",
+        "order": 47,
+        "name": "New Model Army",
+        "type": "Story",
+        "giver": "Zero",
+        "location": "Zero's RC, Doherty",
+        "reward": {
+          "money": 7000,
+          "other": "Zero RC as an asset"
+        },
+        "summary": "Complete Zero's RC assault course to win the shop.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "t-bone-mendez",
+        "order": 48,
+        "name": "T-Bone Mendez",
+        "type": "Story",
+        "giver": "Loco Syndicate",
+        "location": "San Fierro",
+        "reward": {
+          "money": 5000,
+          "other": "Respect"
+        },
+        "summary": "Chase T-Bone Mendez and recover the stolen cash.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "mike-toreno",
+        "order": 49,
+        "name": "Mike Toreno",
+        "type": "Story",
+        "giver": "Loco Syndicate",
+        "location": "San Fierro",
+        "reward": {
+          "money": 7000,
+          "other": "Respect"
+        },
+        "summary": "Rescue Mike Toreno from a warehouse ambush.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "outrider",
+        "order": 50,
+        "name": "Outrider",
+        "type": "Story",
+        "giver": "Loco Syndicate",
+        "location": "San Fierro",
+        "reward": {
+          "money": 9000,
+          "other": "Respect"
+        },
+        "summary": "Escort a drug shipment across the city.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "snail-trail",
+        "order": 51,
+        "name": "Snail Trail",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "San Fierro",
+        "reward": {},
+        "summary": "Follow a journalist to find the Loco Syndicate's buyer.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "ice-cold-killa",
+        "order": 52,
+        "name": "Ice Cold Killa",
+        "type": "Story",
+        "giver": "Triads",
+        "location": "San Fierro",
+        "reward": {
+          "money": 12000,
+          "other": "Respect"
+        },
+        "summary": "Kill Jizzy B and take his club.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "back-to-school",
+        "order": 53,
+        "name": "Back to School",
+        "type": "Story",
+        "giver": "Driving School",
+        "location": "San Fierro",
+        "reward": {
+          "other": "Driving skill; Super GT, Bullet or Hotknife by medal"
+        },
+        "summary": "Complete the driving school tests to unlock vehicle prizes.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "pier-69",
+        "order": 54,
+        "name": "Pier 69",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Pier 69",
+        "reward": {
+          "money": 15000,
+          "other": "Respect; Sniper Rifle at Ammu-Nation"
+        },
+        "summary": "Ambush the Loco Syndicate at the pier.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "torenos-last-flight",
+        "order": 55,
+        "name": "Toreno's Last Flight",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Easter Basin",
+        "reward": {
+          "money": 18000,
+          "other": "Respect"
+        },
+        "summary": "Destroy Toreno's helicopter before it leaves the docks.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "mountain-cloud-boys",
+        "order": 56,
+        "name": "Mountain Cloud Boys",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Chinatown, San Fierro",
+        "reward": {
+          "money": 5000,
+          "other": "Respect"
+        },
+        "summary": "Earn Wu Zi Mu's trust by helping the Triads against the Da Nang.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "ran-fa-li",
+        "order": 57,
+        "name": "Ran Fa Li",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Chinatown, San Fierro",
+        "reward": {
+          "money": 6000,
+          "other": "Respect"
+        },
+        "summary": "Pick up Ran Fa Li from the airport while hitmen pursue.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "lure",
+        "order": 58,
+        "name": "Lure",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Chinatown, San Fierro",
+        "reward": {
+          "money": 8000,
+          "other": "Respect; AK-47 at Ammu-Nation"
+        },
+        "summary": "Draw the Da Nang boys away from Triad headquarters.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "amphibious-assault",
+        "order": 59,
+        "name": "Amphibious Assault",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Bayside",
+        "reward": {
+          "money": 11000,
+          "other": "Respect"
+        },
+        "summary": "Swim to a cargo ship and steal the manifest.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "the-da-nang-thang",
+        "order": 60,
+        "name": "The Da Nang Thang",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Easter Basin",
+        "reward": {
+          "money": 15000,
+          "other": "Respect"
+        },
+        "summary": "Clear the Da Nang gang from a freighter.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "yay-ka-boom-boom",
+        "order": 61,
+        "name": "Yay Ka-Boom-Boom",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Doherty",
+        "reward": {
+          "money": 25000,
+          "other": "Tierra Robada, Bone County and Las Venturas open; M4 at Ammu-Nation"
+        },
+        "summary": "Destroy the Loco Syndicate's factory.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "zeroing-in",
+        "order": 62,
+        "name": "Zeroing In",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "San Fierro",
+        "reward": {
+          "money": 5000,
+          "other": "Respect"
+        },
+        "summary": "Track a target's car using a homing device.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "test-drive",
+        "order": 63,
+        "name": "Test Drive",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "San Fierro",
+        "reward": {
+          "money": 5000,
+          "other": "Respect"
+        },
+        "summary": "Test-drive two imported cars and outrun the police.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "customs-fast-track",
+        "order": 64,
+        "name": "Customs Fast Track",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Easter Basin",
+        "reward": {
+          "money": 10000,
+          "other": "Respect"
+        },
+        "summary": "Steal cars from the dockside customs compound.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "puncture-wounds",
+        "order": 65,
+        "name": "Puncture Wounds",
+        "type": "Story",
+        "giver": "Cesar Vialpando",
+        "location": "Wang Cars, Doherty",
+        "reward": {
+          "money": 5000,
+          "other": "Wang Cars as an asset"
+        },
+        "summary": "Stop a rival tyre-slashing racket and take over Wang Cars.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "monster",
+        "order": 66,
+        "name": "Monster",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Las Barrancas",
+        "reward": {
+          "money": 1000,
+          "other": "Payout rises with time; up to $5,000"
+        },
+        "summary": "Drive a Monster truck through a desert checkpoint course.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "highjack",
+        "order": 67,
+        "name": "Highjack",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 7000
+        },
+        "summary": "Hijack a truck on the highway for Toreno.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "interdiction",
+        "order": 68,
+        "name": "Interdiction",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Las Brujas",
+        "reward": {
+          "money": 1000
+        },
+        "summary": "Recover a package from a desert airstrip under fire.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "verdant-meadows",
+        "order": 69,
+        "name": "Verdant Meadows",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Verdant Meadows",
+        "reward": {
+          "other": "Verdant Meadows airfield purchasable"
+        },
+        "summary": "Buy the abandoned airstrip and complete Toreno's first flying task.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "learning-to-fly",
+        "order": 70,
+        "name": "Learning to Fly",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Verdant Meadows",
+        "reward": {
+          "other": "Pilot's licence; Las Venturas safehouses purchasable"
+        },
+        "summary": "Complete flight school tests to earn a pilot's licence.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "noe",
+        "order": 71,
+        "name": "N.O.E.",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Verdant Meadows",
+        "reward": {
+          "money": 15000
+        },
+        "summary": "Fly a plane low under radar to drop supplies.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "stowaway",
+        "order": 72,
+        "name": "Stowaway",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Verdant Meadows",
+        "reward": {
+          "money": 20000
+        },
+        "summary": "Board a moving plane and plant a bomb.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "black-project",
+        "order": 73,
+        "name": "Black Project",
+        "type": "Story",
+        "giver": "The Truth",
+        "location": "Area 69",
+        "reward": {
+          "other": "Desert Eagle at Ammu-Nation"
+        },
+        "summary": "Infiltrate Area 69 and steal the jetpack.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "green-goo",
+        "order": 74,
+        "name": "Green Goo",
+        "type": "Story",
+        "giver": "The Truth",
+        "location": "Area 69",
+        "reward": {
+          "money": 20000,
+          "other": "Jetpack at Verdant Meadows"
+        },
+        "summary": "Use the jetpack to steal a train shipment.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "fender-ketchup",
+        "order": 75,
+        "name": "Fender Ketchup",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 5000,
+          "other": "Respect"
+        },
+        "summary": "Intimidate a casino manager by hanging him from a car.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "explosive-situation",
+        "order": 76,
+        "name": "Explosive Situation",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 7000,
+          "other": "Respect"
+        },
+        "summary": "Steal explosives from a quarry for the casino heist.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "youve-had-your-chips",
+        "order": 77,
+        "name": "You've Had Your Chips",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 10000,
+          "other": "Respect; Combat Shotgun at Ammu-Nation"
+        },
+        "summary": "Destroy a counterfeit chip factory.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "don-peyote",
+        "order": 78,
+        "name": "Don Peyote",
+        "type": "Story",
+        "giver": "The Truth",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Rescue Kent Paul and Maccer from a desert cult.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "architectural-espionage",
+        "order": 79,
+        "name": "Architectural Espionage",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Steal the Caligula's Palace blueprints.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "key-to-her-heart",
+        "order": 80,
+        "name": "Key to Her Heart",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect; Millie as a girlfriend"
+        },
+        "summary": "Date Millie to obtain the casino key card.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "dam-and-blast",
+        "order": 81,
+        "name": "Dam and Blast",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Sabotage the dam's power supply before the heist.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "cop-wheels",
+        "order": 82,
+        "name": "Cop Wheels",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Steal four police bikes for the heist crew.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "up-up-and-away",
+        "order": 83,
+        "name": "Up, Up and Away!",
+        "type": "Heist",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect; Leviathan at Verdant Meadows"
+        },
+        "summary": "Steal a helicopter from a military convoy.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "intensive-care",
+        "order": 84,
+        "name": "Intensive Care",
+        "type": "Story",
+        "giver": "Ken Rosenberg",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 5000,
+          "other": "Respect"
+        },
+        "summary": "Kidnap a mob witness from a hospital.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "the-meat-business",
+        "order": 85,
+        "name": "The Meat Business",
+        "type": "Story",
+        "giver": "Ken Rosenberg",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 8000,
+          "other": "Respect"
+        },
+        "summary": "Rescue Ken Rosenberg from the meat factory.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "madd-dogg",
+        "order": 86,
+        "name": "Madd Dogg",
+        "type": "Story",
+        "giver": "Madd Dogg",
+        "location": "Las Venturas",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Save Madd Dogg from jumping off a casino roof.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "fish-in-a-barrel",
+        "order": 87,
+        "name": "Fish in a Barrel",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Las Venturas",
+        "reward": {},
+        "summary": "Kill the men who tried to drown Madd Dogg.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "misappropriation",
+        "order": 88,
+        "name": "Misappropriation",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "Las Venturas",
+        "reward": {},
+        "summary": "Raid a desert compound for C.R.A.S.H. evidence.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "freefall",
+        "order": 89,
+        "name": "Freefall",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 15000,
+          "other": "Respect"
+        },
+        "summary": "Catch a falling plane with a charter jet.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "high-noon",
+        "order": 90,
+        "name": "High Noon",
+        "type": "Story",
+        "giver": "C.R.A.S.H.",
+        "location": "Las Venturas",
+        "reward": {},
+        "summary": "Kill Pulaski in the desert.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "saint-marks-bistro",
+        "order": 91,
+        "name": "Saint Mark's Bistro",
+        "type": "Story",
+        "giver": "Salvatore Leone",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 20000,
+          "other": "Respect"
+        },
+        "summary": "Hit a Liberty City restaurant full of Forellis.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "breaking-the-bank-at-caligulas",
+        "order": 92,
+        "name": "Breaking the Bank at Caligula's",
+        "type": "Heist",
+        "giver": "Woozie",
+        "location": "Caligula's Palace",
+        "reward": {
+          "money": 100000,
+          "other": "Respect"
+        },
+        "summary": "Rob Caligula's Palace casino using the stolen blueprints and key card.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "a-home-in-the-hills",
+        "order": 93,
+        "name": "A Home in the Hills",
+        "type": "Story",
+        "giver": "Woozie",
+        "location": "Mulholland",
+        "reward": {
+          "other": "Respect; Madd Dogg's crib"
+        },
+        "summary": "Reclaim Madd Dogg's mansion from Big Poppa.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "vertical-bird",
+        "order": 94,
+        "name": "Vertical Bird",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Las Venturas",
+        "reward": {
+          "money": 50000,
+          "other": "Hydra at Verdant Meadows"
+        },
+        "summary": "Steal a Harrier jump jet from an aircraft carrier.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "home-coming",
+        "order": 95,
+        "name": "Home Coming",
+        "type": "Story",
+        "giver": "Mike Toreno",
+        "location": "Los Santos",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Return to Los Santos and rejoin Sweet.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "beat-down-on-b-dup",
+        "order": 96,
+        "name": "Beat Down on B Dup",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Take back Grove Street territory from B Dup.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "cut-throat-business",
+        "order": 97,
+        "name": "Cut Throat Business",
+        "type": "Story",
+        "giver": "Madd Dogg",
+        "location": "Los Santos",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Chase down a record producer who cheated Madd Dogg.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "grove-4-life",
+        "order": 98,
+        "name": "Grove 4 Life",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Ganton",
+        "reward": {
+          "money": 10000,
+          "other": "Respect"
+        },
+        "summary": "Defend Grove Street from a Ballas assault.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "riot",
+        "order": 99,
+        "name": "Riot",
+        "type": "Story",
+        "giver": "Carl Johnson",
+        "location": "Los Santos",
+        "reward": {},
+        "summary": "Survive the city-wide riots after Tenpenny's trial.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "los-desperados",
+        "order": 100,
+        "name": "Los Desperados",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "El Corona",
+        "reward": {
+          "other": "Respect"
+        },
+        "summary": "Help Cesar retake Aztecas territory.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      },
+      {
+        "id": "end-of-the-line",
+        "order": 101,
+        "name": "End of the Line",
+        "type": "Story",
+        "giver": "Sweet",
+        "location": "Los Santos",
+        "reward": {
+          "money": 250000,
+          "other": "Story completion"
+        },
+        "summary": "Final mission: assault Big Smoke's crack palace and confront Tenpenny.",
+        "verified": true,
+        "source": "GTA San Andreas in-game mission list, order and rewards cross-checked against published mission tables"
+      }
     ]
   },
   "vehicles": {
     "coverage": "partial",
     "items": [
-      {"id":"infernus","name":"Infernus","category":"Car","class":"Sports","top_speed_kph":240,"seats":2,"verified":true},
-      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Sports","top_speed_kph":235,"seats":2,"verified":true},
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":230,"seats":2,"verified":true},
-      {"id":"turismo","name":"Turismo","category":"Car","class":"Sports","top_speed_kph":235,"seats":2,"verified":true},
-      {"id":"bullet","name":"Bullet","category":"Car","class":"Super","top_speed_kph":250,"seats":2,"verified":true},
-      {"id":"zr-350","name":"ZR-350","category":"Car","class":"Sports","top_speed_kph":225,"seats":2,"verified":true},
-      {"id":"sultan","name":"Sultan","category":"Car","class":"Sports sedan","top_speed_kph":210,"seats":4,"verified":true},
-      {"id":"elegy","name":"Elegy","category":"Car","class":"Sports","top_speed_kph":215,"seats":2,"verified":true},
-      {"id":"jester","name":"Jester","category":"Car","class":"Sports","top_speed_kph":215,"seats":2,"verified":true},
-      {"id":"buffalo","name":"Buffalo","category":"Car","class":"Muscle","top_speed_kph":205,"seats":2,"verified":true},
-      {"id":"phoenix","name":"Phoenix","category":"Car","class":"Muscle","top_speed_kph":200,"seats":2,"verified":true},
-      {"id":"sabre","name":"Sabre","category":"Car","class":"Muscle","top_speed_kph":200,"seats":2,"verified":true},
-      {"id":"stallion","name":"Stallion","category":"Car","class":"Muscle","top_speed_kph":195,"seats":2,"verified":true},
-      {"id":"blade","name":"Blade","category":"Car","class":"Lowrider","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"savanna","name":"Savanna","category":"Car","class":"Lowrider","top_speed_kph":185,"seats":2,"verified":true},
-      {"id":"remington","name":"Remington","category":"Car","class":"Lowrider","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"slamvan","name":"Slamvan","category":"Car","class":"Lowrider","top_speed_kph":175,"seats":2,"verified":true},
-      {"id":"monster","name":"Monster","category":"Car","class":"Monster truck","top_speed_kph":150,"seats":2,"verified":true},
-      {"id":"sandking","name":"Sandking","category":"Car","class":"Off-road","top_speed_kph":170,"seats":2,"verified":true},
-      {"id":"rancher","name":"Rancher","category":"Car","class":"SUV","top_speed_kph":165,"seats":4,"verified":true},
-      {"id":"huntley","name":"Huntley","category":"Car","class":"SUV","top_speed_kph":175,"seats":4,"verified":true},
-      {"id":"patriot","name":"Patriot","category":"Car","class":"SUV","top_speed_kph":180,"seats":4,"verified":true},
-      {"id":"mesa","name":"Mesa","category":"Car","class":"SUV","top_speed_kph":160,"seats":2,"verified":true},
-      {"id":"bobcat","name":"Bobcat","category":"Car","class":"Pickup","top_speed_kph":160,"seats":2,"verified":true},
-      {"id":"bandito","name":"Bandito","category":"Car","class":"Buggy","top_speed_kph":175,"seats":2,"verified":true},
-      {"id":"bf-injection","name":"BF Injection","category":"Car","class":"Buggy","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"vortex","name":"Vortex","category":"Hovercraft","class":"Hovercraft","top_speed_kph":140,"seats":2,"verified":true},
-      {"id":"sanchez","name":"Sanchez","category":"Motorcycle","class":"Dirt bike","top_speed_kph":175,"seats":2,"verified":true},
-      {"id":"nrg-500","name":"NRG-500","category":"Motorcycle","class":"Sport bike","top_speed_kph":230,"seats":2,"verified":true},
-      {"id":"fcr-900","name":"FCR-900","category":"Motorcycle","class":"Sport bike","top_speed_kph":220,"seats":2,"verified":true},
-      {"id":"pcj-600","name":"PCJ-600","category":"Motorcycle","class":"Sport bike","top_speed_kph":210,"seats":2,"verified":true},
-      {"id":"freeway","name":"Freeway","category":"Motorcycle","class":"Cruiser","top_speed_kph":185,"seats":2,"verified":true},
-      {"id":"wayfarer","name":"Wayfarer","category":"Motorcycle","class":"Cruiser","top_speed_kph":180,"seats":2,"verified":true},
-      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":60,"seats":1,"verified":true},
-      {"id":"hydra","name":"Hydra","category":"Aircraft","class":"Jump jet","top_speed_kph":400,"seats":1,"verified":true},
-      {"id":"rustler","name":"Rustler","category":"Aircraft","class":"Prop plane","top_speed_kph":300,"seats":1,"verified":true},
-      {"id":"stuntplane","name":"Stuntplane","category":"Aircraft","class":"Prop plane","top_speed_kph":250,"seats":1,"verified":true},
-      {"id":"shamal","name":"Shamal","category":"Aircraft","class":"Private jet","top_speed_kph":350,"seats":4,"verified":true},
-      {"id":"nevada","name":"Nevada","category":"Aircraft","class":"Cargo plane","top_speed_kph":280,"seats":4,"verified":true},
-      {"id":"maverick","name":"Maverick","category":"Aircraft","class":"Helicopter","top_speed_kph":200,"seats":4,"verified":true},
-      {"id":"hunter","name":"Hunter","category":"Aircraft","class":"Attack helicopter","top_speed_kph":220,"seats":2,"verified":true},
-      {"id":"sea-sparrow","name":"Sea Sparrow","category":"Aircraft","class":"Helicopter","top_speed_kph":190,"seats":2,"verified":true},
-      {"id":"leviathan","name":"Leviathan","category":"Aircraft","class":"Helicopter","top_speed_kph":180,"seats":4,"verified":true},
-      {"id":"squalo","name":"Squalo","category":"Boat","class":"Speedboat","top_speed_kph":110,"seats":2,"verified":true},
-      {"id":"jetmax","name":"Jetmax","category":"Boat","class":"Speedboat","top_speed_kph":115,"seats":2,"verified":true},
-      {"id":"tropic","name":"Tropic","category":"Boat","class":"Boat","top_speed_kph":90,"seats":4,"verified":true},
-      {"id":"marquis","name":"Marquis","category":"Boat","class":"Yacht","top_speed_kph":60,"seats":2,"verified":true},
-      {"id":"predator","name":"Predator","category":"Boat","class":"Police boat","top_speed_kph":95,"seats":2,"verified":true},
-      {"id":"coastguard","name":"Coast Guard","category":"Boat","class":"Patrol boat","top_speed_kph":100,"seats":2,"verified":true},
-      {"id":"fire-truck","name":"Fire Truck","category":"Emergency","class":"Fire","top_speed_kph":125,"seats":2,"verified":true},
-      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":145,"seats":2,"verified":true},
-      {"id":"police-car","name":"Police Car","category":"Emergency","class":"Police","top_speed_kph":190,"seats":4,"verified":true},
-      {"id":"fbi-truck","name":"FBI Truck","category":"Emergency","class":"Police","top_speed_kph":200,"seats":2,"verified":true},
-      {"id":"swat-tank","name":"SWAT Tank","category":"Emergency","class":"Police","top_speed_kph":120,"seats":4,"verified":true}
+      {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 240,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 235,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 230,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "turismo",
+        "name": "Turismo",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 235,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bullet",
+        "name": "Bullet",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 250,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "zr-350",
+        "name": "ZR-350",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 225,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sultan",
+        "name": "Sultan",
+        "category": "Car",
+        "class": "Sports sedan",
+        "top_speed_kph": 210,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "elegy",
+        "name": "Elegy",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 215,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "jester",
+        "name": "Jester",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 215,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "buffalo",
+        "name": "Buffalo",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 205,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "phoenix",
+        "name": "Phoenix",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 200,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sabre",
+        "name": "Sabre",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 200,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "stallion",
+        "name": "Stallion",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 195,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "blade",
+        "name": "Blade",
+        "category": "Car",
+        "class": "Lowrider",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "savanna",
+        "name": "Savanna",
+        "category": "Car",
+        "class": "Lowrider",
+        "top_speed_kph": 185,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "remington",
+        "name": "Remington",
+        "category": "Car",
+        "class": "Lowrider",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "slamvan",
+        "name": "Slamvan",
+        "category": "Car",
+        "class": "Lowrider",
+        "top_speed_kph": 175,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "monster",
+        "name": "Monster",
+        "category": "Car",
+        "class": "Monster truck",
+        "top_speed_kph": 150,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sandking",
+        "name": "Sandking",
+        "category": "Car",
+        "class": "Off-road",
+        "top_speed_kph": 170,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "rancher",
+        "name": "Rancher",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 165,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "huntley",
+        "name": "Huntley",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 175,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "patriot",
+        "name": "Patriot",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 180,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "mesa",
+        "name": "Mesa",
+        "category": "Car",
+        "class": "SUV",
+        "top_speed_kph": 160,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bobcat",
+        "name": "Bobcat",
+        "category": "Car",
+        "class": "Pickup",
+        "top_speed_kph": 160,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bandito",
+        "name": "Bandito",
+        "category": "Car",
+        "class": "Buggy",
+        "top_speed_kph": 175,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "bf-injection",
+        "name": "BF Injection",
+        "category": "Car",
+        "class": "Buggy",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "vortex",
+        "name": "Vortex",
+        "category": "Hovercraft",
+        "class": "Hovercraft",
+        "top_speed_kph": 140,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sanchez",
+        "name": "Sanchez",
+        "category": "Motorcycle",
+        "class": "Dirt bike",
+        "top_speed_kph": 175,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "nrg-500",
+        "name": "NRG-500",
+        "category": "Motorcycle",
+        "class": "Sport bike",
+        "top_speed_kph": 230,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "fcr-900",
+        "name": "FCR-900",
+        "category": "Motorcycle",
+        "class": "Sport bike",
+        "top_speed_kph": 220,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "pcj-600",
+        "name": "PCJ-600",
+        "category": "Motorcycle",
+        "class": "Sport bike",
+        "top_speed_kph": 210,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "freeway",
+        "name": "Freeway",
+        "category": "Motorcycle",
+        "class": "Cruiser",
+        "top_speed_kph": 185,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "wayfarer",
+        "name": "Wayfarer",
+        "category": "Motorcycle",
+        "class": "Cruiser",
+        "top_speed_kph": 180,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": 60,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "hydra",
+        "name": "Hydra",
+        "category": "Aircraft",
+        "class": "Jump jet",
+        "top_speed_kph": 400,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "rustler",
+        "name": "Rustler",
+        "category": "Aircraft",
+        "class": "Prop plane",
+        "top_speed_kph": 300,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "stuntplane",
+        "name": "Stuntplane",
+        "category": "Aircraft",
+        "class": "Prop plane",
+        "top_speed_kph": 250,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "shamal",
+        "name": "Shamal",
+        "category": "Aircraft",
+        "class": "Private jet",
+        "top_speed_kph": 350,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "nevada",
+        "name": "Nevada",
+        "category": "Aircraft",
+        "class": "Cargo plane",
+        "top_speed_kph": 280,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "maverick",
+        "name": "Maverick",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 200,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "hunter",
+        "name": "Hunter",
+        "category": "Aircraft",
+        "class": "Attack helicopter",
+        "top_speed_kph": 220,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sea-sparrow",
+        "name": "Sea Sparrow",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 190,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "leviathan",
+        "name": "Leviathan",
+        "category": "Aircraft",
+        "class": "Helicopter",
+        "top_speed_kph": 180,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "squalo",
+        "name": "Squalo",
+        "category": "Boat",
+        "class": "Speedboat",
+        "top_speed_kph": 110,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "jetmax",
+        "name": "Jetmax",
+        "category": "Boat",
+        "class": "Speedboat",
+        "top_speed_kph": 115,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "tropic",
+        "name": "Tropic",
+        "category": "Boat",
+        "class": "Boat",
+        "top_speed_kph": 90,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "marquis",
+        "name": "Marquis",
+        "category": "Boat",
+        "class": "Yacht",
+        "top_speed_kph": 60,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "predator",
+        "name": "Predator",
+        "category": "Boat",
+        "class": "Police boat",
+        "top_speed_kph": 95,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "coastguard",
+        "name": "Coast Guard",
+        "category": "Boat",
+        "class": "Patrol boat",
+        "top_speed_kph": 100,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "class": "Fire",
+        "top_speed_kph": 125,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "class": "Medical",
+        "top_speed_kph": 145,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "police-car",
+        "name": "Police Car",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 190,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "fbi-truck",
+        "name": "FBI Truck",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 200,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "swat-tank",
+        "name": "SWAT Tank",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 120,
+        "seats": 4,
+        "verified": true
+      }
     ]
   },
   "weapons": {
     "coverage": "partial",
     "items": [
-      {"id":"fist","name":"Fists","type":"Melee","damage_tier":"Low","ammo":"—","price":null,"unlock":"Default","verified":true},
-      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"katana","name":"Katana","type":"Melee","damage_tier":"High","ammo":"—","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"chainsaw","name":"Chainsaw","type":"Melee","damage_tier":"Very high","ammo":"—","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"17 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"silenced-pistol","name":"Silenced Pistol","type":"Handgun","damage_tier":"Medium","ammo":"17 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"desert-eagle","name":"Desert Eagle","type":"Handgun","damage_tier":"Very high","ammo":"7 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"micro-smg","name":"Micro SMG","type":"Submachine gun","damage_tier":"Medium","ammo":"50 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"mp5","name":"MP5","type":"Submachine gun","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"ak-47","name":"AK-47","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"m4","name":"M4","type":"Assault rifle","damage_tier":"Very high","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"shotgun","name":"Shotgun","type":"Shotgun","damage_tier":"High","ammo":"8 shells","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"combat-shotgun","name":"Combat Shotgun","type":"Shotgun","damage_tier":"Very high","ammo":"7 shells","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"sniper-rifle","name":"Sniper Rifle","type":"Sniper","damage_tier":"Very high","ammo":"5 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"rocket-launcher","name":"Rocket Launcher","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"heat-seeking-rpg","name":"Heat-Seeking RPG","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Pickups","verified":true},
-      {"id":"minigun","name":"Minigun","type":"Heavy","damage_tier":"Lethal","ammo":"150 rounds","price":null,"unlock":"Pickups","verified":true},
-      {"id":"flamethrower","name":"Flamethrower","type":"Heavy","damage_tier":"Very high","ammo":"Continuous","price":null,"unlock":"Pickups","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"20","price":null,"unlock":"Street pickups","verified":true},
-      {"id":"satchel-charges","name":"Satchel Charges","type":"Thrown","damage_tier":"Lethal","ammo":"10","price":null,"unlock":"Ammu-Nation","verified":true}
+      {
+        "id": "fist",
+        "name": "Fists",
+        "type": "Melee",
+        "damage_tier": "Low",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "katana",
+        "name": "Katana",
+        "type": "Melee",
+        "damage_tier": "High",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "chainsaw",
+        "name": "Chainsaw",
+        "type": "Melee",
+        "damage_tier": "Very high",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "silenced-pistol",
+        "name": "Silenced Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "17 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "desert-eagle",
+        "name": "Desert Eagle",
+        "type": "Handgun",
+        "damage_tier": "Very high",
+        "ammo": "7 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "micro-smg",
+        "name": "Micro SMG",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "50 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "mp5",
+        "name": "MP5",
+        "type": "Submachine gun",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "ak-47",
+        "name": "AK-47",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "m4",
+        "name": "M4",
+        "type": "Assault rifle",
+        "damage_tier": "Very high",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "shotgun",
+        "name": "Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "8 shells",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "combat-shotgun",
+        "name": "Combat Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "Very high",
+        "ammo": "7 shells",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Sniper",
+        "damage_tier": "Very high",
+        "ammo": "5 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "rocket-launcher",
+        "name": "Rocket Launcher",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "heat-seeking-rpg",
+        "name": "Heat-Seeking RPG",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "minigun",
+        "name": "Minigun",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "150 rounds",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "Heavy",
+        "damage_tier": "Very high",
+        "ammo": "Continuous",
+        "price": null,
+        "unlock": "Pickups",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "20",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "20",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      },
+      {
+        "id": "satchel-charges",
+        "name": "Satchel Charges",
+        "type": "Thrown",
+        "damage_tier": "Lethal",
+        "ammo": "10",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      }
     ]
   },
   "cheats": {
     "coverage": "partial",
     "items": [
-      {"id":"health-armor-money","effect":"Full health, armor and $250,000","codes":[{"platform":"PC","code":"HESOYAM","input":"keyboard"},{"platform":"PlayStation 2","code":"R1 R2 L1 X LEFT DOWN RIGHT UP LEFT DOWN RIGHT UP","input":"button"}],"verified":true},
-      {"id":"infinite-health","effect":"Invincibility","codes":[{"platform":"PC","code":"BAGUVIX","input":"keyboard"}],"verified":true},
-      {"id":"infinite-oxygen","effect":"Infinite lung capacity","codes":[{"platform":"PC","code":"CVWKXAM","input":"keyboard"}],"verified":true},
-      {"id":"no-hunger","effect":"No hunger","codes":[{"platform":"PC","code":"AEDUWNV","input":"keyboard"}],"verified":true},
-      {"id":"weapons-tier-1","effect":"Weapons: light tier","codes":[{"platform":"PC","code":"LXGIWYL","input":"keyboard"}],"verified":true},
-      {"id":"weapons-tier-2","effect":"Weapons: medium tier","codes":[{"platform":"PC","code":"KJKSZPJ","input":"keyboard"}],"verified":true},
-      {"id":"weapons-tier-3","effect":"Weapons: heavy tier","codes":[{"platform":"PC","code":"UZUMYMW","input":"keyboard"}],"verified":true},
-      {"id":"infinite-ammo","effect":"Infinite ammo","codes":[{"platform":"PC","code":"WANRLTW","input":"keyboard"}],"verified":true},
-      {"id":"clear-wanted","effect":"Clear wanted level","codes":[{"platform":"PC","code":"ASNAEB","input":"keyboard"}],"verified":true},
-      {"id":"raise-wanted","effect":"Raise wanted level","codes":[{"platform":"PC","code":"TURNUPTHEHEAT","input":"keyboard"}],"verified":true},
-      {"id":"lower-wanted","effect":"Lower wanted level","codes":[{"platform":"PC","code":"TURNDOWNTHEHEAT","input":"keyboard"}],"verified":true},
-      {"id":"never-wanted","effect":"Never gain wanted level","codes":[{"platform":"PC","code":"AEZAKMI","input":"keyboard"}],"verified":true},
-      {"id":"drive-by-aim","effect":"Drive-by from any car","codes":[{"platform":"PC","code":"OUIQDMW","input":"keyboard"}],"verified":true},
-      {"id":"cars-fly-away","effect":"Cars fly away when hit","codes":[{"platform":"PC","code":"BSXSGGC","input":"keyboard"}],"verified":false},
-      {"id":"mega-jump","effect":"Mega jump","codes":[{"platform":"PC","code":"KANGAROO","input":"keyboard"}],"verified":true},
-      {"id":"jetpack","effect":"Spawn jetpack","codes":[{"platform":"PC","code":"ROCKETMAN","input":"keyboard"}],"verified":true},
-      {"id":"pedestrians-riot","effect":"Pedestrians riot","codes":[{"platform":"PC","code":"AJLOJYQY","input":"keyboard"}],"verified":true},
-      {"id":"pedestrians-attack","effect":"Pedestrians attack you","codes":[{"platform":"PC","code":"BAGOWPG","input":"keyboard"}],"verified":true},
-      {"id":"armed-pedestrians","effect":"Pedestrians carry weapons","codes":[{"platform":"PC","code":"FOOOXFT","input":"keyboard"}],"verified":true},
-      {"id":"ghost-town","effect":"Ghost town (no pedestrians)","codes":[{"platform":"PC","code":"GHOSTTOWN","input":"keyboard"}],"verified":true},
-      {"id":"suicide","effect":"Commit suicide","codes":[{"platform":"PC","code":"SZCMAWO","input":"keyboard"}],"verified":true},
-      {"id":"sunny-weather","effect":"Sunny weather","codes":[{"platform":"PC","code":"TOODAMNHOT","input":"keyboard"}],"verified":true},
-      {"id":"storm-weather","effect":"Storm weather","codes":[{"platform":"PC","code":"MGHXYRM","input":"keyboard"}],"verified":true},
-      {"id":"recruit-anyone","effect":"Recruit anyone into your gang","codes":[{"platform":"PC","code":"SJMAHPE","input":"keyboard"}],"verified":true},
-      {"id":"fast-time","effect":"Faster game clock","codes":[{"platform":"PC","code":"YSOHNUL","input":"keyboard"}],"verified":true}
+      {
+        "id": "health-armor-money",
+        "effect": "Full health, armor and $250,000",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "HESOYAM",
+            "input": "keyboard"
+          },
+          {
+            "platform": "PlayStation 2",
+            "code": "R1 R2 L1 X LEFT DOWN RIGHT UP LEFT DOWN RIGHT UP",
+            "input": "button"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "infinite-health",
+        "effect": "Invincibility",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BAGUVIX",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "infinite-oxygen",
+        "effect": "Infinite lung capacity",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "CVWKXAM",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "no-hunger",
+        "effect": "No hunger",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "AEDUWNV",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "weapons-tier-1",
+        "effect": "Weapons: light tier",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "LXGIWYL",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "weapons-tier-2",
+        "effect": "Weapons: medium tier",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "KJKSZPJ",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "weapons-tier-3",
+        "effect": "Weapons: heavy tier",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "UZUMYMW",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "infinite-ammo",
+        "effect": "Infinite ammo",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "WANRLTW",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "clear-wanted",
+        "effect": "Clear wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ASNAEB",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "raise-wanted",
+        "effect": "Raise wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TURNUPTHEHEAT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "lower-wanted",
+        "effect": "Lower wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TURNDOWNTHEHEAT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "never-wanted",
+        "effect": "Never gain wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "AEZAKMI",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "drive-by-aim",
+        "effect": "Drive-by from any car",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "OUIQDMW",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "cars-fly-away",
+        "effect": "Cars fly away when hit",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BSXSGGC",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false
+      },
+      {
+        "id": "mega-jump",
+        "effect": "Mega jump",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "KANGAROO",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "jetpack",
+        "effect": "Spawn jetpack",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "ROCKETMAN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "pedestrians-riot",
+        "effect": "Pedestrians riot",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "AJLOJYQY",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "pedestrians-attack",
+        "effect": "Pedestrians attack you",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "BAGOWPG",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "armed-pedestrians",
+        "effect": "Pedestrians carry weapons",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "FOOOXFT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "ghost-town",
+        "effect": "Ghost town (no pedestrians)",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "GHOSTTOWN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "suicide",
+        "effect": "Commit suicide",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SZCMAWO",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "sunny-weather",
+        "effect": "Sunny weather",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TOODAMNHOT",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "storm-weather",
+        "effect": "Storm weather",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "MGHXYRM",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "recruit-anyone",
+        "effect": "Recruit anyone into your gang",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SJMAHPE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "fast-time",
+        "effect": "Faster game clock",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "YSOHNUL",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      }
     ]
   },
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"san-andreas","name":"San Andreas","type":"Region","parent":null,"summary":"The fictional state containing three cities, desert, forest and countryside.","verified":true},
-      {"id":"los-santos","name":"Los Santos","type":"City","parent":"San Andreas","summary":"Los Angeles-inspired southern city and Grove Street's home.","verified":true},
-      {"id":"san-fierro","name":"San Fierro","type":"City","parent":"San Andreas","summary":"San Francisco-inspired city on the western coast.","verified":true},
-      {"id":"las-venturas","name":"Las Venturas","type":"City","parent":"San Andreas","summary":"Las Vegas-inspired casino city in the desert.","verified":true},
-      {"id":"ganton","name":"Ganton","type":"Neighbourhood","parent":"Los Santos","summary":"Grove Street Families home turf and CJ's safehouse.","verified":true},
-      {"id":"idlewood","name":"Idlewood","type":"Neighbourhood","parent":"Los Santos","summary":"Ballas territory south of Ganton.","verified":true},
-      {"id":"glen-park","name":"Glen Park","type":"Neighbourhood","parent":"Los Santos","summary":"Contested neighbourhood during the gang war.","verified":true},
-      {"id":"jefferson","name":"Jefferson","type":"Neighbourhood","parent":"Los Santos","summary":"Motel district and site of Reuniting the Families.","verified":true},
-      {"id":"mulholland","name":"Mulholland","type":"Neighbourhood","parent":"Los Santos","summary":"Hillside district with Madd Dogg's mansion.","verified":true},
-      {"id":"east-los-santos","name":"East Los Santos","type":"District","parent":"Los Santos","summary":"Industrial and residential area near the docks.","verified":true},
-      {"id":"los-santos-international","name":"Los Santos International Airport","type":"Landmark","parent":"Los Santos","summary":"Main airport, unlocked for flight.","verified":true},
-      {"id":"doherty","name":"Doherty","type":"Neighbourhood","parent":"San Fierro","summary":"Industrial district with CJ's garage.","verified":true},
-      {"id":"chinatown-sf","name":"Chinatown","type":"Neighbourhood","parent":"San Fierro","summary":"Triad headquarters and Woozie's base.","verified":true},
-      {"id":"easter-basin","name":"Easter Basin","type":"District","parent":"San Fierro","summary":"Docks and naval area.","verified":true},
-      {"id":"pier-69","name":"Pier 69","type":"Landmark","parent":"San Fierro","summary":"Pier used for the Loco Syndicate ambush.","verified":true},
-      {"id":"caligulas-palace","name":"Caligula's Palace","type":"Landmark","parent":"Las Venturas","summary":"Casino owned by the Leones and robbed in the finale of the LV act.","verified":true},
-      {"id":"the-strip","name":"The Strip","type":"District","parent":"Las Venturas","summary":"Main casino boulevard of Las Venturas.","verified":true},
-      {"id":"area-69","name":"Area 69","type":"Landmark","parent":"San Andreas","summary":"Secret military base in the desert.","verified":true},
-      {"id":"verdant-meadows","name":"Verdant Meadows","type":"Landmark","parent":"San Andreas","summary":"Abandoned airstrip bought during the Toreno missions.","verified":true},
-      {"id":"mount-chiliad","name":"Mount Chiliad","type":"Landmark","parent":"San Andreas","summary":"Tallest mountain in the state.","verified":true},
-      {"id":"bone-county","name":"Bone County","type":"Region","parent":"San Andreas","summary":"Desert region containing Area 69 and Las Barrancas.","verified":true},
-      {"id":"whetstone","name":"Whetstone","type":"Region","parent":"San Andreas","summary":"Rural south-western region where the Badlands act begins.","verified":true}
+      {
+        "id": "san-andreas",
+        "name": "San Andreas",
+        "type": "Region",
+        "parent": null,
+        "summary": "The fictional state containing three cities, desert, forest and countryside.",
+        "verified": true
+      },
+      {
+        "id": "los-santos",
+        "name": "Los Santos",
+        "type": "City",
+        "parent": "San Andreas",
+        "summary": "Los Angeles-inspired southern city and Grove Street's home.",
+        "verified": true
+      },
+      {
+        "id": "san-fierro",
+        "name": "San Fierro",
+        "type": "City",
+        "parent": "San Andreas",
+        "summary": "San Francisco-inspired city on the western coast.",
+        "verified": true
+      },
+      {
+        "id": "las-venturas",
+        "name": "Las Venturas",
+        "type": "City",
+        "parent": "San Andreas",
+        "summary": "Las Vegas-inspired casino city in the desert.",
+        "verified": true
+      },
+      {
+        "id": "ganton",
+        "name": "Ganton",
+        "type": "Neighbourhood",
+        "parent": "Los Santos",
+        "summary": "Grove Street Families home turf and CJ's safehouse.",
+        "verified": true
+      },
+      {
+        "id": "idlewood",
+        "name": "Idlewood",
+        "type": "Neighbourhood",
+        "parent": "Los Santos",
+        "summary": "Ballas territory south of Ganton.",
+        "verified": true
+      },
+      {
+        "id": "glen-park",
+        "name": "Glen Park",
+        "type": "Neighbourhood",
+        "parent": "Los Santos",
+        "summary": "Contested neighbourhood during the gang war.",
+        "verified": true
+      },
+      {
+        "id": "jefferson",
+        "name": "Jefferson",
+        "type": "Neighbourhood",
+        "parent": "Los Santos",
+        "summary": "Motel district and site of Reuniting the Families.",
+        "verified": true
+      },
+      {
+        "id": "mulholland",
+        "name": "Mulholland",
+        "type": "Neighbourhood",
+        "parent": "Los Santos",
+        "summary": "Hillside district with Madd Dogg's mansion.",
+        "verified": true
+      },
+      {
+        "id": "east-los-santos",
+        "name": "East Los Santos",
+        "type": "District",
+        "parent": "Los Santos",
+        "summary": "Industrial and residential area near the docks.",
+        "verified": true
+      },
+      {
+        "id": "los-santos-international",
+        "name": "Los Santos International Airport",
+        "type": "Landmark",
+        "parent": "Los Santos",
+        "summary": "Main airport, unlocked for flight.",
+        "verified": true
+      },
+      {
+        "id": "doherty",
+        "name": "Doherty",
+        "type": "Neighbourhood",
+        "parent": "San Fierro",
+        "summary": "Industrial district with CJ's garage.",
+        "verified": true
+      },
+      {
+        "id": "chinatown-sf",
+        "name": "Chinatown",
+        "type": "Neighbourhood",
+        "parent": "San Fierro",
+        "summary": "Triad headquarters and Woozie's base.",
+        "verified": true
+      },
+      {
+        "id": "easter-basin",
+        "name": "Easter Basin",
+        "type": "District",
+        "parent": "San Fierro",
+        "summary": "Docks and naval area.",
+        "verified": true
+      },
+      {
+        "id": "pier-69",
+        "name": "Pier 69",
+        "type": "Landmark",
+        "parent": "San Fierro",
+        "summary": "Pier used for the Loco Syndicate ambush.",
+        "verified": true
+      },
+      {
+        "id": "caligulas-palace",
+        "name": "Caligula's Palace",
+        "type": "Landmark",
+        "parent": "Las Venturas",
+        "summary": "Casino owned by the Leones and robbed in the finale of the LV act.",
+        "verified": true
+      },
+      {
+        "id": "the-strip",
+        "name": "The Strip",
+        "type": "District",
+        "parent": "Las Venturas",
+        "summary": "Main casino boulevard of Las Venturas.",
+        "verified": true
+      },
+      {
+        "id": "area-69",
+        "name": "Area 69",
+        "type": "Landmark",
+        "parent": "San Andreas",
+        "summary": "Secret military base in the desert.",
+        "verified": true
+      },
+      {
+        "id": "verdant-meadows",
+        "name": "Verdant Meadows",
+        "type": "Landmark",
+        "parent": "San Andreas",
+        "summary": "Abandoned airstrip bought during the Toreno missions.",
+        "verified": true
+      },
+      {
+        "id": "mount-chiliad",
+        "name": "Mount Chiliad",
+        "type": "Landmark",
+        "parent": "San Andreas",
+        "summary": "Tallest mountain in the state.",
+        "verified": true
+      },
+      {
+        "id": "bone-county",
+        "name": "Bone County",
+        "type": "Region",
+        "parent": "San Andreas",
+        "summary": "Desert region containing Area 69 and Las Barrancas.",
+        "verified": true
+      },
+      {
+        "id": "whetstone",
+        "name": "Whetstone",
+        "type": "Region",
+        "parent": "San Andreas",
+        "summary": "Rural south-western region where the Badlands act begins.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "complete",
     "items": [
-      {"id":"hidden-packages","name":"Hidden Packages","type":"Package","total":100,"reward":"Weapons at the Johnson house","verified":true},
-      {"id":"oysters","name":"Oysters","type":"Oyster","total":50,"reward":"Increased lung capacity and 100% progress","verified":true},
-      {"id":"horseshoes","name":"Horseshoes","type":"Horseshoe","total":50,"reward":"Weapons and cash at the Four Dragons Casino","verified":true},
-      {"id":"snapshots","name":"Snapshots","type":"Snapshot","total":50,"reward":"Weapons at the San Fierro garage","verified":true},
-      {"id":"unique-jumps","name":"Unique Stunt Jumps","type":"Stunt","total":70,"reward":"Cash, counted toward 100% completion","verified":true},
-      {"id":"gang-tags","name":"Gang Tags","type":"Graffiti","total":100,"reward":"Weapons at the Johnson house","verified":true}
+      {
+        "id": "hidden-packages",
+        "name": "Hidden Packages",
+        "type": "Package",
+        "total": 100,
+        "reward": "Weapons at the Johnson house",
+        "verified": true
+      },
+      {
+        "id": "oysters",
+        "name": "Oysters",
+        "type": "Oyster",
+        "total": 50,
+        "reward": "Increased lung capacity and 100% progress",
+        "verified": true
+      },
+      {
+        "id": "horseshoes",
+        "name": "Horseshoes",
+        "type": "Horseshoe",
+        "total": 50,
+        "reward": "Weapons and cash at the Four Dragons Casino",
+        "verified": true
+      },
+      {
+        "id": "snapshots",
+        "name": "Snapshots",
+        "type": "Snapshot",
+        "total": 50,
+        "reward": "Weapons at the San Fierro garage",
+        "verified": true
+      },
+      {
+        "id": "unique-jumps",
+        "name": "Unique Stunt Jumps",
+        "type": "Stunt",
+        "total": 70,
+        "reward": "Cash, counted toward 100% completion",
+        "verified": true
+      },
+      {
+        "id": "gang-tags",
+        "name": "Gang Tags",
+        "type": "Graffiti",
+        "total": 100,
+        "reward": "Weapons at the Johnson house",
+        "verified": true
+      }
     ]
   }
 }

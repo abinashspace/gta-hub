@@ -63,11 +63,12 @@ export const SECTIONS = {
       },
       summary: { type: 'string', required: true },
       requirements: { type: 'array', items: 'string' },
+      playable: { type: 'string' },
       image: { type: ['string', 'null'] },
       verified: { type: 'boolean', required: true },
       source: { type: 'string' },
     },
-    detailFields: ['type', 'giver', 'location', 'reward.other'],
+    detailFields: ['type', 'giver', 'playable', 'location', 'reward.other'],
   },
 
   vehicles: {

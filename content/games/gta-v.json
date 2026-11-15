@@ -1,192 +1,2181 @@
 {
   "meta": {
-    "sources": ["GTA V in-game mission list", "Rockstar Games official GTA V materials"],
+    "sources": [
+      "GTA V in-game mission list",
+      "Rockstar Games official GTA V materials"
+    ],
     "notes": "Three switchable protagonists. Heists have multiple planning approaches; only the canonical approach is recorded here."
   },
   "characters": {
     "coverage": "partial",
     "items": [
-      {"id":"michael-de-santa","name":"Michael De Santa","role":"Protagonist","affiliations":["De Santa family","FIB (asset)"],"summary":"A retired bank robber in witness protection whose midlife crisis drags him back into crime.","status":"Alive","first_appearance":"Grand Theft Auto V","verified":true},
-      {"id":"franklin-clinton","name":"Franklin Clinton","role":"Protagonist","affiliations":["Chamberlain gang (former)","De Santa crew"],"summary":"A repo man from South Los Santos who wants a bigger life than gang politics allow.","status":"Alive","verified":true},
-      {"id":"trevor-philips","name":"Trevor Philips","role":"Protagonist","affiliations":["Trevor Philips Enterprises","The Lost MC (former)"],"summary":"A violent, unpredictable career criminal running arms and drugs out of Sandy Shores.","status":"Alive","verified":true},
-      {"id":"lamar-davis","name":"Lamar Davis","role":"Friend","affiliations":["Chamberlain gang"],"summary":"Franklin's best friend, whose schemes constantly put them both in danger.","status":"Alive","verified":true},
-      {"id":"lester-crest","name":"Lester Crest","role":"Heist planner","affiliations":["De Santa crew"],"summary":"A reclusive hacker and strategist who plans the crew's heists.","status":"Alive","verified":true},
-      {"id":"ron-jakowski","name":"Ron Jakowski","role":"Associate","affiliations":["Trevor Philips Enterprises"],"summary":"Trevor's paranoid radio-operator and business partner.","status":"Alive","verified":true},
-      {"id":"wade-hebert","name":"Wade Hebert","role":"Associate","affiliations":["Trevor Philips Enterprises"],"summary":"Trevor's loyal but simple-minded friend.","status":"Alive","verified":true},
-      {"id":"amanda-de-santa","name":"Amanda De Santa","role":"Michael's wife","affiliations":["De Santa family"],"summary":"Michael's estranged wife, spending his money and testing the marriage.","status":"Alive","verified":true},
-      {"id":"jimmy-de-santa","name":"Jimmy De Santa","role":"Michael's son","affiliations":["De Santa family"],"summary":"Michael's aimless son, obsessed with games and internet fame.","status":"Alive","verified":true},
-      {"id":"tracey-de-santa","name":"Tracey De Santa","role":"Michael's daughter","affiliations":["De Santa family"],"summary":"Michael's daughter, chasing reality-TV fame.","status":"Alive","verified":true},
-      {"id":"dave-norton","name":"Dave Norton","role":"FIB agent","affiliations":["FIB"],"summary":"The agent who put Michael in witness protection and keeps pulling him back in.","status":"Alive","verified":true},
-      {"id":"steve-haines","name":"Steve Haines","role":"Antagonist, FIB","affiliations":["FIB"],"summary":"A publicity-hungry FIB agent who blackmails the crew into government jobs.","status":"Varies","verified":true},
-      {"id":"devin-weston","name":"Devin Weston","role":"Antagonist","affiliations":["Weston Holdings"],"summary":"A billionaire who treats the crew as disposable contractors.","status":"Varies","verified":true},
-      {"id":"martin-madrazo","name":"Martin Madrazo","role":"Associate, antagonist","affiliations":["Madrazo cartel"],"summary":"A Mexican drug lord with a mansion in Vinewood Hills.","status":"Alive","verified":true},
-      {"id":"patricia-madrazo","name":"Patricia Madrazo","role":"Ally","affiliations":["Madrazo family"],"summary":"Martin's wife, who leaves him for Trevor.","status":"Alive","verified":true},
-      {"id":"simeon-yetarian","name":"Simeon Yetarian","role":"Employer","affiliations":["Premium Deluxe Motorsport"],"summary":"A shady luxury car dealer who employs Franklin and Michael.","status":"Alive","verified":true},
-      {"id":"molly-schultz","name":"Molly Schultz","role":"Weston's lawyer","affiliations":["Weston Holdings"],"summary":"Devin Weston's lawyer and fixer.","status":"Deceased","verified":true},
-      {"id":"dr-friedlander","name":"Dr. Isiah Friedlander","role":"Michael's therapist","affiliations":["Private practice"],"summary":"Michael's opportunistic psychiatrist, recordable as a collectible side objective.","status":"Alive","verified":true},
-      {"id":"stretch","name":"Stretch","role":"Antagonist","affiliations":["Chamberlain gang"],"summary":"Lamar's former associate who betrays the crew.","status":"Deceased","verified":true}
+      {
+        "id": "michael-de-santa",
+        "name": "Michael De Santa",
+        "role": "Protagonist",
+        "affiliations": [
+          "De Santa family",
+          "FIB (asset)"
+        ],
+        "summary": "A retired bank robber in witness protection whose midlife crisis drags him back into crime.",
+        "status": "Alive",
+        "first_appearance": "Grand Theft Auto V",
+        "verified": true
+      },
+      {
+        "id": "franklin-clinton",
+        "name": "Franklin Clinton",
+        "role": "Protagonist",
+        "affiliations": [
+          "Chamberlain gang (former)",
+          "De Santa crew"
+        ],
+        "summary": "A repo man from South Los Santos who wants a bigger life than gang politics allow.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "trevor-philips",
+        "name": "Trevor Philips",
+        "role": "Protagonist",
+        "affiliations": [
+          "Trevor Philips Enterprises",
+          "The Lost MC (former)"
+        ],
+        "summary": "A violent, unpredictable career criminal running arms and drugs out of Sandy Shores.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "lamar-davis",
+        "name": "Lamar Davis",
+        "role": "Friend",
+        "affiliations": [
+          "Chamberlain gang"
+        ],
+        "summary": "Franklin's best friend, whose schemes constantly put them both in danger.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "lester-crest",
+        "name": "Lester Crest",
+        "role": "Heist planner",
+        "affiliations": [
+          "De Santa crew"
+        ],
+        "summary": "A reclusive hacker and strategist who plans the crew's heists.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ron-jakowski",
+        "name": "Ron Jakowski",
+        "role": "Associate",
+        "affiliations": [
+          "Trevor Philips Enterprises"
+        ],
+        "summary": "Trevor's paranoid radio-operator and business partner.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "wade-hebert",
+        "name": "Wade Hebert",
+        "role": "Associate",
+        "affiliations": [
+          "Trevor Philips Enterprises"
+        ],
+        "summary": "Trevor's loyal but simple-minded friend.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "amanda-de-santa",
+        "name": "Amanda De Santa",
+        "role": "Michael's wife",
+        "affiliations": [
+          "De Santa family"
+        ],
+        "summary": "Michael's estranged wife, spending his money and testing the marriage.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "jimmy-de-santa",
+        "name": "Jimmy De Santa",
+        "role": "Michael's son",
+        "affiliations": [
+          "De Santa family"
+        ],
+        "summary": "Michael's aimless son, obsessed with games and internet fame.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "tracey-de-santa",
+        "name": "Tracey De Santa",
+        "role": "Michael's daughter",
+        "affiliations": [
+          "De Santa family"
+        ],
+        "summary": "Michael's daughter, chasing reality-TV fame.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "dave-norton",
+        "name": "Dave Norton",
+        "role": "FIB agent",
+        "affiliations": [
+          "FIB"
+        ],
+        "summary": "The agent who put Michael in witness protection and keeps pulling him back in.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "steve-haines",
+        "name": "Steve Haines",
+        "role": "Antagonist, FIB",
+        "affiliations": [
+          "FIB"
+        ],
+        "summary": "A publicity-hungry FIB agent who blackmails the crew into government jobs.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "devin-weston",
+        "name": "Devin Weston",
+        "role": "Antagonist",
+        "affiliations": [
+          "Weston Holdings"
+        ],
+        "summary": "A billionaire who treats the crew as disposable contractors.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "martin-madrazo",
+        "name": "Martin Madrazo",
+        "role": "Associate, antagonist",
+        "affiliations": [
+          "Madrazo cartel"
+        ],
+        "summary": "A Mexican drug lord with a mansion in Vinewood Hills.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "patricia-madrazo",
+        "name": "Patricia Madrazo",
+        "role": "Ally",
+        "affiliations": [
+          "Madrazo family"
+        ],
+        "summary": "Martin's wife, who leaves him for Trevor.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "simeon-yetarian",
+        "name": "Simeon Yetarian",
+        "role": "Employer",
+        "affiliations": [
+          "Premium Deluxe Motorsport"
+        ],
+        "summary": "A shady luxury car dealer who employs Franklin and Michael.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "molly-schultz",
+        "name": "Molly Schultz",
+        "role": "Weston's lawyer",
+        "affiliations": [
+          "Weston Holdings"
+        ],
+        "summary": "Devin Weston's lawyer and fixer.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "dr-friedlander",
+        "name": "Dr. Isiah Friedlander",
+        "role": "Michael's therapist",
+        "affiliations": [
+          "Private practice"
+        ],
+        "summary": "Michael's opportunistic psychiatrist, recordable as a collectible side objective.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "stretch",
+        "name": "Stretch",
+        "role": "Antagonist",
+        "affiliations": [
+          "Chamberlain gang"
+        ],
+        "summary": "Lamar's former associate who betrays the crew.",
+        "status": "Deceased",
+        "verified": true
+      }
     ]
   },
   "missions": {
-    "coverage": "partial",
+    "coverage": "complete",
     "items": [
-      {"id":"franklin-and-lamar","order":1,"name":"Franklin and Lamar","type":"Story","giver":"Simeon Yetarian","location":"Vespucci","reward":{"money":0},"summary":"Repossess two cars for Simeon and race Lamar back to the dealership.","verified":true},
-      {"id":"repossession","order":2,"name":"Repossession","type":"Story","giver":"Simeon Yetarian","location":"Vespucci","reward":{"money":0},"summary":"Recover a car from a gang-controlled housing project.","verified":true},
-      {"id":"complications","order":3,"name":"Complications","type":"Story","giver":"Simeon Yetarian","location":"Rockford Hills","reward":{"money":0},"summary":"Repossess a car from Michael De Santa, who turns the tables.","verified":true},
-      {"id":"chop","order":4,"name":"Chop","type":"Story","giver":"Lamar Davis","location":"Chamberlain Hills","reward":{"money":0},"summary":"Use Chop to track down a rival gang member.","verified":true},
-      {"id":"father-son","order":5,"name":"Father/Son","type":"Story","giver":"Michael De Santa","location":"Rockford Hills","reward":{"money":0},"summary":"Michael and Franklin rescue Jimmy from a boat chase.","verified":true},
-      {"id":"marriage-counseling","order":6,"name":"Marriage Counseling","type":"Story","giver":"Michael De Santa","location":"Rockford Hills","reward":{"money":0},"summary":"Chase Amanda's tennis coach and accidentally destroy a mansion.","verified":true},
-      {"id":"daddys-little-girl","order":7,"name":"Daddy's Little Girl","type":"Story","giver":"Michael De Santa","location":"Los Santos","reward":{"money":0},"summary":"Rescue Tracey from a reality-TV setup.","verified":true},
-      {"id":"friend-request","order":8,"name":"Friend Request","type":"Story","giver":"Lester Crest","location":"Los Santos","reward":{"money":0},"summary":"Hack Lifeinvader and assassinate its CEO.","verified":true},
-      {"id":"the-long-stretch","order":9,"name":"The Long Stretch","type":"Story","giver":"Lamar Davis","location":"Chamberlain Hills","reward":{"money":0},"summary":"A gang meeting turns into a firefight.","verified":true},
-      {"id":"casing-the-jewel-store","order":10,"name":"Casing the Jewel Store","type":"Heist","giver":"Lester Crest","location":"Rockford Hills","reward":{"money":0},"summary":"Scout Vangelico Jewellers and choose the approach.","verified":true},
-      {"id":"carbine-rifles","order":11,"name":"Carbine Rifles","type":"Heist","giver":"Lester Crest","location":"Los Santos","reward":{"money":0},"summary":"Steal a police convoy's carbine rifles for the loud approach.","verified":true},
-      {"id":"bugstars","order":12,"name":"Bugstars","type":"Heist","giver":"Lester Crest","location":"Rockford Hills","reward":{"money":0},"summary":"Pose as pest control to plant gas in the jewellery store.","verified":true},
-      {"id":"the-jewel-store-job","order":13,"name":"The Jewel Store Job","type":"Heist","giver":"Lester Crest","location":"Rockford Hills","reward":{"money":0},"summary":"Rob Vangelico Jewellers and escape on motorbikes.","verified":true},
-      {"id":"mr-philips","order":14,"name":"Mr. Philips","type":"Story","giver":"Trevor Philips","location":"Sandy Shores","reward":{"money":0},"summary":"Trevor takes over the Lost MC's meth business by force.","verified":true},
-      {"id":"trevor-philips-industries","order":15,"name":"Trevor Philips Industries","type":"Story","giver":"Trevor Philips","location":"Sandy Shores","reward":{"money":0},"summary":"Defend the meth lab from rival dealers.","verified":true},
-      {"id":"nervous-ron","order":16,"name":"Nervous Ron","type":"Story","giver":"Ron Jakowski","location":"Sandy Shores","reward":{"money":0},"summary":"Steal a plane for Trevor's arms business.","verified":true},
-      {"id":"crystal-maze","order":17,"name":"Crystal Maze","type":"Story","giver":"Trevor Philips","location":"Sandy Shores","reward":{"money":0},"summary":"Raid a rival meth operation.","verified":true},
-      {"id":"friends-reunited","order":18,"name":"Friends Reunited","type":"Story","giver":"Trevor Philips","location":"Los Santos","reward":{"money":0},"summary":"Trevor tracks down Michael in Los Santos.","verified":true},
-      {"id":"fame-or-shame","order":19,"name":"Fame or Shame","type":"Story","giver":"Trevor Philips","location":"Los Santos","reward":{"money":0},"summary":"Wreck Tracey's talent show.","verified":true},
-      {"id":"dead-man-walking","order":20,"name":"Dead Man Walking","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Infiltrate a morgue and steal a body for the FIB.","verified":true},
-      {"id":"did-somebody-say-yoga","order":21,"name":"Did Somebody Say Yoga?","type":"Story","giver":"Michael De Santa","location":"Rockford Hills","reward":{"money":0},"summary":"A family therapy session ends with Michael drugged and stranded.","verified":true},
-      {"id":"threes-company","order":22,"name":"Three's Company","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Extract a target from the IAA building.","verified":true},
-      {"id":"by-the-book","order":23,"name":"By the Book","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Torture interrogation for the FIB.","verified":true},
-      {"id":"blitz-play","order":24,"name":"Blitz Play","type":"Heist","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Three-way ambush of an armored car with a fire truck.","verified":true},
-      {"id":"mr-richards","order":25,"name":"Mr. Richards","type":"Story","giver":"Solomon Richards","location":"Los Santos","reward":{"money":0},"summary":"Help a film producer deal with a star's scandal.","verified":true},
-      {"id":"i-fought-the-law","order":26,"name":"I Fought the Law","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Steal two supercars for the FIB's evidence lockup.","verified":true},
-      {"id":"eye-in-the-sky","order":27,"name":"Eye in the Sky","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Use a police helicopter's camera to identify a target.","verified":true},
-      {"id":"deep-inside","order":28,"name":"Deep Inside","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Infiltrate the FIB building disguised as cleaners.","verified":true},
-      {"id":"minor-turbulence","order":29,"name":"Minor Turbulence","type":"Story","giver":"Trevor Philips","location":"Blaine County","reward":{"money":0},"summary":"Hijack a cargo plane mid-flight.","verified":true},
-      {"id":"the-paleto-score","order":30,"name":"The Paleto Score","type":"Heist","giver":"Lester Crest","location":"Paleto Bay","reward":{"money":0},"summary":"Rob a small-town bank with military-grade firepower.","verified":true},
-      {"id":"derailed","order":31,"name":"Derailed","type":"Story","giver":"Trevor Philips","location":"Blaine County","reward":{"money":0},"summary":"Stop a train to steal its cargo.","verified":true},
-      {"id":"monkey-business","order":32,"name":"Monkey Business","type":"Story","giver":"FIB","location":"Humane Labs","reward":{"money":0},"summary":"Steal a chemical weapon from Humane Labs.","verified":true},
-      {"id":"predator","order":33,"name":"Predator","type":"Story","giver":"FIB","location":"Blaine County","reward":{"money":0},"summary":"Snipe mercenaries in the woods.","verified":true},
-      {"id":"surveying-the-score","order":34,"name":"Surveying the Score","type":"Heist","giver":"Lester Crest","location":"Los Santos","reward":{"money":0},"summary":"Case the Union Depository for the final heist.","verified":true},
-      {"id":"bury-the-hatchet","order":35,"name":"Bury the Hatchet","type":"Story","giver":"Trevor Philips","location":"North Yankton","reward":{"money":0},"summary":"Trevor learns the truth about Brad and Michael.","verified":true},
-      {"id":"pack-man","order":36,"name":"Pack Man","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"Steal a convoy of cars for Devin Weston.","verified":true},
-      {"id":"fresh-meat","order":37,"name":"Fresh Meat","type":"Story","giver":"Michael De Santa","location":"Los Santos","reward":{"money":0},"summary":"Rescue Michael from kidnappers.","verified":true},
-      {"id":"the-wrap-up","order":38,"name":"The Wrap Up","type":"Story","giver":"FIB","location":"Los Santos","reward":{"money":0},"summary":"A deal at the Kortz Center ends in a shootout.","verified":true},
-      {"id":"lamar-down","order":39,"name":"Lamar Down","type":"Story","giver":"Lamar Davis","location":"Blaine County","reward":{"money":0},"summary":"Rescue Lamar from a Sawmill shootout.","verified":true},
-      {"id":"meltdown","order":40,"name":"Meltdown","type":"Story","giver":"Devin Weston","location":"Los Santos","reward":{"money":0},"summary":"Stop Devin Weston's lawyers from moving his assets.","verified":true},
-      {"id":"the-third-way","order":41,"name":"The Third Way","type":"Story","giver":"Lester Crest","location":"Los Santos","reward":{"money":0},"summary":"Ending: keep all three protagonists alive and settle every score.","verified":true},
-      {"id":"something-sensible","order":42,"name":"Something Sensible","type":"Story","giver":"Devin Weston","location":"Los Santos","reward":{"money":0},"summary":"Ending: Franklin sides with Weston against Trevor.","verified":true},
-      {"id":"the-times-come","order":43,"name":"The Time's Come","type":"Story","giver":"Devin Weston","location":"Los Santos","reward":{"money":0},"summary":"Ending: Franklin sides with Weston against Michael.","verified":true}
+      {
+        "id": "prologue",
+        "order": 1,
+        "name": "Prologue",
+        "type": "Story",
+        "giver": "None (flashback)",
+        "location": "Ludendorff, North Yankton",
+        "playable": "Michael, Trevor",
+        "reward": {
+          "other": "Nine years before the story"
+        },
+        "summary": "The Ludendorff bank robbery in 2004 goes wrong and Brad is shot.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "franklin-and-lamar",
+        "order": 2,
+        "name": "Franklin and Lamar",
+        "type": "Story",
+        "giver": "Simeon Yetarian",
+        "location": "Strawberry, Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Repossession work for Simeon"
+        },
+        "summary": "Franklin and Lamar repossess two cars for Simeon Yetarian.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "repossession",
+        "order": 3,
+        "name": "Repossession",
+        "type": "Story",
+        "giver": "Simeon Yetarian",
+        "location": "Strawberry, Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Michael introduced"
+        },
+        "summary": "Franklin repossesses a car from a man who turns out to be Michael De Santa.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "complications",
+        "order": 4,
+        "name": "Complications",
+        "type": "Story",
+        "giver": "Simeon Yetarian",
+        "location": "Rockford Hills",
+        "playable": "Franklin, Michael",
+        "reward": {
+          "other": "Michael and Franklin team up"
+        },
+        "summary": "Michael and Franklin break into Simeon's dealership to settle a debt.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "father-son",
+        "order": 5,
+        "name": "Father/Son",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael, Franklin",
+        "reward": {
+          "other": "Family mission chain"
+        },
+        "summary": "Michael and Franklin chase down the boat carrying Michael's son.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "chop",
+        "order": 6,
+        "name": "Chop",
+        "type": "Story",
+        "giver": "Lamar Davis",
+        "location": "Strawberry, Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Chop as a companion"
+        },
+        "summary": "Franklin and Lamar use Chop to track a rival crew.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "marriage-counseling",
+        "order": 7,
+        "name": "Marriage Counseling",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael, Franklin",
+        "reward": {},
+        "summary": "Michael and Franklin steal a car from a therapist's client.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "daddys-little-girl",
+        "order": 8,
+        "name": "Daddy's Little Girl",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {},
+        "summary": "Michael stops his daughter's attempted robbery at a marina.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "friend-request",
+        "order": 9,
+        "name": "Friend Request",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {
+          "other": "Lester introduced; Lifeinvader"
+        },
+        "summary": "Michael helps Lester take down Lifeinvader.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-long-stretch",
+        "order": 10,
+        "name": "The Long Stretch",
+        "type": "Story",
+        "giver": "Lamar Davis",
+        "location": "Strawberry, Los Santos",
+        "playable": "Franklin",
+        "reward": {},
+        "summary": "Franklin and Lamar defend a deal against the Ballas.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-good-husband",
+        "order": 11,
+        "name": "The Good Husband",
+        "type": "Side",
+        "giver": "Amanda De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {
+          "other": "Optional family mission"
+        },
+        "summary": "Michael retrieves Amanda's things from a yacht.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "casing-the-jewel-store",
+        "order": 12,
+        "name": "Casing the Jewel Store",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Textile City",
+        "playable": "Michael",
+        "reward": {
+          "other": "Heist planning: The Jewel Store Job"
+        },
+        "summary": "Michael and Lester case the Vangelico jewelry store.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "carbine-rifles",
+        "order": 13,
+        "name": "Carbine Rifles",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "Heist setup; loud approach"
+        },
+        "summary": "Michael steals carbine rifles from a police convoy.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "bugstars-equipment",
+        "order": 14,
+        "name": "Bugstars Equipment",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "Heist setup; smart approach"
+        },
+        "summary": "Michael obtains Bugstars pest-control uniforms and a van.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "bz-gas-grenades",
+        "order": 15,
+        "name": "BZ Gas Grenades",
+        "type": "Side",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "Heist setup; smart approach; optional"
+        },
+        "summary": "Michael steals gas grenades from a National Guard depot.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-jewel-store-job",
+        "order": 16,
+        "name": "The Jewel Store Job",
+        "type": "Heist",
+        "giver": "Lester Crest",
+        "location": "Textile City",
+        "playable": "Michael, Franklin",
+        "reward": {
+          "other": "Heist finale; first score"
+        },
+        "summary": "Rob the Vangelico jewelry store by the loud or smart approach.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "mr-philips",
+        "order": 17,
+        "name": "Mr. Philips",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Sandy Shores",
+        "playable": "Trevor",
+        "reward": {
+          "other": "Trevor becomes playable"
+        },
+        "summary": "Trevor rides out to Los Santos after the jewelry heist.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "trevor-philips-industries",
+        "order": 18,
+        "name": "Trevor Philips Industries",
+        "type": "Story",
+        "giver": "Tao Cheng",
+        "location": "Sandy Shores",
+        "playable": "Trevor",
+        "reward": {},
+        "summary": "Trevor defends his meth business from the O'Neil brothers.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "nervous-ron",
+        "order": 19,
+        "name": "Nervous Ron",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Sandy Shores",
+        "playable": "Trevor",
+        "reward": {},
+        "summary": "Trevor and Ron steal a plane from a McKenzie airfield.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "crystal-maze",
+        "order": 20,
+        "name": "Crystal Maze",
+        "type": "Story",
+        "giver": "Tao Cheng",
+        "location": "Sandy Shores",
+        "playable": "Trevor",
+        "reward": {},
+        "summary": "Trevor attacks the O'Neil brothers' farmhouse.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "friends-reunited",
+        "order": 21,
+        "name": "Friends Reunited",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Sandy Shores",
+        "playable": "Trevor",
+        "reward": {},
+        "summary": "Trevor confronts the Lost MC at their clubhouse.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "fame-or-shame",
+        "order": 22,
+        "name": "Fame or Shame",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Los Santos",
+        "playable": "Michael, Trevor",
+        "reward": {},
+        "summary": "Michael and Trevor chase down a talent-show host.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "dead-man-walking",
+        "order": 23,
+        "name": "Dead Man Walking",
+        "type": "Story",
+        "giver": "Dave Norton (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "FIB storyline opens"
+        },
+        "summary": "Michael is taken to the morgue to fake his own death.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "threes-company",
+        "order": 24,
+        "name": "Three's Company",
+        "type": "Story",
+        "giver": "Dave Norton (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Trevor, Franklin",
+        "reward": {
+          "other": "All three protagonists together"
+        },
+        "summary": "The three protagonists extract a target from the IAA building.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "by-the-book",
+        "order": 25,
+        "name": "By the Book",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Trevor",
+        "reward": {
+          "other": "Interrogation scenes"
+        },
+        "summary": "Michael and Trevor torture a man for Steve Haines.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "hood-safari",
+        "order": 26,
+        "name": "Hood Safari",
+        "type": "Story",
+        "giver": "Lamar Davis",
+        "location": "Strawberry, Los Santos",
+        "playable": "Franklin, Trevor",
+        "reward": {},
+        "summary": "Franklin and Trevor survive a Ballas ambush at a drug deal.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "did-somebody-say-yoga",
+        "order": 27,
+        "name": "Did Somebody Say Yoga?",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {
+          "other": "Michael's family leaves"
+        },
+        "summary": "Michael's family falls apart after a yoga session.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "scouting-the-port",
+        "order": 28,
+        "name": "Scouting the Port",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Port of Los Santos",
+        "playable": "Trevor",
+        "reward": {
+          "other": "Heist planning: The Merryweather Heist"
+        },
+        "summary": "Trevor scouts the port for the Merryweather heist.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "minisub",
+        "order": 29,
+        "name": "Minisub",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Port of Los Santos",
+        "playable": "Trevor",
+        "reward": {
+          "other": "Heist setup"
+        },
+        "summary": "Trevor steals a minisub for the port heist.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "cargobob",
+        "order": 30,
+        "name": "Cargobob",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Fort Zancudo",
+        "playable": "Trevor",
+        "reward": {
+          "other": "Heist setup; offshore approach"
+        },
+        "summary": "Trevor steals a Cargobob from Fort Zancudo.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-merryweather-heist",
+        "order": 31,
+        "name": "The Merryweather Heist",
+        "type": "Heist",
+        "giver": "Trevor Philips",
+        "location": "Port of Los Santos",
+        "playable": "Trevor, Michael, Franklin",
+        "reward": {
+          "other": "Heist finale"
+        },
+        "summary": "Raid Merryweather's cargo with the sub or the container approach.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-hotel-assassination",
+        "order": 32,
+        "name": "The Hotel Assassination",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Stock market payout"
+        },
+        "summary": "Franklin assassinates a target for Lester and moves the markets.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "boiler-suits",
+        "order": 33,
+        "name": "Boiler Suits",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup for Blitz Play"
+        },
+        "summary": "The crew steals boiler suits for the FIB heist.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "masks",
+        "order": 34,
+        "name": "Masks",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup for Blitz Play"
+        },
+        "summary": "The crew buys masks from a robbery crew.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "trash-truck",
+        "order": 35,
+        "name": "Trash Truck",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup for Blitz Play"
+        },
+        "summary": "The crew steals a garbage truck as a getaway vehicle.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "tow-truck",
+        "order": 36,
+        "name": "Tow Truck",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup for Blitz Play"
+        },
+        "summary": "The crew steals a tow truck for the FIB ambush.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "blitz-play",
+        "order": 37,
+        "name": "Blitz Play",
+        "type": "Heist",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist finale"
+        },
+        "summary": "Ambush an armored truck using the classic FIB plan.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "i-fought-the-law",
+        "order": 38,
+        "name": "I Fought the Law...",
+        "type": "Story",
+        "giver": "Devin Weston",
+        "location": "Los Santos",
+        "playable": "Franklin, Michael, Trevor",
+        "reward": {
+          "other": "Devin Weston introduced"
+        },
+        "summary": "The crew steals a classic car collection for Devin Weston.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "eye-in-the-sky",
+        "order": 39,
+        "name": "Eye in the Sky",
+        "type": "Story",
+        "giver": "Devin Weston",
+        "location": "Los Santos",
+        "playable": "Franklin, Trevor",
+        "reward": {},
+        "summary": "Franklin and Trevor steal a police helicopter and a supercar.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "mr-richards",
+        "order": 40,
+        "name": "Mr. Richards",
+        "type": "Story",
+        "giver": "Solomon Richards",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "Solomon Richards introduced"
+        },
+        "summary": "Michael helps a film producer deal with a difficult actor.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "caida-libre",
+        "order": 41,
+        "name": "Caida Libre",
+        "type": "Story",
+        "giver": "Martin Madrazo",
+        "location": "Los Santos",
+        "playable": "Michael, Trevor",
+        "reward": {
+          "other": "Martin Madrazo introduced"
+        },
+        "summary": "Michael and Trevor shoot down a private jet for Madrazo.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "deep-inside",
+        "order": 42,
+        "name": "Deep Inside",
+        "type": "Story",
+        "giver": "Devin Weston",
+        "location": "Los Santos",
+        "playable": "Franklin",
+        "reward": {},
+        "summary": "Franklin and Trevor steal a prototype car from a movie set.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "minor-turbulence",
+        "order": 43,
+        "name": "Minor Turbulence",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Sandy Shores",
+        "playable": "Trevor",
+        "reward": {},
+        "summary": "Trevor boards a cargo plane in mid-air.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "paleto-score-setup",
+        "order": 44,
+        "name": "Paleto Score Setup",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Paleto Bay",
+        "playable": "Michael, Trevor",
+        "reward": {
+          "other": "Heist planning: The Paleto Score"
+        },
+        "summary": "Michael and Trevor plan the Paleto Bay bank robbery.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "predator",
+        "order": 45,
+        "name": "Predator",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Sandy Shores",
+        "playable": "Trevor, Michael, Franklin",
+        "reward": {
+          "other": "Sniper rifle"
+        },
+        "summary": "Trevor hunts a Merryweather team in the Chiliad wilderness.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "military-hardware",
+        "order": 46,
+        "name": "Military Hardware",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Fort Zancudo",
+        "playable": "Michael, Trevor",
+        "reward": {
+          "other": "Heist setup"
+        },
+        "summary": "Michael and Trevor steal military hardware for the Paleto Score.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-paleto-score",
+        "order": 47,
+        "name": "The Paleto Score",
+        "type": "Heist",
+        "giver": "Lester Crest",
+        "location": "Paleto Bay",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist finale"
+        },
+        "summary": "Rob the Paleto Bay bank and fight through the police response.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "derailed",
+        "order": 48,
+        "name": "Derailed",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Sandy Shores",
+        "playable": "Trevor, Michael",
+        "reward": {},
+        "summary": "Trevor and Michael stop a train to steal its cargo.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "monkey-business",
+        "order": 49,
+        "name": "Monkey Business",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Humane Labs",
+        "playable": "Michael, Trevor, Franklin",
+        "reward": {
+          "other": "Chemical weapon stolen"
+        },
+        "summary": "The crew raids Humane Labs for a chemical weapon.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "hang-ten",
+        "order": 50,
+        "name": "Hang Ten",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Vespucci Beach",
+        "playable": "Trevor, Michael",
+        "reward": {},
+        "summary": "Trevor and Michael chase a target along the beach.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "surveying-the-score",
+        "order": 51,
+        "name": "Surveying the Score",
+        "type": "Story",
+        "giver": "Trevor Philips",
+        "location": "Los Santos",
+        "playable": "Trevor, Michael, Franklin",
+        "reward": {
+          "other": "Heist planning: The Big Score"
+        },
+        "summary": "The crew surveys the Union Depository for the final heist.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "bury-the-hatchet",
+        "order": 52,
+        "name": "Bury the Hatchet",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Ludendorff, North Yankton",
+        "playable": "Michael, Trevor",
+        "reward": {
+          "other": "Brad's grave revealed"
+        },
+        "summary": "Michael and Trevor return to Ludendorff and the truth comes out.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "pack-man",
+        "order": 53,
+        "name": "Pack Man",
+        "type": "Story",
+        "giver": "Devin Weston",
+        "location": "Los Santos",
+        "playable": "Franklin, Trevor",
+        "reward": {},
+        "summary": "Franklin and Trevor steal a car from a collector for Weston.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "fresh-meat",
+        "order": 54,
+        "name": "Fresh Meat",
+        "type": "Story",
+        "giver": "Franklin Clinton",
+        "location": "Los Santos",
+        "playable": "Franklin, Michael",
+        "reward": {},
+        "summary": "Franklin rescues Michael from kidnappers.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-ballad-of-rocco",
+        "order": 55,
+        "name": "The Ballad of Rocco",
+        "type": "Story",
+        "giver": "Solomon Richards",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {},
+        "summary": "Michael protects a film set from a mobster's demands.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "cleaning-out-the-bureau",
+        "order": 56,
+        "name": "Cleaning out the Bureau",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "Heist planning: The Bureau Raid"
+        },
+        "summary": "Michael and Lester plan the FIB raid.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "architects-plans",
+        "order": 57,
+        "name": "Architect's Plans",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Heist setup for The Bureau Raid"
+        },
+        "summary": "Franklin steals the FIB building plans.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "fire-truck",
+        "order": 58,
+        "name": "Fire Truck",
+        "type": "Side",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin",
+        "reward": {
+          "other": "Heist setup; fire crew approach; optional"
+        },
+        "summary": "The crew steals a fire truck for the Bureau Raid.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-bureau-raid",
+        "order": 59,
+        "name": "The Bureau Raid",
+        "type": "Heist",
+        "giver": "Steve Haines",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin",
+        "reward": {
+          "other": "Heist finale"
+        },
+        "summary": "Raid the FIB building for the files Haines wants.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-wrap-up",
+        "order": 60,
+        "name": "The Wrap Up",
+        "type": "Story",
+        "giver": "Dave Norton (FIB)",
+        "location": "Los Santos",
+        "playable": "Michael, Trevor",
+        "reward": {},
+        "summary": "Michael and Trevor survive an FIB ambush at the Kortz Center.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "reuniting-the-family",
+        "order": 61,
+        "name": "Reuniting the Family",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {
+          "other": "Family returns"
+        },
+        "summary": "Michael brings his family back together.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "doting-dad",
+        "order": 62,
+        "name": "Doting Dad",
+        "type": "Side",
+        "giver": "Tracey De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {
+          "other": "Optional family mission"
+        },
+        "summary": "Michael helps Tracey with a stalker.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "legal-trouble",
+        "order": 63,
+        "name": "Legal Trouble",
+        "type": "Story",
+        "giver": "Solomon Richards",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {},
+        "summary": "Michael rescues a film reel from a deal gone wrong.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "lamar-down",
+        "order": 64,
+        "name": "Lamar Down",
+        "type": "Story",
+        "giver": "Franklin Clinton",
+        "location": "Los Santos",
+        "playable": "Franklin, Michael, Trevor",
+        "reward": {},
+        "summary": "The crew rescues Lamar from the Ballas.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "meltdown",
+        "order": 65,
+        "name": "Meltdown",
+        "type": "Story",
+        "giver": "Michael De Santa",
+        "location": "Los Santos",
+        "playable": "Michael",
+        "reward": {
+          "other": "Solomon Richards' film saved"
+        },
+        "summary": "Michael stops an attack on the premiere of Solomon's film.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "parenting-101",
+        "order": 66,
+        "name": "Parenting 101",
+        "type": "Side",
+        "giver": "Jimmy De Santa",
+        "location": "Rockford Hills",
+        "playable": "Michael",
+        "reward": {
+          "other": "Optional family mission"
+        },
+        "summary": "Michael chases Jimmy across the city on a bike.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "planning-the-big-score",
+        "order": 67,
+        "name": "Planning the Big Score",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist planning: The Big Score"
+        },
+        "summary": "The crew decides between the subtle and obvious approaches.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "stingers",
+        "order": 68,
+        "name": "Stingers",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup; subtle approach"
+        },
+        "summary": "The crew steals police stingers for the Big Score.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "sidetracked",
+        "order": 69,
+        "name": "Sidetracked",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup; obvious approach"
+        },
+        "summary": "The crew hijacks a train for the Big Score.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "gauntlet",
+        "order": 70,
+        "name": "Gauntlet",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup; subtle approach"
+        },
+        "summary": "The crew steals Gauntlets as getaway cars.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "driller",
+        "order": 71,
+        "name": "Driller",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist setup; obvious approach"
+        },
+        "summary": "The crew steals a large drill for the Big Score.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-big-score",
+        "order": 72,
+        "name": "The Big Score",
+        "type": "Heist",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Michael, Franklin, Trevor",
+        "reward": {
+          "other": "Heist finale; largest payout in the game"
+        },
+        "summary": "Rob the Union Depository, the biggest score of the story.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "something-sensible",
+        "order": 73,
+        "name": "Something Sensible",
+        "type": "Story",
+        "giver": "Steve Haines (FIB)",
+        "location": "Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Ending A"
+        },
+        "summary": "Ending A: Franklin turns on Trevor.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-times-come",
+        "order": 74,
+        "name": "The Time's Come",
+        "type": "Story",
+        "giver": "Devin Weston",
+        "location": "Los Santos",
+        "playable": "Franklin",
+        "reward": {
+          "other": "Ending B"
+        },
+        "summary": "Ending B: Franklin turns on Michael.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      },
+      {
+        "id": "the-third-way",
+        "order": 75,
+        "name": "The Third Way",
+        "type": "Story",
+        "giver": "Lester Crest",
+        "location": "Los Santos",
+        "playable": "Franklin, Michael, Trevor",
+        "reward": {
+          "other": "Ending C; true ending"
+        },
+        "summary": "Ending C: the three protagonists take on all their enemies together.",
+        "verified": true,
+        "source": "GTA V mission order, givers and variants cross-checked against published mission tables"
+      }
     ]
   },
   "vehicles": {
     "coverage": "partial",
     "items": [
-      {"id":"adder","name":"Adder","category":"Car","class":"Super","top_speed_kph":400,"seats":2,"verified":true},
-      {"id":"entity-xf","name":"Entity XF","category":"Car","class":"Super","top_speed_kph":390,"seats":2,"verified":true},
-      {"id":"z-type","name":"Z-Type","category":"Car","class":"Sports classic","top_speed_kph":300,"seats":2,"verified":true},
-      {"id":"cheetah","name":"Cheetah","category":"Car","class":"Super","top_speed_kph":380,"seats":2,"verified":true},
-      {"id":"infernus","name":"Infernus","category":"Car","class":"Super","top_speed_kph":370,"seats":2,"verified":true},
-      {"id":"turismo-r","name":"Turismo R","category":"Car","class":"Super","top_speed_kph":380,"seats":2,"verified":true},
-      {"id":"banshee","name":"Banshee","category":"Car","class":"Sports","top_speed_kph":330,"seats":2,"verified":true},
-      {"id":"comet","name":"Comet","category":"Car","class":"Sports","top_speed_kph":320,"seats":2,"verified":true},
-      {"id":"elegy-rh8","name":"Elegy RH8","category":"Car","class":"Sports","top_speed_kph":330,"seats":2,"verified":true},
-      {"id":"sultan","name":"Sultan","category":"Car","class":"Sports sedan","top_speed_kph":300,"seats":4,"verified":true},
-      {"id":"buffalo","name":"Buffalo","category":"Car","class":"Muscle","top_speed_kph":300,"seats":2,"verified":true},
-      {"id":"dominator","name":"Dominator","category":"Car","class":"Muscle","top_speed_kph":310,"seats":2,"verified":true},
-      {"id":"gauntlet","name":"Gauntlet","category":"Car","class":"Muscle","top_speed_kph":305,"seats":2,"verified":true},
-      {"id":"phoenix","name":"Phoenix","category":"Car","class":"Muscle","top_speed_kph":300,"seats":2,"verified":true},
-      {"id":"sabre-turbo","name":"Sabre Turbo","category":"Car","class":"Muscle","top_speed_kph":305,"seats":2,"verified":true},
-      {"id":"sentinel","name":"Sentinel","category":"Car","class":"Sedan","top_speed_kph":280,"seats":4,"verified":true},
-      {"id":"tailgater","name":"Tailgater","category":"Car","class":"Sedan","top_speed_kph":280,"seats":4,"verified":true},
-      {"id":"schafter","name":"Schafter","category":"Car","class":"Sedan","top_speed_kph":285,"seats":4,"verified":true},
-      {"id":"carbonizzare","name":"Carbonizzare","category":"Car","class":"Sports","top_speed_kph":330,"seats":2,"verified":true},
-      {"id":"sultan-rs","name":"Sultan RS","category":"Car","class":"Super","top_speed_kph":360,"seats":2,"verified":true},
-      {"id":"sandking-xl","name":"Sandking XL","category":"Car","class":"Off-road","top_speed_kph":250,"seats":4,"verified":true},
-      {"id":"bison","name":"Bison","category":"Car","class":"Pickup","top_speed_kph":260,"seats":4,"verified":true},
-      {"id":"insurgent","name":"Insurgent","category":"Car","class":"Armored","top_speed_kph":260,"seats":4,"verified":true},
-      {"id":"rhino","name":"Rhino","category":"Military","class":"Tank","top_speed_kph":60,"seats":1,"verified":true},
-      {"id":"buzzard","name":"Buzzard","category":"Aircraft","class":"Attack helicopter","top_speed_kph":250,"seats":4,"verified":true},
-      {"id":"savage","name":"Savage","category":"Aircraft","class":"Attack helicopter","top_speed_kph":250,"seats":4,"verified":true},
-      {"id":"hydra","name":"Hydra","category":"Aircraft","class":"Jump jet","top_speed_kph":500,"seats":1,"verified":true},
-      {"id":"lazer","name":"P-996 Lazer","category":"Aircraft","class":"Fighter jet","top_speed_kph":600,"seats":1,"verified":true},
-      {"id":"titan","name":"Titan","category":"Aircraft","class":"Cargo plane","top_speed_kph":400,"seats":4,"verified":true},
-      {"id":"cargobob","name":"Cargobob","category":"Aircraft","class":"Transport helicopter","top_speed_kph":220,"seats":4,"verified":true},
-      {"id":"seashark","name":"Seashark","category":"Boat","class":"Jet ski","top_speed_kph":110,"seats":2,"verified":true},
-      {"id":"speeder","name":"Speeder","category":"Boat","class":"Speedboat","top_speed_kph":140,"seats":2,"verified":true},
-      {"id":"police-cruiser","name":"Police Cruiser","category":"Emergency","class":"Police","top_speed_kph":290,"seats":4,"verified":true},
-      {"id":"fire-truck","name":"Fire Truck","category":"Emergency","class":"Fire","top_speed_kph":150,"seats":2,"verified":true},
-      {"id":"ambulance","name":"Ambulance","category":"Emergency","class":"Medical","top_speed_kph":165,"seats":2,"verified":true}
+      {
+        "id": "adder",
+        "name": "Adder",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 400,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "entity-xf",
+        "name": "Entity XF",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 390,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "z-type",
+        "name": "Z-Type",
+        "category": "Car",
+        "class": "Sports classic",
+        "top_speed_kph": 300,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "cheetah",
+        "name": "Cheetah",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 380,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "infernus",
+        "name": "Infernus",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 370,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "turismo-r",
+        "name": "Turismo R",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 380,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "banshee",
+        "name": "Banshee",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 330,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "comet",
+        "name": "Comet",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 320,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "elegy-rh8",
+        "name": "Elegy RH8",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 330,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sultan",
+        "name": "Sultan",
+        "category": "Car",
+        "class": "Sports sedan",
+        "top_speed_kph": 300,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "buffalo",
+        "name": "Buffalo",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 300,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "dominator",
+        "name": "Dominator",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 310,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "gauntlet",
+        "name": "Gauntlet",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 305,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "phoenix",
+        "name": "Phoenix",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 300,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sabre-turbo",
+        "name": "Sabre Turbo",
+        "category": "Car",
+        "class": "Muscle",
+        "top_speed_kph": 305,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sentinel",
+        "name": "Sentinel",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 280,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "tailgater",
+        "name": "Tailgater",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 280,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "schafter",
+        "name": "Schafter",
+        "category": "Car",
+        "class": "Sedan",
+        "top_speed_kph": 285,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "carbonizzare",
+        "name": "Carbonizzare",
+        "category": "Car",
+        "class": "Sports",
+        "top_speed_kph": 330,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sultan-rs",
+        "name": "Sultan RS",
+        "category": "Car",
+        "class": "Super",
+        "top_speed_kph": 360,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "sandking-xl",
+        "name": "Sandking XL",
+        "category": "Car",
+        "class": "Off-road",
+        "top_speed_kph": 250,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "bison",
+        "name": "Bison",
+        "category": "Car",
+        "class": "Pickup",
+        "top_speed_kph": 260,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "insurgent",
+        "name": "Insurgent",
+        "category": "Car",
+        "class": "Armored",
+        "top_speed_kph": 260,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "rhino",
+        "name": "Rhino",
+        "category": "Military",
+        "class": "Tank",
+        "top_speed_kph": 60,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "buzzard",
+        "name": "Buzzard",
+        "category": "Aircraft",
+        "class": "Attack helicopter",
+        "top_speed_kph": 250,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "savage",
+        "name": "Savage",
+        "category": "Aircraft",
+        "class": "Attack helicopter",
+        "top_speed_kph": 250,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "hydra",
+        "name": "Hydra",
+        "category": "Aircraft",
+        "class": "Jump jet",
+        "top_speed_kph": 500,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "lazer",
+        "name": "P-996 Lazer",
+        "category": "Aircraft",
+        "class": "Fighter jet",
+        "top_speed_kph": 600,
+        "seats": 1,
+        "verified": true
+      },
+      {
+        "id": "titan",
+        "name": "Titan",
+        "category": "Aircraft",
+        "class": "Cargo plane",
+        "top_speed_kph": 400,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "cargobob",
+        "name": "Cargobob",
+        "category": "Aircraft",
+        "class": "Transport helicopter",
+        "top_speed_kph": 220,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "seashark",
+        "name": "Seashark",
+        "category": "Boat",
+        "class": "Jet ski",
+        "top_speed_kph": 110,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "speeder",
+        "name": "Speeder",
+        "category": "Boat",
+        "class": "Speedboat",
+        "top_speed_kph": 140,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "police-cruiser",
+        "name": "Police Cruiser",
+        "category": "Emergency",
+        "class": "Police",
+        "top_speed_kph": 290,
+        "seats": 4,
+        "verified": true
+      },
+      {
+        "id": "fire-truck",
+        "name": "Fire Truck",
+        "category": "Emergency",
+        "class": "Fire",
+        "top_speed_kph": 150,
+        "seats": 2,
+        "verified": true
+      },
+      {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "category": "Emergency",
+        "class": "Medical",
+        "top_speed_kph": 165,
+        "seats": 2,
+        "verified": true
+      }
     ]
   },
   "weapons": {
     "coverage": "partial",
     "items": [
-      {"id":"fist","name":"Fists","type":"Melee","damage_tier":"Low","ammo":"—","price":null,"unlock":"Default","verified":true},
-      {"id":"knife","name":"Knife","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"baseball-bat","name":"Baseball Bat","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"crowbar","name":"Crowbar","type":"Melee","damage_tier":"Medium","ammo":"—","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"pistol","name":"Pistol","type":"Handgun","damage_tier":"Medium","ammo":"12 rounds","price":null,"unlock":"Default","verified":true},
-      {"id":"ap-pistol","name":"AP Pistol","type":"Handgun","damage_tier":"High","ammo":"18 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"combat-pistol","name":"Combat Pistol","type":"Handgun","damage_tier":"High","ammo":"12 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"micro-smg","name":"Micro SMG","type":"Submachine gun","damage_tier":"Medium","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"smg","name":"SMG","type":"Submachine gun","damage_tier":"Medium","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"pump-shotgun","name":"Pump Shotgun","type":"Shotgun","damage_tier":"High","ammo":"8 shells","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"assault-shotgun","name":"Assault Shotgun","type":"Shotgun","damage_tier":"Very high","ammo":"8 shells","price":null,"unlock":"Ammu-Nation (later)","verified":true},
-      {"id":"carbine-rifle","name":"Carbine Rifle","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"assault-rifle","name":"Assault Rifle","type":"Assault rifle","damage_tier":"High","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"special-carbine","name":"Special Carbine","type":"Assault rifle","damage_tier":"Very high","ammo":"30 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"sniper-rifle","name":"Sniper Rifle","type":"Sniper","damage_tier":"Very high","ammo":"10 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"heavy-sniper","name":"Heavy Sniper","type":"Sniper","damage_tier":"Lethal","ammo":"6 rounds","price":null,"unlock":"Ammu-Nation (later)","verified":true},
-      {"id":"combat-mg","name":"Combat MG","type":"Machine gun","damage_tier":"Very high","ammo":"100 rounds","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"rpg","name":"RPG","type":"Heavy","damage_tier":"Lethal","ammo":"5 rockets","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"minigun","name":"Minigun","type":"Heavy","damage_tier":"Lethal","ammo":"150 rounds","price":null,"unlock":"Later missions","verified":true},
-      {"id":"grenades","name":"Grenades","type":"Thrown","damage_tier":"High","ammo":"25","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"sticky-bombs","name":"Sticky Bombs","type":"Thrown","damage_tier":"Lethal","ammo":"25","price":null,"unlock":"Ammu-Nation","verified":true},
-      {"id":"molotov","name":"Molotov Cocktail","type":"Thrown","damage_tier":"High","ammo":"25","price":null,"unlock":"Street pickups","verified":true}
+      {
+        "id": "fist",
+        "name": "Fists",
+        "type": "Melee",
+        "damage_tier": "Low",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "knife",
+        "name": "Knife",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "baseball-bat",
+        "name": "Baseball Bat",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "crowbar",
+        "name": "Crowbar",
+        "type": "Melee",
+        "damage_tier": "Medium",
+        "ammo": "—",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "pistol",
+        "name": "Pistol",
+        "type": "Handgun",
+        "damage_tier": "Medium",
+        "ammo": "12 rounds",
+        "price": null,
+        "unlock": "Default",
+        "verified": true
+      },
+      {
+        "id": "ap-pistol",
+        "name": "AP Pistol",
+        "type": "Handgun",
+        "damage_tier": "High",
+        "ammo": "18 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "combat-pistol",
+        "name": "Combat Pistol",
+        "type": "Handgun",
+        "damage_tier": "High",
+        "ammo": "12 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "micro-smg",
+        "name": "Micro SMG",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "smg",
+        "name": "SMG",
+        "type": "Submachine gun",
+        "damage_tier": "Medium",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "pump-shotgun",
+        "name": "Pump Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "High",
+        "ammo": "8 shells",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "assault-shotgun",
+        "name": "Assault Shotgun",
+        "type": "Shotgun",
+        "damage_tier": "Very high",
+        "ammo": "8 shells",
+        "price": null,
+        "unlock": "Ammu-Nation (later)",
+        "verified": true
+      },
+      {
+        "id": "carbine-rifle",
+        "name": "Carbine Rifle",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "assault-rifle",
+        "name": "Assault Rifle",
+        "type": "Assault rifle",
+        "damage_tier": "High",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "special-carbine",
+        "name": "Special Carbine",
+        "type": "Assault rifle",
+        "damage_tier": "Very high",
+        "ammo": "30 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "sniper-rifle",
+        "name": "Sniper Rifle",
+        "type": "Sniper",
+        "damage_tier": "Very high",
+        "ammo": "10 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "heavy-sniper",
+        "name": "Heavy Sniper",
+        "type": "Sniper",
+        "damage_tier": "Lethal",
+        "ammo": "6 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation (later)",
+        "verified": true
+      },
+      {
+        "id": "combat-mg",
+        "name": "Combat MG",
+        "type": "Machine gun",
+        "damage_tier": "Very high",
+        "ammo": "100 rounds",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "rpg",
+        "name": "RPG",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "5 rockets",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "minigun",
+        "name": "Minigun",
+        "type": "Heavy",
+        "damage_tier": "Lethal",
+        "ammo": "150 rounds",
+        "price": null,
+        "unlock": "Later missions",
+        "verified": true
+      },
+      {
+        "id": "grenades",
+        "name": "Grenades",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "25",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "sticky-bombs",
+        "name": "Sticky Bombs",
+        "type": "Thrown",
+        "damage_tier": "Lethal",
+        "ammo": "25",
+        "price": null,
+        "unlock": "Ammu-Nation",
+        "verified": true
+      },
+      {
+        "id": "molotov",
+        "name": "Molotov Cocktail",
+        "type": "Thrown",
+        "damage_tier": "High",
+        "ammo": "25",
+        "price": null,
+        "unlock": "Street pickups",
+        "verified": true
+      }
     ]
   },
   "cheats": {
     "coverage": "partial",
     "items": [
-      {"id":"health-armor","effect":"Full health and armor","codes":[{"platform":"PC","code":"TURTLE","input":"keyboard"}],"verified":true},
-      {"id":"invincibility","effect":"Invincibility (5 minutes)","codes":[{"platform":"PC","code":"PAINKILLER","input":"keyboard"}],"verified":true},
-      {"id":"all-weapons","effect":"All weapons","codes":[{"platform":"PC","code":"TOOLUP","input":"keyboard"}],"verified":true},
-      {"id":"clear-wanted","effect":"Clear wanted level","codes":[{"platform":"PC","code":"LAWYERUP","input":"keyboard"}],"verified":true},
-      {"id":"super-sprint","effect":"Fast run and swim","codes":[{"platform":"PC","code":"CATCHME","input":"keyboard"}],"verified":true},
-      {"id":"skyfall","effect":"Fall from the sky","codes":[{"platform":"PC","code":"SKYFALL","input":"keyboard"}],"verified":true},
-      {"id":"moon-gravity","effect":"Low gravity","codes":[{"platform":"PC","code":"FLOATER","input":"keyboard"}],"verified":true},
-      {"id":"snow","effect":"Snowy weather","codes":[{"platform":"PC","code":"SNOWDAY","input":"keyboard"}],"verified":true},
-      {"id":"storm","effect":"Thunderstorm","codes":[{"platform":"PC","code":"MAKEITRAIN","input":"keyboard"}],"verified":true},
-      {"id":"explosive-ammo","effect":"Explosive ammunition","codes":[{"platform":"PC","code":"INCENDIARY","input":"keyboard"}],"verified":true},
-      {"id":"slow-mo-aim","effect":"Slow-motion aiming","codes":[{"platform":"PC","code":"DEADEYE","input":"keyboard"}],"verified":true},
-      {"id":"drunk","effect":"Drunk mode","codes":[{"platform":"PC","code":"LIQUOR","input":"keyboard"}],"verified":false}
+      {
+        "id": "health-armor",
+        "effect": "Full health and armor",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TURTLE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "invincibility",
+        "effect": "Invincibility (5 minutes)",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "PAINKILLER",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "all-weapons",
+        "effect": "All weapons",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "TOOLUP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "clear-wanted",
+        "effect": "Clear wanted level",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "LAWYERUP",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "super-sprint",
+        "effect": "Fast run and swim",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "CATCHME",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "skyfall",
+        "effect": "Fall from the sky",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SKYFALL",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "moon-gravity",
+        "effect": "Low gravity",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "FLOATER",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "snow",
+        "effect": "Snowy weather",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "SNOWDAY",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "storm",
+        "effect": "Thunderstorm",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "MAKEITRAIN",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "explosive-ammo",
+        "effect": "Explosive ammunition",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "INCENDIARY",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "slow-mo-aim",
+        "effect": "Slow-motion aiming",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "DEADEYE",
+            "input": "keyboard"
+          }
+        ],
+        "verified": true
+      },
+      {
+        "id": "drunk",
+        "effect": "Drunk mode",
+        "codes": [
+          {
+            "platform": "PC",
+            "code": "LIQUOR",
+            "input": "keyboard"
+          }
+        ],
+        "verified": false
+      }
     ]
   },
   "locations": {
     "coverage": "partial",
     "items": [
-      {"id":"san-andreas","name":"San Andreas","type":"Region","parent":null,"summary":"The state containing Los Santos and Blaine County.","verified":true},
-      {"id":"los-santos","name":"Los Santos","type":"City","parent":"San Andreas","summary":"Los Angeles analogue and the game's main urban area.","verified":true},
-      {"id":"blaine-county","name":"Blaine County","type":"Region","parent":"San Andreas","summary":"Rural desert and mountain county north of the city.","verified":true},
-      {"id":"vinewood","name":"Vinewood","type":"District","parent":"Los Santos","summary":"Hollywood analogue with the sign and studios.","verified":true},
-      {"id":"rockford-hills","name":"Rockford Hills","type":"District","parent":"Los Santos","summary":"Affluent district and Michael's mansion.","verified":true},
-      {"id":"downtown-los-santos","name":"Downtown Los Santos","type":"District","parent":"Los Santos","summary":"Skyscraper business district and the FIB tower.","verified":true},
-      {"id":"vespucci","name":"Vespucci","type":"District","parent":"Los Santos","summary":"Beach district and the boardwalk.","verified":true},
-      {"id":"chamberlain-hills","name":"Chamberlain Hills","type":"Neighbourhood","parent":"Los Santos","summary":"Franklin and Lamar's home neighbourhood.","verified":true},
-      {"id":"sandy-shores","name":"Sandy Shores","type":"Town","parent":"Blaine County","summary":"Desert town and Trevor's base of operations.","verified":true},
-      {"id":"paleto-bay","name":"Paleto Bay","type":"Town","parent":"Blaine County","summary":"Small northern town and bank heist location.","verified":true},
-      {"id":"fort-zancudo","name":"Fort Zancudo","type":"Landmark","parent":"Blaine County","summary":"Military base with restricted airspace.","verified":true},
-      {"id":"mount-chiliad","name":"Mount Chiliad","type":"Landmark","parent":"Blaine County","summary":"Tallest mountain in the state, tied to the mystery egg and jetpack hunt.","verified":true},
-      {"id":"humane-labs","name":"Humane Labs and Research","type":"Landmark","parent":"Blaine County","summary":"Research facility raided in Monkey Business.","verified":true},
-      {"id":"union-depository","name":"Union Depository","type":"Landmark","parent":"Los Santos","summary":"Target of the final heist.","verified":true}
+      {
+        "id": "san-andreas",
+        "name": "San Andreas",
+        "type": "Region",
+        "parent": null,
+        "summary": "The state containing Los Santos and Blaine County.",
+        "verified": true
+      },
+      {
+        "id": "los-santos",
+        "name": "Los Santos",
+        "type": "City",
+        "parent": "San Andreas",
+        "summary": "Los Angeles analogue and the game's main urban area.",
+        "verified": true
+      },
+      {
+        "id": "blaine-county",
+        "name": "Blaine County",
+        "type": "Region",
+        "parent": "San Andreas",
+        "summary": "Rural desert and mountain county north of the city.",
+        "verified": true
+      },
+      {
+        "id": "vinewood",
+        "name": "Vinewood",
+        "type": "District",
+        "parent": "Los Santos",
+        "summary": "Hollywood analogue with the sign and studios.",
+        "verified": true
+      },
+      {
+        "id": "rockford-hills",
+        "name": "Rockford Hills",
+        "type": "District",
+        "parent": "Los Santos",
+        "summary": "Affluent district and Michael's mansion.",
+        "verified": true
+      },
+      {
+        "id": "downtown-los-santos",
+        "name": "Downtown Los Santos",
+        "type": "District",
+        "parent": "Los Santos",
+        "summary": "Skyscraper business district and the FIB tower.",
+        "verified": true
+      },
+      {
+        "id": "vespucci",
+        "name": "Vespucci",
+        "type": "District",
+        "parent": "Los Santos",
+        "summary": "Beach district and the boardwalk.",
+        "verified": true
+      },
+      {
+        "id": "chamberlain-hills",
+        "name": "Chamberlain Hills",
+        "type": "Neighbourhood",
+        "parent": "Los Santos",
+        "summary": "Franklin and Lamar's home neighbourhood.",
+        "verified": true
+      },
+      {
+        "id": "sandy-shores",
+        "name": "Sandy Shores",
+        "type": "Town",
+        "parent": "Blaine County",
+        "summary": "Desert town and Trevor's base of operations.",
+        "verified": true
+      },
+      {
+        "id": "paleto-bay",
+        "name": "Paleto Bay",
+        "type": "Town",
+        "parent": "Blaine County",
+        "summary": "Small northern town and bank heist location.",
+        "verified": true
+      },
+      {
+        "id": "fort-zancudo",
+        "name": "Fort Zancudo",
+        "type": "Landmark",
+        "parent": "Blaine County",
+        "summary": "Military base with restricted airspace.",
+        "verified": true
+      },
+      {
+        "id": "mount-chiliad",
+        "name": "Mount Chiliad",
+        "type": "Landmark",
+        "parent": "Blaine County",
+        "summary": "Tallest mountain in the state, tied to the mystery egg and jetpack hunt.",
+        "verified": true
+      },
+      {
+        "id": "humane-labs",
+        "name": "Humane Labs and Research",
+        "type": "Landmark",
+        "parent": "Blaine County",
+        "summary": "Research facility raided in Monkey Business.",
+        "verified": true
+      },
+      {
+        "id": "union-depository",
+        "name": "Union Depository",
+        "type": "Landmark",
+        "parent": "Los Santos",
+        "summary": "Target of the final heist.",
+        "verified": true
+      }
     ]
   },
   "collectibles": {
     "coverage": "complete",
     "items": [
-      {"id":"spaceship-parts","name":"Spaceship Parts","type":"Part","total":50,"reward":"Unlocks the Space Docker vehicle","verified":true},
-      {"id":"letter-scraps","name":"Letter Scraps","type":"Scrap","total":50,"reward":"Unlocks a murder-mystery side story","verified":true},
-      {"id":"stunt-jumps","name":"Stunt Jumps","type":"Stunt","total":50,"reward":"Cash and 100% progress","verified":true},
-      {"id":"nuclear-waste","name":"Nuclear Waste","type":"Barrel","total":30,"reward":"Cash and 100% progress","verified":true},
-      {"id":"monkey-mosaics","name":"Monkey Mosaics","type":"Mosaic","total":50,"reward":"Unlocks the Go Go Monkey Blista (enhanced editions)","verified":false},
-      {"id":"peyote-plants","name":"Peyote Plants","type":"Plant","total":30,"reward":"Play as animals (enhanced editions)","verified":false}
+      {
+        "id": "spaceship-parts",
+        "name": "Spaceship Parts",
+        "type": "Part",
+        "total": 50,
+        "reward": "Unlocks the Space Docker vehicle",
+        "verified": true
+      },
+      {
+        "id": "letter-scraps",
+        "name": "Letter Scraps",
+        "type": "Scrap",
+        "total": 50,
+        "reward": "Unlocks a murder-mystery side story",
+        "verified": true
+      },
+      {
+        "id": "stunt-jumps",
+        "name": "Stunt Jumps",
+        "type": "Stunt",
+        "total": 50,
+        "reward": "Cash and 100% progress",
+        "verified": true
+      },
+      {
+        "id": "nuclear-waste",
+        "name": "Nuclear Waste",
+        "type": "Barrel",
+        "total": 30,
+        "reward": "Cash and 100% progress",
+        "verified": true
+      },
+      {
+        "id": "monkey-mosaics",
+        "name": "Monkey Mosaics",
+        "type": "Mosaic",
+        "total": 50,
+        "reward": "Unlocks the Go Go Monkey Blista (enhanced editions)",
+        "verified": false
+      },
+      {
+        "id": "peyote-plants",
+        "name": "Peyote Plants",
+        "type": "Plant",
+        "total": 30,
+        "reward": "Play as animals (enhanced editions)",
+        "verified": false
+      }
     ]
   }
 }
