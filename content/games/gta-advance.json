@@ -10,30 +10,6 @@
     "coverage": "limited",
     "items": [
       {
-        "id": "mike",
-        "name": "Mike",
-        "role": "Protagonist",
-        "affiliations": [
-          "Independent",
-          "Vinnie's crew"
-        ],
-        "summary": "A small-time Liberty City criminal trying to buy his way out after a job goes wrong.",
-        "status": "Alive",
-        "first_appearance": "GTA Advance",
-        "verified": true
-      },
-      {
-        "id": "vinnie",
-        "name": "Vinnie",
-        "role": "Partner, antagonist",
-        "affiliations": [
-          "Liberty City underworld"
-        ],
-        "summary": "Mike's partner whose betrayal drives the story.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
         "id": "8-ball",
         "name": "8-Ball",
         "role": "Explosives expert",
@@ -56,17 +32,6 @@
         "verified": true
       },
       {
-        "id": "king-courtney",
-        "name": "King Courtney",
-        "role": "Yardies leader",
-        "affiliations": [
-          "Yardies"
-        ],
-        "summary": "Yardie boss active in Liberty City before GTA III.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
         "id": "cisco",
         "name": "Cisco",
         "role": "Associate",
@@ -78,6 +43,30 @@
         "verified": false
       },
       {
+        "id": "king-courtney",
+        "name": "King Courtney",
+        "role": "Yardies leader",
+        "affiliations": [
+          "Yardies"
+        ],
+        "summary": "Yardie boss active in Liberty City before GTA III.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "mike",
+        "name": "Mike",
+        "role": "Protagonist",
+        "affiliations": [
+          "Independent",
+          "Vinnie's crew"
+        ],
+        "summary": "A small-time Liberty City criminal trying to buy his way out after a job goes wrong.",
+        "status": "Alive",
+        "first_appearance": "GTA Advance",
+        "verified": true
+      },
+      {
         "id": "uncle-fu-advance",
         "name": "Uncle Fu",
         "role": "Antagonist",
@@ -87,6 +76,17 @@
         "summary": "A crime figure involved in the game's central betrayal.",
         "status": "Deceased",
         "verified": false
+      },
+      {
+        "id": "vinnie",
+        "name": "Vinnie",
+        "role": "Partner, antagonist",
+        "affiliations": [
+          "Liberty City underworld"
+        ],
+        "summary": "Mike's partner whose betrayal drives the story.",
+        "status": "Deceased",
+        "verified": true
       }
     ]
   },

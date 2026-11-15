@@ -10,26 +10,14 @@
     "coverage": "partial",
     "items": [
       {
-        "id": "huang-lee",
-        "name": "Huang Lee",
-        "role": "Protagonist",
+        "id": "chan-jaoming",
+        "name": "Chan Jaoming",
+        "role": "Triad heir",
         "affiliations": [
           "Liberty City Triads"
         ],
-        "summary": "Returns to Liberty City with a stolen sword and a murdered father's legacy to untangle.",
+        "summary": "Hsin's son and one claimant to the Triad leadership.",
         "status": "Alive",
-        "first_appearance": "GTA: Chinatown Wars",
-        "verified": true
-      },
-      {
-        "id": "wu-lee",
-        "name": "Wu Lee",
-        "role": "Uncle, Triad elder",
-        "affiliations": [
-          "Liberty City Triads"
-        ],
-        "summary": "Huang's uncle and the Triad elder he reports to.",
-        "status": "Deceased",
         "verified": true
       },
       {
@@ -44,58 +32,15 @@
         "verified": true
       },
       {
-        "id": "chan-jaoming",
-        "name": "Chan Jaoming",
-        "role": "Triad heir",
+        "id": "huang-lee",
+        "name": "Huang Lee",
+        "role": "Protagonist",
         "affiliations": [
           "Liberty City Triads"
         ],
-        "summary": "Hsin's son and one claimant to the Triad leadership.",
+        "summary": "Returns to Liberty City with a stolen sword and a murdered father's legacy to untangle.",
         "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "zhou-ming",
-        "name": "Zhou Ming",
-        "role": "Triad rival",
-        "affiliations": [
-          "Liberty City Triads"
-        ],
-        "summary": "The other claimant to the Triad leadership.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "rudy-davanzo",
-        "name": "Rudy D'Avanzo",
-        "role": "Mafia associate",
-        "affiliations": [
-          "Liberty City Mafia"
-        ],
-        "summary": "Italian mob contact who pulls Huang into Mafia business.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "melanie-mallard",
-        "name": "Melanie Mallard",
-        "role": "Journalist",
-        "affiliations": [
-          "Liberty City press"
-        ],
-        "summary": "Investigative journalist working the Triad succession story.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "wade-heston",
-        "name": "Wade Heston",
-        "role": "Undercover agent",
-        "affiliations": [
-          "Federal law enforcement"
-        ],
-        "summary": "Undercover operative who recruits Huang's help.",
-        "status": "Alive",
+        "first_appearance": "GTA: Chinatown Wars",
         "verified": true
       },
       {
@@ -119,6 +64,61 @@
         "summary": "Huang's ally within the Triad power struggle.",
         "status": "Alive",
         "verified": false
+      },
+      {
+        "id": "melanie-mallard",
+        "name": "Melanie Mallard",
+        "role": "Journalist",
+        "affiliations": [
+          "Liberty City press"
+        ],
+        "summary": "Investigative journalist working the Triad succession story.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "rudy-davanzo",
+        "name": "Rudy D'Avanzo",
+        "role": "Mafia associate",
+        "affiliations": [
+          "Liberty City Mafia"
+        ],
+        "summary": "Italian mob contact who pulls Huang into Mafia business.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "wade-heston",
+        "name": "Wade Heston",
+        "role": "Undercover agent",
+        "affiliations": [
+          "Federal law enforcement"
+        ],
+        "summary": "Undercover operative who recruits Huang's help.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "wu-lee",
+        "name": "Wu Lee",
+        "role": "Uncle, Triad elder",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "Huang's uncle and the Triad elder he reports to.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "zhou-ming",
+        "name": "Zhou Ming",
+        "role": "Triad rival",
+        "affiliations": [
+          "Liberty City Triads"
+        ],
+        "summary": "The other claimant to the Triad leadership.",
+        "status": "Alive",
+        "verified": true
       }
     ]
   },

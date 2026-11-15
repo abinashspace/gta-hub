@@ -10,26 +10,127 @@
     "coverage": "partial",
     "items": [
       {
-        "id": "niko-bellic",
-        "name": "Niko Bellic",
-        "role": "Protagonist",
+        "id": "bernie-crane",
+        "name": "Bernie Crane",
+        "role": "Friend",
         "affiliations": [
-          "Independent",
-          "McReary crew (associate)"
+          "Liberty City politics"
         ],
-        "summary": "A Balkan war veteran who comes to Liberty City chasing the man who betrayed his unit.",
-        "status": "Varies",
-        "first_appearance": "Grand Theft Auto IV",
+        "summary": "An old friend of Niko's from the war, now a flamboyant political fixer.",
+        "status": "Alive",
         "verified": true
       },
       {
-        "id": "roman-bellic",
-        "name": "Roman Bellic",
-        "role": "Cousin, taxi depot owner",
+        "id": "brucie-kibbutz",
+        "name": "Brucie Kibbutz",
+        "role": "Ally, car dealer",
         "affiliations": [
-          "Bellic Enterprises"
+          "Kibbutz Motors"
         ],
-        "summary": "Niko's cousin, whose exaggerated stories hide a gambling problem and loan-shark debt.",
+        "summary": "Steroid-obsessed car dealer and adrenaline junkie.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "derrick-mcreary",
+        "name": "Derrick McReary",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 3 missions in gta-iv, starting with \"Smackdown\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "dimitri-rascalov",
+        "name": "Dimitri Rascalov",
+        "role": "Antagonist",
+        "affiliations": [
+          "Russian Mafia"
+        ],
+        "summary": "A manipulative Russian gangster who betrays everyone he works with.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "dwayne-forge",
+        "name": "Dwayne Forge",
+        "role": "Ally",
+        "affiliations": [
+          "North Holland crew"
+        ],
+        "summary": "An ex-con trying to rebuild his life after prison.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "elizabeta-torres",
+        "name": "Elizabeta Torres",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 4 missions in gta-iv, starting with \"Luck of the Irish\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "francis-mcreary",
+        "name": "Francis McReary",
+        "role": "Corrupt cop",
+        "affiliations": [
+          "Liberty City Police Department",
+          "McReary Crime Family"
+        ],
+        "summary": "A police detective who blackmails Niko into cleaning up his problems.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "gerald-mcreary",
+        "name": "Gerald McReary",
+        "role": "McReary patriarch",
+        "affiliations": [
+          "McReary Crime Family"
+        ],
+        "summary": "The eldest McReary brother, running the family business from prison.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "gerry-mcreary",
+        "name": "Gerry McReary",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 5 missions in gta-iv, starting with \"Actions Speak Louder than Words\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "jimmy-pegorino",
+        "name": "Jimmy Pegorino",
+        "role": "Boss",
+        "affiliations": [
+          "Pegorino Crime Family"
+        ],
+        "summary": "The head of the Alderney family and Niko's final employer.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "jon-gravelli",
+        "name": "Jon Gravelli",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 3 missions in gta-iv, starting with \"Entourage\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "kate-mcreary",
+        "name": "Kate McReary",
+        "role": "Girlfriend",
+        "affiliations": [
+          "McReary Crime Family"
+        ],
+        "summary": "Packie's sister and Niko's moral counterweight.",
         "status": "Varies",
         "verified": true
       },
@@ -46,14 +147,54 @@
         "verified": true
       },
       {
-        "id": "brucie-kibbutz",
-        "name": "Brucie Kibbutz",
-        "role": "Ally, car dealer",
+        "id": "mallorie-bardas",
+        "name": "Mallorie Bardas",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-iv, starting with \"Hostile Negotiation\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "manny-escuela",
+        "name": "Manny Escuela",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 3 missions in gta-iv, starting with \"Escuela of the Streets\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "michelle",
+        "name": "Michelle",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-iv, starting with \"First Date\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "mikhail-faustin",
+        "name": "Mikhail Faustin",
+        "role": "Antagonist",
         "affiliations": [
-          "Kibbutz Motors"
+          "Russian Mafia"
         ],
-        "summary": "Steroid-obsessed car dealer and adrenaline junkie.",
-        "status": "Alive",
+        "summary": "Volatile Russian crime boss whose paranoia starts a war.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "niko-bellic",
+        "name": "Niko Bellic",
+        "role": "Protagonist",
+        "affiliations": [
+          "Independent",
+          "McReary crew (associate)"
+        ],
+        "summary": "A Balkan war veteran who comes to Liberty City chasing the man who betrayed his unit.",
+        "status": "Varies",
+        "first_appearance": "Grand Theft Auto IV",
         "verified": true
       },
       {
@@ -68,70 +209,14 @@
         "verified": true
       },
       {
-        "id": "kate-mcreary",
-        "name": "Kate McReary",
-        "role": "Girlfriend",
+        "id": "phil-bell",
+        "name": "Phil Bell",
+        "role": "Associate",
         "affiliations": [
-          "McReary Crime Family"
+          "Pegorino Crime Family"
         ],
-        "summary": "Packie's sister and Niko's moral counterweight.",
-        "status": "Varies",
-        "verified": true
-      },
-      {
-        "id": "gerald-mcreary",
-        "name": "Gerald McReary",
-        "role": "McReary patriarch",
-        "affiliations": [
-          "McReary Crime Family"
-        ],
-        "summary": "The eldest McReary brother, running the family business from prison.",
+        "summary": "A Pegorino associate running truck hijackings.",
         "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "francis-mcreary",
-        "name": "Francis McReary",
-        "role": "Corrupt cop",
-        "affiliations": [
-          "Liberty City Police Department",
-          "McReary Crime Family"
-        ],
-        "summary": "A police detective who blackmails Niko into cleaning up his problems.",
-        "status": "Varies",
-        "verified": true
-      },
-      {
-        "id": "dimitri-rascalov",
-        "name": "Dimitri Rascalov",
-        "role": "Antagonist",
-        "affiliations": [
-          "Russian Mafia"
-        ],
-        "summary": "A manipulative Russian gangster who betrays everyone he works with.",
-        "status": "Varies",
-        "verified": true
-      },
-      {
-        "id": "mikhail-faustin",
-        "name": "Mikhail Faustin",
-        "role": "Antagonist",
-        "affiliations": [
-          "Russian Mafia"
-        ],
-        "summary": "Volatile Russian crime boss whose paranoia starts a war.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "vladimir-glebov",
-        "name": "Vladimir Glebov",
-        "role": "Antagonist",
-        "affiliations": [
-          "Russian Mafia"
-        ],
-        "summary": "A petty loan shark running a small crew out of Hove Beach.",
-        "status": "Deceased",
         "verified": true
       },
       {
@@ -142,17 +227,6 @@
           "North Holland crew"
         ],
         "summary": "An ambitious dealer whose partnership with Niko ends in a choice.",
-        "status": "Varies",
-        "verified": true
-      },
-      {
-        "id": "dwayne-forge",
-        "name": "Dwayne Forge",
-        "role": "Ally",
-        "affiliations": [
-          "North Holland crew"
-        ],
-        "summary": "An ex-con trying to rebuild his life after prison.",
         "status": "Varies",
         "verified": true
       },
@@ -168,36 +242,14 @@
         "verified": true
       },
       {
-        "id": "phil-bell",
-        "name": "Phil Bell",
-        "role": "Associate",
+        "id": "roman-bellic",
+        "name": "Roman Bellic",
+        "role": "Cousin, taxi depot owner",
         "affiliations": [
-          "Pegorino Crime Family"
+          "Bellic Enterprises"
         ],
-        "summary": "A Pegorino associate running truck hijackings.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "jimmy-pegorino",
-        "name": "Jimmy Pegorino",
-        "role": "Boss",
-        "affiliations": [
-          "Pegorino Crime Family"
-        ],
-        "summary": "The head of the Alderney family and Niko's final employer.",
+        "summary": "Niko's cousin, whose exaggerated stories hide a gambling problem and loan-shark debt.",
         "status": "Varies",
-        "verified": true
-      },
-      {
-        "id": "bernie-crane",
-        "name": "Bernie Crane",
-        "role": "Friend",
-        "affiliations": [
-          "Liberty City politics"
-        ],
-        "summary": "An old friend of Niko's from the war, now a flamboyant political fixer.",
-        "status": "Alive",
         "verified": true
       },
       {
@@ -209,6 +261,26 @@
         ],
         "summary": "A shadowy agent who trades favours for information about Niko's past.",
         "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "vlad-glebov",
+        "name": "Vlad Glebov",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 4 missions in gta-iv, starting with \"Bull in a China Shop\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "vladimir-glebov",
+        "name": "Vladimir Glebov",
+        "role": "Antagonist",
+        "affiliations": [
+          "Russian Mafia"
+        ],
+        "summary": "A petty loan shark running a small crew out of Hove Beach.",
+        "status": "Deceased",
         "verified": true
       }
     ]

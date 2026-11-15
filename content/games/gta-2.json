@@ -22,13 +22,13 @@
         "verified": true
       },
       {
-        "id": "zaibatsu-boss",
-        "name": "Zaibatsu boss",
-        "role": "Corporation boss",
+        "id": "hare-krishna-leader",
+        "name": "Hare Krishna leader",
+        "role": "Gang leader",
         "affiliations": [
-          "Zaibatsu Corporation"
+          "Hare Krishna"
         ],
-        "summary": "Head of the Zaibatsu Corporation, the city's dominant corporate power.",
+        "summary": "Leader of the Hare Krishna gang.",
         "status": "Alive",
         "verified": false
       },
@@ -44,17 +44,6 @@
         "verified": false
       },
       {
-        "id": "yakuza-boss",
-        "name": "Yakuza boss",
-        "role": "Gang leader",
-        "affiliations": [
-          "Yakuza"
-        ],
-        "summary": "Head of the Yakuza in Anywhere City's Downtown district.",
-        "status": "Alive",
-        "verified": false
-      },
-      {
         "id": "rednecks-leader",
         "name": "Rednecks leader",
         "role": "Gang leader",
@@ -62,6 +51,17 @@
           "Rednecks"
         ],
         "summary": "Leader of the Rednecks in the Industrial district.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "russian-boss",
+        "name": "Russian boss",
+        "role": "Gang leader",
+        "affiliations": [
+          "Russian Mafia"
+        ],
+        "summary": "Head of the Russian Mafia in Anywhere City.",
         "status": "Alive",
         "verified": false
       },
@@ -77,24 +77,33 @@
         "verified": false
       },
       {
-        "id": "hare-krishna-leader",
-        "name": "Hare Krishna leader",
+        "id": "yakuza-boss",
+        "name": "Yakuza boss",
         "role": "Gang leader",
         "affiliations": [
-          "Hare Krishna"
+          "Yakuza"
         ],
-        "summary": "Leader of the Hare Krishna gang.",
+        "summary": "Head of the Yakuza in Anywhere City's Downtown district.",
         "status": "Alive",
         "verified": false
       },
       {
-        "id": "russian-boss",
-        "name": "Russian boss",
-        "role": "Gang leader",
+        "id": "zaibatsu",
+        "name": "Zaibatsu",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-2, starting with \"Final jobs\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "zaibatsu-boss",
+        "name": "Zaibatsu boss",
+        "role": "Corporation boss",
         "affiliations": [
-          "Russian Mafia"
+          "Zaibatsu Corporation"
         ],
-        "summary": "Head of the Russian Mafia in Anywhere City.",
+        "summary": "Head of the Zaibatsu Corporation, the city's dominant corporate power.",
         "status": "Alive",
         "verified": false
       }

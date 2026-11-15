@@ -22,48 +22,13 @@
         "verified": true
       },
       {
-        "id": "sweet",
-        "name": "Sean 'Sweet' Johnson",
-        "role": "Grove Street leader, brother",
+        "id": "catalina",
+        "name": "Catalina",
+        "role": "Ally, robber",
         "affiliations": [
-          "Grove Street Families"
+          "Independent"
         ],
-        "summary": "CJ's older brother and the stubborn leader of Grove Street.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "big-smoke",
-        "name": "Melvin 'Big Smoke' Harris",
-        "role": "Antagonist, former Grove member",
-        "affiliations": [
-          "Grove Street Families (former)",
-          "Ballas (secretly)"
-        ],
-        "summary": "CJ's childhood friend whose ambition leads him to betray Grove Street.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "ryder",
-        "name": "Lance 'Ryder' Wilson",
-        "role": "Antagonist, former Grove member",
-        "affiliations": [
-          "Grove Street Families (former)",
-          "Ballas (secretly)"
-        ],
-        "summary": "Hot-headed Grove member who turns on the family.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "kendl",
-        "name": "Kendl Johnson",
-        "role": "CJ's sister",
-        "affiliations": [
-          "Grove Street Families"
-        ],
-        "summary": "CJ and Sweet's sister, partner of Cesar Vialpando.",
+        "summary": "CJ's brief girlfriend in the Badlands; robs stores with him in a series of missions.",
         "status": "Alive",
         "verified": true
       },
@@ -79,14 +44,25 @@
         "verified": true
       },
       {
-        "id": "og-loc",
-        "name": "OG Loc",
-        "role": "Rapper, comic relief",
+        "id": "denise-robinson",
+        "name": "Denise Robinson",
+        "role": "Girlfriend",
         "affiliations": [
           "Grove Street Families"
         ],
-        "summary": "Aspiring rapper whose career CJ helps launch by stealing Madd Dogg's rhymes.",
+        "summary": "Grove Street affiliate and one of CJ's girlfriends.",
         "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "eddie-pulaski",
+        "name": "Eddie Pulaski",
+        "role": "Antagonist, corrupt officer",
+        "affiliations": [
+          "C.R.A.S.H."
+        ],
+        "summary": "Tenpenny's brutal partner, killed by CJ in the desert.",
+        "status": "Deceased",
         "verified": true
       },
       {
@@ -102,17 +78,6 @@
         "verified": true
       },
       {
-        "id": "eddie-pulaski",
-        "name": "Eddie Pulaski",
-        "role": "Antagonist, corrupt officer",
-        "affiliations": [
-          "C.R.A.S.H."
-        ],
-        "summary": "Tenpenny's brutal partner, killed by CJ in the desert.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
         "id": "hernandez",
         "name": "Jimmy Hernandez",
         "role": "Corrupt officer, informant",
@@ -121,83 +86,6 @@
         ],
         "summary": "The youngest C.R.A.S.H. officer, torn between loyalty and doing the right thing.",
         "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "catalina",
-        "name": "Catalina",
-        "role": "Ally, robber",
-        "affiliations": [
-          "Independent"
-        ],
-        "summary": "CJ's brief girlfriend in the Badlands; robs stores with him in a series of missions.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "the-truth",
-        "name": "The Truth",
-        "role": "Ally, conspiracy theorist",
-        "affiliations": [
-          "Independent"
-        ],
-        "summary": "A hippie conspiracy theorist who supplies CJ with vehicles and information.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "wu-zi-mu",
-        "name": "Wu Zi Mu ('Woozie')",
-        "role": "Ally, Triad leader",
-        "affiliations": [
-          "San Fierro Triads"
-        ],
-        "summary": "Blind Triad boss who becomes CJ's business partner in San Fierro and Las Venturas.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "ran-fa-li",
-        "name": "Ran Fa Li",
-        "role": "Triad elder",
-        "affiliations": [
-          "San Fierro Triads"
-        ],
-        "summary": "Senior Triad figure whose protection is a recurring obligation.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "mike-toreno",
-        "name": "Mike Toreno",
-        "role": "Ally, covert agent",
-        "affiliations": [
-          "US government (covert)"
-        ],
-        "summary": "A shadowy federal agent who blackmails CJ into running missions for him.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "zero",
-        "name": "Zero",
-        "role": "Ally, electronics expert",
-        "affiliations": [
-          "Zero's RC"
-        ],
-        "summary": "RC hobbyist and electronics genius with a shop in San Fierro.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "madd-dogg",
-        "name": "Madd Dogg",
-        "role": "Rapper",
-        "affiliations": [
-          "Madd Dogg Records"
-        ],
-        "summary": "Famous rapper whose career CJ manages after OG Loc steals his work.",
-        "status": "Alive",
         "verified": true
       },
       {
@@ -224,6 +112,17 @@
         "verified": true
       },
       {
+        "id": "kendl",
+        "name": "Kendl Johnson",
+        "role": "CJ's sister",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "CJ and Sweet's sister, partner of Cesar Vialpando.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
         "id": "kent-paul",
         "name": "Kent Paul",
         "role": "Music manager",
@@ -235,13 +134,48 @@
         "verified": true
       },
       {
-        "id": "salvatore-leone",
-        "name": "Salvatore Leone",
-        "role": "Leone don",
+        "id": "ryder",
+        "name": "Lance 'Ryder' Wilson",
+        "role": "Antagonist, former Grove member",
         "affiliations": [
-          "Leone Crime Family"
+          "Grove Street Families (former)",
+          "Ballas (secretly)"
         ],
-        "summary": "Liberty City don who owns Caligula's Palace and is targeted by the Triads.",
+        "summary": "Hot-headed Grove member who turns on the family.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "madd-dogg",
+        "name": "Madd Dogg",
+        "role": "Rapper",
+        "affiliations": [
+          "Madd Dogg Records"
+        ],
+        "summary": "Famous rapper whose career CJ manages after OG Loc steals his work.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "big-smoke",
+        "name": "Melvin 'Big Smoke' Harris",
+        "role": "Antagonist, former Grove member",
+        "affiliations": [
+          "Grove Street Families (former)",
+          "Ballas (secretly)"
+        ],
+        "summary": "CJ's childhood friend whose ambition leads him to betray Grove Street.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "mike-toreno",
+        "name": "Mike Toreno",
+        "role": "Ally, covert agent",
+        "affiliations": [
+          "US government (covert)"
+        ],
+        "summary": "A shadowy federal agent who blackmails CJ into running missions for him.",
         "status": "Alive",
         "verified": true
       },
@@ -257,13 +191,88 @@
         "verified": true
       },
       {
-        "id": "denise-robinson",
-        "name": "Denise Robinson",
-        "role": "Girlfriend",
+        "id": "og-loc",
+        "name": "OG Loc",
+        "role": "Rapper, comic relief",
         "affiliations": [
           "Grove Street Families"
         ],
-        "summary": "Grove Street affiliate and one of CJ's girlfriends.",
+        "summary": "Aspiring rapper whose career CJ helps launch by stealing Madd Dogg's rhymes.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ran-fa-li",
+        "name": "Ran Fa Li",
+        "role": "Triad elder",
+        "affiliations": [
+          "San Fierro Triads"
+        ],
+        "summary": "Senior Triad figure whose protection is a recurring obligation.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "salvatore-leone",
+        "name": "Salvatore Leone",
+        "role": "Leone don",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Liberty City don who owns Caligula's Palace and is targeted by the Triads.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "sweet",
+        "name": "Sean 'Sweet' Johnson",
+        "role": "Grove Street leader, brother",
+        "affiliations": [
+          "Grove Street Families"
+        ],
+        "summary": "CJ's older brother and the stubborn leader of Grove Street.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "the-truth",
+        "name": "The Truth",
+        "role": "Ally, conspiracy theorist",
+        "affiliations": [
+          "Independent"
+        ],
+        "summary": "A hippie conspiracy theorist who supplies CJ with vehicles and information.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "woozie",
+        "name": "Woozie",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 18 missions in gta-san-andreas, starting with \"Toreno's Last Flight\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "wu-zi-mu",
+        "name": "Wu Zi Mu ('Woozie')",
+        "role": "Ally, Triad leader",
+        "affiliations": [
+          "San Fierro Triads"
+        ],
+        "summary": "Blind Triad boss who becomes CJ's business partner in San Fierro and Las Venturas.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "zero",
+        "name": "Zero",
+        "role": "Ally, electronics expert",
+        "affiliations": [
+          "Zero's RC"
+        ],
+        "summary": "RC hobbyist and electronics genius with a shop in San Fierro.",
         "status": "Alive",
         "verified": true
       }

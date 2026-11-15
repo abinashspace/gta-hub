@@ -13,16 +13,44 @@
     "coverage": "limited",
     "items": [
       {
-        "id": "online-player",
-        "name": "Online protagonist",
-        "role": "Protagonist",
+        "id": "agatha-baker",
+        "name": "Agatha Baker",
+        "role": "Contact",
         "affiliations": [
-          "Player-chosen organisations"
+          "The Diamond Casino & Resort"
         ],
-        "summary": "A player-created criminal operating across Southern San Andreas with no fixed backstory.",
-        "status": "Varies",
-        "first_appearance": "Grand Theft Auto Online",
+        "summary": "Casino contact for the Diamond Casino & Resort storyline.",
+        "status": "Alive",
         "verified": true
+      },
+      {
+        "id": "agent-14",
+        "name": "Agent 14",
+        "role": "Contact",
+        "affiliations": [
+          "IAA"
+        ],
+        "summary": "Government handler for the Doomsday Heist and bunker research.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ceo-office",
+        "name": "CEO office",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-online, starting with \"Vehicle Cargo\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "free-mode",
+        "name": "Free mode",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-online, starting with \"Business Battles\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
       },
       {
         "id": "lamar-davis",
@@ -48,14 +76,26 @@
         "verified": true
       },
       {
-        "id": "agent-14",
-        "name": "Agent 14",
+        "id": "miguel-madrazo",
+        "name": "Miguel Madrazo",
         "role": "Contact",
         "affiliations": [
-          "IAA"
+          "Madrazo cartel"
         ],
-        "summary": "Government handler for the Doomsday Heist and bunker research.",
+        "summary": "Ranch-hand turned contact after his father's fall.",
         "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "online-player",
+        "name": "Online protagonist",
+        "role": "Protagonist",
+        "affiliations": [
+          "Player-chosen organisations"
+        ],
+        "summary": "A player-created criminal operating across Southern San Andreas with no fixed backstory.",
+        "status": "Varies",
+        "first_appearance": "Grand Theft Auto Online",
         "verified": true
       },
       {
@@ -66,17 +106,6 @@
           "Kosatka crew"
         ],
         "summary": "Submarine commander and planner of the Cayo Perico Heist.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "miguel-madrazo",
-        "name": "Miguel Madrazo",
-        "role": "Contact",
-        "affiliations": [
-          "Madrazo cartel"
-        ],
-        "summary": "Ranch-hand turned contact after his father's fall.",
         "status": "Alive",
         "verified": true
       },
@@ -92,15 +121,13 @@
         "verified": true
       },
       {
-        "id": "agatha-baker",
-        "name": "Agatha Baker",
-        "role": "Contact",
-        "affiliations": [
-          "The Diamond Casino & Resort"
-        ],
-        "summary": "Casino contact for the Diamond Casino & Resort storyline.",
-        "status": "Alive",
-        "verified": true
+        "id": "tony-prince",
+        "name": "Tony Prince",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-online, starting with \"Nightclub management\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
       }
     ]
   },

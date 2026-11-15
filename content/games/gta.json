@@ -10,6 +10,17 @@
     "coverage": "limited",
     "items": [
       {
+        "id": "el-burro-gta1",
+        "name": "El Burro",
+        "role": "Boss (San Andreas)",
+        "affiliations": [
+          "San Andreas gangs"
+        ],
+        "summary": "A San Andreas mission boss in the original top-down game.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
         "id": "player-character",
         "name": "Player-named protagonist",
         "role": "Protagonist",
@@ -23,28 +34,6 @@
         "source": "Character select roster needs verification"
       },
       {
-        "id": "uncle-fu",
-        "name": "Uncle Fu",
-        "role": "Boss (Liberty City)",
-        "affiliations": [
-          "Liberty City gangs"
-        ],
-        "summary": "One of the city bosses who hands out missions in Liberty City.",
-        "status": "Alive",
-        "verified": false
-      },
-      {
-        "id": "el-burro-gta1",
-        "name": "El Burro",
-        "role": "Boss (San Andreas)",
-        "affiliations": [
-          "San Andreas gangs"
-        ],
-        "summary": "A San Andreas mission boss in the original top-down game.",
-        "status": "Alive",
-        "verified": false
-      },
-      {
         "id": "samuel-deever",
         "name": "Samuel Deever",
         "role": "Boss (Vice City)",
@@ -52,6 +41,17 @@
           "Vice City gangs"
         ],
         "summary": "Vice City mission contact in the original game.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
+        "id": "uncle-fu",
+        "name": "Uncle Fu",
+        "role": "Boss (Liberty City)",
+        "affiliations": [
+          "Liberty City gangs"
+        ],
+        "summary": "One of the city bosses who hands out missions in Liberty City.",
         "status": "Alive",
         "verified": false
       }

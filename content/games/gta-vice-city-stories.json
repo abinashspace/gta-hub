@@ -10,16 +10,68 @@
     "coverage": "partial",
     "items": [
       {
-        "id": "victor-vance",
-        "name": "Victor Vance",
-        "role": "Protagonist",
+        "id": "armando-mendez",
+        "name": "Armando Mendez",
+        "role": "Antagonist",
         "affiliations": [
-          "Vance Crime Family",
-          "Army (former)"
+          "Mendez Cartel"
         ],
-        "summary": "A discharged soldier who builds a drug empire in 1984 Vice City.",
+        "summary": "One of the Mendez brothers running the cartel's Vice City operation.",
         "status": "Deceased",
-        "first_appearance": "GTA: Vice City Stories",
+        "verified": true
+      },
+      {
+        "id": "bryan-forbes",
+        "name": "Bryan Forbes",
+        "role": "Antagonist",
+        "affiliations": [
+          "Mendez Cartel"
+        ],
+        "summary": "Cartel enforcer caught in a feud with Victor.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "diego-mendez",
+        "name": "Diego Mendez",
+        "role": "Antagonist",
+        "affiliations": [
+          "Mendez Cartel"
+        ],
+        "summary": "The other Mendez brother and cartel co-leader.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "gonzales",
+        "name": "Gonzales",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 2 missions in gta-vice-city-stories, starting with \"Home's on the Range\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "gonzalez",
+        "name": "Gonzalez",
+        "role": "Associate",
+        "affiliations": [
+          "Diaz Cartel"
+        ],
+        "summary": "Diaz's nervous middleman, already active in 1984.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "jerry-martinez",
+        "name": "Jerry Martinez",
+        "role": "Antagonist",
+        "affiliations": [
+          "Mendez Cartel",
+          "Army"
+        ],
+        "summary": "Corrupt sergeant who betrays Victor and becomes a cartel player.",
+        "status": "Deceased",
         "verified": true
       },
       {
@@ -45,6 +97,26 @@
         "verified": true
       },
       {
+        "id": "marty-jay-williams",
+        "name": "Marty Jay Williams",
+        "role": "Antagonist",
+        "affiliations": [
+          "Trailer Park gang"
+        ],
+        "summary": "Abusive gang leader running the trailer park racket.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "mendez-brothers",
+        "name": "Mendez Brothers",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 5 missions in gta-vice-city-stories, starting with \"The Mugshot Longshot\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
         "id": "phil-cassidy",
         "name": "Phil Cassidy",
         "role": "Ally, gun runner",
@@ -56,37 +128,14 @@
         "verified": true
       },
       {
-        "id": "jerry-martinez",
-        "name": "Jerry Martinez",
-        "role": "Antagonist",
+        "id": "reni-wassulmaier",
+        "name": "Reni Wassulmaier",
+        "role": "Ally, film director",
         "affiliations": [
-          "Mendez Cartel",
-          "Army"
+          "InterGlobal Films"
         ],
-        "summary": "Corrupt sergeant who betrays Victor and becomes a cartel player.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "armando-mendez",
-        "name": "Armando Mendez",
-        "role": "Antagonist",
-        "affiliations": [
-          "Mendez Cartel"
-        ],
-        "summary": "One of the Mendez brothers running the cartel's Vice City operation.",
-        "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "diego-mendez",
-        "name": "Diego Mendez",
-        "role": "Antagonist",
-        "affiliations": [
-          "Mendez Cartel"
-        ],
-        "summary": "The other Mendez brother and cartel co-leader.",
-        "status": "Deceased",
+        "summary": "Eccentric film director who gives Victor a set of missions.",
+        "status": "Alive",
         "verified": true
       },
       {
@@ -112,47 +161,16 @@
         "verified": true
       },
       {
-        "id": "reni-wassulmaier",
-        "name": "Reni Wassulmaier",
-        "role": "Ally, film director",
+        "id": "victor-vance",
+        "name": "Victor Vance",
+        "role": "Protagonist",
         "affiliations": [
-          "InterGlobal Films"
+          "Vance Crime Family",
+          "Army (former)"
         ],
-        "summary": "Eccentric film director who gives Victor a set of missions.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "bryan-forbes",
-        "name": "Bryan Forbes",
-        "role": "Antagonist",
-        "affiliations": [
-          "Mendez Cartel"
-        ],
-        "summary": "Cartel enforcer caught in a feud with Victor.",
+        "summary": "A discharged soldier who builds a drug empire in 1984 Vice City.",
         "status": "Deceased",
-        "verified": true
-      },
-      {
-        "id": "gonzalez",
-        "name": "Gonzalez",
-        "role": "Associate",
-        "affiliations": [
-          "Diaz Cartel"
-        ],
-        "summary": "Diaz's nervous middleman, already active in 1984.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "marty-jay-williams",
-        "name": "Marty Jay Williams",
-        "role": "Antagonist",
-        "affiliations": [
-          "Trailer Park gang"
-        ],
-        "summary": "Abusive gang leader running the trailer park racket.",
-        "status": "Deceased",
+        "first_appearance": "GTA: Vice City Stories",
         "verified": true
       }
     ]

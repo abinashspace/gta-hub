@@ -9,6 +9,17 @@
     "coverage": "limited",
     "items": [
       {
+        "id": "harold-cartwright",
+        "name": "Harold Cartwright",
+        "role": "Mission contact",
+        "affiliations": [
+          "London firms"
+        ],
+        "summary": "One of the London mission contacts in the expansion.",
+        "status": "Alive",
+        "verified": false
+      },
+      {
         "id": "player-character",
         "name": "Player-named protagonist",
         "role": "Protagonist",
@@ -19,17 +30,6 @@
         "status": "Varies",
         "first_appearance": "GTA: London 1969",
         "verified": true
-      },
-      {
-        "id": "harold-cartwright",
-        "name": "Harold Cartwright",
-        "role": "Mission contact",
-        "affiliations": [
-          "London firms"
-        ],
-        "summary": "One of the London mission contacts in the expansion.",
-        "status": "Alive",
-        "verified": false
       },
       {
         "id": "sister-anna",

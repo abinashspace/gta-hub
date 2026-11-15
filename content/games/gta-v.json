@@ -10,16 +10,56 @@
     "coverage": "partial",
     "items": [
       {
-        "id": "michael-de-santa",
-        "name": "Michael De Santa",
-        "role": "Protagonist",
+        "id": "amanda-de-santa",
+        "name": "Amanda De Santa",
+        "role": "Michael's wife",
         "affiliations": [
-          "De Santa family",
-          "FIB (asset)"
+          "De Santa family"
         ],
-        "summary": "A retired bank robber in witness protection whose midlife crisis drags him back into crime.",
+        "summary": "Michael's estranged wife, spending his money and testing the marriage.",
         "status": "Alive",
-        "first_appearance": "Grand Theft Auto V",
+        "verified": true
+      },
+      {
+        "id": "dave-norton",
+        "name": "Dave Norton",
+        "role": "FIB agent",
+        "affiliations": [
+          "FIB"
+        ],
+        "summary": "The agent who put Michael in witness protection and keeps pulling him back in.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "dave-norton-fib",
+        "name": "Dave Norton (FIB)",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 3 missions in gta-v, starting with \"Dead Man Walking\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "devin-weston",
+        "name": "Devin Weston",
+        "role": "Antagonist",
+        "affiliations": [
+          "Weston Holdings"
+        ],
+        "summary": "A billionaire who treats the crew as disposable contractors.",
+        "status": "Varies",
+        "verified": true
+      },
+      {
+        "id": "dr-friedlander",
+        "name": "Dr. Isiah Friedlander",
+        "role": "Michael's therapist",
+        "affiliations": [
+          "Private practice"
+        ],
+        "summary": "Michael's opportunistic psychiatrist, recordable as a collectible side objective.",
+        "status": "Alive",
         "verified": true
       },
       {
@@ -35,14 +75,13 @@
         "verified": true
       },
       {
-        "id": "trevor-philips",
-        "name": "Trevor Philips",
-        "role": "Protagonist",
+        "id": "jimmy-de-santa",
+        "name": "Jimmy De Santa",
+        "role": "Michael's son",
         "affiliations": [
-          "Trevor Philips Enterprises",
-          "The Lost MC (former)"
+          "De Santa family"
         ],
-        "summary": "A violent, unpredictable career criminal running arms and drugs out of Sandy Shores.",
+        "summary": "Michael's aimless son, obsessed with games and internet fame.",
         "status": "Alive",
         "verified": true
       },
@@ -69,94 +108,6 @@
         "verified": true
       },
       {
-        "id": "ron-jakowski",
-        "name": "Ron Jakowski",
-        "role": "Associate",
-        "affiliations": [
-          "Trevor Philips Enterprises"
-        ],
-        "summary": "Trevor's paranoid radio-operator and business partner.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "wade-hebert",
-        "name": "Wade Hebert",
-        "role": "Associate",
-        "affiliations": [
-          "Trevor Philips Enterprises"
-        ],
-        "summary": "Trevor's loyal but simple-minded friend.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "amanda-de-santa",
-        "name": "Amanda De Santa",
-        "role": "Michael's wife",
-        "affiliations": [
-          "De Santa family"
-        ],
-        "summary": "Michael's estranged wife, spending his money and testing the marriage.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "jimmy-de-santa",
-        "name": "Jimmy De Santa",
-        "role": "Michael's son",
-        "affiliations": [
-          "De Santa family"
-        ],
-        "summary": "Michael's aimless son, obsessed with games and internet fame.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "tracey-de-santa",
-        "name": "Tracey De Santa",
-        "role": "Michael's daughter",
-        "affiliations": [
-          "De Santa family"
-        ],
-        "summary": "Michael's daughter, chasing reality-TV fame.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "dave-norton",
-        "name": "Dave Norton",
-        "role": "FIB agent",
-        "affiliations": [
-          "FIB"
-        ],
-        "summary": "The agent who put Michael in witness protection and keeps pulling him back in.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "steve-haines",
-        "name": "Steve Haines",
-        "role": "Antagonist, FIB",
-        "affiliations": [
-          "FIB"
-        ],
-        "summary": "A publicity-hungry FIB agent who blackmails the crew into government jobs.",
-        "status": "Varies",
-        "verified": true
-      },
-      {
-        "id": "devin-weston",
-        "name": "Devin Weston",
-        "role": "Antagonist",
-        "affiliations": [
-          "Weston Holdings"
-        ],
-        "summary": "A billionaire who treats the crew as disposable contractors.",
-        "status": "Varies",
-        "verified": true
-      },
-      {
         "id": "martin-madrazo",
         "name": "Martin Madrazo",
         "role": "Associate, antagonist",
@@ -168,6 +119,39 @@
         "verified": true
       },
       {
+        "id": "michael-de-santa",
+        "name": "Michael De Santa",
+        "role": "Protagonist",
+        "affiliations": [
+          "De Santa family",
+          "FIB (asset)"
+        ],
+        "summary": "A retired bank robber in witness protection whose midlife crisis drags him back into crime.",
+        "status": "Alive",
+        "first_appearance": "Grand Theft Auto V",
+        "verified": true
+      },
+      {
+        "id": "molly-schultz",
+        "name": "Molly Schultz",
+        "role": "Weston's lawyer",
+        "affiliations": [
+          "Weston Holdings"
+        ],
+        "summary": "Devin Weston's lawyer and fixer.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "none-flashback",
+        "name": "None (flashback)",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 1 mission in gta-v, starting with \"Prologue\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
         "id": "patricia-madrazo",
         "name": "Patricia Madrazo",
         "role": "Ally",
@@ -175,6 +159,17 @@
           "Madrazo family"
         ],
         "summary": "Martin's wife, who leaves him for Trevor.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "ron-jakowski",
+        "name": "Ron Jakowski",
+        "role": "Associate",
+        "affiliations": [
+          "Trevor Philips Enterprises"
+        ],
+        "summary": "Trevor's paranoid radio-operator and business partner.",
         "status": "Alive",
         "verified": true
       },
@@ -190,26 +185,33 @@
         "verified": true
       },
       {
-        "id": "molly-schultz",
-        "name": "Molly Schultz",
-        "role": "Weston's lawyer",
+        "id": "solomon-richards",
+        "name": "Solomon Richards",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 3 missions in gta-v, starting with \"Mr. Richards\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "steve-haines",
+        "name": "Steve Haines",
+        "role": "Antagonist, FIB",
         "affiliations": [
-          "Weston Holdings"
+          "FIB"
         ],
-        "summary": "Devin Weston's lawyer and fixer.",
-        "status": "Deceased",
+        "summary": "A publicity-hungry FIB agent who blackmails the crew into government jobs.",
+        "status": "Varies",
         "verified": true
       },
       {
-        "id": "dr-friedlander",
-        "name": "Dr. Isiah Friedlander",
-        "role": "Michael's therapist",
-        "affiliations": [
-          "Private practice"
-        ],
-        "summary": "Michael's opportunistic psychiatrist, recordable as a collectible side objective.",
-        "status": "Alive",
-        "verified": true
+        "id": "steve-haines-fib",
+        "name": "Steve Haines (FIB)",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 10 missions in gta-v, starting with \"By the Book\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
       },
       {
         "id": "stretch",
@@ -220,6 +222,49 @@
         ],
         "summary": "Lamar's former associate who betrays the crew.",
         "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "tao-cheng",
+        "name": "Tao Cheng",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 2 missions in gta-v, starting with \"Trevor Philips Industries\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "tracey-de-santa",
+        "name": "Tracey De Santa",
+        "role": "Michael's daughter",
+        "affiliations": [
+          "De Santa family"
+        ],
+        "summary": "Michael's daughter, chasing reality-TV fame.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "trevor-philips",
+        "name": "Trevor Philips",
+        "role": "Protagonist",
+        "affiliations": [
+          "Trevor Philips Enterprises",
+          "The Lost MC (former)"
+        ],
+        "summary": "A violent, unpredictable career criminal running arms and drugs out of Sandy Shores.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "wade-hebert",
+        "name": "Wade Hebert",
+        "role": "Associate",
+        "affiliations": [
+          "Trevor Philips Enterprises"
+        ],
+        "summary": "Trevor's loyal but simple-minded friend.",
+        "status": "Alive",
         "verified": true
       }
     ]

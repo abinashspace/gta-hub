@@ -10,47 +10,35 @@
     "coverage": "partial",
     "items": [
       {
-        "id": "toni-cipriani",
-        "name": "Toni Cipriani",
-        "role": "Protagonist",
+        "id": "8-ball",
+        "name": "8-Ball",
+        "role": "Explosives expert",
         "affiliations": [
-          "Leone Crime Family"
+          "Liberty City underworld"
         ],
-        "summary": "Returns to Liberty City after killing a made man and works to earn back Salvatore's trust.",
-        "status": "Alive",
-        "first_appearance": "GTA: Liberty City Stories",
-        "verified": true
-      },
-      {
-        "id": "salvatore-leone",
-        "name": "Salvatore Leone",
-        "role": "Leone don",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "The don Toni serves, fighting off Sicilian and Forelli challenges to his rule.",
+        "summary": "Bomb-maker and fixer, already established before GTA III.",
         "status": "Alive",
         "verified": true
       },
       {
-        "id": "maria-latare",
-        "name": "Maria Latore",
-        "role": "Salvatore's girlfriend",
+        "id": "donald-love",
+        "name": "Donald Love",
+        "role": "Media mogul",
         "affiliations": [
-          "Leone Crime Family"
+          "Love Media"
         ],
-        "summary": "Salvatore's partner and a recurring source of chaos for Toni.",
+        "summary": "A young Donald Love building his media empire in 1998.",
         "status": "Alive",
         "verified": true
       },
       {
-        "id": "vincenzo-cilli",
-        "name": "Vincenzo Cilli",
-        "role": "Leone associate",
+        "id": "franco-forelli",
+        "name": "Franco Forelli",
+        "role": "Forelli boss",
         "affiliations": [
-          "Leone Crime Family"
+          "Forelli Crime Family"
         ],
-        "summary": "Toni's early employer and rival within the family.",
+        "summary": "Forelli leader attempting to take over Leone territory.",
         "status": "Deceased",
         "verified": true
       },
@@ -67,6 +55,17 @@
         "verified": true
       },
       {
+        "id": "joey-leone",
+        "name": "Joey Leone",
+        "role": "Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's son, running the Portland garage.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
         "id": "leon-mcaffrey",
         "name": "Leon McAffrey",
         "role": "Corrupt cop",
@@ -74,28 +73,6 @@
           "Liberty City Police Department"
         ],
         "summary": "A corrupt detective who hires Toni for off-the-books work.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "donald-love",
-        "name": "Donald Love",
-        "role": "Media mogul",
-        "affiliations": [
-          "Love Media"
-        ],
-        "summary": "A young Donald Love building his media empire in 1998.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "8-ball",
-        "name": "8-Ball",
-        "role": "Explosives expert",
-        "affiliations": [
-          "Liberty City underworld"
-        ],
-        "summary": "Bomb-maker and fixer, already established before GTA III.",
         "status": "Alive",
         "verified": true
       },
@@ -111,17 +88,6 @@
         "verified": true
       },
       {
-        "id": "joey-leone",
-        "name": "Joey Leone",
-        "role": "Leone capo",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "Salvatore's son, running the Portland garage.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
         "id": "ma-cipriani",
         "name": "Ma Cipriani",
         "role": "Toni's mother",
@@ -131,6 +97,46 @@
         "summary": "Toni's overbearing mother and a side-mission contact.",
         "status": "Alive",
         "verified": true
+      },
+      {
+        "id": "maria-latare",
+        "name": "Maria Latore",
+        "role": "Salvatore's girlfriend",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's partner and a recurring source of chaos for Toni.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "massimo-torini",
+        "name": "Massimo Torini",
+        "role": "Antagonist, Sicilian don",
+        "affiliations": [
+          "Sicilian Mafia"
+        ],
+        "summary": "Sicilian envoy manipulating the Liberty City families.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "mrs-cipriani",
+        "name": "Mrs. Cipriani",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 5 missions in gta-liberty-city-stories, starting with \"Snappy Dresser\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "ned-burner",
+        "name": "Ned Burner",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 4 missions in gta-liberty-city-stories, starting with \"L.C. Confidential\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
       },
       {
         "id": "paulie-sindacco",
@@ -144,24 +150,45 @@
         "verified": true
       },
       {
-        "id": "franco-forelli",
-        "name": "Franco Forelli",
-        "role": "Forelli boss",
+        "id": "salvatore-leone",
+        "name": "Salvatore Leone",
+        "role": "Leone don",
         "affiliations": [
-          "Forelli Crime Family"
+          "Leone Crime Family"
         ],
-        "summary": "Forelli leader attempting to take over Leone territory.",
-        "status": "Deceased",
+        "summary": "The don Toni serves, fighting off Sicilian and Forelli challenges to his rule.",
+        "status": "Alive",
         "verified": true
       },
       {
-        "id": "massimo-torini",
-        "name": "Massimo Torini",
-        "role": "Antagonist, Sicilian don",
+        "id": "toni-cipriani",
+        "name": "Toni Cipriani",
+        "role": "Protagonist",
         "affiliations": [
-          "Sicilian Mafia"
+          "Leone Crime Family"
         ],
-        "summary": "Sicilian envoy manipulating the Liberty City families.",
+        "summary": "Returns to Liberty City after killing a made man and works to earn back Salvatore's trust.",
+        "status": "Alive",
+        "first_appearance": "GTA: Liberty City Stories",
+        "verified": true
+      },
+      {
+        "id": "toshiko-kasen",
+        "name": "Toshiko Kasen",
+        "role": "Mission giver",
+        "affiliations": [],
+        "summary": "Gives 4 missions in gta-liberty-city-stories, starting with \"More Deadly Than the Male\". Added from the mission table; affiliations are not tabulated here.",
+        "verified": true,
+        "source": "Derived from the mission list in this dataset (giver field)"
+      },
+      {
+        "id": "vincenzo-cilli",
+        "name": "Vincenzo Cilli",
+        "role": "Leone associate",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Toni's early employer and rival within the family.",
         "status": "Deceased",
         "verified": true
       }

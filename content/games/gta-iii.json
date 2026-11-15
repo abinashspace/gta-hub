@@ -10,20 +10,6 @@
     "coverage": "partial",
     "items": [
       {
-        "id": "claude",
-        "name": "Claude",
-        "role": "Protagonist",
-        "affiliations": [
-          "Independent",
-          "Leone Crime Family (associate)",
-          "Yakuza (associate)"
-        ],
-        "summary": "A silent career criminal shot and left for dead by Catalina, who works his way up through Liberty City's underworld to settle the score.",
-        "status": "Alive",
-        "first_appearance": "Grand Theft Auto III",
-        "verified": true
-      },
-      {
         "id": "8-ball",
         "name": "8-Ball",
         "role": "Explosives expert, first ally",
@@ -34,61 +20,6 @@
         "summary": "Frees Claude from the police convoy at the start of the game and runs a bomb shop in Portland.",
         "status": "Alive",
         "first_appearance": "Grand Theft Auto III",
-        "verified": true
-      },
-      {
-        "id": "luigi-goterelli",
-        "name": "Luigi Goterelli",
-        "role": "Strip club owner, Leone capo",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "Runs Luigi's Sex Club 7 and gives Claude his first paying work in Portland.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "joey-leone",
-        "name": "Joey Leone",
-        "role": "Garage owner, Leone capo",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "Salvatore's son, based at a Portland garage; assigns car-theft and disposal jobs.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "toni-cipriani",
-        "name": "Toni Cipriani",
-        "role": "Leone capo",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "Salvatore's trusted enforcer in Portland. Later the protagonist of Liberty City Stories.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "salvatore-leone",
-        "name": "Salvatore Leone",
-        "role": "Don of the Leone family",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "Aging head of the Leone family who takes Claude on before suspecting him of betrayal.",
-        "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "maria-latare",
-        "name": "Maria Latore",
-        "role": "Salvatore's girlfriend",
-        "affiliations": [
-          "Leone Crime Family"
-        ],
-        "summary": "Salvatore's unpredictable partner, who attaches herself to Claude after leaving the don.",
-        "status": "Alive",
         "verified": true
       },
       {
@@ -103,25 +34,38 @@
         "verified": true
       },
       {
-        "id": "kenji-kasen",
-        "name": "Kenji Kasen",
-        "role": "Yakuza co-leader",
+        "id": "catalina",
+        "name": "Catalina",
+        "role": "Antagonist, Colombian Cartel",
         "affiliations": [
-          "Yakuza"
+          "Colombian Cartel"
         ],
-        "summary": "Asuka's brother, based at a Staunton casino; assigns jobs against the Triads and Cartel.",
+        "summary": "Claude's ex-girlfriend who shoots him at the start and later leads the Cartel.",
         "status": "Deceased",
         "verified": true
       },
       {
-        "id": "ray-machowski",
-        "name": "Ray Machowski",
-        "role": "Corrupt LCPD detective",
+        "id": "claude",
+        "name": "Claude",
+        "role": "Protagonist",
         "affiliations": [
-          "Liberty City Police Department",
-          "Yakuza"
+          "Independent",
+          "Leone Crime Family (associate)",
+          "Yakuza (associate)"
         ],
-        "summary": "A dirty cop selling protection and information, eventually forced to flee the city.",
+        "summary": "A silent career criminal shot and left for dead by Catalina, who works his way up through Liberty City's underworld to settle the score.",
+        "status": "Alive",
+        "first_appearance": "Grand Theft Auto III",
+        "verified": true
+      },
+      {
+        "id": "d-ice",
+        "name": "D-Ice",
+        "role": "Red Jacks leader",
+        "affiliations": [
+          "Red Jacks"
+        ],
+        "summary": "Wichita Gardens gang leader whose phone missions target the Purple Nines.",
         "status": "Alive",
         "verified": true
       },
@@ -137,13 +81,79 @@
         "verified": true
       },
       {
-        "id": "catalina",
-        "name": "Catalina",
-        "role": "Antagonist, Colombian Cartel",
+        "id": "el-burro",
+        "name": "El Burro",
+        "role": "Diablos leader",
         "affiliations": [
-          "Colombian Cartel"
+          "Diablos"
         ],
-        "summary": "Claude's ex-girlfriend who shoots him at the start and later leads the Cartel.",
+        "summary": "Puerto Rican gang leader in Hepburn Heights who pays in vehicles and cash for chaos.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "joey-leone",
+        "name": "Joey Leone",
+        "role": "Garage owner, Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's son, based at a Portland garage; assigns car-theft and disposal jobs.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "kenji-kasen",
+        "name": "Kenji Kasen",
+        "role": "Yakuza co-leader",
+        "affiliations": [
+          "Yakuza"
+        ],
+        "summary": "Asuka's brother, based at a Staunton casino; assigns jobs against the Triads and Cartel.",
+        "status": "Deceased",
+        "verified": true
+      },
+      {
+        "id": "king-courtney",
+        "name": "King Courtney",
+        "role": "Yardies leader",
+        "affiliations": [
+          "Yardies"
+        ],
+        "summary": "Jamaican gang boss in Staunton who sets Claude up during a later job.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "luigi-goterelli",
+        "name": "Luigi Goterelli",
+        "role": "Strip club owner, Leone capo",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Runs Luigi's Sex Club 7 and gives Claude his first paying work in Portland.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "maria-latare",
+        "name": "Maria Latore",
+        "role": "Salvatore's girlfriend",
+        "affiliations": [
+          "Leone Crime Family"
+        ],
+        "summary": "Salvatore's unpredictable partner, who attaches herself to Claude after leaving the don.",
+        "status": "Alive",
+        "verified": true
+      },
+      {
+        "id": "marty-chonks",
+        "name": "Marty Chonks",
+        "role": "Cannibal business owner",
+        "affiliations": [
+          "Bitch'n' Dog Food"
+        ],
+        "summary": "Runs a dog food factory and asks Claude to dispose of people who threaten him.",
         "status": "Deceased",
         "verified": true
       },
@@ -170,47 +180,37 @@
         "verified": true
       },
       {
-        "id": "el-burro",
-        "name": "El Burro",
-        "role": "Diablos leader",
+        "id": "ray-machowski",
+        "name": "Ray Machowski",
+        "role": "Corrupt LCPD detective",
         "affiliations": [
-          "Diablos"
+          "Liberty City Police Department",
+          "Yakuza"
         ],
-        "summary": "Puerto Rican gang leader in Hepburn Heights who pays in vehicles and cash for chaos.",
+        "summary": "A dirty cop selling protection and information, eventually forced to flee the city.",
         "status": "Alive",
         "verified": true
       },
       {
-        "id": "king-courtney",
-        "name": "King Courtney",
-        "role": "Yardies leader",
+        "id": "salvatore-leone",
+        "name": "Salvatore Leone",
+        "role": "Don of the Leone family",
         "affiliations": [
-          "Yardies"
+          "Leone Crime Family"
         ],
-        "summary": "Jamaican gang boss in Staunton who sets Claude up during a later job.",
+        "summary": "Aging head of the Leone family who takes Claude on before suspecting him of betrayal.",
         "status": "Alive",
         "verified": true
       },
       {
-        "id": "d-ice",
-        "name": "D-Ice",
-        "role": "Red Jacks leader",
+        "id": "toni-cipriani",
+        "name": "Toni Cipriani",
+        "role": "Leone capo",
         "affiliations": [
-          "Red Jacks"
+          "Leone Crime Family"
         ],
-        "summary": "Wichita Gardens gang leader whose phone missions target the Purple Nines.",
+        "summary": "Salvatore's trusted enforcer in Portland. Later the protagonist of Liberty City Stories.",
         "status": "Alive",
-        "verified": true
-      },
-      {
-        "id": "marty-chonks",
-        "name": "Marty Chonks",
-        "role": "Cannibal business owner",
-        "affiliations": [
-          "Bitch'n' Dog Food"
-        ],
-        "summary": "Runs a dog food factory and asks Claude to dispose of people who threaten him.",
-        "status": "Deceased",
         "verified": true
       },
       {
