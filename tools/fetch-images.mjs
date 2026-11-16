@@ -2,13 +2,14 @@
 /**
  * Fetch official in-game images from GTA Wiki into the local image slots.
  *
- *   node tools/fetch-images.mjs [--kinds=portrait,vehicle,weapon,cover,banner]
+ *   node tools/fetch-images.mjs [--kinds=portrait,vehicle,weapon,mission,cover,banner]
  *                               [--limit=N] [--max-mb=150] [--force] [--dry]
  *
  * Sources (per game, from gta.wiki):
  *   vehicles   Vehicles_in_<Game>/images  (gallery captions -> screenshots of that game)
  *   weapons    Weapons_in_<Game>/images
- *   portraits  Characters_in_<Game>        (character list rows -> portraits)
+ *   missions   Missions_in_<Game>         (mission table rows -> in-game screenshots)
+ *   portraits  page image of each character's own wiki page (batched API)
  *   cover      page image of the game's wiki page
  *   banner     page image of the game's wiki page (larger)
  *
@@ -31,9 +32,9 @@ const DRY = has('dry');
 const FORCE = has('force');
 const LIMIT = Number(flag('limit') || 0);
 const MAX_MB = Number(flag('max-mb') || 150);
-const KINDS = new Set((flag('kinds') || 'portrait,vehicle,weapon,cover,banner').split(',').map((s) => s.trim()).filter(Boolean));
+const KINDS = new Set((flag('kinds') || 'portrait,vehicle,weapon,mission,cover,banner').split(',').map((s) => s.trim()).filter(Boolean));
 
-const WIDTH = { vehicle: 400, weapon: 320, portrait: 480, cover: 600, banner: 1200, location: 480, collectible: 256 };
+const WIDTH = { vehicle: 400, weapon: 320, portrait: 480, mission: 480, cover: 600, banner: 1200, location: 480, collectible: 256 };
 
 const VEHICLE_PAGE = {
   'gta-iii': 'GTA_III',
@@ -51,7 +52,8 @@ const VEHICLE_PAGE = {
   'gta-vi': 'GTA_VI',
 };
 
-const CHARACTER_PAGE = {
+// Wiki page suffix per game, used for mission, vehicle and weapon gallery pages.
+const WIKI_GAME = {
   gta: 'GTA_1',
   'gta-london-1969': 'GTA_London_1969',
   'gta-london-1961': 'GTA_London_1961',
@@ -101,8 +103,17 @@ for (const g of games) {
   bundles.set(g.slug, JSON.parse(await readFile(path.join(ROOT, `content/games/${g.slug}.json`), 'utf8')));
 }
 
-const key = (s) =>
+const decodeEntities = (s) =>
   String(s)
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#0?39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&#91;/g, '[')
+    .replace(/&#93;/g, ']');
+
+const key = (s) =>
+  decodeEntities(s)
     .toLowerCase()
     .replace(/\([^)]*\)/g, '')
     .replace(/[^a-z0-9]+/g, '');
@@ -174,6 +185,42 @@ function titleVariants(name) {
 }
 
 const NOT_A_PERSON = /^(player-named protagonist|none\b|online protagonist|free mode|ceo office|.*\bleader$|.*\bcontact$)/i;
+
+function rowImages(html, names) {
+  const body = html.slice(html.indexOf('<div id="mw-content-text"'));
+  const map = new Map();
+  for (const row of body.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+    // ignore icons and blips: mission screenshots are at least ~150px wide
+    const img = [...row[1].matchAll(/<img[^>]*src="([^"]+)"/g)]
+      .map((m) => m[1])
+      .find((src) => {
+        const w = Number((src.match(/\/(\d+)px-/) || [])[1] || 0);
+        return w >= 120;
+      });
+    if (!img) continue;
+    for (const a of row[1].matchAll(/<a[^>]*href="\/w\/([^"#?]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+      if (a[1].startsWith('File:')) continue;
+      const label = a[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      const k = key(label);
+      if (names.has(k) && !map.has(k)) map.set(k, img);
+    }
+  }
+  return map;
+}
+
+async function missionMap(slug) {
+  const suffix = WIKI_GAME[slug];
+  if (!suffix) return new Map();
+  // GTA Online's section holds job-type summaries rather than a mission list.
+  if (slug === 'gta-online' || slug === 'gta-vi') return new Map();
+  // The Advance mission table lists blips only, no screenshots.
+  if (slug === 'gta-advance') return new Map();
+  const items = bundles.get(slug)?.missions?.items ?? [];
+  if (!items.length) return new Map();
+  const names = new Set(items.map((m) => key(m.name)));
+  const html = await fetchText(`https://gta.wiki/w/Missions_in_${suffix}`);
+  return html ? rowImages(html, names) : new Map();
+}
 
 function pageImage(json) {
   const pages = Object.values(json?.query?.pages ?? {});
@@ -276,6 +323,7 @@ async function gameImageMap(slug, kind) {
     return map;
   }
   if (kind === 'portrait') return portraitMap(slug);
+  if (kind === 'mission') return missionMap(slug);
   return new Map();
 }
 
@@ -297,7 +345,16 @@ const realSlots = [];
 
 function recordName(slug, kind, id) {
   const b = bundles.get(slug);
-  const section = kind === 'portrait' ? b?.characters : kind === 'vehicle' ? b?.vehicles : kind === 'weapon' ? b?.weapons : null;
+  const section =
+    kind === 'portrait'
+      ? b?.characters
+      : kind === 'vehicle'
+        ? b?.vehicles
+        : kind === 'weapon'
+          ? b?.weapons
+          : kind === 'mission'
+            ? b?.missions
+            : null;
   return section?.items?.find((r) => r.id === id)?.name ?? null;
 }
 
@@ -416,7 +473,7 @@ included here for a personal, non-commercial reference site and are not licensed
 - Anything not matched stays a generated placeholder and is listed as such in
   \`docs/data/images.json\`.
 
-Last fetch: ${new Date().toISOString()} — ${realSlots.length} files.
+Last fetch: ${new Date().toISOString()} — ${realSlots.length} files written this run.
 `;
   await writeFile(path.join(ROOT, 'assets/img/CREDITS.md'), credits);
 }
