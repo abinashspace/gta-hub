@@ -327,6 +327,39 @@ const FALLBACK_TO = {
   'gta-the-ballad-of-gay-tony': 'gta-iv',
 };
 
+/* --------------------------------------------------- Grand Theft Wiki (2D era) */
+/*
+ * gta.wiki has no vehicle galleries for the top-down games, but Grand Theft Wiki
+ * keeps one image per vehicle for them. Its thumbnails cap at 128px, which is
+ * fine for 56–64px sprites.
+ */
+const GTW_VEHICLE_PAGE = {
+  gta: 'Vehicles_in_GTA_1',
+  'gta-london-1969': 'Vehicles_in_GTA_London_1969',
+  'gta-london-1961': 'Vehicles_in_GTA_London_1961',
+  'gta-2': 'Vehicles_in_GTA_2',
+  'gta-advance': 'Vehicles_in_GTA_Advance',
+};
+
+async function gtwVehicleMap(slug) {
+  const page = GTW_VEHICLE_PAGE[slug];
+  if (!page) return new Map();
+  const res = await fetch(`https://www.grandtheftwiki.com/${page}`, {
+    headers: { 'user-agent': 'gta-hub static build (personal fan site)' },
+  });
+  if (!res.ok) return new Map();
+  const html = await res.text();
+  const map = new Map();
+  for (const row of html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+    const name = row[1].match(/<a[^>]*title="([^"]+)"[^>]*>([^<]*)<\/a>/);
+    const img = row[1].match(/<img[^>]*src="(https:\/\/gtwfilesie-thumb[^"]+)"/);
+    if (!name || !img) continue;
+    const k = key(name[2] || name[1]);
+    if (k && !map.has(k)) map.set(k, img[1]);
+  }
+  return map;
+}
+
 async function gameImageMap(slug, kind) {
   if (kind === 'vehicle' || kind === 'weapon') {
     const map = await galleryFor(slug, kind);
@@ -334,6 +367,10 @@ async function gameImageMap(slug, kind) {
     if (fallback) {
       const base = await galleryFor(fallback, kind);
       for (const [k, v] of base) if (!map.has(k)) map.set(k, v);
+    }
+    if (kind === 'vehicle') {
+      const gtw = await gtwVehicleMap(slug);
+      for (const [k, v] of gtw) if (!map.has(k)) map.set(k, v);
     }
     return map;
   }
@@ -466,7 +503,8 @@ for (const game of games) {
       if (!url) continue;
       matched += 1;
       planned += 1;
-      work.push(() => download(slot, url, WIDTH[kind]));
+      const width = /gtwfilesie/.test(url) ? 128 : WIDTH[kind];
+      work.push(() => download(slot, url, width));
     }
     console.log(`${game.slug.padEnd(30)} ${kind.padEnd(9)} ${String(matched).padStart(4)}/${String(slots.length).padStart(4)} matched`);
   }

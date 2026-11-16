@@ -5,7 +5,7 @@ seven sections each, every record available as HTML **and** portable JSON. No se
 no build service, no external requests — GitHub Pages serves the whole thing for free.
 
 ```
-17 games · 7 sections · 1,205 pages · 3,807 image slots (2,598 real) · 0 runtime dependencies
+17 games · 7 sections · 1,205 pages · 3,807 image slots (2,791 real) · 0 runtime dependencies
 ```
 
 ## What's here
@@ -104,7 +104,7 @@ docs/                      BUILD OUTPUT — the GitHub Pages root
 
 ## Images
 
-**2,598 of 3,807 image slots are real in-game art.** Character portraits, mission screenshots,
+**2,791 of 3,807 image slots are real in-game art.** Character portraits, mission screenshots,
 location photos, collectible icons, vehicle and weapon renders and box art are fetched from
 [GTA Wiki](https://gta.wiki) by `tools/fetch-images.mjs` and stored under
 `assets/img/<kind>/<game>/<record-id>.<ext>`. That artwork belongs to Rockstar Games /
@@ -114,6 +114,10 @@ Take-Two Interactive and is used here for a personal, non-commercial reference s
 Every unfilled slot resolves to a generated SVG placeholder at the exact target size, so the
 layout never breaks. `docs/data/images.json` lists every slot with its `kind`, dimensions and
 `status` (`real` or `placeholder`) — that file is the worklist.
+
+Two sources are used: **GTA Wiki** (`gta.wiki`, the live home of the GTA Fandom community) for
+everything from the 3D era onward, and **Grand Theft Wiki** (`grandtheftwiki.com`) for the
+top-down 2D-era vehicle sprites that gta.wiki does not illustrate.
 
 ```bash
 node tools/fetch-images.mjs                    # all supported kinds
@@ -131,7 +135,7 @@ assets/img/mission/gta-v/the-third-way.webp
 assets/img/vehicle/gta-san-andreas/infernus.png
 ```
 
-Current state by kind: cover 17/17, banner 17/17, mission 626/840, vehicle 1,298/1,560,
+Current state by kind: cover 17/17, banner 17/17, mission 626/840, vehicle 1,491/1,560,
 weapon 313/490, portrait 189/221, location 105/144, collectible 33/49. Maps and cheat icons
 are still generated placeholders — the wiki has no per-record art for those slots.
 
