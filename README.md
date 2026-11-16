@@ -5,7 +5,7 @@ seven sections each, every record available as HTML **and** portable JSON. No se
 no build service, no external requests — GitHub Pages serves the whole thing for free.
 
 ```
-17 games · 7 sections · 1,205 pages · 3,807 image slots (2,794 real) · 0 runtime dependencies
+17 games · 7 sections · 1,205 pages · 3,751 image slots (2,794 real) · 0 runtime dependencies
 ```
 
 ## What's here
@@ -104,7 +104,7 @@ docs/                      BUILD OUTPUT — the GitHub Pages root
 
 ## Images
 
-**2,794 of 3,807 image slots are real in-game art.** Character portraits, mission screenshots,
+**2,794 of 3,751 image slots are real in-game art.** Character portraits, mission screenshots,
 location photos, collectible icons, vehicle and weapon renders and box art are fetched from
 [GTA Wiki](https://gta.wiki) by `tools/fetch-images.mjs` and stored under
 `assets/img/<kind>/<game>/<record-id>.<ext>`. That artwork belongs to Rockstar Games /
@@ -135,8 +135,11 @@ assets/img/mission/gta-v/the-third-way.webp
 assets/img/vehicle/gta-san-andreas/infernus.png
 ```
 
+`node tools/gaps.mjs` writes `GAPS.md` and `GAPS.csv`: every slot that is still a
+placeholder, with its target size and the exact path to save the image at.
+
 Current state by kind: cover 17/17, banner 17/17, map 3/17, mission 626/840,
-vehicle 1,491/1,560, weapon 313/490, portrait 189/221, location 105/144,
+vehicle 1,491/1,560, weapon 313/434, portrait 189/221, location 105/144,
 collectible 33/49. The three real maps are the GTA III, Vice City and San Andreas
 poster maps from Grand Theft Wiki. Cheat icons and the other 14 maps remain generated
 placeholders — no per-record art exists for those slots.

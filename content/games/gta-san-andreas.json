@@ -3078,20 +3078,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "against-all-odds",
-        "name": "Against All Odds",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "air-raid",
-        "name": "Air Raid",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "ak-47",
         "name": "AK-47",
         "type": "Assault rifle",
@@ -3109,30 +3095,9 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "architectural-espionage",
-        "name": "Architectural Espionage",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "are-you-going-to-san-fierro",
-        "name": "Are You Going to San Fierro?",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "assault",
         "name": "Assault",
         "type": "Weapon",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "badlands",
-        "name": "Badlands",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3161,30 +3126,9 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "black-project",
-        "name": "Black Project",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "brass-knuckles",
         "name": "Brass Knuckles",
         "type": "Unarmed",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "breaking-the-bank-at-caligulas",
-        "name": "Breaking the Bank at Caligula's",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "burning-desire",
-        "name": "Burning Desire",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3213,13 +3157,6 @@
         "unlock": "Ammu-Nation"
       },
       {
-        "id": "cleaning-the-hood",
-        "name": "Cleaning the Hood",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "combat-shotgun",
         "name": "Combat Shotgun",
         "type": "Shotguns",
@@ -3228,13 +3165,6 @@
         "damage_tier": "Very high",
         "ammo": "7 shells",
         "unlock": "Ammu-Nation"
-      },
-      {
-        "id": "dam-and-blast",
-        "name": "Dam and Blast",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "desert-eagle",
@@ -3264,13 +3194,6 @@
         "id": "dildo-short",
         "name": "Dildo (short)",
         "type": "Gifts",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "end-of-the-line",
-        "name": "End of the Line",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3309,23 +3232,9 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "freefall",
-        "name": "Freefall",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "golf-club",
         "name": "Golf Club",
         "type": "Melee Weapons",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "green-goo",
-        "name": "Green Goo",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3371,27 +3280,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "ice-cold-killa",
-        "name": "Ice Cold Killa",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "interdiction",
-        "name": "Interdiction",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "just-business",
-        "name": "Just Business",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "katana",
         "name": "Katana",
         "type": "Melee Weapons",
@@ -3417,13 +3305,6 @@
         "damage_tier": "Very high",
         "ammo": "30 rounds",
         "unlock": "Ammu-Nation"
-      },
-      {
-        "id": "madd-doggs-rhymes",
-        "name": "Madd Dogg's Rhymes",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "melee",
@@ -3501,37 +3382,9 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "nines-and-aks",
-        "name": "Nines and AK's",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "outrider",
-        "name": "Outrider",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "parachute",
         "name": "Parachute",
         "type": "Special",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "photo-opportunity",
-        "name": "Photo Opportunity",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "pier-69",
-        "name": "Pier 69",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3549,13 +3402,6 @@
         "id": "pool-cue",
         "name": "Pool Cue",
         "type": "Melee Weapons",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "reuniting-the-families",
-        "name": "Reuniting the Families",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3642,23 +3488,9 @@
         "verified": true
       },
       {
-        "id": "small-town-bank",
-        "name": "Small Town Bank",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "smg",
         "name": "SMG",
         "type": "Submachine Guns",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "snail-trail",
-        "name": "Snail Trail",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -3687,20 +3519,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "stowaway",
-        "name": "Stowaway",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "tagging-up-turf",
-        "name": "Tagging Up Turf",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "tear-gas",
         "name": "Tear Gas",
         "type": "Thrown",
@@ -3715,37 +3533,9 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "the-da-nang-thang",
-        "name": "The Da Nang Thang",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "the-green-sabre",
-        "name": "The Green Sabre",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "thermal-vision",
         "name": "Thermal Vision",
         "type": "Special",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "torenos-last-flight",
-        "name": "Toreno's Last Flight",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "vertical-bird",
-        "name": "Vertical Bird",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },

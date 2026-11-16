@@ -2064,27 +2064,6 @@
     "coverage": "complete",
     "items": [
       {
-        "id": "all-hands-on-deck",
-        "name": "All Hands On Deck!",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "autocide",
-        "name": "Autocide",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "back-alley-brawl",
-        "name": "Back Alley Brawl",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "baseball-bat",
         "name": "Baseball Bat",
         "type": "Melee Weapons",
@@ -2112,13 +2091,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "cannon-fodder",
-        "name": "Cannon Fodder",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "chainsaw",
         "name": "Chainsaw",
         "type": "Melee Weapons",
@@ -2127,13 +2099,6 @@
         "damage_tier": "Very high",
         "ammo": "—",
         "unlock": "Treacherous Swine / pickups"
-      },
-      {
-        "id": "check-out-at-the-check-in",
-        "name": "Check Out at the Check In",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "colt-45-pistol",
@@ -2153,13 +2118,6 @@
         "id": "detonator",
         "name": "Detonator",
         "type": "Special",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "dirty-lickins",
-        "name": "Dirty Lickin's",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -2205,20 +2163,6 @@
         "verified": true
       },
       {
-        "id": "guardian-angels",
-        "name": "Guardian Angels",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "gun-runner",
-        "name": "Gun Runner",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "hammer",
         "name": "Hammer",
         "type": "Melee Weapons",
@@ -2241,13 +2185,6 @@
         "damage_tier": "High",
         "ammo": "—",
         "unlock": "Street pickups"
-      },
-      {
-        "id": "keep-your-friends-close",
-        "name": "Keep Your Friends Close...",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "knife",
@@ -2277,13 +2214,6 @@
         "id": "machete",
         "name": "Machete",
         "type": "Melee Weapons",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "marthas-mug-shot",
-        "name": "Martha's Mug Shot",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -2346,13 +2276,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "phnom-penh-86",
-        "name": "Phnom Penh '86",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "pistol",
         "name": "Pistol",
         "type": "Handgun",
@@ -2395,13 +2318,6 @@
         "damage_tier": "Lethal",
         "ammo": "5 rockets",
         "unlock": "Phil Cassidy / pickups"
-      },
-      {
-        "id": "rub-out",
-        "name": "Rub Out",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "ruger",
@@ -2472,13 +2388,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "supply-and-demand",
-        "name": "Supply & Demand",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "tear-gas",
         "name": "Tear Gas",
         "type": "Thrown Weapons",
@@ -2497,27 +2406,6 @@
         "damage_tier": "Medium",
         "ammo": "30 rounds",
         "unlock": "Street pickups"
-      },
-      {
-        "id": "the-job",
-        "name": "The Job",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "the-shootist",
-        "name": "The Shootist",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "treacherous-swine",
-        "name": "Treacherous Swine",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
         "id": "uzi",

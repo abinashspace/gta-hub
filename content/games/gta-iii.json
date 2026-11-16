@@ -1798,13 +1798,6 @@
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
       {
-        "id": "arms-shortage",
-        "name": "Arms Shortage",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "baseball-bat",
         "name": "Baseball Bat",
         "type": "Melee",
@@ -1815,23 +1808,9 @@
         "unlock": "Street pickups"
       },
       {
-        "id": "bomb-da-base-act-ii",
-        "name": "Bomb Da Base: Act II",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "detonator",
         "name": "Detonator",
         "type": "Special",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "dont-spank-ma-bitch-up",
-        "name": "Don't Spank Ma Bitch Up",
-        "type": "Additional Information",
         "verified": true,
         "source": "GTA Wiki weapon list (names and weapon class)"
       },
@@ -1883,13 +1862,6 @@
         "unlock": "Hidden packages reward"
       },
       {
-        "id": "marked-man",
-        "name": "Marked Man",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "molotov-cocktail",
         "name": "Molotov Cocktail",
         "type": "Thrown",
@@ -1917,13 +1889,6 @@
         "unlock": "Default sidearm; Ammu-Nation"
       },
       {
-        "id": "pump-action-pimp",
-        "name": "Pump-Action Pimp",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "rocket-launcher",
         "name": "Rocket Launcher",
         "type": "Heavy",
@@ -1944,13 +1909,6 @@
         "unlock": "Ammu-Nation"
       },
       {
-        "id": "silence-the-sneak",
-        "name": "Silence the Sneak",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "sniper-rifle",
         "name": "Sniper Rifle",
         "type": "Large Firearms",
@@ -1961,20 +1919,6 @@
         "unlock": "Ammu-Nation"
       },
       {
-        "id": "taking-out-the-laundry",
-        "name": "Taking Out the Laundry",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "trial-by-fire",
-        "name": "Trial By Fire",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
         "id": "uzi",
         "name": "Uzi",
         "type": "Small Firearms",
@@ -1983,20 +1927,6 @@
         "damage_tier": "Medium",
         "ammo": "25 rounds",
         "unlock": "Ammu-Nation / 8-Ball"
-      },
-      {
-        "id": "uzi-money",
-        "name": "Uzi Money",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
-      },
-      {
-        "id": "uzi-rider",
-        "name": "Uzi Rider",
-        "type": "Additional Information",
-        "verified": true,
-        "source": "GTA Wiki weapon list (names and weapon class)"
       }
     ]
   },
