@@ -32,9 +32,9 @@ const DRY = has('dry');
 const FORCE = has('force');
 const LIMIT = Number(flag('limit') || 0);
 const MAX_MB = Number(flag('max-mb') || 150);
-const KINDS = new Set((flag('kinds') || 'portrait,vehicle,weapon,mission,location,collectible,cover,banner').split(',').map((s) => s.trim()).filter(Boolean));
+const KINDS = new Set((flag('kinds') || 'portrait,vehicle,weapon,mission,location,collectible,map,cover,banner').split(',').map((s) => s.trim()).filter(Boolean));
 
-const WIDTH = { vehicle: 400, weapon: 320, portrait: 480, mission: 480, cover: 600, banner: 1200, location: 480, collectible: 256 };
+const WIDTH = { vehicle: 400, weapon: 320, portrait: 480, mission: 480, cover: 600, banner: 1200, location: 480, collectible: 256, map: 2048 };
 
 const VEHICLE_PAGE = {
   'gta-iii': 'GTA_III',
@@ -341,6 +341,16 @@ const GTW_VEHICLE_PAGE = {
   'gta-advance': 'Vehicles_in_GTA_Advance',
 };
 
+/*
+ * Full-size era maps. Grand Theft Wiki only has the three 3D-era maps, but they
+ * are the real in-game ones, which beats a generated placeholder.
+ */
+const GTW_MAP = {
+  'gta-iii': 'Map-GTAIII.jpg',
+  'gta-vice-city': 'Map-GTAVC.jpg',
+  'gta-san-andreas': 'Map-GTASA.jpg',
+};
+
 async function gtwVehicleMap(slug) {
   const page = GTW_VEHICLE_PAGE[slug];
   if (!page) return new Map();
@@ -361,6 +371,10 @@ async function gtwVehicleMap(slug) {
 }
 
 async function gameImageMap(slug, kind) {
+  if (kind === 'map') {
+    const file = GTW_MAP[slug];
+    return file ? new Map([['map', `https://gtwfilesie.grandtheftwiki.com/${file}`]]) : new Map();
+  }
   if (kind === 'vehicle' || kind === 'weapon') {
     const map = await galleryFor(slug, kind);
     const fallback = FALLBACK_TO[slug];
@@ -499,7 +513,9 @@ for (const game of games) {
       const url =
         kind === 'portrait' || kind === 'location' || kind === 'collectible'
           ? map.get(slot.record ?? slot.id)
-          : map.get(key(recordName(game.slug, kind, slot.record ?? slot.id) ?? ''));
+          : kind === 'map'
+            ? map.get('map')
+            : map.get(key(recordName(game.slug, kind, slot.record ?? slot.id) ?? ''));
       if (!url) continue;
       matched += 1;
       planned += 1;
