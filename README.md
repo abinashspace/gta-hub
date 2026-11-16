@@ -5,7 +5,7 @@ seven sections each, every record available as HTML **and** portable JSON. No se
 no build service, no external requests — GitHub Pages serves the whole thing for free.
 
 ```
-17 games · 7 sections · 1,205 pages · 3,807 tracked image slots · 0 runtime dependencies
+17 games · 7 sections · 1,205 pages · 3,807 image slots (1,834 real) · 0 runtime dependencies
 ```
 
 ## What's here
@@ -104,10 +104,25 @@ docs/                      BUILD OUTPUT — the GitHub Pages root
 
 ## Images
 
-Real in-game art belongs to Rockstar Games; it is not redistributed here. Every image slot
-currently resolves to an original generated SVG placeholder at the exact target size.
-To use real art you own or have rights to, drop a file in the matching folder with the
-same basename and rebuild — nothing else changes:
+**1,834 of 3,807 image slots are real in-game art.** Character portraits, vehicle and weapon
+renders and box art are fetched from [GTA Wiki](https://gta.wiki) by `tools/fetch-images.mjs`
+and stored under `assets/img/<kind>/<game>/<record-id>.<ext>`. That artwork belongs to
+Rockstar Games / Take-Two Interactive and is used here for a personal, non-commercial
+reference site — see `assets/img/CREDITS.md`.
+
+Every unfilled slot resolves to a generated SVG placeholder at the exact target size, so the
+layout never breaks. `docs/data/images.json` lists every slot with its `kind`, dimensions and
+`status` (`real` or `placeholder`) — that file is the worklist.
+
+```bash
+node tools/fetch-images.mjs                    # all supported kinds
+node tools/fetch-images.mjs --kinds=portrait   # just portraits
+node tools/fetch-images.mjs --dry --limit=20   # plan only
+node tools/fetch-images.mjs --force            # re-download over existing files
+```
+
+To add your own art instead, drop a file in the matching folder with the same basename and
+rebuild — nothing else changes:
 
 ```
 assets/img/portrait/gta-iii/claude.jpg
@@ -115,8 +130,9 @@ assets/img/mission/gta-v/the-third-way.webp
 assets/img/vehicle/gta-san-andreas/infernus.png
 ```
 
-`docs/data/images.json` lists every expected image, its dimensions, and whether it is
-currently `placeholder` or `real`. That file is the worklist.
+Current state by kind: cover 17/17, banner 17/17, vehicle 1,298/1,560, weapon 313/490,
+portrait 189/221. Maps, mission screenshots, cheat icons, locations and collectibles are
+still generated placeholders — the wiki has no per-record art for those slots.
 
 ## Machine interface
 

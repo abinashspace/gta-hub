@@ -26,7 +26,6 @@ const registry = JSON.parse(await readFile(path.join(ROOT, 'content/games.json')
 const games = registry.games.sort((a, b) => a.order - b.order);
 
 if (!ARGS.has('--no-clean')) await rm(OUT, { recursive: true, force: true });
-await scanReal();
 
 /* ------------------------------------------------------------------ utils */
 
@@ -96,6 +95,7 @@ for (const g of games) {
 
 const IMG_EXT = ['jpg', 'jpeg', 'png', 'webp', 'avif', 'svg'];
 const realImages = new Map(); // "<kind>/<game>/<basename>" -> "assets/img/..."
+await scanReal();
 
 async function scanReal(dir = path.join(ROOT, 'assets/img'), prefix = 'assets/img') {
   let entries;
@@ -429,6 +429,7 @@ for (const g of games) {
       )}">${esc(g.sections[k].coverage)}</span></td><td><a href="${relFrom(base + 'index.html')}data/games/${g.slug}/${k}.json"><code>${k}.json</code></a></td></tr>`
   ).join('')}</tbody></table></div>`;
 
+  const bannerReal = !g.images.banner.endsWith('.svg');
   const content = `${pageHead({
     eyebrow: `${g.year} · ${g.type}${g.status === 'upcoming' ? ' · upcoming' : ''}`,
     title: g.title,
@@ -436,8 +437,12 @@ for (const g of games) {
     meta: gameMeta(g),
   })}
 <figure class="hero">
-  <img src="${rel}${g.images.banner}" alt="${esc(g.title)} banner (placeholder)" width="1920" height="800" loading="lazy" decoding="async">
-  <figcaption>${esc(g.title)} — banner. ${g.images.banner.endsWith('.svg') ? 'Placeholder art; add a real image at assets/img/banner/' + g.slug + '/banner.jpg.' : ''}</figcaption>
+  <img src="${rel}${g.images.banner}" alt="${esc(g.title)}${bannerReal ? '' : ' banner (placeholder)'}" width="1920" height="800" loading="lazy" decoding="async">
+  <figcaption>${esc(g.title)} — banner. ${
+    bannerReal
+      ? 'Artwork from GTA Wiki; see <a href="' + rel + 'assets/img/CREDITS.md">image credits</a>.'
+      : 'Placeholder art; add a real image at assets/img/banner/' + g.slug + '/banner.jpg.'
+  }</figcaption>
 </figure>
 <h2 id="sections">Sections</h2>
 ${sectionCards}
@@ -559,7 +564,7 @@ ${items.length ? `<h2 id="fields">Field definitions</h2>${fieldTable(key)}` : ''
       })}
 <div class="detail">
   <figure class="detail-art">
-    <img src="${drel}${row.image}" alt="${esc(row.name)} ${s.singular.toLowerCase()} image (placeholder)" width="${s.image.width}" height="${s.image.height}" loading="lazy" decoding="async">
+    <img src="${drel}${row.image}" alt="${esc(row.name)}${row.image.endsWith('.svg') ? ' image (placeholder)' : ''}" width="${s.image.width}" height="${s.image.height}" loading="lazy" decoding="async">
     <figcaption>${row.image.endsWith('.svg') ? 'Placeholder art' : 'Local image'} — ${s.image.width}×${s.image.height}</figcaption>
   </figure>
   <div class="detail-body">
@@ -1370,11 +1375,12 @@ ${statGrid([
 <h2 id="accuracy">Accuracy</h2>
 <p>Every record has <code>verified</code>. <code>true</code> means the record was checked against the game or a documented source; <code>false</code> means it is best-effort and may contain errors. Where a field is genuinely unknown it is <code>null</code> — never a guess. GTA VI is <code>official-only</code>: nothing beyond confirmed Rockstar material is recorded.</p>
 <h2 id="images">Images</h2>
-<p>Real in-game artwork is owned by Rockstar Games and cannot be redistributed here. Each image slot currently resolves to an original generated SVG placeholder at the exact target dimensions. To swap in real art, place a file at the same path with the same basename and a real extension:</p>
+<p>Most images are real in-game art — character portraits, vehicle and weapon renders, and box art — fetched from <a href="https://gta.wiki" rel="noreferrer">GTA Wiki</a> by <code>tools/fetch-images.mjs</code>. That artwork remains the property of Rockstar Games / Take-Two Interactive and is used here for a personal, non-commercial reference site; see <a href="../assets/img/CREDITS.md">image credits</a>.</p>
+<p>Every remaining slot resolves to an original generated SVG placeholder at the exact target dimensions. To replace a placeholder with your own file, put it at the same path with the same basename and a real extension:</p>
 <pre><code>assets/img/portrait/gta-iii/claude.jpg
 assets/img/vehicle/gta-v/adder.png
 assets/img/weapon/gta-san-andreas/ak-47.webp</code></pre>
-<p>Rebuild: <code>node tools/build.mjs</code>. The build prefers the real file, updates <code>data/images.json</code>, and leaves every URL and record untouched.</p>
+<p>Rebuild: <code>node tools/build.mjs</code>. The build prefers the real file, updates <code>data/images.json</code>, and leaves every URL and record untouched. <code>data/images.json</code> lists every slot with its <code>status</code> (<code>real</code> or <code>placeholder</code>), so what is still missing is always explicit.</p>
 <h2 id="build">Build</h2>
 <pre><code>node tools/validate.mjs   # data checks
 node tools/build.mjs      # content/ + assets/ → docs/
@@ -1497,7 +1503,7 @@ Sitemap: ${site.base_url}/sitemap.xml
     );
     lines.push('');
   }
-  lines.push('## Notes', '', '- Unofficial fan data. Trademarks belong to Rockstar Games / Take-Two Interactive.', '- Artwork is not included; image paths resolve to generated placeholders.', '');
+  lines.push('## Notes', '', '- Unofficial fan data. Trademarks belong to Rockstar Games / Take-Two Interactive.', `- Artwork mostly sourced from GTA Wiki (${manifest.filter((m) => m.status === 'real').length}/${manifest.length} slots); the rest resolve to generated placeholders. See /data/images.json for per-slot status.`, '');
   await write('llms.txt', lines.join('\n'));
 }
 
@@ -1506,6 +1512,8 @@ Sitemap: ${site.base_url}/sitemap.xml
 await mkdir(path.join(OUT, 'assets/img'), { recursive: true });
 await copyDir(path.join(ROOT, 'assets/css'), path.join(OUT, 'assets/css'));
 await copyDir(path.join(ROOT, 'assets/js'), path.join(OUT, 'assets/js'));
+// real images (fetched or dropped in by hand); placeholders are generated below
+await copyDir(path.join(ROOT, 'assets/img'), path.join(OUT, 'assets/img'));
 
 if (!NO_ART) {
   await mkdir(path.join(OUT, 'assets/img/brand'), { recursive: true });

@@ -176,23 +176,33 @@ export function sectionTable(section, items, rel, game) {
   const s = SECTIONS[section];
   const cols = s.columns.map((c) => ({ ...c, __section: section }));
   const numeric = s.columns.filter((c) => c.type === 'number' || c.type === 'money').length;
+  const thumbs = items.some((r) => r.image);
   const rows = items
     .map((row) => {
       const cells = cols.map((c) => cellValue(c, row, rel, game)).join('');
-      return `<tr data-id="${esc(row.id)}"${row.verified === false ? ' class="unverified" title="Unverified record"' : ''}>${cells}</tr>`;
+      const thumb = thumbs
+        ? `<td class="thumb-col">${
+            row.image
+              ? `<img loading="lazy" decoding="async" src="${esc(rel + row.image)}" alt="${esc(
+                  (row.name || row.effect || '') + (row.image.endsWith('.svg') ? ' (placeholder)' : '')
+                )}" width="${s.image.width}" height="${s.image.height}">`
+              : ''
+          }</td>`
+        : '';
+      return `<tr data-id="${esc(row.id)}"${row.verified === false ? ' class="unverified" title="Unverified record"' : ''}>${thumb}${cells}</tr>`;
     })
     .join('\n');
   return `<div class="table-wrap">
-<table class="data-table${numeric ? ' has-num' : ''}">
+<table class="data-table${numeric ? ' has-num' : ''}${thumbs ? ' has-thumb' : ''}">
 <caption>${esc(s.title)} — ${esc(game.title)} (${items.length} records)</caption>
-<thead><tr>${cols
+<thead><tr>${thumbs ? '<th scope="col" class="thumb-col"><span class="visually-hidden">Image</span></th>' : ''}${cols
     .map(
       (c) =>
         `<th scope="col"${c.type === 'number' || c.type === 'money' ? ' class="num"' : ''}>${esc(c.label)}</th>`
     )
     .join('')}</tr></thead>
 <tbody>
-${rows || `<tr><td colspan="${cols.length}">No records yet.</td></tr>`}
+${rows || `<tr><td colspan="${cols.length + (thumbs ? 1 : 0)}">No records yet.</td></tr>`}
 </tbody>
 </table>
 </div>`;

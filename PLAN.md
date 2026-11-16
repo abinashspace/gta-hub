@@ -178,13 +178,17 @@ Build writes `docs/data/status.json` with per-game, per-section counts and compl
 - Session 7: cross-game layer — `/timeline/`, `/compare/`, `/cheats/`, `/locations/` with
   JSON twins, plus cheat-data normalisation (removed wiki reference artefacts from effects
   and slugs, unified platform labels, `phone` input type).
-- Validator: 0 errors, 0 warnings. Linkcheck: 1,206 files, 31,397 internal refs, 0 broken.
+- Session 8: real artwork. `tools/fetch-images.mjs` pulls per-game art from GTA Wiki:
+  1,834 of 3,807 slots now real (cover 17/17, banner 17/17, vehicle 1,298/1,560,
+  weapon 313/490, portrait 189/221). Tables now show thumbnails; every image slot keeps a
+  generated placeholder fallback. Credits in `assets/img/CREDITS.md`.
+- Validator: 0 errors, 0 warnings. Linkcheck: 1,206 files, 35,767 internal refs, 0 broken.
 
 ### Open
 
-- Real artwork: every one of the 3,807 image slots is a generated placeholder. Official
-  Rockstar art cannot be redistributed from here, so the site ships drop-in slots instead:
-  put a file at `assets/img/<kind>/<game>/<id>.jpg|png|webp|avif` and rebuild.
+- Artwork gaps: maps (17), mission screenshots (840), cheat icons (452), locations (144)
+  and collectibles (49) are still generated placeholders — the wiki has no per-record art
+  for those slots. Vehicles 262 and weapons 177 records likewise have no usable wiki image.
 - Characters below full cast for every game (main cast plus all mission givers).
 - Weapon damage/ammo/price only where a game tabulates it; the fields are optional and
   omitted rather than invented.
