@@ -32,7 +32,7 @@ const DRY = has('dry');
 const FORCE = has('force');
 const LIMIT = Number(flag('limit') || 0);
 const MAX_MB = Number(flag('max-mb') || 150);
-const KINDS = new Set((flag('kinds') || 'portrait,vehicle,weapon,mission,cover,banner').split(',').map((s) => s.trim()).filter(Boolean));
+const KINDS = new Set((flag('kinds') || 'portrait,vehicle,weapon,mission,location,collectible,cover,banner').split(',').map((s) => s.trim()).filter(Boolean));
 
 const WIDTH = { vehicle: 400, weapon: 320, portrait: 480, mission: 480, cover: 600, banner: 1200, location: 480, collectible: 256 };
 
@@ -280,20 +280,35 @@ async function pageImages(titles, width) {
 async function portraitMap(slug) {
   const items = bundles.get(slug)?.characters?.items ?? [];
   const pending = items.filter((r) => r.name && !NOT_A_PERSON.test(r.name.trim()));
+  return pageImageMap(pending, WIDTH.portrait);
+}
+
+/**
+ * Resolve one image per record by asking the wiki for the record's own page
+ * image. Works for characters, locations and collectible sets, where the
+ * record name is a wiki page title.
+ */
+async function pageImageMap(items, width) {
   const variants = new Map();
   const allTitles = [];
-  for (const r of pending) {
+  for (const r of items) {
     const list = titleVariants(r.name);
     variants.set(r.id, list);
     for (const t of list) if (!allTitles.includes(t)) allTitles.push(t);
   }
-  const found = await pageImages(allTitles, WIDTH.portrait);
+  const found = await pageImages(allTitles, width);
   const map = new Map();
   for (const [id, list] of variants) {
     const hit = list.find((t) => found.has(t));
     if (hit) map.set(id, found.get(hit));
   }
   return map;
+}
+
+async function sectionPageMap(slug, sectionKey) {
+  const items = bundles.get(slug)?.[sectionKey]?.items ?? [];
+  if (!items.length) return new Map();
+  return pageImageMap(items.filter((r) => r.name), WIDTH[sectionKey === 'locations' ? 'location' : 'collectible']);
 }
 
 async function galleryFor(slug, kind) {
@@ -324,6 +339,8 @@ async function gameImageMap(slug, kind) {
   }
   if (kind === 'portrait') return portraitMap(slug);
   if (kind === 'mission') return missionMap(slug);
+  if (kind === 'location') return sectionPageMap(slug, 'locations');
+  if (kind === 'collectible') return sectionPageMap(slug, 'collectibles');
   return new Map();
 }
 
@@ -442,7 +459,10 @@ for (const game of games) {
     let matched = 0;
     for (const slot of slots) {
       if (LIMIT && planned >= LIMIT) break;
-      const url = kind === 'portrait' ? map.get(slot.record ?? slot.id) : map.get(key(recordName(game.slug, kind, slot.record ?? slot.id) ?? ''));
+      const url =
+        kind === 'portrait' || kind === 'location' || kind === 'collectible'
+          ? map.get(slot.record ?? slot.id)
+          : map.get(key(recordName(game.slug, kind, slot.record ?? slot.id) ?? ''));
       if (!url) continue;
       matched += 1;
       planned += 1;
@@ -459,23 +479,9 @@ console.log(`\nDownloading ${work.length} images (max ${MAX_MB} MB, width ${JSON
 await runPool(work, 4);
 
 if (!DRY && realSlots.length) {
+  // CREDITS.md is written by the build from docs/data/images.json, so it always
+  // matches what is actually on disk. Nothing to do here.
   await mkdir(path.join(ROOT, 'assets/img'), { recursive: true });
-  const credits = `# Image credits
-
-The images in this directory were fetched from [GTA Wiki](https://gta.wiki) by
-\`tools/fetch-images.mjs\`. They are screenshots, renders and cover art from Grand Theft
-Auto games and remain the property of Rockstar Games / Take-Two Interactive. They are
-included here for a personal, non-commercial reference site and are not licensed for reuse.
-
-- In-game vehicle, weapon and character images come from each game's own gallery pages on
-  GTA Wiki (e.g. \`Vehicles in GTA III/images\`), so the art matches the game it is filed under.
-- Cover and banner slots use the game's page image on GTA Wiki.
-- Anything not matched stays a generated placeholder and is listed as such in
-  \`docs/data/images.json\`.
-
-Last fetch: ${new Date().toISOString()} — ${realSlots.length} files written this run.
-`;
-  await writeFile(path.join(ROOT, 'assets/img/CREDITS.md'), credits);
 }
 
 console.log(

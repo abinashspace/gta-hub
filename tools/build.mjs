@@ -1512,6 +1512,44 @@ Sitemap: ${site.base_url}/sitemap.xml
 await mkdir(path.join(OUT, 'assets/img'), { recursive: true });
 await copyDir(path.join(ROOT, 'assets/css'), path.join(OUT, 'assets/css'));
 await copyDir(path.join(ROOT, 'assets/js'), path.join(OUT, 'assets/js'));
+
+// Image credits, generated from the manifest so the counts always match the files.
+{
+  const kinds = [...new Set(manifest.map((m) => m.kind))];
+  const rows = kinds.map((k) => {
+    const all = manifest.filter((m) => m.kind === k);
+    return `| ${k} | ${all.filter((m) => m.status === 'real').length} | ${all.length} |`;
+  });
+  await mkdir(path.join(ROOT, 'assets/img'), { recursive: true });
+  await writeFile(
+    path.join(ROOT, 'assets/img/CREDITS.md'),
+    `# Image credits
+
+The images in this directory were fetched from [GTA Wiki](https://gta.wiki) by
+\`tools/fetch-images.mjs\`. They are screenshots, renders and cover art from Grand Theft
+Auto games and remain the property of Rockstar Games / Take-Two Interactive. They are
+included here for a personal, non-commercial reference site and are not licensed for reuse.
+
+- Vehicle and weapon images come from each game's own gallery page on GTA Wiki
+  (e.g. \`Vehicles in GTA III/images\`), so the art matches the game it is filed under.
+  The Episodes from Liberty City fall back to GTA IV's gallery for shared models.
+- Mission screenshots come from each game's \`Missions in <Game>\` table.
+- Character portraits, locations and collectible sets use the record's own GTA Wiki page image,
+  preferring the page for the game the record belongs to.
+- Cover and banner slots use the game's page image on GTA Wiki.
+- Anything unmatched stays a generated placeholder and is listed as such in
+  \`data/images.json\`.
+
+${new Date().toISOString()}
+
+| Kind | Real | Slots |
+|---|---|---|
+${rows.join('\n')}
+| **total** | **${manifest.filter((m) => m.status === 'real').length}** | **${manifest.length}** |
+`
+  );
+}
+
 // real images (fetched or dropped in by hand); placeholders are generated below
 await copyDir(path.join(ROOT, 'assets/img'), path.join(OUT, 'assets/img'));
 
