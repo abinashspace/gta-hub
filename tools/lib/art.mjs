@@ -42,8 +42,38 @@ const KINDS = {
   brand: { tag: 'BRAND' },
 };
 
+export function cheatPlaceholder({ width = 128, height = 128, text = '' }) {
+  const lines = String(text)
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const fontSize = Math.max(10, Math.min(18, Math.floor(width / 7)));
+  const lineHeight = fontSize * 1.45;
+  const startY = height / 2 - ((lines.length - 1) * lineHeight) / 2 + fontSize * 0.35;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(lines.join(' / '))}">
+<title>${esc(lines.join(' / '))}</title>
+<rect width="${width}" height="${height}" fill="#000"/>
+${lines
+  .map(
+    (line, i) =>
+      `<text x="${width / 2}" y="${startY + i * lineHeight}" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="${fontSize}" font-weight="700" fill="#fff">${esc(line)}</text>`
+  )
+  .join('\n')}
+</svg>`;
+}
+
 /** Build one placeholder SVG string. */
-export function placeholder({ kind = 'portrait', width = 512, height = 512, title = '', subtitle = '', accent = '#495057', seed }) {
+export function placeholder({
+  kind = 'portrait',
+  width = 512,
+  height = 512,
+  title = '',
+  subtitle = '',
+  accent = '#495057',
+  seed,
+  protagonists = [],
+}) {
   const w = width;
   const h = height;
   const bg = shade(accent, -150);
@@ -68,6 +98,25 @@ export function placeholder({ kind = 'portrait', width = 512, height = 512, titl
   const maxChars = Math.max(10, Math.floor((w * 0.86) / (titleSize * 0.56)));
   const shortTitle = String(title).length > maxChars ? String(title).slice(0, maxChars - 1) + '…' : String(title);
 
+  const protagonistArt =
+    kind === 'mission' && protagonists.length
+      ? protagonists
+          .map((p, i) => {
+            const count = protagonists.length;
+            const tileWidth = w / count;
+            const x = i * tileWidth;
+            return `<g><rect x="${x}" y="0" width="${tileWidth}" height="${h}" fill="#000" opacity="0.28"/><image href="${esc(
+              p.href
+            )}" x="${x + tileWidth * 0.08}" y="${h * 0.08}" width="${tileWidth * 0.84}" height="${h * 0.72}" preserveAspectRatio="xMidYMid slice"/><text x="${
+              x + tileWidth / 2
+            }" y="${h * 0.9}" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-weight="700" font-size="${Math.max(
+              12,
+              Math.min(28, w / (count * 8))
+            )}" fill="#fff">${esc(p.name)}</text></g>`;
+          })
+          .join('')
+      : '';
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)} — placeholder image">
 <title>${esc(title)} — placeholder</title>
 <defs>
@@ -80,6 +129,7 @@ export function placeholder({ kind = 'portrait', width = 512, height = 512, titl
 </defs>
 <rect width="${w}" height="${h}" fill="url(#g)"/>
 <rect width="${w}" height="${h}" fill="url(#p)"/>
+${protagonistArt ? `${protagonistArt}\n` : ''}
 <rect x="${stripe * 2}" y="${stripe * 2}" width="${w - stripe * 4}" height="${h - stripe * 4}" fill="none" stroke="${fg}" stroke-opacity="0.25" stroke-width="${stripe}"/>
 <text x="${cx}" y="${cy - big * 0.15}" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-weight="800" font-size="${big}" fill="${fg}" fill-opacity="0.22" letter-spacing="${big * 0.05}">${esc(initials)}</text>
 <text x="${cx}" y="${cy + titleSize * 0.6}" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-weight="700" font-size="${titleSize}" fill="${fg}">${esc(shortTitle)}</text>
