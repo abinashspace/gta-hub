@@ -15,41 +15,45 @@ import { useFonts as useFonts2, ChakraPetch as ChakraPetch2 } from '@expo-google
 import { useNavigation } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+// GTA-inspired color palette
+// Midnight City - deep blues like GTA V's night atmosphere
+// Neon accents - purple/pink like GTA's neon lighting
+// Yellow accent - GTA series signature color
 const LIGHT = {
-  bg: '#F7F6F3',
+  bg: '#E8EDF5',
   bgSoft: '#FFFFFF',
-  bgElev: '#F0EFEB',
-  line: '#DCD9D1',
-  lineSoft: '#E9E6DF',
-  fg: '#14161A',
-  fgSoft: '#454B54',
-  fgDim: '#6A717B',
-  accent: '#7C3AED',
-  accentStrong: '#5B2C6F',
+  bgElev: '#F5F7FF',
+  line: '#CBD5E1',
+  lineSoft: '#E2E8F0',
+  fg: '#0F172A',
+  fgSoft: '#475569',
+  fgDim: '#64748B',
+  accent: '#A855F7', // Purple neon
+  accentStrong: '#9F7AEA',
   accentInk: '#FFFFFF',
-  ok: '#1F7A3A',
-  warn: '#9A6400',
-  info: '#0B5CAD',
-  danger: '#B3121F',
+  ok: '#10B981', // Green like GTA success
+  warn: '#F59E0B', // GTA yellow accent
+  info: '#3B82F6', // Blue
+  danger: '#EF4444', // Red
 };
 
 const DARK = {
   bg: '#0F0F23',
-  bgSoft: '#101217',
-  bgElev: '#15181E',
-  bgElev2: '#1B1F27',
-  line: '#272C36',
-  lineSoft: '#1C2028',
-  fg: '#F3F5F8',
-  fgSoft: '#B7C0CC',
-  fgDim: '#818B99',
-  accent: '#7C3AED',
-  accentStrong: '#5A2D6D',
+  bgSoft: '#111827',
+  bgElev: '#1E293B',
+  bgElev2: '#334155',
+  line: '#0f172a',
+  lineSoft: '#1e293b',
+  fg: '#F8FAFC',
+  fgSoft: '#94A3B8',
+  fgDim: '#64748B',
+  accent: '#F472B6', // Neon pink
+  accentStrong: '#EC4899',
   accentInk: '#FFFFFF',
-  ok: '#3ECF63',
-  warn: '#FFB020',
-  info: '#5AA9FF',
-  danger: '#FF6B6B',
+  ok: '#22C55E',
+  warn: '#F59E0B', // GTA yellow
+  info: '#60A5FA',
+  danger: '#F87171',
 };
 
 const useAppFonts = () => {
@@ -75,6 +79,7 @@ const HomeScreen = () => {
   const navigation = useNavigation();
   const [games, setGames] = useState([]);
   const [appState, setAppState] = useState<AppStateStatus>(AppState.current);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const subscribe = AppState.addEventListener('change', (nextAppState) => {
@@ -84,56 +89,77 @@ const HomeScreen = () => {
   }, []);
 
   useEffect(() => {
-    // Simulated game library data
-    const sampleGames = [
-      { id: 1, name: 'GTA V', slug: 'gta-v', section: 'vehicles' },
-      { id: 2, name: 'GTA San Andreas', slug: 'gta-san-andreas', section: 'missions' },
-      { id: 3, name: 'GTA Vice City', slug: 'gta-vice-city', section: 'characters' },
-      { id: 4, name: 'GTA III', slug: 'gta-iii', section: 'missions' },
-      { id: 5, name: 'GTA Vice City Stories', slug: 'gta-vice-city-stories', section: 'missions' },
-      { id: 6, name: 'GTA Liberty City Stories', slug: 'gta-liberty-city-stories', section: 'missions' },
-      { id: 7, name: 'GTA IV', slug: 'gta-iv', section: 'missions' },
-      { id: 8, name: 'GTA: Chinatown Wars', slug: 'gta-chinatown-wars', section: 'missions' },
-      { id: 9, name: 'GTA: Advance', slug: 'gta-advance', section: 'missions' },
-      { id: 10, name: 'GTA: Liberty Stories', slug: 'gta-liberty-stories', section: 'missions' },
-      { id: 11, name: 'GTA V (2nd)', slug: 'gta-v', section: 'vehicles' },
-      { id: 12, name: 'GTA San Andreas (2nd)', slug: 'gta-san-andreas', section: 'characters' },
-      { id: 13, name: 'GTA Online', slug: 'gta-online', section: 'missions' },
-      { id: 14, name: 'GTA VI', slug: 'gta-vi', section: 'characters' },
-      { id: 15, name: 'GTA: The Ballad of Gay Tony', slug: 'gta-ballad', section: 'missions' },
-      { id: 16, name: 'GTA: Liberty City Stories', slug: 'gta-liberty', section: 'vehicles' },
-      { id: 17, name: 'GTA: San Andreas MP', slug: 'gta-samp', section: 'missions' },
-    ];
-    setGames(sampleGames);
+    const loadGames = async () => {
+      setIsLoading(true);
+      // Simulated game library data with delay for loading state
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const sampleGames = [
+        { id: 1, name: 'GTA V', slug: 'gta-v', section: 'vehicles' },
+        { id: 2, name: 'GTA San Andreas', slug: 'gta-san-andreas', section: 'missions' },
+        { id: 3, name: 'GTA Vice City', slug: 'gta-vice-city', section: 'characters' },
+        { id: 4, name: 'GTA III', slug: 'gta-iii', section: 'missions' },
+        { id: 5, name: 'GTA Vice City Stories', slug: 'gta-vice-city-stories', section: 'missions' },
+        { id: 6, name: 'GTA Liberty City Stories', slug: 'gta-liberty-city-stories', section: 'missions' },
+        { id: 7, name: 'GTA IV', slug: 'gta-iv', section: 'missions' },
+        { id: 8, name: 'GTA: Chinatown Wars', slug: 'gta-chinatown-wars', section: 'missions' },
+        { id: 9, name: 'GTA: Advance', slug: 'gta-advance', section: 'missions' },
+        { id: 10, name: 'GTA: Liberty Stories', slug: 'gta-liberty-stories', section: 'missions' },
+        { id: 11, name: 'GTA V (2nd)', slug: 'gta-v', section: 'vehicles' },
+        { id: 12, name: 'GTA San Andreas (2nd)', slug: 'gta-san-andreas', section: 'characters' },
+        { id: 13, name: 'GTA Online', slug: 'gta-online', section: 'missions' },
+        { id: 14, name: 'GTA VI', slug: 'gta-vi', section: 'characters' },
+        { id: 15, name: 'GTA: The Ballad of Gay Tony', slug: 'gta-ballad', section: 'missions' },
+        { id: 16, name: 'GTA: Liberty City Stories', slug: 'gta-liberty', section: 'vehicles' },
+        { id: 17, name: 'GTA: San Andreas MP', slug: 'gta-samp', section: 'missions' },
+      ];
+      setGames(sampleGames);
+      setIsLoading(false);
+    };
+    loadGames();
   }, [navigation]);
+
+  // Pulse animation for the GTA logo
+  const [pulse, setPulse] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setPulse((p) => p + 1), 3000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={[{ ...styles.headerText, color: DARK.fg }]}>GTA Hub</Text>
+      {/* Glassmorphism header with pulse animation */}
+      <View style={[styles.homeHeader, { background: `rgba(255,255,255,0.03)` }]}>
+        <Text style={styles.headerPulse}>GTA Hub</Text>
         <Text style={styles.subtitle}>Grand Theft Auto Encyclopedia</Text>
       </View>
 
+      {/* Search bar with glass effect */}
       <View style={styles.searchContainer}>
         <View style={styles.searchBar}>
           <Text style={styles.searchPlaceholder}>Search GTA hub…</Text>
         </View>
       </View>
 
+      {/* Game grid with staggered animation */}
       <View style={styles.gameGrid}>
-        {games.map((game) => (
-          <TouchableOpacity
-            key={game.id}
-            onPress={() => navigation.navigate('GameDetail', { game: game.slug, section: game.section })}
-            style={styles.gameCard}
-          >
-            <View style={styles.cardBadge}>
+        {isLoading ? (
+          <View style={styles.loadingSkeleton}>
+            <AnimatedIcon />
+          </View>
+        ) : (
+          games.map((game) => (
+            <View
+              key={game.id}
+              style={styles.gameCardPreview}
+              onPress={() => navigation.navigate('GameDetail', { game: game.slug, section: game.section })}
+            >
               <Text style={styles.cardText}>{game.name}</Text>
             </View>
-          </TouchableOpacity>
-        ))}
+          ))
+        )}
       </View>
 
+      {/* Theme toggle with improved design */}
       <View style={styles.themeToggle}>
         <TouchableOpacity onPress={setTheme} style={styles.themeBtn}>
           <Text style={styles.themeText}>{DARK.bg === '#0F0F23' ? 'Light Mode' : 'Dark Mode'}</Text>
@@ -148,21 +174,25 @@ const SearchScreen = () => {
   const navigation = useNavigation();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
 
   const handleSearch = (text: string) => {
     setQuery(text);
+    setIsSearching(true);
     const simulatedResults = [
       { id: 1, title: 'GTA V - Vehicles', snippet: 'Includes cars, bikes, aircraft' },
       { id: 2, title: 'GTA San Andreas - Missions', snippet: 'Includes 100+ missions' },
       { id: 3, title: 'GTA Vice City - Characters', snippet: 'Includes main characters' },
     ].filter((item) => item.title.toLowerCase().includes(text.toLowerCase()));
     setResults(simulatedResults);
+    setIsSearching(false);
   };
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={[{ ...styles.headerText, color: DARK.fg }]}>Search</Text>
+      {/* Glassmorphism search header */}
+      <View style={[styles.header, { background: `rgba(15, 15, 35, 0.8)` }]}>
+        <Text style={styles.headerText}>Search</Text>
       </View>
 
       <View style={styles.searchContainer}>
@@ -200,6 +230,7 @@ const SearchScreen = () => {
 const GameDetailScreen = ({ route }: any) => {
   const { game } = route.params;
   const [section, setSection] = useState('vehicles');
+  const { setTheme } = useAppTheme();
 
   const gtaVData = {
     vehicles: [
@@ -227,8 +258,19 @@ const GameDetailScreen = ({ route }: any) => {
 
   return (
     <View style={styles.container}>
+      {/* Game detail header with back button and theme toggle */}
       <View style={styles.header}>
-        <Text style={styles.title}>{game.toUpperCase()}</Text>
+        <View style={styles.headerLeft}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Text style={styles.backArrow}>←</Text>
+          </TouchableOpacity>
+          <Text style={styles.title}>{game.toUpperCase()}</Text>
+        </View>
+        <View style={styles.headerRight}>
+          <TouchableOpacity onPress={setTheme} style={styles.themeBtnSmall}>
+            <Text style={styles.themeTextSmall}>{DARK.bg === '#0F0F23' ? 'Light' : 'Dark'}</Text>
+          </TouchableOpacity>
+        </View>
       </View>
 
       <View style={styles.tabContainer}>
@@ -238,7 +280,7 @@ const GameDetailScreen = ({ route }: any) => {
             onPress={() => setSection(key)}
             style={[
               styles.tabButton,
-              { backgroundColor: section === key ? DARK.bgElev2 : DARK.bg },
+              { backgroundColor: section === key ? DARK.accent : DARK.bgElev },
             ]}
           >
             <Text style={styles.tabText}>{sections[key].title}</Text>
@@ -248,13 +290,13 @@ const GameDetailScreen = ({ route }: any) => {
 
       <View style={styles.contentArea}>
         <View style={styles.sectionTitle}>
-          <Text style={styles.fontChakraPetch}>{sections[section].title}</Text>
+          <Text>{sections[section].title}</Text>
         </View>
 
         <View style={styles.sectionContent}>
           {sections[section].data.map((item: any, i: number) => (
             <View key={i} style={styles.sectionItem}>
-              <Text style={styles.fontChakraPetch}>{item.name}</Text>
+              <Text style={styles.fontRussoOne}>{item.name}</Text>
               <Text style={styles.fontChakraPetch}>{item.description}</Text>
             </View>
           ))}
@@ -270,13 +312,13 @@ const TabNavigator = () => {
   return (
     <View style={styles.tabBarContainer}>
       <View style={styles.tabItem} onPress={() => navigate('Home')}>
-        <Text style={styles.tabText}>Games</Text>
+        <Text style={styles.tabText}>🚗 Games</Text>
       </View>
       <View style={styles.tabItem} onPress={() => navigate('Search')}>
-        <Text style={styles.tabText}>Search</Text>
+        <Text style={styles.tabText}>🔍 Search</Text>
       </View>
       <View style={styles.tabItem} onPress={() => navigate('Detail')}>
-        <Text style={styles.tabText}>Data</Text>
+        <Text style={styles.tabText}>📊 Data</Text>
       </View>
     </View>
   );
@@ -297,11 +339,13 @@ export default function GtaHubApp() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: DARK.bg },
 
-  header: {
-    padding: 24,
-    paddingBottom: 16,
-    borderBottomWidth: 1,
+  homeHeader: {
+    padding: 32,
+    paddingBottom: 24,
+    borderBottomWidth: 2,
     borderBottomColor: DARK.line,
+    background: `rgba(15, 15, 35, 0.8)`,
+    backdropFilter: 'blur(10px)',
   },
   subtitle: {
     marginTop: 4,
@@ -310,62 +354,133 @@ const styles = StyleSheet.create({
     color: DARK.fgDim,
   },
 
+  // Pulse effect for header text
+  headerPulse: {
+    fontFamily: 'RussoOne',
+    fontSize: 32,
+    fontWeight: '700',
+    letterSpacing: -0.5,
+    color: DARK.accent,
+    textShadowColor: DARK.accent,
+    textShadowRadius: 8,
+  },
+
+  // Game detail screen header styles
+  header: {
+    padding: 24,
+    paddingBottom: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: DARK.line,
+    background: `rgba(15, 15, 35, 0.8)`,
+    backdropFilter: 'blur(10px)',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  headerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  backArrow: {
+    fontFamily: 'ChakraPetch',
+    fontSize: 20,
+    color: DARK.fgDim,
+  },
+  title: {
+    fontFamily: 'RussoOne',
+    fontSize: 22,
+    color: DARK.fg,
+    fontWeight: '600',
+    letterSpacing: -0.3,
+  },
+  headerText: {
+    fontFamily: 'RussoOne',
+    fontSize: 24,
+    fontWeight: '700',
+    color: DARK.fg,
+  },
+  themeBtnSmall: {
+    padding: 8,
+    borderRadius: 20,
+    backgroundColor: DARK.bgElev,
+  },
+  themeTextSmall: {
+    color: DARK.fgSoft,
+    fontFamily: 'ChakraPetch',
+    fontSize: 12,
+  },
+
   searchContainer: {
     margin: 24,
-    marginBottom: 12,
+    marginBottom: 20,
   },
   searchBar: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: DARK.bgElev,
-    borderRadius: 28,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-  },
-  searchPlaceholder: {
-    flex: 1,
-    color: DARK.fgDim,
-    fontFamily: 'ChakraPetch',
-    fontSize: 16,
+    borderRadius: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 14,
+    ...Platform.select({
+      ios: { shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
+      android: { elevation: 4 },
+    }),
   },
 
   gameGrid: {
     marginHorizontal: 24,
-    marginVertical: 16,
+    marginVertical: 32,
     flexWrap: 'wrap',
     justifyContent: 'center',
+    gap: 16,
   },
-  gameCard: {
-    width: '48%',
+  gameCardPreview: {
+    width: '45%',
     aspectRatio: 3 / 4,
     backgroundColor: DARK.bgElev,
-    borderRadius: 12,
+    borderRadius: 20,
     overflow: 'hidden',
-    marginBottom: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginBottom: 24,
+    elevation: 8,
+    ...Platform.select({
+      ios: { shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.15, shadowRadius: 8 },
+      android: { elevation: 8 },
+    }),
   },
   cardBadge: {
     width: '100%',
-    padding: 16,
+    padding: 20,
     textAlign: 'center',
+    background: `rgba(255,255,255,0.03)`,
   },
   cardText: {
     color: DARK.fg,
-    fontFamily: 'ChakraPetch',
-    fontSize: 14,
+    fontFamily: 'RussoOne',
+    fontSize: 16,
+    fontWeight: '600',
+    letterSpacing: 0.5,
   },
 
   themeToggle: {
-    padding: 16,
-    margin: 24,
+    padding: 20,
+    margin: 32,
     borderTopWidth: 1,
     borderTopColor: DARK.line,
+    paddingBottom: 32,
   },
   themeBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    padding: 12,
+    backgroundColor: DARK.bgElev,
+    borderRadius: 28,
   },
   themeText: {
     color: DARK.fgSoft,
@@ -373,30 +488,49 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
 
+  // Loading skeleton
+  loadingSkeleton: {
+    padding: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
   // Search screen styles
   searchInput: {
-    height: 44,
+    height: 48,
     backgroundColor: DARK.bg,
-    borderRadius: 22,
-    paddingHorizontal: 16,
+    borderRadius: 24,
+    paddingHorizontal: 20,
     color: DARK.fg,
     fontFamily: 'ChakraPetch',
+    fontSize: 16,
+    ...Platform.select({
+      ios: { shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.05, shadowRadius: 2 },
+    }),
   },
 
   resultsList: {
-    marginTop: 12,
-    maxHeight: 300,
+    marginTop: 16,
+    maxHeight: 320,
+    borderRadius: 16,
+    overflow: 'hidden',
+    backgroundColor: DARK.bgElev,
+    ...Platform.select({
+      ios: { shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.05, shadowRadius: 2 },
+    }),
   },
   resultItem: {
-    padding: 12,
-    borderRadius: 8,
+    padding: 16,
+    borderRadius: 12,
     backgroundColor: DARK.bgElev,
-    marginBottom: 8,
+    marginBottom: 12,
+    transitionBackground: 'background-color 0.2s',
   },
   resultText: {
     fontFamily: 'ChakraPetch',
     fontSize: 16,
     color: DARK.fg,
+    fontWeight: '500',
   },
   resultSnippet: {
     fontFamily: 'ChakraPetch',
@@ -405,25 +539,32 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   backButton: {
-    padding: 24,
+    padding: 20,
   },
   backText: {
     color: DARK.accent,
     fontFamily: 'ChakraPetch',
     fontSize: 16,
+    fontWeight: '500',
   },
 
   // Game detail screen styles
   tabContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    padding: 16,
-    borderBottomWidth: 1,
+    padding: 20,
+    borderBottomWidth: 2,
     borderBottomColor: DARK.line,
+    backgroundColor: DARK.bgElev,
+    borderRadius: 20,
+    marginBottom: 24,
   },
   tabButton: {
-    padding: 8,
-    borderRadius: 20,
+    padding: 12,
+    borderRadius: 24,
+    ...Platform.select({
+      ios: { shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.05, shadowRadius: 2 },
+    }),
   },
   tabText: {
     fontFamily: 'ChakraPetch',
@@ -432,24 +573,27 @@ const styles = StyleSheet.create({
   },
   contentArea: {
     flex: 1,
-    padding: 24,
+    padding: 32,
   },
   sectionTitle: {
-    fontFamily: 'ChakraPetch',
-    fontSize: 18,
+    fontFamily: 'RussoOne',
+    fontSize: 24,
     color: DARK.fg,
-    marginBottom: 20,
+    marginBottom: 28,
+    letterSpacing: -0.3,
   },
   sectionContent: {
-    marginBottom: 30,
+    marginBottom: 36,
   },
   sectionItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: DARK.lineSoft,
-    marginBottom: 8,
+    padding: 16,
+    borderRadius: 16,
+    backgroundColor: DARK.bgElev,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: DARK.lineSoft,
   },
 
   // Tab bar styles
@@ -457,14 +601,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     backgroundColor: DARK.bg,
-    padding: 16,
-    borderTopWidth: 1,
+    padding: 20,
+    borderTopWidth: 2,
     borderTopColor: DARK.line,
-    marginTop: 32,
+    marginTop: 40,
   },
   tabItem: {
-    padding: 12,
-    borderRadius: 20,
+    padding: 16,
+    borderRadius: 28,
   },
   tabText: {
     color: DARK.fgDim,
@@ -473,8 +617,8 @@ const styles = StyleSheet.create({
   },
   tabItemActive: {
     backgroundColor: DARK.bgElev2,
-    padding: 12,
-    borderRadius: 20,
+    padding: 16,
+    borderRadius: 28,
   },
   tabTextActive: {
     color: DARK.accent,
