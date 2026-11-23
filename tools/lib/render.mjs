@@ -31,6 +31,21 @@ export function jsonScript(obj) {
 
 /* ------------------------------------------------------------------ layout */
 
+const ICON_SEARCH =
+  '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>';
+
+const ICON_SUN =
+  '<svg class="icon-dark" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2 12h2.4M19.6 12H22M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>';
+
+const ICON_MOON =
+  '<svg class="icon-light" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>';
+
+/** Is this nav entry the current section? */
+function isCurrent(href, canonicalPath) {
+  if (href === '/') return canonicalPath === '/';
+  return canonicalPath === href || canonicalPath.startsWith(href);
+}
+
 export function layout({
   rel = '',
   site,
@@ -48,9 +63,12 @@ export function layout({
   const navItems = site.nav
     .map((n) => {
       const href = n.href === '/' ? rel || './' : rel + n.href.replace(/^\//, '');
-      return `<li><a href="${esc(href)}">${esc(n.label)}</a></li>`;
+      const current = isCurrent(n.href, canonicalPath) ? ' aria-current="page"' : '';
+      return `<li><a href="${esc(href)}"${current}>${esc(n.label)}</a></li>`;
     })
     .join('');
+
+  const searchAction = `${rel}search/`;
 
   const crumbs = breadcrumbs.length
     ? `<nav class="crumbs" aria-label="Breadcrumb"><ol>${breadcrumbs
@@ -86,6 +104,7 @@ ${alternate}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0c0e">
 <link rel="icon" href="${rel}assets/img/brand/favicon.svg" type="image/svg+xml">
+<script>(function(){try{var t=localStorage.getItem('gta-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 <link rel="stylesheet" href="${rel}assets/css/site.css">
 ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script>`).join('\n')}
 <script src="${rel}assets/js/site.js" defer></script>
@@ -93,17 +112,60 @@ ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script
 <body data-page="${esc(pageType)}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
-  <a class="brand" href="${rel || './'}"><svg width="28" height="28" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="18" fill="#1a1d23"/><text x="64" y="84" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="54" fill="#ff6b6b">GTA</text></svg><span>${esc(site.title)}</span></a>
+  <a class="brand" href="${rel || './'}"><svg width="30" height="30" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="20" fill="#1a1d23"/><text x="64" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="54" fill="#ff4d5a">GTA</text></svg><span>${esc(site.title)}</span></a>
   <nav aria-label="Primary"><ul>${navItems}</ul></nav>
+  <div class="head-actions">
+    <form class="head-search" role="search" action="${esc(searchAction)}" method="get">
+      ${ICON_SEARCH}
+      <label class="visually-hidden" for="head-q">Search all games</label>
+      <input id="head-q" name="q" type="search" placeholder="Search records…" autocomplete="off">
+    </form>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle colour theme">${ICON_SUN}${ICON_MOON}</button>
+  </div>
 </header>
 ${crumbs}
 <main id="main" tabindex="-1">
 ${content}
 </main>
 <footer class="site-foot">
-  <p><strong>${esc(site.title)}</strong> — static, machine-readable, no external services.</p>
-  <p>Data files: <a href="${rel}data/index.json">index.json</a> · <a href="${rel}data/search-index.json">search-index.json</a> · <a href="${rel}llms.txt">llms.txt</a> · <a href="${rel}sitemap.xml">sitemap.xml</a></p>
-  <p class="fine">Unofficial fan reference. Game names, trademarks and artwork are property of Rockstar Games and Take-Two Interactive. ${esc(site.license)}</p>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <a class="brand" href="${rel || './'}"><svg width="26" height="26" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="20" fill="#1a1d23"/><text x="64" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="54" fill="#ff4d5a">GTA</text></svg><span>${esc(site.title)}</span></a>
+      <p>${esc(site.tagline)} Static, machine-readable, no external services.</p>
+    </div>
+    <nav class="foot-col" aria-label="Explore">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="${rel}timeline/">Timeline</a></li>
+        <li><a href="${rel}compare/">Compare games</a></li>
+        <li><a href="${rel}cheats/">Cheat codes</a></li>
+        <li><a href="${rel}locations/">Locations</a></li>
+        <li><a href="${rel}search/">Search</a></li>
+      </ul>
+    </nav>
+    <nav class="foot-col" aria-label="Data">
+      <h2>Data</h2>
+      <ul>
+        <li><a href="${rel}data/index.json">index.json</a></li>
+        <li><a href="${rel}data/search-index.json">search-index.json</a></li>
+        <li><a href="${rel}data/images.json">images.json</a></li>
+        <li><a href="${rel}llms.txt">llms.txt</a></li>
+        <li><a href="${rel}sitemap.xml">sitemap.xml</a></li>
+      </ul>
+    </nav>
+    <nav class="foot-col" aria-label="About">
+      <h2>About</h2>
+      <ul>
+        <li><a href="${rel}about/">How this site works</a></li>
+        <li><a href="${rel}about/#accuracy">Accuracy</a></li>
+        <li><a href="${rel}assets/img/CREDITS.md">Image credits</a></li>
+        <li><a href="${esc(site.repo)}" rel="noopener">Source on GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="foot-legal">
+    <p class="fine">Unofficial fan reference. Game names, trademarks and artwork are property of Rockstar Games and Take-Two Interactive. ${esc(site.license)}</p>
+  </div>
 </footer>
 </body>
 </html>
@@ -141,11 +203,11 @@ function cellValue(col, row, rel, game) {
   const v = get(row, col.key);
   switch (col.type) {
     case 'number':
-      return typeof v === 'number' ? `<td class="num">${v.toLocaleString('en-US')}</td>` : '<td class="num">—</td>';
+      return typeof v === 'number' ? `<td class="num" data-sort="${v}">${v.toLocaleString('en-US')}</td>` : '<td class="num" data-sort="">—</td>';
     case 'money':
-      return `<td class="num">${fmtMoney(v)}</td>`;
+      return `<td class="num" data-sort="${typeof v === 'number' ? v : ''}">${fmtMoney(v)}</td>`;
     case 'list':
-      return `<td>${Array.isArray(v) && v.length ? v.map((x) => esc(x)).join(', ') : '—'}</td>`;
+      return `<td data-sort="${esc(Array.isArray(v) ? v.join(', ') : '')}">${Array.isArray(v) && v.length ? v.map((x) => esc(x)).join(', ') : '—'}</td>`;
     case 'codes':
       return `<td class="codes">${
         Array.isArray(v) && v.length
@@ -160,14 +222,15 @@ function cellValue(col, row, rel, game) {
           : '—'
       }</td>`;
     default: {
+      const sort = esc(v == null ? '' : Array.isArray(v) ? v.join(', ') : v);
       if (col.primary) {
         const key = col.__section;
         if (SECTIONS[key]?.detail) {
-          return `<td><a href="${esc(`${rel}games/${game.slug}/${key}/${row.id}/`)}">${esc(v)}</a></td>`;
+          return `<td data-sort="${sort}"><a href="${esc(`${rel}games/${game.slug}/${key}/${row.id}/`)}">${esc(v)}</a></td>`;
         }
-        return `<td><strong>${esc(v)}</strong></td>`;
+        return `<td data-sort="${sort}"><strong>${esc(v)}</strong></td>`;
       }
-      return `<td>${v == null || v === '' ? '—' : esc(v)}</td>`;
+      return `<td data-sort="${sort}">${v == null || v === '' ? '—' : esc(v)}</td>`;
     }
   }
 }
@@ -189,16 +252,21 @@ export function sectionTable(section, items, rel, game) {
               : ''
           }</td>`
         : '';
-      return `<tr data-id="${esc(row.id)}"${row.verified === false ? ' class="unverified" title="Unverified record"' : ''}>${thumb}${cells}</tr>`;
+      return `<tr data-id="${esc(row.id)}" data-search="${esc(
+        [row.id, row.name, row.effect, row.summary, row.status, row.role, row.location, row.giver]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase()
+      )}"${row.verified === false ? ' class="unverified" title="Unverified record"' : ''}>${thumb}${cells}</tr>`;
     })
     .join('\n');
   return `<div class="table-wrap">
-<table class="data-table${numeric ? ' has-num' : ''}${thumbs ? ' has-thumb' : ''}">
+<table class="data-table${numeric ? ' has-num' : ''}${thumbs ? ' has-thumb' : ''}" data-sortable>
 <caption>${esc(s.title)} — ${esc(game.title)} (${items.length} records)</caption>
 <thead><tr>${thumbs ? '<th scope="col" class="thumb-col"><span class="visually-hidden">Image</span></th>' : ''}${cols
     .map(
       (c) =>
-        `<th scope="col"${c.type === 'number' || c.type === 'money' ? ' class="num"' : ''}>${esc(c.label)}</th>`
+        `<th scope="col" data-sort${c.type === 'number' || c.type === 'money' ? ' class="num"' : ''}>${esc(c.label)}</th>`
     )
     .join('')}</tr></thead>
 <tbody>
@@ -207,6 +275,15 @@ ${rows || `<tr><td colspan="${cols.length + (thumbs ? 1 : 0)}">No records yet.</
 </table>
 </div>`;
 }
+
+export function filterBar(label, placeholder) {
+  return `<div class="filter-bar">
+  <label for="table-filter">Filter</label>
+  <input id="table-filter" type="search" autocomplete="off" placeholder="${esc(placeholder)}" aria-controls="table-results">
+  <span class="filter-count" id="table-filter-count" aria-live="polite"></span>
+</div>`;
+}
+
 
 export function statGrid(stats) {
   return `<dl class="stats">${stats
@@ -225,6 +302,28 @@ export function cardGrid(cards) {
     <span class="card-kicker">${esc(c.kicker || '')}</span>
     <span class="card-title">${esc(c.title)}</span>
     <span class="card-meta">${esc(c.meta || '')}</span>
+  </a>
+</li>`
+    )
+    .join('')}</ul>`;
+}
+
+/** Poster grid for the game library. */
+export function gameGrid(games) {
+  return `<ul class="game-grid">${games
+    .map(
+      (g, i) => `<li>
+  <a class="game-card${g.empty ? ' is-empty' : ''}" href="${esc(g.href)}">
+    <span class="cover-wrap">
+      <img class="cover" src="${esc(g.cover)}" alt="${esc(g.title)} box art" width="600" height="900" loading="${
+        i < 6 ? 'eager' : 'lazy'
+      }" decoding="async">
+      <span class="cover-badge">${esc(g.badge || '')}</span>
+    </span>
+    <span class="game-body">
+      <span class="game-title">${esc(g.title)}</span>
+      <span class="game-meta">${esc(g.meta || '')}</span>
+    </span>
   </a>
 </li>`
     )

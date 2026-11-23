@@ -3,3 +3,38 @@ node_modules/
 Thumbs.db
 *.log
 .env
+
+# --- build artifacts & binaries (published via GitHub Releases, not git) ---
+dist/
+*.apk
+*.aab
+*.aar
+*.keystore
+*.jks
+
+# --- Android / Gradle build output ---
+**/android/build/
+**/android/app/build/
+**/android/.gradle/
+**/android/capacitor-cordova-android-plugins/build/
+**/.kotlin/
+local.properties
+
+# --- Capacitor shell ---
+gta-hub-cap/www-offline/
+gta-hub-cap/android/app/release.keystore
+
+# --- Expo / React Native ---
+gta-hub-mobile/.expo/
+gta-hub-mobile/dist/
+gta-hub-mobile/web-build/
+gta-hub-mobile/expo-env.d.ts
+gta-hub-mobile/android/.gradle/
+
+# --- scratch / junk scaffolding ---
+gta-hub-app/
+gta-hub-mobile@latest/
+
+# --- tooling ---
+__pycache__/
+*.pyc

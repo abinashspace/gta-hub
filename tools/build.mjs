@@ -8,7 +8,7 @@ import { readFile, writeFile, mkdir, rm, readdir, copyFile, stat } from 'node:fs
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SECTIONS, SECTION_KEYS, sectionSchema } from './lib/schema.mjs';
-import { layout, pageHead, sectionTable, dataLink, esc, fmtMoney, jsonScript, cardGrid, statGrid } from './lib/render.mjs';
+import { layout, pageHead, sectionTable, dataLink, esc, fmtMoney, jsonScript, cardGrid, statGrid, gameGrid, filterBar } from './lib/render.mjs';
 import { placeholder, brandSvg, shade } from './lib/art.mjs';
 import { validate } from './validate.mjs';
 
@@ -279,12 +279,15 @@ function coverageRow(g) {
 // home
 {
   const rel = '';
-  const coverCards = cardGrid(
+  const totalRecords = Object.values(totalCounts).reduce((a, b) => a + b, 0);
+  const library = gameGrid(
     games.map((g) => ({
       href: `${rel}games/${g.slug}/`,
-      kicker: `${g.year} · ${g.type}`,
+      cover: g.images.cover,
       title: g.title,
-      meta: `${g.cities.join(' · ')} — ${SECTION_KEYS.reduce((n, k) => n + g.sections[k].items.length, 0)} records`,
+      badge: String(g.year),
+      meta: `${g.type} · ${g.cities.length} ${g.cities.length === 1 ? 'city' : 'cities'}`,
+      empty: SECTION_KEYS.every((k) => g.sections[k].items.length === 0),
     }))
   );
 
@@ -322,23 +325,33 @@ function coverageRow(g) {
 <tr><td><code>llms.txt</code></td><td>Plain-text map for LLM crawlers</td></tr>
 </tbody></table></div>`;
 
-  const content = `${pageHead({
-    eyebrow: 'Static · JSON-first · No external services',
-    title: 'GTA Hub',
-    lead: `${games.length} games. ${SECTION_KEYS.length} section types. ${Object.values(totalCounts).reduce((a, b) => a + b, 0)} records. Every page has a JSON twin.`,
-  })}
+  const content = `<section class="home-hero">
+  <p class="eyebrow">Static · JSON-first · No external services</p>
+  <h1>The complete <em>GTA</em> reference</h1>
+  <p class="lead">${games.length} games. ${SECTION_KEYS.length} section types. ${totalRecords.toLocaleString('en-US')} records. Every page has a JSON twin — search it, browse it, or read the raw data.</p>
+  <form class="home-search" role="search" action="search/" method="get">
+    <label class="visually-hidden" for="hero-q">Search every record</label>
+    <input id="hero-q" name="q" type="search" autocomplete="off" placeholder="Try “Rhino”, “Vice City”, “hidden package”…">
+    <button class="btn" type="submit">Search</button>
+  </form>
+  <div class="hero-tags">
+    <a href="games/gta-v/">GTA V</a>
+    <a href="games/gta-san-andreas/">San Andreas</a>
+    <a href="games/gta-vice-city/">Vice City</a>
+    <a href="games/gta-iv/">GTA IV</a>
+    <a href="games/gta-vi/">GTA VI</a>
+    <a href="cheats/">All cheats →</a>
+  </div>
+</section>
 ${statGrid([
     { label: 'Games', value: games.length },
-    { label: 'Records', value: Object.values(totalCounts).reduce((a, b) => a + b, 0) },
+    { label: 'Records', value: totalRecords },
     { label: 'Sections', value: SECTION_KEYS.length },
-    { label: 'Build', html: `<time datetime="${TODAY}">${TODAY}</time>` },
+    { label: 'Universes', html: `<a href="timeline/">2D · 3D · HD · VI</a>` },
   ])}
-${coverCards}
-<h2 id="games">Every game</h2>
-${gameTable}
-<h2 id="coverage">Coverage</h2>
-<p class="note">Cells show how many records exist today. <span class="badge badge-complete">complete</span> <span class="badge badge-partial">partial</span> <span class="badge badge-limited">limited</span> <span class="badge badge-official-only">official-only</span> <span class="badge badge-empty">empty</span></p>
-${matrix}
+<h2 id="library">Game library</h2>
+<p class="note">Seventeen releases, from the 1997 original to the upcoming GTA VI. Pick a cover to open its seven sections.</p>
+${library}
 <h2 id="cross">Cross-game views</h2>
 ${cardGrid([
     {
@@ -366,10 +379,26 @@ ${cardGrid([
       meta: 'Cities, districts and landmarks across the series.',
     },
   ])}
-<h2 id="machines">For machines</h2>
-<p>No JavaScript is required to read this site. Prefer JSON: every URL below is a static file in this repository.</p>
-${endpoints}
-<p class="data-link"><a href="llms.txt">llms.txt →</a> <a href="sitemap.xml">sitemap.xml →</a> <a href="robots.txt">robots.txt →</a></p>`;
+<h2 id="reference">Reference tables</h2>
+<details class="panel">
+  <summary>Coverage matrix — records per section, per game</summary>
+  <div class="panel-body">
+    <p class="note">Cells show how many records exist today. <span class="badge badge-complete">complete</span> <span class="badge badge-partial">partial</span> <span class="badge badge-limited">limited</span> <span class="badge badge-official-only">official-only</span> <span class="badge badge-empty">empty</span></p>
+    ${matrix}
+  </div>
+</details>
+<details class="panel">
+  <summary>All ${games.length} games at a glance</summary>
+  <div class="panel-body">${gameTable}</div>
+</details>
+<details class="panel" id="machines">
+  <summary>Machine endpoints — for agents and crawlers</summary>
+  <div class="panel-body">
+    <p class="note">No JavaScript is required to read this site. Every URL below is a static file in this repository. Prefer JSON over scraping HTML.</p>
+    ${endpoints}
+    <p class="data-link"><a href="llms.txt">llms.txt →</a> <a href="sitemap.xml">sitemap.xml →</a> <a href="robots.txt">robots.txt →</a></p>
+  </div>
+</details>`;
 
   await page('index.html', {
     title: `${site.title} — every GTA game, in JSON and HTML`,
@@ -430,20 +459,30 @@ for (const g of games) {
   ).join('')}</tbody></table></div>`;
 
   const bannerReal = !g.images.banner.endsWith('.svg');
-  const content = `${pageHead({
-    eyebrow: `${g.year} · ${g.type}${g.status === 'upcoming' ? ' · upcoming' : ''}`,
-    title: g.title,
-    lead: g.notes,
-    meta: gameMeta(g),
-  })}
-<figure class="hero">
-  <img src="${rel}${g.images.banner}" alt="${esc(g.title)}${bannerReal ? '' : ' banner (placeholder)'}" width="1920" height="800" loading="lazy" decoding="async">
-  <figcaption>${esc(g.title)} — banner. ${
-    bannerReal
-      ? 'Artwork from GTA Wiki; see <a href="' + rel + 'assets/img/CREDITS.md">image credits</a>.'
-      : 'Placeholder art; add a real image at assets/img/banner/' + g.slug + '/banner.jpg.'
-  }</figcaption>
-</figure>
+  const gameRecords = SECTION_KEYS.reduce((n, k) => n + g.sections[k].items.length, 0);
+  const heroFacts = gameMeta(g)
+    .map((m) => `<div><dt>${esc(m.label)}</dt><dd>${m.html ?? esc(m.value)}</dd></div>`)
+    .join('');
+  const content = `<header class="game-hero">
+  <div class="game-hero-bg"><img src="${rel}${g.images.banner}" alt="" width="1920" height="800" loading="eager" decoding="async"></div>
+  <div class="game-hero-inner">
+    <img class="game-hero-cover" src="${rel}${g.images.cover}" alt="${esc(g.title)} box art" width="600" height="900" loading="eager" decoding="async">
+    <div class="game-hero-text">
+      <p class="eyebrow">${g.year} · ${g.type}${g.status === 'upcoming' ? ' · Upcoming' : ''}</p>
+      <h1>${esc(g.title)}</h1>
+      <p class="lead">${esc(g.notes)}</p>
+      <div class="game-hero-badges">
+        <span class="badge">${gameRecords} records</span>
+        <span class="badge">${esc(g.cities.join(' · '))}</span>
+        <span class="badge">${esc(g.platforms.length)} platforms</span>
+      </div>
+    </div>
+  </div>
+</header>
+<dl class="facts">${heroFacts}</dl>
+<p class="fine">${bannerReal
+      ? `Banner artwork from GTA Wiki; see <a href="${rel}assets/img/CREDITS.md">image credits</a>.`
+      : `Placeholder banner art; add a real image at assets/img/banner/${g.slug}/banner.jpg.`}</p>
 <h2 id="sections">Sections</h2>
 ${sectionCards}
 <h2 id="coverage">Coverage &amp; data</h2>
@@ -504,7 +543,8 @@ ${
   <a class="btn btn-ghost" href="${rel}data/games/${g.slug}.json" type="application/json">Whole game bundle</a>
   ${unverified ? `<span class="badge badge-partial">${unverified} unverified record${unverified === 1 ? '' : 's'}</span>` : ''}
 </p>
-${sectionTable(key, items, rel, g)}
+${items.length > 6 ? filterBar('Filter', `Filter ${items.length} ${s.title.toLowerCase()}…`) : ''}
+<div id="table-results">${sectionTable(key, items, rel, g)}</div>
 ${items.length ? `<h2 id="fields">Field definitions</h2>${fieldTable(key)}` : ''}
 <nav class="pager" aria-label="Section navigation">
   <a href="${rel}games/${g.slug}/">← ${esc(g.short_title)} overview</a>

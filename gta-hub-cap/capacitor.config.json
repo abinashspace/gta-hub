@@ -1,0 +1,15 @@
+{
+  "appId": "com.gta.hub",
+  "appName": "GTA Hub",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https",
+    "allowNavigation": [
+      "abinashspace.github.io"
+    ]
+  },
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  }
+}

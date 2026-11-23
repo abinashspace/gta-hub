@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "GTA Hub",
+    "slug": "gta-hub-cap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/img/brand/og.svg",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/img/brand/og.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0b0e"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.gta.hub",
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan"
+    }
+  }
+}
