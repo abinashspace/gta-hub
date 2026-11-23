@@ -8,8 +8,8 @@ import { readFile, writeFile, mkdir, rm, readdir, copyFile, stat } from 'node:fs
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SECTIONS, SECTION_KEYS, sectionSchema } from './lib/schema.mjs';
-import { layout, pageHead, sectionTable, dataLink, esc, fmtMoney, jsonScript, cardGrid, statGrid, gameGrid, filterBar } from './lib/render.mjs';
-import { placeholder, brandSvg, shade } from './lib/art.mjs';
+import { layout, pageHead, sectionTable, dataLink, esc, fmtMoney, jsonScript, cardGrid, statGrid } from './lib/render.mjs';
+import { placeholder, cheatPlaceholder, brandSvg, shade } from './lib/art.mjs';
 import { validate } from './validate.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -117,7 +117,7 @@ async function scanReal(dir = path.join(ROOT, 'assets/img'), prefix = 'assets/im
 
 const manifest = [];
 
-function imageFor(kind, gameSlug, id, { width, height, title, subtitle, accent }) {
+function imageFor(kind, gameSlug, id, { width, height, title, subtitle, accent, placeholderText, protagonists }) {
   // Keep file names inside Windows path limits.
   const fileId = id.length > 60 ? id.slice(0, 60).replace(/-[^-]*$/, '') : id;
   const key = `${kind}/${gameSlug}/${fileId}`;
@@ -127,8 +127,44 @@ function imageFor(kind, gameSlug, id, { width, height, title, subtitle, accent }
     return real;
   }
   const rel = `assets/img/${kind}/${gameSlug}/${fileId}.svg`;
-  manifest.push({ kind, game: gameSlug, id: fileId, record: id, path: rel, width, height, status: 'placeholder', alt: title });
+  manifest.push({
+    kind,
+    game: gameSlug,
+    id: fileId,
+    record: id,
+    path: rel,
+    width,
+    height,
+    status: 'placeholder',
+    alt: title,
+    placeholderText,
+    protagonists,
+  });
   return rel;
+}
+
+function protagonistImageRefs(g) {
+  return g.protagonists
+    .map((name) => {
+      const tokens = String(name).toLowerCase().match(/[a-z0-9]+/g) || [];
+      const character =
+        g.sections.characters.items.find((row) => row.name === name) ||
+        g.sections.characters.items.find((row) => {
+          const rowTokens = row.name.toLowerCase().match(/[a-z0-9]+/g) || [];
+          return tokens.length > 0 && tokens.every((token) => rowTokens.includes(token));
+        }) ||
+        (g.protagonists.length === 1
+          ? g.sections.characters.items.find((row) => /protagonist/i.test(row.role || ''))
+          : null);
+      if (!character) return null;
+      const key = `portrait/${g.slug}/${character.id}`;
+      const source = realImages.get(key) || `assets/img/portrait/${g.slug}/${character.id}.svg`;
+      return {
+        name,
+        href: `../../${source.replace(/^assets\/img\//, '')}`,
+      };
+    })
+    .filter(Boolean);
 }
 
 /* -------------------------------------------------------------- data layer */
@@ -167,6 +203,9 @@ for (const g of games) {
         title: row.name || row.effect,
         subtitle: row.role || row.type || g.short_title,
         accent: g.accent,
+        placeholderText:
+          key === 'cheats' ? row.codes.map((code) => code.code).join('\n') : undefined,
+        protagonists: key === 'missions' ? protagonistImageRefs(g) : undefined,
       });
       if (!row.image) row.image = img;
     }
@@ -1611,8 +1650,14 @@ if (!NO_ART) {
       title: m.alt,
       subtitle: m.game,
       accent,
+      protagonists: m.protagonists,
     });
-    await write(m.path, svg);
+    await write(
+      m.path,
+      m.kind === 'cheat'
+        ? cheatPlaceholder({ width: m.width, height: m.height, text: m.placeholderText || m.alt })
+        : svg
+    );
   }
   log(`Art: ${written.size} placeholders, ${manifest.filter((m) => m.status === 'real').length} real images`);
 }
