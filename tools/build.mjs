@@ -370,28 +370,120 @@ function coverageRow(g) {
   const spotlightVehicles = games.find((g) => g.slug === 'gta-san-andreas');
   const spotlightWeapons = games.find((g) => g.slug === 'gta-vice-city');
 
-  const content = `<section class="home-hero">
-  <div class="home-hero-bg"><img src="${heroGame.images.banner}" alt="" width="1920" height="800" loading="eager" decoding="async"></div>
-  <div class="home-hero-copy">
-    <p class="eyebrow">Grand Theft Auto</p>
-    <h1>GTA <em>HUB</em></h1>
-    <form class="home-search" role="search" action="search/" method="get">
-      <label class="visually-hidden" for="hero-q">Search</label>
-      <input id="hero-q" name="q" type="search" autocomplete="off" placeholder="Search characters, vehicles, cheats…">
-      <button class="btn" type="submit">Search</button>
-    </form>
-    <div class="hero-tags">
-      <a href="games/gta-vi/">GTA VI</a>
-      <a href="games/gta-v/">GTA V</a>
-      <a href="games/gta-san-andreas/">San Andreas</a>
-      <a href="games/gta-vice-city/">Vice City</a>
-      <a href="games/gta-iv/">GTA IV</a>
-      <a href="cheats/">Cheats →</a>
+  const dykItems = [
+    {
+      c: 'Vehicle',
+      img: 'assets/img/vehicle/gta-v/buzzard-attack-chopper.png',
+      t: 'Buzzard Attack Chopper',
+      s: 'A flying weapon platform.',
+      d: 'The Buzzard is a twin-seat attack helicopter in GTA V, famous for its rockets and miniguns. Players often take one from Fort Zancudo, though the base’s defenders respond with heavy fire and a high wanted level.',
+      href: 'games/gta-v/vehicles/',
+    },
+    {
+      c: 'Weapon',
+      img: 'assets/img/weapon/gta-v/minigun.png',
+      t: 'Minigun',
+      s: 'Fires faster than anything else.',
+      d: 'The Minigun is a rotary heavy weapon in GTA V that fires at an extreme rate, shredding vehicles and enemies within seconds. It drains ammunition quickly and slows your movement, yet nothing matches its raw firepower.',
+      href: 'games/gta-v/weapons/',
+    },
+    {
+      c: 'Character',
+      img: 'assets/img/portrait/gta-v/trevor-philips.png',
+      t: 'Trevor Philips',
+      s: 'The chaos in the crew.',
+      d: 'Trevor Philips is one of GTA V’s three protagonists, a volatile former pilot living in Sandy Shores. He runs Trevor Philips Industries and his special ability slows time and boosts damage.',
+      href: 'games/gta-v/characters/trevor-philips/',
+    },
+    {
+      c: 'Mission',
+      img: 'assets/img/mission/gta-v/the-jewel-store-job.jpg',
+      t: 'The Jewel Store Job',
+      s: 'Loud or smart? You decide.',
+      d: 'The Jewel Store Job is a heist in GTA V where you pick your approach. The smart route uses sleeping gas to put staff to sleep quietly, while the loud route is faster but riskier.',
+      href: 'games/gta-v/missions/the-jewel-store-job/',
+    },
+    {
+      c: 'Vehicle',
+      img: 'assets/img/vehicle/gta-v/zentorno.png',
+      t: 'Pegassi Zentorno',
+      s: 'A supercar with a loud reputation.',
+      d: 'The Pegassi Zentorno is a wedge-shaped supercar in GTA V and GTA Online, known for blistering acceleration and sharp handling on Los Santos streets.',
+      href: 'games/gta-v/vehicles/',
+    },
+    {
+      c: 'Character',
+      img: 'assets/img/portrait/gta-v/franklin-clinton.png',
+      t: 'Franklin Clinton',
+      s: 'The newcomer with big plans.',
+      d: 'Franklin Clinton is a young repo man from South Los Santos who dreams of something bigger. His special ability slows time while driving, making tight turns and chases easier.',
+      href: 'games/gta-v/characters/franklin-clinton/',
+    },
+    {
+      c: 'Location',
+      img: 'assets/img/location/gta-v/fort-zancudo.png',
+      t: 'Fort Zancudo',
+      s: 'High-security military base.',
+      d: 'Fort Zancudo is a restricted military installation in Blaine County, GTA V. Entering without clearance triggers an immediate four-star wanted level and heavy military response.',
+      href: 'games/gta-v/locations/',
+    },
+    {
+      c: 'Collectible',
+      img: 'assets/img/collectible/gta-v/spaceship-parts.jpg',
+      t: 'Spaceship Parts',
+      s: '50 pieces scattered across San Andreas.',
+      d: 'Collect all 50 Spaceship Parts for Omega in GTA V to unlock the Space Docker dune buggy with unique alien horn sounds and glowing headlights.',
+      href: 'games/gta-v/collectibles/',
+    },
+  ];
+  const initialDyk = dykItems[0];
+
+  const content = `<section class="app-wrap">
+  <p class="app-label">DO YOU KNOW?</p>
+  <button class="dyk" id="dyk" type="button" aria-label="Open today’s Do You Know">
+    <div class="dyk-copy">
+      <span class="dyk-badge" id="dyk-cat">${esc(initialDyk.c)}</span>
+      <h1 id="dyk-title">${esc(initialDyk.t)}</h1>
+      <p id="dyk-teaser">${esc(initialDyk.s)}</p>
+      <span class="dyk-tap">TAP TO READ MORE →</span>
     </div>
+    <div class="dyk-media"><img id="dyk-img" src="${esc(initialDyk.img)}" alt="${esc(initialDyk.t)}" width="224" height="224" loading="eager" decoding="async"></div>
+  </button>
+  <div class="app-tiles">
+    <a class="app-tile" href="cheats/">
+      <span class="app-tile-thumb"><img src="assets/img/cover/gta-san-andreas/cover.png" alt="GTA Cheat Codes" width="320" height="180" loading="eager" decoding="async"></span>
+      <span>Cheats</span>
+    </a>
+    <a class="app-tile" href="games/gta-v/missions/">
+      <span class="app-tile-thumb"><img src="assets/img/mission/gta-v/the-jewel-store-job.jpg" alt="GTA Missions" width="320" height="180" loading="eager" decoding="async"></span>
+      <span>Missions</span>
+    </a>
+    <a class="app-tile" href="games/gta-v/characters/">
+      <span class="app-tile-thumb"><img src="assets/img/portrait/gta-v/trevor-philips.png" alt="GTA Characters" width="320" height="180" loading="eager" decoding="async"></span>
+      <span>Characters</span>
+    </a>
+    <a class="app-tile" href="locations/">
+      <span class="app-tile-thumb"><img src="assets/img/location/gta-v/fort-zancudo.png" alt="GTA Locations" width="320" height="180" loading="eager" decoding="async"></span>
+      <span>Locations</span>
+    </a>
   </div>
 </section>
+<div id="dyk-detail" aria-hidden="true">
+  <div class="dyk-detail-inner">
+    <button class="dyk-back" id="dyk-back" type="button">← BACK</button>
+    <div class="dyk-hero">
+      <div class="dyk-hero-img"><img id="d-img" src="${esc(initialDyk.img)}" alt="${esc(initialDyk.t)}"></div>
+      <span class="dyk-badge" id="d-cat">${esc(initialDyk.c)}</span>
+      <h2 id="d-title">${esc(initialDyk.t)}</h2>
+    </div>
+    <p class="dyk-desc" id="d-desc">${esc(initialDyk.d)}</p>
+    <div class="dyk-date" id="d-date"></div>
+    <a class="dyk-more-link" id="d-link" href="${esc(initialDyk.href)}">VIEW FULL RECORD →</a>
+  </div>
+</div>
+<script id="dyk-data" type="application/json">${jsonScript(dykItems)}</script>
 <div class="block-heading">
-  <h2 id="library">Games</h2>
+  <h2 id="library">Games (${games.length})</h2>
   <a class="block-more" href="timeline/">Timeline →</a>
 </div>
 ${library}
@@ -1404,19 +1496,39 @@ ${statGrid([
 /* ------------------------------------------------------------------ search */
 
 {
-  const content = `${pageHead({
-    eyebrow: 'Client-side · works offline · no API',
-    title: 'Search',
-    lead: 'Filters a local JSON index. Nothing leaves the page.',
-  })}
-<form class="search-form" role="search" action="#" onsubmit="return false">
-  <label for="q">Query</label>
-  <input id="q" name="q" type="search" autocomplete="off" placeholder="ches, rhino, hidden package, gta v…" aria-describedby="hint">
-  <p id="hint">Matches names, roles, givers, locations, platforms, codes. Minimum 2 characters.</p>
-</form>
-<p id="result-count" class="note" aria-live="polite">Type to search.</p>
-<ol id="results" class="results"></ol>
-<noscript><p>Search needs JavaScript. Every record is also in <a href="../data/search-index.json">search-index.json</a>.</p></noscript>`;
+  const browseCats = [
+    { label: 'Characters', href: '../games/gta-v/characters/', img: '../assets/img/portrait/gta-v/franklin-clinton.png' },
+    { label: 'Missions', href: '../games/gta-v/missions/', img: '../assets/img/mission/gta-v/the-jewel-store-job.jpg' },
+    { label: 'Vehicles', href: '../games/gta-v/vehicles/', img: '../assets/img/vehicle/gta-v/zentorno.png' },
+    { label: 'Weapons', href: '../games/gta-v/weapons/', img: '../assets/img/weapon/gta-v/minigun.png' },
+    { label: 'Cheat codes', href: '../cheats/', img: '../assets/img/cover/gta-san-andreas/cover.png' },
+    { label: 'Locations', href: '../locations/', img: '../assets/img/location/gta-v/fort-zancudo.png' },
+    { label: 'Collectibles', href: '../games/gta-v/collectibles/', img: '../assets/img/collectible/gta-v/spaceship-parts.jpg' },
+  ];
+
+  const content = `<section class="app-wrap">
+  <form class="app-search-bar search-form" role="search" action="#" onsubmit="return false">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>
+    <label class="visually-hidden" for="q">Search vehicles, cheats, missions</label>
+    <input id="q" name="q" type="search" autocomplete="off" placeholder="Search vehicles, cheats, missions…">
+    <button class="app-search-clear" id="q-clear" type="button" aria-label="Clear search">×</button>
+  </form>
+  <p id="result-count" class="note" aria-live="polite"></p>
+  <ol id="results" class="results"></ol>
+  <p class="app-label" id="browse-label">BROWSE</p>
+  <div class="app-browse-list" id="browse-list">
+    ${browseCats
+      .map(
+        (c) => `<a class="app-browse-row" data-name="${esc(c.label.toLowerCase())}" href="${esc(c.href)}">
+      <span class="app-row-img"><img src="${esc(c.img)}" alt="${esc(c.label)}" width="92" height="92" loading="eager" decoding="async"></span>
+      <span>${esc(c.label.toUpperCase())}</span>
+      <span class="arr" aria-hidden="true">→</span>
+    </a>`
+      )
+      .join('\n    ')}
+  </div>
+  <noscript><p>Search needs JavaScript. Every record is also in <a href="../data/search-index.json">search-index.json</a>.</p></noscript>
+</section>`;
 
   await page('search/index.html', {
     title: 'Search — GTA Hub',
@@ -1427,6 +1539,59 @@ ${statGrid([
     breadcrumbs: [
       { label: 'Games', href: '/' },
       { label: 'Search', href: '/search/' },
+    ],
+    content,
+  });
+}
+
+/* ----------------------------------------------------------------- profile */
+
+{
+  const gameOptions = games.map((g) => `<option value="${esc(g.title)}">${esc(g.title)}</option>`).join('');
+  const content = `<section class="app-wrap">
+  <div class="profile-dpbox">
+    <button class="profile-dp" id="dp" type="button" aria-label="Change profile picture">
+      <img id="p-img" src="../assets/img/portrait/gta-v/franklin-clinton.png" alt="Profile picture">
+      <span class="profile-cam" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      </span>
+    </button>
+    <div class="profile-hint">TAP TO CHANGE PHOTO</div>
+    <input type="file" id="p-file" accept="image/*" hidden>
+    <div class="profile-shown" id="p-shown"></div>
+  </div>
+
+  <div class="profile-card">
+    <div class="profile-field"><label for="p-name">NAME</label><input id="p-name" type="text" maxlength="30" placeholder="Your name" autocomplete="off"></div>
+    <div class="profile-field"><label for="p-age">AGE</label><input id="p-age" type="number" min="1" max="120" inputmode="numeric" placeholder="Your age"></div>
+    <div class="profile-field"><label for="p-game">FAVOURITE GTA GAME</label>
+      <select id="p-game">
+        <option value="">Choose one</option>
+        ${gameOptions}
+      </select>
+    </div>
+  </div>
+  <button class="profile-save" id="p-save" type="button">SAVE PROFILE</button>
+  <div class="profile-bk">
+    <p class="app-label">BACKUP DATA</p>
+    <div class="btns">
+      <button id="p-exp" type="button">EXPORT</button>
+      <button id="p-imp" type="button">IMPORT</button>
+      <button id="p-impf" type="button">FROM FILE</button>
+    </div>
+    <textarea id="p-box" spellcheck="false" placeholder="Export fills this box. To import, paste saved data here and tap IMPORT."></textarea>
+    <input type="file" id="p-jf" accept=".json,application/json,text/plain" hidden>
+  </div>
+</section>`;
+
+  await page('profile/index.html', {
+    title: 'Profile — GTA Hub',
+    description: 'Customize your GTA Hub profile, favourite game, and local backup data.',
+    canonicalPath: '/profile/',
+    pageType: 'profile',
+    breadcrumbs: [
+      { label: 'Games', href: '/' },
+      { label: 'Profile', href: '/profile/' },
     ],
     content,
   });

@@ -42,6 +42,10 @@
       "href": "/search/"
     },
     {
+      "label": "Profile",
+      "href": "/profile/"
+    },
+    {
       "label": "About",
       "href": "/about/"
     }

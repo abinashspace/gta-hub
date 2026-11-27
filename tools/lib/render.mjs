@@ -40,6 +40,33 @@ const ICON_SUN =
 const ICON_MOON =
   '<svg class="icon-light" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>';
 
+const APP_TABS = [
+  {
+    key: 'home',
+    label: 'Home',
+    href: '/',
+    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>',
+  },
+  {
+    key: 'search',
+    label: 'Search',
+    href: '/search/',
+    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>',
+  },
+  {
+    key: 'cheats',
+    label: 'Cheats',
+    href: '/cheats/',
+    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 12h4M9 10v4M15.5 11h.01M17.5 13h.01"/></svg>',
+  },
+  {
+    key: 'profile',
+    label: 'Profile',
+    href: '/profile/',
+    icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
+  },
+];
+
 /** Is this nav entry the current section? */
 function isCurrent(href, canonicalPath) {
   if (href === '/') return canonicalPath === '/';
@@ -84,11 +111,36 @@ export function layout({
     ? `<link rel="alternate" type="application/json" href="${esc(rel + jsonPath.replace(/^\//, ''))}" title="Machine-readable JSON">`
     : '';
 
+  const activeTabLabel =
+    pageType === 'home'
+      ? 'HOME'
+      : pageType === 'search'
+        ? 'SEARCH'
+        : pageType === 'profile'
+          ? 'PROFILE'
+          : pageType === 'cheats'
+            ? 'CHEATS'
+            : pageType === 'locations'
+              ? 'LOCATIONS'
+              : pageType === 'timeline'
+                ? 'TIMELINE'
+                : pageType === 'compare'
+                  ? 'COMPARE'
+                  : pageType === 'game' || pageType === 'section' || pageType === 'detail'
+                    ? 'GAMES'
+                    : 'GUIDE';
+
+  const appNavItems = APP_TABS.map((t) => {
+    const href = t.href === '/' ? rel || './' : rel + t.href.replace(/^\//, '');
+    const current = isCurrent(t.href, canonicalPath) ? ' aria-current="page"' : '';
+    return `<a class="app-nav-item" href="${esc(href)}"${current}>${t.icon}<span>${esc(t.label)}</span></a>`;
+  }).join('');
+
   return `<!doctype html>
 <html lang="${esc(site.language || 'en')}">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${esc(canonical)}">
@@ -102,7 +154,7 @@ ${alternate}
 <meta property="og:url" content="${esc(canonical)}">
 <meta property="og:image" content="${esc(site.base_url + (site.build.og_image || '/assets/img/brand/og.png'))}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0b0c0e">
+<meta name="theme-color" content="#FFD500">
 <link rel="icon" href="${rel}assets/img/brand/favicon.svg" type="image/svg+xml">
 <script>(function(){try{var t=localStorage.getItem('gta-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 <link rel="stylesheet" href="${rel}assets/css/site.css">
@@ -120,6 +172,7 @@ ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script
       <label class="visually-hidden" for="head-q">Search all games</label>
       <input id="head-q" name="q" type="search" placeholder="Search records…" autocomplete="off">
     </form>
+    <span class="app-tab-pill">${esc(activeTabLabel)}</span>
     <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle colour theme">${ICON_SUN}${ICON_MOON}</button>
   </div>
 </header>
@@ -127,6 +180,8 @@ ${crumbs}
 <main id="main" tabindex="-1">
 ${content}
 </main>
+<nav class="app-nav" aria-label="App navigation">${appNavItems}</nav>
+<div id="toast" role="status" aria-live="polite"></div>
 <footer class="site-foot">
   <div class="foot-inner">
     <div class="foot-brand">
