@@ -2,7 +2,7 @@
   "title": "GTA Hub",
   "tagline": "Every Grand Theft Auto game, every record, one static repository.",
   "description": "A machine-first encyclopedia of the Grand Theft Auto series: characters, missions, vehicles, weapons, cheats, locations and collectibles for all 17 games, published as static HTML and portable JSON.",
-  "base_url": "https://abinashspace.github.io/gta-hub",
+  "base_url": "https://abinashspace.github.io/public-pages",
   "language": "en",
   "author": "abinashspace",
   "repo": "https://github.com/abinashspace/gta-hub",
