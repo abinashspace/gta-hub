@@ -163,65 +163,85 @@ ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script
 </head>
 <body data-page="${esc(pageType)}">
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head">
-  <a class="brand" href="${rel || './'}"><span class="brand-mark">GTA</span><span>HUB</span></a>
-  <nav aria-label="Primary"><ul>${navItems}</ul></nav>
-  <div class="head-actions">
-    <form class="head-search" role="search" action="${esc(searchAction)}" method="get">
-      ${ICON_SEARCH}
-      <label class="visually-hidden" for="head-q">Search all games</label>
-      <input id="head-q" name="q" type="search" placeholder="Search records…" autocomplete="off">
-    </form>
-    <span class="app-tab-pill">${esc(activeTabLabel)}</span>
-    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle colour theme">${ICON_SUN}${ICON_MOON}</button>
-  </div>
-</header>
-${crumbs}
-<main id="main" tabindex="-1">
-${content}
-</main>
-<nav class="app-nav" aria-label="App navigation">${appNavItems}</nav>
-<div id="toast" role="status" aria-live="polite"></div>
-<footer class="site-foot">
-  <div class="foot-inner">
-    <div class="foot-brand">
-      <a class="brand" href="${rel || './'}"><span class="brand-mark">GTA</span><span>HUB</span></a>
-      <p>${esc(site.tagline)}</p>
+<div class="desktop-stage">
+  <aside class="desktop-intro" aria-label="About GTA Hub">
+    <div class="desktop-avatar">
+      <img src="${rel}assets/img/cover/gta-v/cover.png" alt="GTA Hub" width="96" height="96" loading="eager" decoding="async">
     </div>
-    <nav class="foot-col" aria-label="Explore">
-      <h2>Explore</h2>
-      <ul>
-        <li><a href="${rel}timeline/">Timeline</a></li>
-        <li><a href="${rel}compare/">Compare games</a></li>
-        <li><a href="${rel}cheats/">Cheat codes</a></li>
-        <li><a href="${rel}locations/">Locations</a></li>
-        <li><a href="${rel}search/">Search</a></li>
-      </ul>
-    </nav>
-    <nav class="foot-col" aria-label="Data">
-      <h2>Data</h2>
-      <ul>
-        <li><a href="${rel}data/index.json">index.json</a></li>
-        <li><a href="${rel}data/search-index.json">search-index.json</a></li>
-        <li><a href="${rel}data/images.json">images.json</a></li>
-        <li><a href="${rel}llms.txt">llms.txt</a></li>
-        <li><a href="${rel}sitemap.xml">sitemap.xml</a></li>
-      </ul>
-    </nav>
-    <nav class="foot-col" aria-label="About">
-      <h2>About</h2>
-      <ul>
-        <li><a href="${rel}about/">How this site works</a></li>
-        <li><a href="${rel}about/#accuracy">Accuracy</a></li>
-        <li><a href="${rel}assets/img/CREDITS.md">Image credits</a></li>
-        <li><a href="${esc(site.repo)}" rel="noopener">Source on GitHub</a></li>
-      </ul>
-    </nav>
+    <h2 class="desktop-title">GTA Hub</h2>
+    <p class="desktop-lead">Every Grand Theft Auto game in one place. Look up characters, vehicles, weapons, missions, locations, and cheat codes.</p>
+    <ul class="desktop-pills">
+      <li>17 GTA games &amp; 3,700+ records</li>
+      <li>Real in-game art &amp; portraits</li>
+      <li>Offline cheat codes &amp; search</li>
+      <li>Daily “Do You Know?” spotlight</li>
+    </ul>
+    <a class="desktop-apk-btn" href="https://github.com/abinashspace/gta-hub/releases/latest" target="_blank" rel="noopener">Download Android APK →</a>
+  </aside>
+  <div class="phone-frame">
+    <div class="phone-screen">
+      <header class="site-head">
+        <a class="brand" href="${rel || './'}"><span class="brand-mark">GTA</span><span>HUB</span></a>
+        <nav aria-label="Primary"><ul>${navItems}</ul></nav>
+        <div class="head-actions">
+          <form class="head-search" role="search" action="${esc(searchAction)}" method="get">
+            ${ICON_SEARCH}
+            <label class="visually-hidden" for="head-q">Search all games</label>
+            <input id="head-q" name="q" type="search" placeholder="Search records…" autocomplete="off">
+          </form>
+          <span class="app-tab-pill">${esc(activeTabLabel)}</span>
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle colour theme">${ICON_SUN}${ICON_MOON}</button>
+        </div>
+      </header>
+      ${crumbs}
+      <main id="main" tabindex="-1">
+      ${content}
+      </main>
+      <footer class="site-foot">
+        <div class="foot-inner">
+          <div class="foot-brand">
+            <a class="brand" href="${rel || './'}"><span class="brand-mark">GTA</span><span>HUB</span></a>
+            <p>${esc(site.tagline)}</p>
+          </div>
+          <nav class="foot-col" aria-label="Explore">
+            <h2>Explore</h2>
+            <ul>
+              <li><a href="${rel}timeline/">Timeline</a></li>
+              <li><a href="${rel}compare/">Compare games</a></li>
+              <li><a href="${rel}cheats/">Cheat codes</a></li>
+              <li><a href="${rel}locations/">Locations</a></li>
+              <li><a href="${rel}search/">Search</a></li>
+            </ul>
+          </nav>
+          <nav class="foot-col" aria-label="Data">
+            <h2>Data</h2>
+            <ul>
+              <li><a href="${rel}data/index.json">index.json</a></li>
+              <li><a href="${rel}data/search-index.json">search-index.json</a></li>
+              <li><a href="${rel}data/images.json">images.json</a></li>
+              <li><a href="${rel}llms.txt">llms.txt</a></li>
+              <li><a href="${rel}sitemap.xml">sitemap.xml</a></li>
+            </ul>
+          </nav>
+          <nav class="foot-col" aria-label="About">
+            <h2>About</h2>
+            <ul>
+              <li><a href="${rel}about/">How this site works</a></li>
+              <li><a href="${rel}about/#accuracy">Accuracy</a></li>
+              <li><a href="${rel}assets/img/CREDITS.md">Image credits</a></li>
+              <li><a href="${esc(site.repo)}" rel="noopener">Source on GitHub</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="foot-legal">
+          <p class="fine">Unofficial fan reference. Game names, trademarks and artwork are property of Rockstar Games and Take-Two Interactive. ${esc(site.license)}</p>
+        </div>
+      </footer>
+    </div>
+    <nav class="app-nav" aria-label="App navigation">${appNavItems}</nav>
+    <div id="toast" role="status" aria-live="polite"></div>
   </div>
-  <div class="foot-legal">
-    <p class="fine">Unofficial fan reference. Game names, trademarks and artwork are property of Rockstar Games and Take-Two Interactive. ${esc(site.license)}</p>
-  </div>
-</footer>
+</div>
 </body>
 </html>
 `;
