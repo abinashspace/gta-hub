@@ -112,7 +112,7 @@ ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script
 <body data-page="${esc(pageType)}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
-  <a class="brand" href="${rel || './'}"><svg width="30" height="30" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="20" fill="#1a1d23"/><text x="64" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="54" fill="#ff4d5a">GTA</text></svg><span>${esc(site.title)}</span></a>
+  <a class="brand" href="${rel || './'}"><span class="brand-mark">GTA</span><span>HUB</span></a>
   <nav aria-label="Primary"><ul>${navItems}</ul></nav>
   <div class="head-actions">
     <form class="head-search" role="search" action="${esc(searchAction)}" method="get">
@@ -130,8 +130,8 @@ ${content}
 <footer class="site-foot">
   <div class="foot-inner">
     <div class="foot-brand">
-      <a class="brand" href="${rel || './'}"><svg width="26" height="26" viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="20" fill="#1a1d23"/><text x="64" y="86" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="54" fill="#ff4d5a">GTA</text></svg><span>${esc(site.title)}</span></a>
-      <p>${esc(site.tagline)} Static, machine-readable, no external services.</p>
+      <a class="brand" href="${rel || './'}"><span class="brand-mark">GTA</span><span>HUB</span></a>
+      <p>${esc(site.tagline)}</p>
     </div>
     <nav class="foot-col" aria-label="Explore">
       <h2>Explore</h2>
@@ -291,71 +291,22 @@ export function filterBar(label, placeholder, withToggle = false) {
 </div>`;
 }
 
-function galleryMeta(section, row) {
+function galleryTag(section, row) {
   switch (section) {
-    case 'characters': {
-      const parts = [];
-      if (row.status) parts.push(`<span><strong>Status:</strong> ${esc(row.status)}</span>`);
-      if (row.affiliations?.length) parts.push(`<span>${esc(row.affiliations.slice(0, 2).join(', '))}</span>`);
-      return parts.join('');
-    }
-    case 'missions': {
-      const parts = [];
-      if (row.giver) parts.push(`<span><strong>Giver:</strong> ${esc(row.giver)}</span>`);
-      if (row.reward?.money) parts.push(`<span><strong>Reward:</strong> ${fmtMoney(row.reward.money)}</span>`);
-      else if (row.location) parts.push(`<span>${esc(row.location)}</span>`);
-      return parts.join('');
-    }
-    case 'vehicles': {
-      const parts = [];
-      if (row.top_speed_kph) parts.push(`<span><strong>Top:</strong> ${row.top_speed_kph} km/h</span>`);
-      if (row.seats != null) parts.push(`<span><strong>Seats:</strong> ${row.seats}</span>`);
-      if (row.price) parts.push(`<span><strong>Price:</strong> ${fmtMoney(row.price)}</span>`);
-      return parts.join('');
-    }
-    case 'weapons': {
-      const parts = [];
-      if (row.damage_tier) parts.push(`<span><strong>Damage:</strong> ${esc(row.damage_tier)}</span>`);
-      if (row.price != null) parts.push(`<span><strong>Price:</strong> ${fmtMoney(row.price)}</span>`);
-      if (row.ammo) parts.push(`<span><strong>Ammo:</strong> ${esc(row.ammo)}</span>`);
-      return parts.join('');
-    }
-    case 'locations': {
-      const parts = [];
-      if (row.parent) parts.push(`<span><strong>In:</strong> ${esc(row.parent)}</span>`);
-      return parts.join('');
-    }
-    case 'collectibles': {
-      const parts = [];
-      if (row.count != null) parts.push(`<span><strong>Count:</strong> ${row.count}</span>`);
-      if (row.reward?.money) parts.push(`<span><strong>Reward:</strong> ${fmtMoney(row.reward.money)}</span>`);
-      return parts.join('');
-    }
-    default:
-      return '';
-  }
-}
-
-function galleryKicker(section, row) {
-  switch (section) {
-    case 'characters':
-      return row.role || 'Character';
-    case 'missions':
-      return `#${row.order ?? ''} · ${row.type || 'Mission'}`;
     case 'vehicles':
-      return [row.category, row.class].filter(Boolean).join(' · ') || 'Vehicle';
+      return row.category || '';
     case 'weapons':
-      return row.type || 'Weapon';
+      return row.type || '';
     case 'locations':
-      return row.type || 'Location';
-    case 'collectibles':
-      return row.count != null ? `${row.count} items` : 'Collectible';
+      return row.type || '';
+    case 'missions':
+      return row.type || '';
     default:
       return '';
   }
 }
 
-/** Spacious visual card gallery for a game section. */
+/** Pure visual image gallery — image + title (+ optional 1-word tag). */
 export function sectionGallery(section, items, rel, game) {
   const s = SECTIONS[section];
   const isPortrait = section === 'characters';
@@ -363,30 +314,56 @@ export function sectionGallery(section, items, rel, game) {
   const cards = items
     .map((row) => {
       const title = row.name || row.effect || row.id;
-      const kicker = galleryKicker(section, row);
-      const meta = galleryMeta(section, row);
-      const search = [row.id, row.name, row.effect, row.summary, row.status, row.role, row.location, row.giver, row.category, row.type]
+      const tag = galleryTag(section, row);
+      const search = [row.id, row.name, row.effect, row.status, row.role, row.location, row.giver, row.category, row.type]
         .filter(Boolean)
         .join(' ')
         .toLowerCase();
       const thumb = row.image
         ? `<div class="media-thumb${isPortrait ? ' is-portrait' : ''}${isContain ? ' is-contain' : ''}">
-        <img loading="lazy" decoding="async" src="${esc(rel + row.image)}" alt="${esc(title)}${row.image.endsWith('.svg') ? ' (placeholder)' : ''}" width="${s.image.width}" height="${s.image.height}">
+        <img loading="lazy" decoding="async" src="${esc(rel + row.image)}" alt="${esc(title)}" width="${s.image.width}" height="${s.image.height}">
       </div>`
         : '';
       const inner = `${thumb}<div class="media-body">
-        ${kicker ? `<div class="media-kicker">${esc(kicker)}</div>` : ''}
-        <div class="media-title">${esc(title)}</div>
-        ${row.summary ? `<p class="media-summary">${esc(row.summary)}</p>` : ''}
-        ${meta ? `<div class="media-meta">${meta}</div>` : ''}
+        <span class="media-title">${esc(title)}</span>
+        ${tag ? `<span class="media-tag">${esc(tag)}</span>` : ''}
       </div>`;
       const wrapped = s.detail
         ? `<a class="media-card-link" href="${esc(`${rel}games/${game.slug}/${section}/${row.id}/`)}">${inner}</a>`
-        : inner;
+        : `<a class="media-card-link" href="${esc(`${rel}games/${game.slug}/${section}/`)}">${inner}</a>`;
       return `<li class="media-card" data-id="${esc(row.id)}" data-search="${esc(search)}">${wrapped}</li>`;
     })
     .join('\n');
   return `<ul class="media-grid">${cards}</ul>`;
+}
+
+/** Compact visual preview strip (used on home & game overview pages). */
+export function visualStrip(section, items, rel, game, limit = 4) {
+  const real = items.filter((r) => r.image && !r.image.endsWith('.svg'));
+  const picks = (real.length ? real : items.filter((r) => r.image)).slice(0, limit);
+  if (!picks.length) return '';
+  const s = SECTIONS[section];
+  const isPortrait = section === 'characters';
+  const isContain = section === 'vehicles' || section === 'weapons' || section === 'collectibles';
+  const cards = picks
+    .map((row) => {
+      const title = row.name || row.effect || row.id;
+      const href = s.detail
+        ? `${rel}games/${game.slug}/${section}/${row.id}/`
+        : `${rel}games/${game.slug}/${section}/`;
+      return `<li class="media-card">
+  <a class="media-card-link" href="${esc(href)}">
+    <div class="media-thumb${isPortrait ? ' is-portrait' : ''}${isContain ? ' is-contain' : ''}">
+      <img loading="lazy" decoding="async" src="${esc(rel + row.image)}" alt="${esc(title)}" width="${s.image.width}" height="${s.image.height}">
+    </div>
+    <div class="media-body">
+      <span class="media-title">${esc(title)}</span>
+    </div>
+  </a>
+</li>`;
+    })
+    .join('\n');
+  return `<ul class="visual-strip">${cards}</ul>`;
 }
 
 
@@ -413,21 +390,19 @@ export function cardGrid(cards) {
     .join('')}</ul>`;
 }
 
-/** Poster grid for the game library. */
+/** Poster grid for the game library — cover art + title only. */
 export function gameGrid(games) {
   return `<ul class="game-grid">${games
     .map(
       (g, i) => `<li>
-  <a class="game-card${g.empty ? ' is-empty' : ''}" href="${esc(g.href)}"${g.accent ? ` style="--game-accent:${esc(g.accent)}"` : ''}>
+  <a class="game-card${g.empty ? ' is-empty' : ''}" href="${esc(g.href)}">
     <span class="cover-wrap">
       <img class="cover" src="${esc(g.cover)}" alt="${esc(g.title)} box art" width="600" height="900" loading="${
         i < 6 ? 'eager' : 'lazy'
       }" decoding="async">
-      <span class="cover-badge">${esc(g.badge || '')}</span>
     </span>
     <span class="game-body">
       <span class="game-title">${esc(g.title)}</span>
-      <span class="game-meta">${esc(g.meta || '')}</span>
     </span>
   </a>
 </li>`
