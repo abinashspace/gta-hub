@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Machine entry points
-# https://abinashspace.github.io/public-pages/data/index.json
-# https://abinashspace.github.io/public-pages/llms.txt
+# https://abinashspace.github.io/public-pages/gta-hub/data/index.json
+# https://abinashspace.github.io/public-pages/gta-hub/llms.txt
 
-Sitemap: https://abinashspace.github.io/public-pages/sitemap.xml
+Sitemap: https://abinashspace.github.io/public-pages/gta-hub/sitemap.xml
