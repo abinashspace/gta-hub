@@ -1,243 +1,278 @@
-import React, { useEffect, useState } from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { Image } from 'expo-image';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import React, { useMemo, useState } from 'react';
+import { FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+import { RecordRow } from '@/components/record-row';
+import { ChipRail } from '@/components/chip-rail';
+import { AppText, Chip, Screen } from '@/components/ui';
+import { coverArt } from '@/data/art';
+import type { SectionKey } from '@/lib/library';
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
-import { useParams } from '@react-navigation/native';
-import { useFonts, RussoOne, ChakraPetch } from '@expo-google-fonts/russo-one';
-import { useFonts as useFonts2, ChakraPetch as ChakraPetch2 } from '@expo-google-fonts/chakra-petch';
+  SECTIONS,
+  isSectionKey,
+  gamesBySlug,
+  sectionFacet,
+  sectionItems,
+  sortRecords,
+} from '@/lib/library';
+import { Radii, Space, useTheme } from '@/theme';
 
-const GamesDetailScreen = () => {
-  const { slug, section } = useParams();
-  const [fontsLoaded] = useFonts({
-    RussoOne: require('@expo-google-fonts/russo-one/RussoOne-Regular.ttf'),
-    ChakraPetch: require('@expo-google-fonts/chakra-petch/ChakraPetch-Regular.ttf'),
-  });
+export default function GameSectionScreen() {
+  const { colors } = useTheme();
+  const router = useRouter();
+  const insets = useSafeAreaInsets();
+  const params = useLocalSearchParams<{ slug?: string; section?: string }>();
+  const game = params.slug ? gamesBySlug[params.slug] : undefined;
+  const section: SectionKey = isSectionKey(params.section) ? params.section : 'characters';
+  const meta = SECTIONS.find((entry) => entry.key === section)!;
+  const [facet, setFacet] = useState<string>('all');
 
-  if (!fontsLoaded) {
-    return null;
+  const items = useMemo(() => {
+    if (!game) return [];
+    return sortRecords(sectionItems(game, section), section);
+  }, [game, section]);
+
+  const facets = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const item of items) {
+      const value = sectionFacet(item, section);
+      if (value) counts.set(value, (counts.get(value) ?? 0) + 1);
+    }
+    return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+  }, [items, section]);
+
+  const filtered = useMemo(
+    () =>
+      facet === 'all'
+        ? items
+        : items.filter((item) => sectionFacet(item, section) === facet),
+    [facet, items, section]
+  );
+
+  const nextIndex = (SECTIONS.findIndex((entry) => entry.key === section) + 1) % SECTIONS.length;
+  const nextSection = SECTIONS[nextIndex];
+
+  if (!game) {
+    return (
+      <Screen edges={['top']}>
+        <View style={styles.missing}>
+          <AppText variant="title">Game not found</AppText>
+          <Pressable onPress={() => router.back()}>
+            <AppText color={colors.accent}>Go back</AppText>
+          </Pressable>
+        </View>
+      </Screen>
+    );
   }
 
-  // Simulated data based on the GTA Hub website records
-  const gameData: any = {
-    'gta-v': {
-      vehicles: [
-        { name: 'Pinnacle', description: 'Super sports car' },
-        { name: 'Buffalo', description: 'Muscle car' },
-        { name: 'Comet', description: 'Classic sports car' },
-        { name: 'Bus', description: 'Public transit bus' },
-        { name: 'Marker', description: 'Police marker car' },
-      ],
-      characters: [
-        { name: 'Michael', description: 'Retired bank robber' },
-        { name: 'Franklin', description: 'Street dealer turned actor' },
-        { name: 'Trevor', description: 'Unstable meth dealer' },
-        { name: 'Trevor Philips', description: 'Crazy criminal' },
-      ],
-      missions: [
-        { name: 'The Prologue', description: 'Introduction to the story' },
-        { name: 'The Paleto Score', description: 'Heist at Paleto Bay' },
-        { name: 'The Big Score', description: 'Ultimate heist' },
-        { name: 'Fame or Shame', description: 'Kill a celebrity' },
-      ],
-    },
-    'gta-san-andreas': {
-      vehicles: [
-        { name: 'Pavley', description: 'Off-road buggy' },
-        { name: 'BF Injection', description: 'Dune buggy' },
-        { name: 'Hydra', description: 'Attack helicopter' },
-        { name: 'Ak-Chin', description: 'Lowrider' },
-      ],
-      characters: [
-        { name: 'Carl Johnson', description: 'Grove Street Families leader' },
-        { name: 'Sweet', description: 'Carl\'s sister' },
-        { name: 'Big Smoke', description: 'Gang associate' },
-      ],
-      missions: [
-        { name: 'First Base', description: 'Tutorial missions' },
-        { name: 'Black Project', description: 'Top-secret mission' },
-        { name: 'End of the Line', description: 'Final mission' },
-      ],
-    },
-    'gta-vice-city': {
-      vehicles: [
-        { name: 'Pheonix', description: 'Muscle car' },
-        { name: 'Sovereign', description: 'Luxury car' },
-        { name: 'Tampa', description: 'Classic sedan' },
-        { name: 'Patriot', description: 'SUV' },
-      ],
-      characters: [
-        { name: 'Tommy Vercetti', description: 'Former mob enforcer' },
-        { name: 'Lance Vance', description: 'Partner in crime' },
-        { name: 'Kent Paul', description: 'Dealer and hustler' },
-      ],
-      missions: [
-        { name: 'The Job', description: 'Heist setup' },
-        { name: 'Rearm', description: 'Supply mission' },
-        { name: 'All Hands on Deck', description: 'Final showdown' },
-      ],
-    },
-    'gta-liberty-city-stories': {
-      vehicles: [
-        { name: 'Patriot', description: 'SUV' },
-        { name: 'Enforcer', description: 'Police car' },
-        { name: 'Securicar', description: 'Security van' },
-      ],
-      characters: [
-        { name: 'Michael Townley', description: 'Protagonist' },
-      ],
-      missions: [
-        { name: 'The Exchange', description: 'Drug deal' },
-        { name: 'The Bum Deal', description: 'Mugging' },
-      ],
-    },
-    'gta-vice-city-stories': {
-      vehicles: [
-        { name: 'Biff', description: 'Muscle car' },
-        { name: 'Slamvan', description: 'Classic car' },
-      ],
-      characters: [
-        { name: 'Victor Vance', description: 'Army officer' },
-      ],
-      missions: [
-        { name: 'The Audition', description: 'Tryout mission' },
-        { name: 'The Exchange', description: 'Drug deal' },
-      ],
-    },
-    'gta-the-ballad-of-gay-tony': {
-      vehicles: [
-        { name: 'Pegassi Infernus', description: 'Super sports car' },
-        { name: 'Benson', description: 'Utility van' },
-        { name: 'Buccaneer', description: 'Classic car' },
-      ],
-      characters: [
-        { name: 'Tony Prince', description: 'Club owner' },
-      ],
-      missions: [
-        { name: 'Bang Bang', description: 'Club mission' },
-        { name: 'Blog This', description: 'Social mission' },
-      ],
-    },
-    'gta-online': {
-      vehicles: [
-        { name: 'Opressor', description: 'Flying motorcycle' },
-        { name: 'Ruiner 2000', description: 'Muscle car' },
-        { name: 'Pariah', description: 'Super sports car' },
-      ],
-      characters: [],
-      missions: [
-        { name: 'Cayo Perico Heist', description: 'Main heist mission' },
-        { name: 'Diamond Casino Heist', description: 'Casino robbery' },
-      ],
-    },
-    'gta-vi': {
-      vehicles: [
-        { name: 'Dewbauchee Z-Type', description: 'Classic car' },
-        { name: 'Ocelot Virtue', description: 'Super sports car' },
-        { name: 'BF Messer', description: 'Muscle car' },
-      ],
-      characters: [
-        { name: 'Jason', description: 'Protagonist' },
-        { name: 'Lucia', description: 'Co-protagonist' },
-      ],
-      missions: [
-        { name: 'The Story Begins', description: 'Introduction' },
-        { name: 'The Palmetto', description: 'Main mission' },
-      ],
-    },
-    'gta-chinatown-wars': {
-      vehicles: [
-        { name: 'Hexer', description: 'Motorcycle' },
-        { name: 'Zipline', description: 'Air vehicle' },
-      ],
-      characters: [],
-      missions: [
-        { name: 'The Heist', description: 'Main mission' },
-      ],
-    },
-    'gta-advance': {
-      vehicles: [],
-      characters: [],
-      missions: [
-        { name: 'Mission 1', description: 'First mission' },
-      ],
-    },
-    'gta-liberty-stories': {
-      vehicles: [],
-      characters: [],
-      missions: [
-        { name: 'Mission 1', description: 'First mission' },
-      ],
-    },
-  };
-
-  const data = gameData[slug as keyof typeof gameData];
-  const items = data?.[section as keyof typeof data] || [];
-
   return (
-    <View style={styles.container}>
+    <Screen edges={['top']}>
       <View style={styles.header}>
-        <Text style={styles.title}>{slug.toUpperCase()}</Text>
-        <Text style={styles.subtitle}>{section.charAt(0).toUpperCase() + section.slice(1)}</Text>
+        <Pressable
+          hitSlop={12}
+          onPress={() => router.back()}
+          accessibilityLabel="Go back"
+          style={[styles.iconBtn, { borderColor: colors.line }]}>
+          <Ionicons name="chevron-back" size={18} color={colors.text} />
+        </Pressable>
+        <View style={styles.headerBody}>
+          <AppText variant="label" color={colors.textTertiary}>
+            {game.shortTitle} · {game.year}
+          </AppText>
+          <AppText variant="headline" numberOfLines={1}>
+            {game.title}
+          </AppText>
+        </View>
+        <Pressable
+          hitSlop={12}
+          onPress={() => router.push('/search')}
+          accessibilityLabel="Search"
+          style={[styles.iconBtn, { borderColor: colors.line }]}>
+          <Ionicons name="search" size={17} color={colors.text} />
+        </Pressable>
       </View>
 
-      <ScrollView style={styles.list} contentContainerStyle={styles.listContent}>
-        {items.map((item: any, index: number) => (
-          <View key={index} style={styles.item}>
-            <Text style={styles.itemTitle}>{item.name}</Text>
-            <Text style={styles.itemDesc}>{item.description}</Text>
+      <FlatList
+        data={filtered}
+        keyExtractor={(item) => item.id}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: insets.bottom + 48 }}
+        ListHeaderComponent={
+          <View>
+            <View style={styles.chapter}>
+              <Image
+                source={coverArt[game.slug]}
+                style={[styles.chapterCover, { borderColor: colors.line }]}
+                contentFit="cover"
+                transition={200}
+              />
+              <View style={styles.chapterBody}>
+                <AppText variant="label" color={colors.accent}>
+                  Chapter {String(SECTIONS.findIndex((entry) => entry.key === section) + 1).padStart(2, '0')}
+                </AppText>
+                <AppText variant="title">{meta.label}</AppText>
+                <AppText variant="caption" color={colors.textTertiary}>
+                  {items.length.toLocaleString('en-US')} records ·{' '}
+                  {coverageLabel(game.coverage[section])}
+                </AppText>
+              </View>
+            </View>
+
+            <AppText variant="callout" color={colors.textSecondary} style={styles.blurb}>
+              {meta.blurb}
+            </AppText>
+
+            {facets.length > 1 ? (
+              <ChipRail style={styles.chipRail}>
+                <Chip
+                  label="All"
+                  count={items.length}
+                  active={facet === 'all'}
+                  onPress={() => setFacet('all')}
+                />
+                {facets.map(([value, count]) => (
+                  <Chip
+                    key={value}
+                    label={value}
+                    count={count}
+                    active={facet === value}
+                    onPress={() => setFacet(value)}
+                  />
+                ))}
+              </ChipRail>
+            ) : null}
+
+            <View style={[styles.rule, { backgroundColor: colors.line }]} />
           </View>
-        ))}
-      </ScrollView>
-    </View>
+        }
+        renderItem={({ item }) => (
+          <RecordRow
+            game={game}
+            section={section}
+            item={item}
+            index={
+              section === 'missions' && item.order
+                ? String(item.order).padStart(2, '0')
+                : undefined
+            }
+            onPress={() =>
+              router.push({
+                pathname: '/record/[slug]/[section]/[id]',
+                params: { slug: game.slug, section, id: item.id },
+              })
+            }
+          />
+        )}
+        ListEmptyComponent={
+          <View style={styles.empty}>
+            <AppText variant="headline">No records here</AppText>
+            <AppText variant="callout" color={colors.textSecondary} style={styles.emptyBody}>
+              {game.coverage[section] === 'empty'
+                ? `${game.shortTitle} genuinely has no ${meta.label.toLowerCase()}. The gap is recorded, not filled with guesses.`
+                : 'Nothing matches this filter.'}
+            </AppText>
+          </View>
+        }
+        ListFooterComponent={
+          <Pressable
+            onPress={() =>
+              router.replace({
+                pathname: '/games/[slug]/[section]',
+                params: { slug: game.slug, section: nextSection.key },
+              })
+            }
+            style={({ pressed }) => [
+              styles.next,
+              { borderColor: colors.line },
+              pressed && { backgroundColor: colors.surfacePressed },
+            ]}>
+            <View style={styles.nextBody}>
+              <AppText variant="label" color={colors.textTertiary}>
+                NEXT CHAPTER
+              </AppText>
+              <AppText variant="headline">{nextSection.label}</AppText>
+            </View>
+            <Ionicons name="arrow-forward" size={16} color={colors.accent} />
+          </Pressable>
+        }
+      />
+    </Screen>
   );
-};
+}
+
+function coverageLabel(value?: string) {
+  switch (value) {
+    case 'complete':
+      return 'complete';
+    case 'limited':
+      return 'limited';
+    case 'official-only':
+      return 'official info only';
+    case 'empty':
+      return 'nothing to list';
+    default:
+      return 'partial';
+  }
+}
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#0F0F23',
-  },
+  missing: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12 },
   header: {
-    padding: 24,
-    borderBottomWidth: 1,
-    borderBottomColor: '#272C36',
-    marginBottom: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingHorizontal: Space.lg,
+    paddingTop: 8,
+    paddingBottom: 10,
   },
-  title: {
-    fontFamily: 'RussoOne',
-    fontSize: 28,
-    color: '#F3F5F8',
+  iconBtn: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    borderWidth: StyleSheet.hairlineWidth * 2,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  subtitle: {
-    fontFamily: 'ChakraPetch',
-    fontSize: 14,
-    color: '#818B99',
-    marginTop: 4,
+  headerBody: { flex: 1, gap: 1 },
+  chapter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    paddingHorizontal: Space.xl,
+    paddingTop: Space.md,
   },
-  list: {
-    paddingHorizontal: 20,
+  chapterCover: {
+    width: 58,
+    height: 76,
+    borderRadius: Radii.small,
+    borderWidth: StyleSheet.hairlineWidth * 2,
   },
-  listContent: {},
-  item: {
+  chapterBody: { flex: 1, gap: 2 },
+  blurb: { paddingHorizontal: Space.xl, marginTop: Space.md },
+  chips: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Space.sm,
+    paddingHorizontal: Space.xl,
+    paddingTop: Space.lg,
+    paddingBottom: Space.md,
+  },
+  chipRail: { paddingHorizontal: Space.xl, paddingTop: Space.sm },
+  rule: { height: StyleSheet.hairlineWidth * 2, marginHorizontal: Space.xl, marginBottom: Space.xs },
+  empty: { padding: Space.xl, paddingTop: 48, alignItems: 'center', gap: 8 },
+  emptyBody: { textAlign: 'center', maxWidth: 280 },
+  next: {
+    marginHorizontal: Space.xl,
+    marginTop: Space.xxl,
     padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: '#1C2028',
-    marginBottom: 8,
+    borderRadius: Radii.card,
+    borderWidth: StyleSheet.hairlineWidth * 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
   },
-  itemTitle: {
-    fontFamily: 'ChakraPetch',
-    fontSize: 16,
-    color: '#F3F5F8',
-  },
-  itemDesc: {
-    fontFamily: 'ChakraPetch',
-    fontSize: 13,
-    color: '#B7C0CC',
-    marginTop: 4,
-  },
+  nextBody: { flex: 1, gap: 2 },
 });

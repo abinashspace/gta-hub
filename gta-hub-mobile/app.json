@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "gta-hub-mobile",
+    "name": "GTA Hub",
     "slug": "gta-hub-mobile",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "gtahubmobile",
@@ -12,6 +12,7 @@
     },
     "android": {
       "package": "com.gta.hub",
+      "versionCode": 4,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",

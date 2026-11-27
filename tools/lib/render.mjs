@@ -276,12 +276,117 @@ ${rows || `<tr><td colspan="${cols.length + (thumbs ? 1 : 0)}">No records yet.</
 </div>`;
 }
 
-export function filterBar(label, placeholder) {
+export function filterBar(label, placeholder, withToggle = false) {
+  const toggle = withToggle
+    ? `<div class="view-toggle" role="group" aria-label="View mode">
+    <button type="button" data-view="gallery" aria-pressed="true">Gallery</button>
+    <button type="button" data-view="table" aria-pressed="false">Table</button>
+  </div>`
+    : '';
   return `<div class="filter-bar">
-  <label for="table-filter">Filter</label>
-  <input id="table-filter" type="search" autocomplete="off" placeholder="${esc(placeholder)}" aria-controls="table-results">
+  <label for="table-filter">${esc(label)}</label>
+  <input id="table-filter" type="search" autocomplete="off" placeholder="${esc(placeholder)}" aria-controls="gallery-results table-results">
   <span class="filter-count" id="table-filter-count" aria-live="polite"></span>
+  ${toggle}
 </div>`;
+}
+
+function galleryMeta(section, row) {
+  switch (section) {
+    case 'characters': {
+      const parts = [];
+      if (row.status) parts.push(`<span><strong>Status:</strong> ${esc(row.status)}</span>`);
+      if (row.affiliations?.length) parts.push(`<span>${esc(row.affiliations.slice(0, 2).join(', '))}</span>`);
+      return parts.join('');
+    }
+    case 'missions': {
+      const parts = [];
+      if (row.giver) parts.push(`<span><strong>Giver:</strong> ${esc(row.giver)}</span>`);
+      if (row.reward?.money) parts.push(`<span><strong>Reward:</strong> ${fmtMoney(row.reward.money)}</span>`);
+      else if (row.location) parts.push(`<span>${esc(row.location)}</span>`);
+      return parts.join('');
+    }
+    case 'vehicles': {
+      const parts = [];
+      if (row.top_speed_kph) parts.push(`<span><strong>Top:</strong> ${row.top_speed_kph} km/h</span>`);
+      if (row.seats != null) parts.push(`<span><strong>Seats:</strong> ${row.seats}</span>`);
+      if (row.price) parts.push(`<span><strong>Price:</strong> ${fmtMoney(row.price)}</span>`);
+      return parts.join('');
+    }
+    case 'weapons': {
+      const parts = [];
+      if (row.damage_tier) parts.push(`<span><strong>Damage:</strong> ${esc(row.damage_tier)}</span>`);
+      if (row.price != null) parts.push(`<span><strong>Price:</strong> ${fmtMoney(row.price)}</span>`);
+      if (row.ammo) parts.push(`<span><strong>Ammo:</strong> ${esc(row.ammo)}</span>`);
+      return parts.join('');
+    }
+    case 'locations': {
+      const parts = [];
+      if (row.parent) parts.push(`<span><strong>In:</strong> ${esc(row.parent)}</span>`);
+      return parts.join('');
+    }
+    case 'collectibles': {
+      const parts = [];
+      if (row.count != null) parts.push(`<span><strong>Count:</strong> ${row.count}</span>`);
+      if (row.reward?.money) parts.push(`<span><strong>Reward:</strong> ${fmtMoney(row.reward.money)}</span>`);
+      return parts.join('');
+    }
+    default:
+      return '';
+  }
+}
+
+function galleryKicker(section, row) {
+  switch (section) {
+    case 'characters':
+      return row.role || 'Character';
+    case 'missions':
+      return `#${row.order ?? ''} · ${row.type || 'Mission'}`;
+    case 'vehicles':
+      return [row.category, row.class].filter(Boolean).join(' · ') || 'Vehicle';
+    case 'weapons':
+      return row.type || 'Weapon';
+    case 'locations':
+      return row.type || 'Location';
+    case 'collectibles':
+      return row.count != null ? `${row.count} items` : 'Collectible';
+    default:
+      return '';
+  }
+}
+
+/** Spacious visual card gallery for a game section. */
+export function sectionGallery(section, items, rel, game) {
+  const s = SECTIONS[section];
+  const isPortrait = section === 'characters';
+  const isContain = section === 'vehicles' || section === 'weapons' || section === 'collectibles';
+  const cards = items
+    .map((row) => {
+      const title = row.name || row.effect || row.id;
+      const kicker = galleryKicker(section, row);
+      const meta = galleryMeta(section, row);
+      const search = [row.id, row.name, row.effect, row.summary, row.status, row.role, row.location, row.giver, row.category, row.type]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
+      const thumb = row.image
+        ? `<div class="media-thumb${isPortrait ? ' is-portrait' : ''}${isContain ? ' is-contain' : ''}">
+        <img loading="lazy" decoding="async" src="${esc(rel + row.image)}" alt="${esc(title)}${row.image.endsWith('.svg') ? ' (placeholder)' : ''}" width="${s.image.width}" height="${s.image.height}">
+      </div>`
+        : '';
+      const inner = `${thumb}<div class="media-body">
+        ${kicker ? `<div class="media-kicker">${esc(kicker)}</div>` : ''}
+        <div class="media-title">${esc(title)}</div>
+        ${row.summary ? `<p class="media-summary">${esc(row.summary)}</p>` : ''}
+        ${meta ? `<div class="media-meta">${meta}</div>` : ''}
+      </div>`;
+      const wrapped = s.detail
+        ? `<a class="media-card-link" href="${esc(`${rel}games/${game.slug}/${section}/${row.id}/`)}">${inner}</a>`
+        : inner;
+      return `<li class="media-card" data-id="${esc(row.id)}" data-search="${esc(search)}">${wrapped}</li>`;
+    })
+    .join('\n');
+  return `<ul class="media-grid">${cards}</ul>`;
 }
 
 
@@ -313,7 +418,7 @@ export function gameGrid(games) {
   return `<ul class="game-grid">${games
     .map(
       (g, i) => `<li>
-  <a class="game-card${g.empty ? ' is-empty' : ''}" href="${esc(g.href)}">
+  <a class="game-card${g.empty ? ' is-empty' : ''}" href="${esc(g.href)}"${g.accent ? ` style="--game-accent:${esc(g.accent)}"` : ''}>
     <span class="cover-wrap">
       <img class="cover" src="${esc(g.cover)}" alt="${esc(g.title)} box art" width="600" height="900" loading="${
         i < 6 ? 'eager' : 'lazy'

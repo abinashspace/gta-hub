@@ -8,7 +8,7 @@ import { readFile, writeFile, mkdir, rm, readdir, copyFile, stat } from 'node:fs
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SECTIONS, SECTION_KEYS, sectionSchema } from './lib/schema.mjs';
-import { layout, pageHead, sectionTable, dataLink, esc, fmtMoney, jsonScript, cardGrid, statGrid } from './lib/render.mjs';
+import { layout, pageHead, sectionTable, sectionGallery, filterBar, dataLink, esc, fmtMoney, jsonScript, cardGrid, statGrid, gameGrid } from './lib/render.mjs';
 import { placeholder, cheatPlaceholder, brandSvg, shade } from './lib/art.mjs';
 import { validate } from './validate.mjs';
 
@@ -325,7 +325,8 @@ function coverageRow(g) {
       cover: g.images.cover,
       title: g.title,
       badge: String(g.year),
-      meta: `${g.type} · ${g.cities.length} ${g.cities.length === 1 ? 'city' : 'cities'}`,
+      accent: g.accent,
+      meta: `${g.type} · ${g.cities.join(', ')}`,
       empty: SECTION_KEYS.every((k) => g.sections[k].items.length === 0),
     }))
   );
@@ -364,63 +365,86 @@ function coverageRow(g) {
 <tr><td><code>llms.txt</code></td><td>Plain-text map for LLM crawlers</td></tr>
 </tbody></table></div>`;
 
+  const featured = ['gta-san-andreas', 'gta-v', 'gta-vi']
+    .map((slug) => games.find((g) => g.slug === slug))
+    .filter(Boolean);
+  const heroFan = featured.length
+    ? `<div class="hero-fan" aria-label="Featured titles">${featured
+        .map(
+          (g) =>
+            `<a href="games/${g.slug}/" title="${esc(g.title)}"><img src="${g.images.cover}" alt="${esc(g.title)} cover" width="600" height="900" loading="eager" decoding="async"></a>`
+        )
+        .join('')}</div>`
+    : '';
+
   const content = `<section class="home-hero">
-  <p class="eyebrow">Static · JSON-first · No external services</p>
-  <h1>The complete <em>GTA</em> reference</h1>
-  <p class="lead">${games.length} games. ${SECTION_KEYS.length} section types. ${totalRecords.toLocaleString('en-US')} records. Every page has a JSON twin — search it, browse it, or read the raw data.</p>
-  <form class="home-search" role="search" action="search/" method="get">
-    <label class="visually-hidden" for="hero-q">Search every record</label>
-    <input id="hero-q" name="q" type="search" autocomplete="off" placeholder="Try “Rhino”, “Vice City”, “hidden package”…">
-    <button class="btn" type="submit">Search</button>
-  </form>
-  <div class="hero-tags">
-    <a href="games/gta-v/">GTA V</a>
-    <a href="games/gta-san-andreas/">San Andreas</a>
-    <a href="games/gta-vice-city/">Vice City</a>
-    <a href="games/gta-iv/">GTA IV</a>
-    <a href="games/gta-vi/">GTA VI</a>
-    <a href="cheats/">All cheats →</a>
+  <div class="home-hero-copy">
+    <p class="eyebrow">Grand Theft Auto Series · 1997–2026</p>
+    <h1>Every <em>GTA</em>. One Living Archive.</h1>
+    <p class="lead">Explore ${games.length} games across Liberty City, Vice City, San Andreas and beyond — characters, missions, vehicles, weapons, cheats and locations.</p>
+    <form class="home-search" role="search" action="search/" method="get">
+      <label class="visually-hidden" for="hero-q">Search every record</label>
+      <input id="hero-q" name="q" type="search" autocomplete="off" placeholder="Search “Tommy Vercetti”, “Rhino”, “Vice City”…">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="hero-tags">
+      <a href="games/gta-vi/">GTA VI</a>
+      <a href="games/gta-v/">GTA V</a>
+      <a href="games/gta-san-andreas/">San Andreas</a>
+      <a href="games/gta-vice-city/">Vice City</a>
+      <a href="games/gta-iv/">GTA IV</a>
+      <a href="cheats/">Cheat codes →</a>
+    </div>
   </div>
+  ${heroFan}
 </section>
 ${statGrid([
     { label: 'Games', value: games.length },
-    { label: 'Records', value: totalRecords },
-    { label: 'Sections', value: SECTION_KEYS.length },
+    { label: 'Cataloged Entries', value: totalRecords },
+    { label: 'Categories', value: SECTION_KEYS.length },
     { label: 'Universes', html: `<a href="timeline/">2D · 3D · HD · VI</a>` },
   ])}
-<h2 id="library">Game library</h2>
-<p class="note">Seventeen releases, from the 1997 original to the upcoming GTA VI. Pick a cover to open its seven sections.</p>
+<div class="section-head">
+  <h2 id="library">The GTA Library</h2>
+  <p class="note">Seventeen releases, from the 1997 original to GTA VI. Pick any cover to explore its world.</p>
+</div>
 ${library}
-<h2 id="cross">Cross-game views</h2>
+<div class="section-head">
+  <h2 id="cross">Explore Across Games</h2>
+  <p class="note">Trace recurring cities, compare eras, or jump straight to every cheat code.</p>
+</div>
 ${cardGrid([
     {
       href: 'timeline/',
       kicker: `${games[0].year}–${games[games.length - 1].year} · ${games.length} releases`,
-      title: 'Timeline',
-      meta: 'Every release in order, grouped by 2D, 3D and HD universe.',
+      title: 'Series Timeline',
+      meta: 'Every release in chronological order, grouped by 2D, 3D and HD universe.',
     },
     {
       href: 'compare/',
       kicker: `${games.length} games × ${SECTION_KEYS.length} sections`,
-      title: 'Compare games',
-      meta: 'Record counts, section leaders and shared cities side by side.',
+      title: 'Compare Games',
+      meta: 'Side-by-side totals, section leaders and recurring cities.',
     },
     {
       href: 'cheats/',
       kicker: `${totalCounts.cheats} cheats`,
-      title: 'All cheat codes',
-      meta: 'One page, every game, with platform and button sequence.',
+      title: 'All Cheat Codes',
+      meta: 'Every game and platform button sequence or keyboard code on one page.',
     },
     {
       href: 'locations/',
       kicker: `${totalCounts.locations} locations`,
-      title: 'All locations',
-      meta: 'Cities, districts and landmarks across the series.',
+      title: 'Cities & Locations',
+      meta: 'Districts, landmarks and recurring settings across the series.',
     },
   ])}
-<h2 id="reference">Reference tables</h2>
+<div class="section-head">
+  <h2 id="reference">Archive &amp; Open Data</h2>
+  <p class="note">Optional coverage matrices and static JSON endpoints for researchers and tools.</p>
+</div>
 <details class="panel">
-  <summary>Coverage matrix — records per section, per game</summary>
+  <summary>Coverage matrix — entries per section, per game</summary>
   <div class="panel-body">
     <p class="note">Cells show how many records exist today. <span class="badge badge-complete">complete</span> <span class="badge badge-partial">partial</span> <span class="badge badge-limited">limited</span> <span class="badge badge-official-only">official-only</span> <span class="badge badge-empty">empty</span></p>
     ${matrix}
@@ -431,9 +455,9 @@ ${cardGrid([
   <div class="panel-body">${gameTable}</div>
 </details>
 <details class="panel" id="machines">
-  <summary>Machine endpoints — for agents and crawlers</summary>
+  <summary>JSON API &amp; machine endpoints</summary>
   <div class="panel-body">
-    <p class="note">No JavaScript is required to read this site. Every URL below is a static file in this repository. Prefer JSON over scraping HTML.</p>
+    <p class="note">No JavaScript is required to read this site. Every URL below is a static file in this repository.</p>
     ${endpoints}
     <p class="data-link"><a href="llms.txt">llms.txt →</a> <a href="sitemap.xml">sitemap.xml →</a> <a href="robots.txt">robots.txt →</a></p>
   </div>
@@ -502,7 +526,7 @@ for (const g of games) {
   const heroFacts = gameMeta(g)
     .map((m) => `<div><dt>${esc(m.label)}</dt><dd>${m.html ?? esc(m.value)}</dd></div>`)
     .join('');
-  const content = `<header class="game-hero">
+  const content = `<header class="game-hero" style="--game-accent:${esc(g.accent)}">
   <div class="game-hero-bg"><img src="${rel}${g.images.banner}" alt="" width="1920" height="800" loading="eager" decoding="async"></div>
   <div class="game-hero-inner">
     <img class="game-hero-cover" src="${rel}${g.images.cover}" alt="${esc(g.title)} box art" width="600" height="900" loading="eager" decoding="async">
@@ -572,18 +596,20 @@ ${
 
     const unverified = items.filter((i) => i.verified === false).length;
 
+    const useGallery = key !== 'cheats' && items.length > 0;
     const content = `${pageHead({
-      eyebrow: `${g.short_title} · ${items.length} records · coverage: ${sec.coverage}`,
+      eyebrow: `${g.short_title} · ${items.length} entries · ${sec.coverage}`,
       title: `${s.title} — ${g.title}`,
       lead: s.blurb,
     })}
 <p class="section-actions">
   <a class="btn" href="${rel}data/games/${g.slug}/${key}.json" type="application/json">Download ${esc(key)}.json</a>
   <a class="btn btn-ghost" href="${rel}data/games/${g.slug}.json" type="application/json">Whole game bundle</a>
-  ${unverified ? `<span class="badge badge-partial">${unverified} unverified record${unverified === 1 ? '' : 's'}</span>` : ''}
+  ${unverified ? `<span class="badge badge-partial">${unverified} unverified ${unverified === 1 ? 'entry' : 'entries'}</span>` : ''}
 </p>
-${items.length > 6 ? filterBar('Filter', `Filter ${items.length} ${s.title.toLowerCase()}…`) : ''}
-<div id="table-results">${sectionTable(key, items, rel, g)}</div>
+${useGallery || items.length > 6 ? filterBar('Filter', `Filter ${items.length} ${s.title.toLowerCase()}…`, useGallery) : ''}
+${useGallery ? `<div id="gallery-results">${sectionGallery(key, items, rel, g)}</div>` : ''}
+<div id="table-results"${useGallery ? ' class="is-view-hidden"' : ''}>${sectionTable(key, items, rel, g)}</div>
 ${items.length ? `<h2 id="fields">Field definitions</h2>${fieldTable(key)}` : ''}
 <nav class="pager" aria-label="Section navigation">
   <a href="${rel}games/${g.slug}/">← ${esc(g.short_title)} overview</a>
