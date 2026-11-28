@@ -157,6 +157,9 @@ ${alternate}
 <meta name="theme-color" content="#FFD500">
 <link rel="icon" href="${rel}assets/img/brand/favicon.svg" type="image/svg+xml">
 <script>(function(){try{var t=localStorage.getItem('gta-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap">
 <link rel="stylesheet" href="${rel}assets/css/site.css">
 ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script>`).join('\n')}
 <script src="${rel}assets/js/site.js" defer></script>
