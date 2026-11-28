@@ -159,10 +159,10 @@ ${alternate}
 <script>(function(){try{var t=localStorage.getItem('gta-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap">
-<link rel="stylesheet" href="${rel}assets/css/site.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="${rel}assets/css/site.css?v=20261128">
 ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script>`).join('\n')}
-<script src="${rel}assets/js/site.js" defer></script>
+<script src="${rel}assets/js/site.js?v=20261128" defer></script>
 </head>
 <body data-page="${esc(pageType)}">
 <a class="skip" href="#main">Skip to content</a>
