@@ -154,15 +154,15 @@ ${alternate}
 <meta property="og:url" content="${esc(canonical)}">
 <meta property="og:image" content="${esc(site.base_url + (site.build.og_image || '/assets/img/brand/og.png'))}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FFD500">
+<meta name="theme-color" content="#FFF7D6">
 <link rel="icon" href="${rel}assets/img/brand/favicon.svg" type="image/svg+xml">
 <script>(function(){try{var t=localStorage.getItem('gta-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="${rel}assets/css/site.css?v=20261128">
+<link rel="stylesheet" href="${rel}assets/css/site.css?v=20261128b">
 ${jsonld.map((o) => `<script type="application/ld+json">${jsonScript(o)}</script>`).join('\n')}
-<script src="${rel}assets/js/site.js?v=20261128" defer></script>
+<script src="${rel}assets/js/site.js?v=20261128b" defer></script>
 </head>
 <body data-page="${esc(pageType)}">
 <a class="skip" href="#main">Skip to content</a>
